@@ -1,3 +1,24 @@
+Element.prototype.hasClass = function (className) {
+    return new RegExp(' ' + className + ' ').test(' ' + this.className + ' ');
+};
+
+Element.prototype.addClass = function (className) {
+    if (!this.hasClass(className)) {
+        this.className += ' ' + className;
+    }
+    return this;
+};
+
+Element.prototype.removeClass = function (className) {
+    var newClass = ' ' + this.className.replace(/[\t\r\n]/g, ' ') + ' ';
+    if (this.hasClass(className)) {
+        while (newClass.indexOf( ' ' + className + ' ') >= 0) {
+            newClass = newClass.replace(' ' + className + ' ', ' ');
+        }
+        this.className = newClass.replace(/^\s+|\s+$/g, ' ');
+    }
+    return this;
+};
 // Load fonts
 WebFontConfig = {
   google: { families: [ 'Fira+Sans::latin' ] }
@@ -18,13 +39,16 @@ WebFontConfig = {
     var current = scriptPram.getAttribute('data-current');
 
     var links = {
-        html: 'https://cdn.rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/header_test.html',
+        htmlHeader: 'https://rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/header_test.html',
+        htmlFooter: 'https://rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/footer_test.html',
         css: 'https://rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/header-gfw.css'
     }
 
     var header = document.getElementById('headerGfw'),
+        footer = document.getElementById('footerGfw'),
         head = document.head || document.getElementsByTagName('head')[0], 
-        xhrHtml = new XMLHttpRequest(),
+        xhrHeader = new XMLHttpRequest(),
+        xhrFooter = new XMLHttpRequest(),
         xhrCss = new XMLHttpRequest();
         href = location.href;
 
@@ -38,17 +62,23 @@ WebFontConfig = {
                 style.appendChild(document.createTextNode(xhrCss.responseText));
             // Append to header
             head.appendChild(style);
-            xhrHtml.open("GET", links.html, true);
-            xhrHtml.send();
+            xhrHeader.open("GET", links.htmlHeader, true);
+            xhrHeader.send();
+            xhrFooter.open("GET", links.htmlFooter, true);
+            xhrFooter.send();
         }
     }
 
-    xhrHtml.onreadystatechange = function (e) { 
-        if (xhrHtml.readyState == 4 && xhrHtml.status == 200) {
-            header.innerHTML = xhrHtml.responseText;
+    xhrHeader.onreadystatechange = function (e) { 
+        if (xhrHeader.readyState == 4 && xhrHeader.status == 200) {
+            header.innerHTML = xhrHeader.responseText;
             headerUl = document.getElementById('headerUl');
-            console.log(headerUl);
-            headerUl.find('.shape-fire').addClass('current');
+            document.querySelector(current).addClass('current');
+        }
+    }
+    xhrFooter.onreadystatechange = function (e) { 
+        if (xhrFooter.readyState == 4 && xhrFooter.status == 200) {
+            footer.innerHTML = xhrFooter.responseText;
         }
     }
 
