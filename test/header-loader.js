@@ -41,7 +41,7 @@ WebFontConfig = {
     var links = {
         htmlHeader: 'https://rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/header_test.html',
         htmlFooter: 'https://rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/footer_test.html',
-        css: 'https://rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/header-gfw.css'
+        css: 'https://rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/gfw-styles.css'
     }
 
     var header = document.getElementById('headerGfw'),
