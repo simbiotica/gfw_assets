@@ -6,13 +6,20 @@
 <body>
   <div id="headerGfw"></div>
   <div id="footerGfw"></div>
+
   <script type="text/javascript">
     (function () {
-      var header = document.getElementById("headerGfw");
-      
-      header.innerHTML = "Esto es el header";
-      console.log("Hello World!");
+      var links = ['https://cdn.rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/header_test.html']
+      var header = document.getElementById('headerGfw'), xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function (e) { 
+        if (xhr.readyState == 4 && xhr.status == 200) {
+          header.innerHTML = xhr.responseText;
+        }
+      }
+      xhr.open("GET", "https://cdn.rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/header_test.html", true);
+      xhr.send();
     }());
   </script>
+
 </body>
 </html>
