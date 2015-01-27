@@ -1203,7 +1203,7 @@
 }
 /* line 108, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .partner-box {
-  padding: 40px 20px;
+  padding: 40px 20px 20px;
 }
 @media (min-width: 850px) {
   /* line 108, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
@@ -1227,30 +1227,34 @@
   }
 }
 /* line 124, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
-.layout-footer .partner-box .row {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-box-align: start;
-  -moz-box-align: start;
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -ms-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
+@media (min-width: 850px) {
+  .layout-footer .partner-box .row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
 }
+
 /* line 126, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .partner-box .row .wri-logo {
+  display: block;
   width: 200px;
   height: 70px;
   margin: 0 auto;
@@ -1293,7 +1297,19 @@
 .layout-footer .partner-box .row .address a {
   color: #555555;
   font-weight: 400;
+  display: block;
+  margin: 3px 0 10px;
 }
+@media (min-width: 850px) {
+  /* line 136, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+  .layout-footer .partner-box .row .address a {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+
+
 /* line 158, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .partner-box .row .address strong, .layout-footer .partner-box .row .address span {
   display: block;
@@ -1324,14 +1340,36 @@
   -webkit-align-items: stretch;
   align-items: stretch;
 }
-/* line 174, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
-.layout-footer .footer-logos-btn a, .layout-footer .footer-logos-btn span {
+
+/* line 178, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+.layout-footer .footer-logos-btn {
+  padding: 0 0 20px 0;
+  display: block;
+}
+@media (min-width: 850px) {
+  /* line 178, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+  .layout-footer .footer-logos-btn {
+    display: none;
+  }
+}
+/* line 184, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+.layout-footer .footer-logos-btn .inner {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  align-items: stretch;
+  -webkit-align-items: stretch;
+}
+/* line 187, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+.layout-footer .footer-logos-btn a {
   color: #555555;
+  margin: 0 auto;
 }
-/* line 175, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
-.layout-footer .footer-logos-btn span {
-  font-size: 19px;
-}
+
 /* line 178, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .footer-logos-btn a {
   text-decoration: none;
