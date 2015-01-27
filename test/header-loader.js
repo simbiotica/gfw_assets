@@ -79,6 +79,14 @@ WebFontConfig = {
     xhrFooter.onreadystatechange = function (e) { 
         if (xhrFooter.readyState == 4 && xhrFooter.status == 200) {
             footer.innerHTML = xhrFooter.responseText;
+            $('#footer-logos').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                speed: 500,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
         }
     }
 
