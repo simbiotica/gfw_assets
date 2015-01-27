@@ -19,66 +19,9 @@ Element.prototype.removeClass = function (className) {
     }
     return this;
 };
-
-var $el, $htmlbody, $window, $navMobile, $footer, $siteMap, $mobileMenu, $translate;
-var base_url = (true) ? 'https://rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/' : '';
-
-function initialize() {
-  //CACHE
-  $el = $('#headerView');
-  $htmlbody = $('html,body');
-  $window = $(window);
-  $navMobile = $('#nav-mobile');
-  $footer = $('#footerMenu');
-  $siteMap = $('#siteMap');
-  $mobileMenu = $('#mobileMenu');
-  $translate = $('#google_translate_element');
-
-  createMenu();
-  $window.on('resize',createMenu)
-  $('#footer-logos').slick({
-      infinite: true,
-      slidesToShow: 5,
-      slidesToScroll: 5,
-      speed: 500,
-      autoplay: true,
-      autoplaySpeed: 3000
-  });
-  $('#btn-menu').on('click', toggleMenu)
-
-
-}
-
-function toggleMenu(e){
-  $(e.currentTarget).toggleClass('active');
-  if ($(e.currentTarget).hasClass('active')) {
-    $htmlbody.addClass('active');
-    $el.addClass('active');
-    $navMobile.addClass('active');
-  }else{
-    $htmlbody.removeClass('active');
-    $el.removeClass('active');
-    $navMobile.removeClass('active');
-  }
-}
-
-function createMenu(){
-  if ($window.width() > 700) {
-    $footer.appendTo(this.$siteMap);
-    $translate.appendTo($('#google_translate_element_box1'));
-  }else{
-    $footer.appendTo(this.$mobileMenu);
-    $translate.appendTo($('#google_translate_element_box2'));
-  }
-}
-
-
-
-
-
 // Load fonts
 WebFontConfig = {
-  google: { families: [ 'Fira+Sans::latin' ] }
+  google: { families: [ 'Fira+Sans:300,400,500:latin' ] }
 };
 (function() {
   var wf = document.createElement('script');
@@ -96,9 +39,9 @@ WebFontConfig = {
     var current = scriptPram.getAttribute('data-current');
 
     var links = {
-        htmlHeader: base_url + 'test/header_test.html',
-        htmlFooter: base_url + 'test/footer_test.html',
-        css: base_url + 'test/gfw-styles.css'
+        htmlHeader: 'https://rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/header_test.html',
+        htmlFooter: 'https://rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/footer_test.html',
+        css: 'https://rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/gfw-styles.css'
     }
 
     var header = document.getElementById('headerGfw'),
@@ -136,11 +79,15 @@ WebFontConfig = {
     xhrFooter.onreadystatechange = function (e) { 
         if (xhrFooter.readyState == 4 && xhrFooter.status == 200) {
             footer.innerHTML = xhrFooter.responseText;
-            initialize();
+            $('#footer-logos').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                speed: 500,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
         }
     }
 
-
-
 }());
-
