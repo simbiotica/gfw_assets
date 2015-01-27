@@ -1,24 +1,6 @@
-Element.prototype.hasClass = function (className) {
-    return new RegExp(' ' + className + ' ').test(' ' + this.className + ' ');
-};
 
-Element.prototype.addClass = function (className) {
-    if (!this.hasClass(className)) {
-        this.className += ' ' + className;
-    }
-    return this;
-};
+Element.prototype.hasClass=function(e){return(new RegExp(" "+e+" ")).test(" "+this.className+" ")};Element.prototype.addClass=function(e){if(!this.hasClass(e)){this.className+=" "+e}return this};Element.prototype.removeClass=function(e){var t=" "+this.className.replace(/[\t\r\n]/g," ")+" ";if(this.hasClass(e)){while(t.indexOf(" "+e+" ")>=0){t=t.replace(" "+e+" "," ")}this.className=t.replace(/^\s+|\s+$/g," ")}return this}
 
-Element.prototype.removeClass = function (className) {
-    var newClass = ' ' + this.className.replace(/[\t\r\n]/g, ' ') + ' ';
-    if (this.hasClass(className)) {
-        while (newClass.indexOf( ' ' + className + ' ') >= 0) {
-            newClass = newClass.replace(' ' + className + ' ', ' ');
-        }
-        this.className = newClass.replace(/^\s+|\s+$/g, ' ');
-    }
-    return this;
-};
 // Load fonts
 WebFontConfig = {
   google: { families: [ 'Fira+Sans:300,400,500:latin' ] }
@@ -33,6 +15,20 @@ WebFontConfig = {
   s.parentNode.insertBefore(wf, s);
 })(); 
 
+
+// Google translate
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: '',
+      includedLanguages: 'ar,es,en,fr,id,pt,ru,zh-CN,de,uk,ro,tr,it,hi,km',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    },
+    'google_translate_element');
+}
+
+
 // Load html & css
 (function () {
     var scriptPram = document.getElementById('loader-gfw');
@@ -41,7 +37,8 @@ WebFontConfig = {
     var links = {
         htmlHeader: 'https://rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/header_test.html',
         htmlFooter: 'https://rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/footer_test.html',
-        css: 'https://rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/gfw-styles.css'
+        css: 'https://rawgit.com/simbiotica/gfw_assets/feature/loading-by-js/test/gfw-styles.css',
+        translate: 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
     }
 
     var header = document.getElementById('headerGfw'),
@@ -74,6 +71,12 @@ WebFontConfig = {
             header.innerHTML = xhrHeader.responseText;
             headerUl = document.getElementById('headerUl');
             document.querySelector(current).addClass('current');
+            var translate = document.createElement('script');
+                translate.type = 'text/javascript';
+                translate.src = links.translate;
+            // Append to header
+            head.appendChild(translate);
+
         }
     }
     xhrFooter.onreadystatechange = function (e) { 
@@ -89,5 +92,6 @@ WebFontConfig = {
             });
         }
     }
+
 
 }());
