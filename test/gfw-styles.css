@@ -738,6 +738,199 @@
     width: 25px;
   }
 
+
+  /* line 349, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  .layout-header .layout-header-bottom {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 0;
+  }
+  .layout-header.active .layout-header-bottom {
+    height: 100%;
+    display: block;
+  }
+
+  /* line 16, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_mixins1600.scss */
+  .layout-header .layout-header-bottom:before, .layout-header .layout-header-bottom:after {
+    content: " ";
+    display: table;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+  }
+  /* line 23, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_mixins1600.scss */
+  .layout-header .layout-header-bottom:after {
+    clear: both;
+  }
+  @media (min-width: 850px) {
+    /* line 349, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+    .layout-header .layout-header-bottom {
+      position: relative;
+      background: rgba(255, 255, 255, 0.8);
+      border-bottom: 1px solid #e5e5df;
+    }
+  }
+
+
+  /* line 409, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  .layout-header .layout-header-bottom form {
+    padding: 17px 60px 17px 90px;
+  }
+  /* line 412, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  .layout-header .layout-header-bottom form > input {
+    border: none;
+    border-bottom: 2px solid #B6B6BA;
+    background: none;
+    box-shadow: none;
+    width: calc(100% - 25px);
+    height: 25px;
+    outline: none;
+    margin: 0;
+    padding: 0 5px;
+  }
+  /* line 423, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  .layout-header .layout-header-bottom form svg {
+    float: left;
+    fill: #B6B6BA;
+  }
+
+  /* line 613, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  #google_translate_element_box2 {
+    padding: 15px 15px 10px;
+  }
+  @media (min-width: 850px) {
+    /* line 613, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+    #google_translate_element_box2 {
+      display: none;
+    }
+  }
+
+  .layout-header .mobile-menu{
+    padding-bottom: 56px;
+  }
+
+
+
+  /* line 557, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  .layout-header .mobile-menu h3 {
+    border-top: 1px solid #cecec3;
+    font-size: 16px;
+    padding: 0;
+    text-transform: uppercase;
+    color: #555555;
+  }
+  /* line 563, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  .layout-header .mobile-menu h3 a {
+    display: block;
+    text-transform: uppercase;
+    color: #555555;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    background: #F2F2F3;
+    text-decoration: none;
+  }
+  /* line 572, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  .layout-header .mobile-menu h3 a:after {
+    content: "";
+    background-color: #97bd3d;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    opacity: 0;
+    -webkit-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -moz-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  /* line 585, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  .layout-header .mobile-menu h3 a.current:after, .layout-header .mobile-menu h3 a:hover:after {
+    opacity: 1;
+  }
+  /* line 591, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  .layout-header .mobile-menu ul {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+  }
+  /* line 596, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  .layout-header .mobile-menu ul li a {
+    color: #555555;
+    background: #FFF;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+  }
+  /* line 602, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  .layout-header .mobile-menu ul li a:hover {
+    background: #fafafa;
+  }
+
+  /* line 613, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  #google_translate_element_box2 {
+    padding: 15px 15px 10px;
+  }
+  @media (min-width: 850px) {
+    /* line 613, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+    #google_translate_element_box2 {
+      display: none;
+    }
+  }
+  /* line 621, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  #google_translate_element .goog-te-gadget {
+    font-family: inherit;
+    text-align: center;
+  }
+  /* line 624, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  #google_translate_element .goog-te-gadget .goog-te-gadget-simple {
+    border: none;
+    background: none;
+  }
+  /* line 627, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  #google_translate_element .goog-te-gadget .goog-te-gadget-simple .goog-te-menu-value {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 28px;
+    position: relative;
+    padding-right: 16px;
+  }
+  /* line 635, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  #google_translate_element .goog-te-gadget .goog-te-gadget-simple .goog-te-menu-value span:last-child {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 16px;
+    width: 16px;
+    -webkit-transform: translate(0, -55%);
+    -moz-transform: translate(0, -55%);
+    -ms-transform: translate(0, -55%);
+    -o-transform: translate(0, -55%);
+    transform: translate(0, -55%);
+  }
+  /* line 644, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  #google_translate_element .goog-te-gadget .goog-te-gadget-simple .goog-te-menu-value span:last-child:before {
+    content: "";
+    visibility: visible;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: url(/assets/svg-icons/arrow-down.svg) no-repeat center;
+    background-size: contain;
+  }
+
+
   /* line 17, /Users/miguelbarrenechea/.rvm/gems/ruby-2.1.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   .layout-footer div, .layout-footer span, .layout-footer applet, .layout-footer object, .layout-footer iframe,
   .layout-footer h1, .layout-footer h2, .layout-footer h3, .layout-footer h4, .layout-footer h5, .layout-footer h6, .layout-footer p, .layout-footer blockquote, .layout-footer pre,
