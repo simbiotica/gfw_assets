@@ -1976,8 +1976,14 @@
 
   /* line 191, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_slick1600.scss */
   .layout-footer .slick-prev {
-    left: -50px;
+    left: -10px;
   }
+  @media (min-width: 1400px) {
+    .layout-footer .slick-prev {
+      left: -50px;
+    }
+  }
+
   /* line 193, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_slick1600.scss */
   .layout-footer .slick-prev:before {
     background: url(http://gfw-nav.herokuapp.com/assets/svg-icons/arrow-left.svg) center no-repeat;
@@ -1985,7 +1991,12 @@
 
   /* line 197, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_slick1600.scss */
   .layout-footer .slick-next {
-    right: -50px;
+    right: -10px;
+  }
+  @media (min-width: 1400px) {
+    .layout-footer .slick-next {
+      right: -50px;
+    }
   }
   /* line 199, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_slick1600.scss */
   .layout-footer .slick-next:before {
