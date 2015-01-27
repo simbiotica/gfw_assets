@@ -29,7 +29,7 @@ function googleTranslateElementInit() {
 }
 
 
-// Load html & css
+// Load html & css & translate script
 (function () {
     var scriptPram = document.getElementById('loader-gfw');
     var current = scriptPram.getAttribute('data-current');
@@ -88,6 +88,8 @@ function googleTranslateElementInit() {
 
 
 }());
+
+// MOBILE MENU //
 var headerLoad = null;
 var footerLoad = null;
 function init(_header,_footer){
