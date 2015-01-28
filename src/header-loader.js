@@ -83,6 +83,7 @@ function googleTranslateElementInit() {
         if (xhrFooter.readyState == 4 && xhrFooter.status == 200) {
             footer.innerHTML = xhrFooter.responseText;
             init(false,true);
+            initSlick();
         }
     }
 
@@ -108,17 +109,18 @@ function init(_header,_footer){
     createMenu();
     $window.on('resize',createMenu); 
     $('#btn-menu').on('click', toggleMenu);
-
-    // FOOTER
-    $('#footer-logos').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        speed: 500,
-        autoplay: true,
-        autoplaySpeed: 3000
-    });
   }
+}
+
+function initSlick () {
+  $('#footer-logos').slick({
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      speed: 500,
+      autoplay: true,
+      autoplaySpeed: 3000
+  });
 }
 
 
