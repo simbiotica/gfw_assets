@@ -1,6 +1,3 @@
-
-Element.prototype.hasClass=function(e){return(new RegExp(" "+e+" ")).test(" "+this.className+" ")};Element.prototype.addClass=function(e){if(!this.hasClass(e)){this.className+=" "+e}return this};Element.prototype.removeClass=function(e){var t=" "+this.className.replace(/[\t\r\n]/g," ")+" ";if(this.hasClass(e)){while(t.indexOf(" "+e+" ")>=0){t=t.replace(" "+e+" "," ")}this.className=t.replace(/^\s+|\s+$/g," ")}return this}
-
 // Load fonts
 WebFontConfig = {
   google: { families: [ 'Fira+Sans:300,400,500:latin' ] }
@@ -35,9 +32,9 @@ function googleTranslateElementInit() {
     var current = scriptPram.getAttribute('data-current');
 
     var links = {
-        htmlHeader: 'https://cdn.rawgit.com/simbiotica/gfw_assets/master/src/header.html',
-        htmlFooter: 'https://cdn.rawgit.com/simbiotica/gfw_assets/master/src/footer.html',
-        css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/master/src/gfw-styles.css',
+        htmlHeader: 'https://cdn.rawgit.com/simbiotica/gfw_assets/develop/src_develop/header.html',
+        htmlFooter: 'https://cdn.rawgit.com/simbiotica/gfw_assets/develop/src_develop/footer.html',
+        css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/develop/src_develop/gfw-styles.css',
         translate: 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
     }
 
@@ -70,7 +67,7 @@ function googleTranslateElementInit() {
         if (xhrHeader.readyState == 4 && xhrHeader.status == 200) {
             header.innerHTML = xhrHeader.responseText;
             headerUl = document.getElementById('headerUl');
-            document.querySelector(current).addClass('current');
+            $(current).addClass('current');
             var translate = document.createElement('script');
                 translate.type = 'text/javascript';
                 translate.src = links.translate;
@@ -83,7 +80,6 @@ function googleTranslateElementInit() {
         if (xhrFooter.readyState == 4 && xhrFooter.status == 200) {
             footer.innerHTML = xhrFooter.responseText;
             init(false,true);
-            initSlick();
         }
     }
 
@@ -109,6 +105,7 @@ function init(_header,_footer){
     createMenu();
     $window.on('resize',createMenu); 
     $('#btn-menu').on('click', toggleMenu);
+    initSlick();
   }
 }
 
