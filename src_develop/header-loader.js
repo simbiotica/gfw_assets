@@ -27,7 +27,7 @@ function googleTranslateElementInit() {
 
 
 // Load html & css & translate script
-window.onload = function () {
+(function () {
     var scriptPram = document.getElementById('loader-gfw');
     var current = scriptPram.getAttribute('data-current');
 
@@ -98,14 +98,14 @@ window.onload = function () {
 
           var head = document.getElementsByTagName("head")[0] ;
               head.insertBefore(script,head.firstChild) ;
-              console.log('hola');
-          initSlick();
+
+          setTimeout(initSlick,500);
         }
     }
 
 
 
-};
+})();
 
 // MOBILE MENU //
 var headerLoad = false;
