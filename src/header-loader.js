@@ -27,7 +27,7 @@ function googleTranslateElementInit() {
 
 
 // Load html & css & translate script
-window.onload = function () {
+(function () {
     var scriptPram = document.getElementById('loader-gfw');
     var current = scriptPram.getAttribute('data-current');
 
@@ -105,7 +105,7 @@ window.onload = function () {
 
 
 
-};
+})();
 
 // MOBILE MENU //
 var headerLoad = false;
