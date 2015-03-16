@@ -52,8 +52,6 @@ window.onload = function () {
     xhrCss.send();
 
 
-    xhrSlick.open("GET", links.slick, true);
-    xhrSlick.send();
 
     xhrCss.onreadystatechange = function (e) { 
         if (xhrCss.readyState == 4 && xhrCss.status == 200) {
@@ -86,6 +84,8 @@ window.onload = function () {
         if (xhrFooter.readyState == 4 && xhrFooter.status == 200) {
             footer.innerHTML = xhrFooter.responseText;
             init(false,true);
+            xhrSlick.open("GET", links.slick, true);
+            xhrSlick.send();
         }
     }
 
@@ -98,6 +98,7 @@ window.onload = function () {
 
           var head = document.getElementsByTagName("head")[0] ;
               head.insertBefore(script,head.firstChild) ;
+              console.log('hola');
           initSlick();
         }
     }
