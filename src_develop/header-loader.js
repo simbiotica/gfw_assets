@@ -27,7 +27,7 @@ function googleTranslateElementInit() {
 
 
 // Load html & css & translate script
-(function () {
+window.onload = function () {
     var scriptPram = document.getElementById('loader-gfw');
     var current = scriptPram.getAttribute('data-current');
 
@@ -38,8 +38,8 @@ function googleTranslateElementInit() {
         translate: 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
     }
 
-    var header = document.getElementById('headerGfw'),
-        footer = document.getElementById('footerGfw'),
+    var footer = document.getElementById('footerGfw'),
+        header = document.getElementById('headerGfw'),
         head = document.head || document.getElementsByTagName('head')[0], 
         xhrHeader = new XMLHttpRequest(),
         xhrFooter = new XMLHttpRequest(),
@@ -84,14 +84,16 @@ function googleTranslateElementInit() {
     }
 
 
-}());
+};
 
 // MOBILE MENU //
-var headerLoad = null;
-var footerLoad = null;
+var headerLoad = false;
+var footerLoad = false;
 function init(_header,_footer){
   headerLoad = headerLoad || _header;
   footerLoad = footerLoad || _footer;
+  console.log(headerLoad,footerLoad);
+
   // HEADER
   if (headerLoad && footerLoad) {
     $el = $('#headerView');
