@@ -34,6 +34,7 @@ window.onload = function () {
     var links = {
         htmlHeader: 'https://cdn.rawgit.com/simbiotica/gfw_assets/develop/src_develop/header.html',
         htmlFooter: 'https://cdn.rawgit.com/simbiotica/gfw_assets/develop/src_develop/footer.html',
+        slick: 'http://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js',
         css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/develop/src_develop/gfw-styles.css',
         translate: 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
     }
@@ -44,10 +45,15 @@ window.onload = function () {
         xhrHeader = new XMLHttpRequest(),
         xhrFooter = new XMLHttpRequest(),
         xhrCss = new XMLHttpRequest();
+        xhrSlick = new XMLHttpRequest();
         href = location.href;
 
     xhrCss.open("GET", links.css, true);
     xhrCss.send();
+
+
+    xhrSlick.open("GET", links.slick, true);
+    xhrSlick.send();
 
     xhrCss.onreadystatechange = function (e) { 
         if (xhrCss.readyState == 4 && xhrCss.status == 200) {
@@ -73,15 +79,29 @@ window.onload = function () {
                 translate.src = links.translate;
             // Append to header
             head.appendChild(translate);
-            init(true, false);
+            init(true, false,false);
         }
     }
     xhrFooter.onreadystatechange = function (e) { 
         if (xhrFooter.readyState == 4 && xhrFooter.status == 200) {
             footer.innerHTML = xhrFooter.responseText;
-            init(false,true);
+            init(false,true,false);
         }
     }
+
+    xhrSlick.onreadystatechange = function (e) { 
+        if (xhrSlick.readyState == 4 && xhrSlick.status == 200) {
+          var script = document.createElement("script") ;
+              script.setAttribute("type","text/javascript") ;
+          var text = document.createTextNode(xhrSlick.responseText) ;
+              script.appendChild(text) ;
+
+          var head = document.getElementsByTagName("head")[0] ;
+              head.insertBefore(script,head.firstChild) ;
+          init(false,false,true);
+        }
+    }
+
 
 
 };
@@ -89,13 +109,14 @@ window.onload = function () {
 // MOBILE MENU //
 var headerLoad = false;
 var footerLoad = false;
-function init(_header,_footer){
+var slickLoad = false;
+function init(_header,_footer, _slick){
   headerLoad = headerLoad || _header;
   footerLoad = footerLoad || _footer;
-  console.log(headerLoad,footerLoad);
+  slickLoad = slickLoad || _slick;
 
   // HEADER
-  if (headerLoad && footerLoad) {
+  if (headerLoad && footerLoad && slickLoad) {
     $el = $('#headerView');
     $htmlbody = $('html,body');
     $window = $(window);
@@ -119,7 +140,7 @@ function initSlick () {
       speed: 500,
       autoplay: true,
       autoplaySpeed: 3000
-  });
+  });    
 }
 
 
