@@ -98,8 +98,8 @@ window.onload = function () {
 
           var head = document.getElementsByTagName("head")[0] ;
               head.insertBefore(script,head.firstChild) ;
-              console.log('hola');
-          initSlick();
+
+          setTimeout(initSlick,500);
         }
     }
 
