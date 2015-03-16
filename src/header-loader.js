@@ -79,13 +79,13 @@ window.onload = function () {
                 translate.src = links.translate;
             // Append to header
             head.appendChild(translate);
-            init(true, false,false);
+            init(true, false);
         }
     }
     xhrFooter.onreadystatechange = function (e) { 
         if (xhrFooter.readyState == 4 && xhrFooter.status == 200) {
             footer.innerHTML = xhrFooter.responseText;
-            init(false,true,false);
+            init(false,true);
         }
     }
 
@@ -98,7 +98,7 @@ window.onload = function () {
 
           var head = document.getElementsByTagName("head")[0] ;
               head.insertBefore(script,head.firstChild) ;
-          init(false,false,true);
+          initSlick();
         }
     }
 
@@ -109,14 +109,12 @@ window.onload = function () {
 // MOBILE MENU //
 var headerLoad = false;
 var footerLoad = false;
-var slickLoad = false;
 function init(_header,_footer, _slick){
   headerLoad = headerLoad || _header;
   footerLoad = footerLoad || _footer;
-  slickLoad = slickLoad || _slick;
 
   // HEADER
-  if (headerLoad && footerLoad && slickLoad) {
+  if (headerLoad && footerLoad) {
     $el = $('#headerView');
     $htmlbody = $('html,body');
     $window = $(window);
@@ -128,7 +126,7 @@ function init(_header,_footer, _slick){
     createMenu();
     $window.on('resize',createMenu); 
     $('#btn-menu').on('click', toggleMenu);
-    initSlick();
+    
   }
 }
 
