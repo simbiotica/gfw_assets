@@ -34,7 +34,7 @@ function googleTranslateElementInit() {
     var links = {
         htmlHeader: 'https://rawgit.com/simbiotica/gfw_assets/develop/src/header.html',
         htmlFooter: 'https://rawgit.com/simbiotica/gfw_assets/develop/src/footer.html',
-        slick: 'http://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js',
+        slick: 'https://rawgit.com/simbiotica/gfw_assets/develop/src/slick.js',
         css: 'https://rawgit.com/simbiotica/gfw_assets/develop/src/gfw-styles.css',
         translate: 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
     }
