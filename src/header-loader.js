@@ -32,10 +32,10 @@ function googleTranslateElementInit() {
     var current = scriptPram.getAttribute('data-current');
 
     var links = {
-        htmlHeader: 'https://cdn.rawgit.com/simbiotica/gfw_assets/develop/src_develop/header.html',
-        htmlFooter: 'https://cdn.rawgit.com/simbiotica/gfw_assets/develop/src_develop/footer.html',
+        htmlHeader: 'https://rawgit.com/simbiotica/gfw_assets/develop/src/header.html',
+        htmlFooter: 'https://rawgit.com/simbiotica/gfw_assets/develop/src/footer.html',
         slick: 'http://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js',
-        css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/develop/src_develop/gfw-styles.css',
+        css: 'https://rawgit.com/simbiotica/gfw_assets/develop/src/gfw-styles.css',
         translate: 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
     }
 
