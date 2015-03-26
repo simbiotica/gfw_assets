@@ -1251,6 +1251,11 @@
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+  .layout-footer .partner-box .row:before,
+  .layout-footer .partner-box .row:after{
+    content: "";
+    display: none;
+  }
 }
 
 /* line 126, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
