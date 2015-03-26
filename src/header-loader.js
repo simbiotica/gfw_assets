@@ -48,10 +48,22 @@ function googleTranslateElementInit() {
         xhrSlick = new XMLHttpRequest();
         href = location.href;
 
-    xhrCss.open("GET", links.css, true);
-    xhrCss.send();
+    xhrSlick.open("GET", links.slick, true);
+    xhrSlick.send();
 
 
+    xhrSlick.onreadystatechange = function (e) { 
+        if (xhrSlick.readyState == 4 && xhrSlick.status == 200) {
+          var script = document.createElement("script") ;
+              script.setAttribute("type","text/javascript") ;
+          var text = document.createTextNode(xhrSlick.responseText) ;
+              script.appendChild(text) ;
+
+          document.body.appendChild(script); 
+          xhrCss.open("GET", links.css, true);
+          xhrCss.send();
+        }
+    }
 
     xhrCss.onreadystatechange = function (e) { 
         if (xhrCss.readyState == 4 && xhrCss.status == 200) {
@@ -84,22 +96,10 @@ function googleTranslateElementInit() {
         if (xhrFooter.readyState == 4 && xhrFooter.status == 200) {
             footer.innerHTML = xhrFooter.responseText;
             init(false,true);
-            xhrSlick.open("GET", links.slick, true);
-            xhrSlick.send();
+            setTimeout(initSlick,1000);
         }
     }
 
-    xhrSlick.onreadystatechange = function (e) { 
-        if (xhrSlick.readyState == 4 && xhrSlick.status == 200) {
-          var script = document.createElement("script") ;
-              script.setAttribute("type","text/javascript") ;
-          var text = document.createTextNode(xhrSlick.responseText) ;
-              script.appendChild(text) ;
-
-          document.body.appendChild(script);
-          setTimeout(initSlick,1000);
-        }
-    }
 
 
 
