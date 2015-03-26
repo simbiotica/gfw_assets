@@ -99,7 +99,7 @@ function googleTranslateElementInit() {
           var head = document.getElementsByTagName("head")[0] ;
               head.insertBefore(script,head.firstChild) ;
 
-          setTimeout(initSlick,500);
+          setTimeout(initSlick,1000);
         }
     }
 
