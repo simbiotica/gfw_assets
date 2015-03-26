@@ -62,8 +62,6 @@ function googleTranslateElementInit() {
             head.appendChild(style);
             xhrHeader.open("GET", links.htmlHeader, true);
             xhrHeader.send();
-            xhrFooter.open("GET", links.htmlFooter, true);
-            xhrFooter.send();
         }
     }
 
@@ -78,6 +76,8 @@ function googleTranslateElementInit() {
             // Append to header
             head.appendChild(translate);
             init(true, false);
+            xhrFooter.open("GET", links.htmlFooter, true);
+            xhrFooter.send();
         }
     }
     xhrFooter.onreadystatechange = function (e) { 
