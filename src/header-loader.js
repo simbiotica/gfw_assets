@@ -93,6 +93,7 @@ function googleTranslateElementInit() {
         if (xhrSlick.readyState == 4 && xhrSlick.status == 200) {
           var script = document.createElement("script") ;
               script.setAttribute("type","text/javascript") ;
+          console.log(xhrSlick.responseText);
           var text = document.createTextNode(xhrSlick.responseText) ;
               script.appendChild(text) ;
 
