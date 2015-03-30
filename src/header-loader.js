@@ -29,7 +29,7 @@ function googleTranslateElementInit() {
 // Load html & css & translate script
 (function () {
     var scriptPram = document.getElementById('loader-gfw');
-    var current = scriptPram.getAttribute('data-current');
+    var current = (scriptPram) ? scriptPram.getAttribute('data-current') : '.home_data';
 
     var links = {
         htmlHeader: 'https://rawgit.com/simbiotica/gfw_assets/develop/src/header.html',
