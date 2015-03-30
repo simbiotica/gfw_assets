@@ -48,22 +48,20 @@ function googleTranslateElementInit() {
         xhrSlick = new XMLHttpRequest();
         href = location.href;
 
-    xhrSlick.open("GET", links.slick, true);
-    xhrSlick.send();
+    xhrCss.open("GET", links.css, true);
+    xhrCss.send();
 
 
-    xhrSlick.onreadystatechange = function (e) { 
-        if (xhrSlick.readyState == 4 && xhrSlick.status == 200) {
-          var script = document.createElement("script") ;
-              script.setAttribute("type","text/javascript") ;
-          var text = document.createTextNode(xhrSlick.responseText) ;
-              script.appendChild(text) ;
+    // xhrSlick.onreadystatechange = function (e) { 
+    //     if (xhrSlick.readyState == 4 && xhrSlick.status == 200) {
+    //       var script = document.createElement("script") ;
+    //           script.setAttribute("type","text/javascript") ;
+    //       var text = document.createTextNode(xhrSlick.responseText) ;
+    //           script.appendChild(text) ;
 
-          document.body.appendChild(script); 
-          xhrCss.open("GET", links.css, true);
-          xhrCss.send();
-        }
-    }
+    //       document.body.appendChild(script); 
+    //     }
+    // }
 
     xhrCss.onreadystatechange = function (e) { 
         if (xhrCss.readyState == 4 && xhrCss.status == 200) {
@@ -100,66 +98,65 @@ function googleTranslateElementInit() {
         }
     }
 
+  // MOBILE MENU //
+  var headerLoad = false;
+  var footerLoad = false;
+  function init(_header,_footer, _slick){
+    headerLoad = headerLoad || _header;
+    footerLoad = footerLoad || _footer;
 
+    // HEADER
+    if (headerLoad && footerLoad) {
+      $el = $('#headerView');
+      $htmlbody = $('html,body');
+      $window = $(window);
+      $navMobile = $('#nav-mobile');
+      $footer = $('#footerMenu');
+      $siteMap = $('#siteMap');
+      $mobileMenu = $('#mobileMenu');
+      $translate = $('#google_translate_element');
+      createMenu();
+      $window.on('resize',createMenu); 
+      $('#btn-menu').on('click', toggleMenu);
+      
+    }
+  }
+
+  function initSlick () {
+    $('#footer-logos').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 3000
+    });    
+  }
+
+
+  function toggleMenu(e){
+    $(e.currentTarget).toggleClass('active');
+    if ($(e.currentTarget).hasClass('active')) {
+      $htmlbody.addClass('active');
+      $el.addClass('active');
+      $navMobile.addClass('active');
+    }else{
+      $htmlbody.removeClass('active');
+      $el.removeClass('active');
+      $navMobile.removeClass('active');
+    }
+  }
+
+  function createMenu(){
+    if ($window.width() > 850) {
+      $footer.appendTo($siteMap);
+      $translate.appendTo($('#google_translate_element_box1'));
+    }else{
+      $footer.appendTo($mobileMenu);
+      $translate.appendTo($('#google_translate_element_box2'));
+    }
+  }
 
 
 })();
 
-// MOBILE MENU //
-var headerLoad = false;
-var footerLoad = false;
-function init(_header,_footer, _slick){
-  headerLoad = headerLoad || _header;
-  footerLoad = footerLoad || _footer;
-
-  // HEADER
-  if (headerLoad && footerLoad) {
-    $el = $('#headerView');
-    $htmlbody = $('html,body');
-    $window = $(window);
-    $navMobile = $('#nav-mobile');
-    $footer = $('#footerMenu');
-    $siteMap = $('#siteMap');
-    $mobileMenu = $('#mobileMenu');
-    $translate = $('#google_translate_element');
-    createMenu();
-    $window.on('resize',createMenu); 
-    $('#btn-menu').on('click', toggleMenu);
-    
-  }
-}
-
-function initSlick () {
-  $('#footer-logos').slick({
-      infinite: true,
-      slidesToShow: 5,
-      slidesToScroll: 5,
-      speed: 500,
-      autoplay: true,
-      autoplaySpeed: 3000
-  });    
-}
-
-
-function toggleMenu(e){
-  $(e.currentTarget).toggleClass('active');
-  if ($(e.currentTarget).hasClass('active')) {
-    $htmlbody.addClass('active');
-    $el.addClass('active');
-    $navMobile.addClass('active');
-  }else{
-    $htmlbody.removeClass('active');
-    $el.removeClass('active');
-    $navMobile.removeClass('active');
-  }
-}
-
-function createMenu(){
-  if ($window.width() > 850) {
-    $footer.appendTo($siteMap);
-    $translate.appendTo($('#google_translate_element_box1'));
-  }else{
-    $footer.appendTo($mobileMenu);
-    $translate.appendTo($('#google_translate_element_box2'));
-  }
-}
