@@ -35,9 +35,9 @@ function googleTranslateElementInit() {
     var current = scriptPram.getAttribute('data-current');
 
     var links = {
-        htmlHeader: 'https://cdn.rawgit.com/simbiotica/gfw_assets/master/src/header.html',
-        htmlFooter: 'https://cdn.rawgit.com/simbiotica/gfw_assets/master/src/footer.html',
-        css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/master/src/gfw-styles.css',
+        htmlHeader: 'https://rawgit.com/simbiotica/gfw_assets/master/src/header.html',
+        htmlFooter: 'https://rawgit.com/simbiotica/gfw_assets/master/src/footer.html',
+        css: 'https://rawgit.com/simbiotica/gfw_assets/master/src/gfw-styles.css',
         translate: 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
     }
 
