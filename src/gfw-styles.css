@@ -1264,7 +1264,7 @@
   width: 200px;
   height: 70px;
   margin: 0 auto;
-  background-position: 0 -1749px;
+  background-position: 0 -3258px;
 }
 @media (min-width: 850px) {
   /* line 127, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
@@ -1397,7 +1397,7 @@
 }
 /* line 192, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .footer-logos .slick-slide {
-  height: 60px;
+  height: 100px;
 }
 /* line 195, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .footer-logos a {
