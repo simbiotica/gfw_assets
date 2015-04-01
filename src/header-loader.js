@@ -111,12 +111,13 @@ function init(_header,_footer){
 
 function initSlick () {
   $('#footer-logos').slick({
-      infinite: true,
-      slidesToShow: 5,
-      slidesToScroll: 5,
-      speed: 500,
-      autoplay: true,
-      autoplaySpeed: 3000
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slide: 'li'
   });
 }
 
