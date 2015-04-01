@@ -624,7 +624,7 @@
   position: absolute;
   width: 16px;
   height: 16px;
-  background: white;
+  background: #555;
   z-index: 2;
   top: 0;
   left: 50%;
@@ -633,8 +633,8 @@
   -ms-transform: translate(-50%, -50%) rotate(45deg);
   -o-transform: translate(-50%, -50%) rotate(45deg);
   transform: translate(-50%, -50%) rotate(45deg);
-  border-top: 1px solid #f0f0ed;
-  border-left: 1px solid #f0f0ed;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
 }
   /* line 53, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
   .layout-header .submenu-tooltip {
