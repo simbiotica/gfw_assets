@@ -32,9 +32,9 @@ function googleTranslateElementInit() {
     var current = scriptPram.getAttribute('data-current');
 
     var links = {
-        htmlHeader: 'https://rawgit.com/simbiotica/gfw_assets/master/src/header.html',
-        htmlFooter: 'https://rawgit.com/simbiotica/gfw_assets/master/src/footer.html',
-        css: 'https://rawgit.com/simbiotica/gfw_assets/master/src/gfw-styles.css',
+        htmlHeader: 'https://cdn.rawgit.com/simbiotica/gfw_assets/develop/src_develop/header.html',
+        htmlFooter: 'https://cdn.rawgit.com/simbiotica/gfw_assets/develop/src_develop/footer.html',
+        css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/develop/src_develop/gfw-styles.css',
         translate: 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
     }
 
@@ -58,6 +58,8 @@ function googleTranslateElementInit() {
             head.appendChild(style);
             xhrHeader.open("GET", links.htmlHeader, true);
             xhrHeader.send();
+            xhrFooter.open("GET", links.htmlFooter, true);
+            xhrFooter.send();
         }
     }
 
@@ -72,8 +74,6 @@ function googleTranslateElementInit() {
             // Append to header
             head.appendChild(translate);
             init(true, false);
-            xhrFooter.open("GET", links.htmlFooter, true);
-            xhrFooter.send();
         }
     }
     xhrFooter.onreadystatechange = function (e) { 
