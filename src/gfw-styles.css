@@ -270,8 +270,6 @@
 /* line 123, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
 .layout-header .layout-header-top nav > div > ul > li > a .tooltip1, .layout-header .layout-header-top nav > div > ul > li .link .tooltip1 {
   margin: 0;
-  color: #FFF;
-  background: #555;
   line-height: normal;
 }
 @media (max-width: 849px) {
@@ -283,6 +281,7 @@
     z-index: 1;
     visibility: visible;
     opacity: 1;
+    color: #555555;
     top: auto;
     left: auto;
     text-align: left;
@@ -304,12 +303,14 @@
   border-bottom: 2px solid #B6B6BA;
   background: none;
   box-shadow: none;
+  font-size: 11px;
   height: 25px;
   outline: none;
   width: auto;
-  font-family: inherit;
   margin: 0;
-  padding: 0 5px;
+  padding: 5px 5px 0px;
+  position: relative;
+  top: -2px;
 }
 /* line 159, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
 .layout-header .layout-header-top nav > div > ul > li > a svg, .layout-header .layout-header-top nav > div > ul > li .link svg {
