@@ -34,7 +34,7 @@ function googleTranslateElementInit() {
     var links = {
         htmlHeader: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7fd84d2301de1fe7c4be31cac77b2da74798e8b1/src/header.html',
         htmlFooter: 'https://cdn.rawgit.com/simbiotica/gfw_assets/acf40ed4e8f1fbed6dea5f10c9cd063d13f8c04a/src/footer.html',
-        css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/c8d94f9418d6abe7694b58901f3ad4f7ed11a458/src/gfw-styles.css',
+        css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/0d56f2526d57387689257a2674e0d4c972171e2f/src/gfw-styles.css',
         translate: 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
     }
 
