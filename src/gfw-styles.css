@@ -636,6 +636,19 @@
   border-top: 1px solid transparent;
   border-left: 1px solid transparent;
 }
+
+/* line 124, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
+.layout-header .tooltip1.dark {
+  background: #555555;
+  color: white;
+}
+/* line 127, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
+.layout-header .tooltip1.dark:after {
+  background: #555555;
+  border-top: none;
+  border-left: none;
+}
+
   /* line 53, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
   .layout-header .submenu-tooltip {
     position: absolute;

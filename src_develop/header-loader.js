@@ -32,9 +32,9 @@ function googleTranslateElementInit() {
     var current = (scriptPram) ? scriptPram.getAttribute('data-current') : '.home_data';
 
     var links = {
-        htmlHeader: 'https://cdn.rawgit.com/simbiotica/gfw_assets/develop/src_develop/header.html',
-        htmlFooter: 'https://cdn.rawgit.com/simbiotica/gfw_assets/develop/src_develop/footer.html',
-        css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/develop/src_develop/gfw-styles.css',
+        htmlHeader: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7fd84d2301de1fe7c4be31cac77b2da74798e8b1/src/header.html',
+        htmlFooter: 'https://cdn.rawgit.com/simbiotica/gfw_assets/acf40ed4e8f1fbed6dea5f10c9cd063d13f8c04a/src/footer.html',
+        css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/c8d94f9418d6abe7694b58901f3ad4f7ed11a458/src/gfw-styles.css',
         translate: 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
     }
 
@@ -58,8 +58,6 @@ function googleTranslateElementInit() {
             head.appendChild(style);
             xhrHeader.open("GET", links.htmlHeader, true);
             xhrHeader.send();
-            xhrFooter.open("GET", links.htmlFooter, true);
-            xhrFooter.send();
         }
     }
 
@@ -74,6 +72,8 @@ function googleTranslateElementInit() {
             // Append to header
             head.appendChild(translate);
             init(true, false);
+            xhrFooter.open("GET", links.htmlFooter, true);
+            xhrFooter.send();
         }
     }
     xhrFooter.onreadystatechange = function (e) { 
@@ -111,12 +111,13 @@ function init(_header,_footer){
 
 function initSlick () {
   $('#footer-logos').slick({
-      infinite: true,
-      slidesToShow: 5,
-      slidesToScroll: 5,
-      speed: 500,
-      autoplay: true,
-      autoplaySpeed: 3000
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slide: 'li'
   });
 }
 
