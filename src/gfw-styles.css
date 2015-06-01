@@ -905,6 +905,9 @@
     font-family: inherit;
     text-align: center;
   }
+  #google_translate_element .goog-te-gadget img {
+    display: inline;
+  }
   /* line 624, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
   #google_translate_element .goog-te-gadget .goog-te-gadget-simple {
     border: none;
@@ -944,7 +947,6 @@
     background: url(http://www.globalforestwatch.org/assets/svg-icons/arrow-down.svg) no-repeat center;
     background-size: contain;
   }
-
 
   /* line 17, /Users/miguelbarrenechea/.rvm/gems/ruby-2.1.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   .layout-footer div, .layout-footer span, .layout-footer applet, .layout-footer object, .layout-footer iframe,
