@@ -911,8 +911,12 @@
     height: auto;
   }
   #google_translate_element .goog-te-gadget .goog-te-gadget-icon{
+    margin-left: 2px;
+    margin-right: 2px;
     width: 19px;
     height: 19px;
+    border: none;
+    vertical-align: middle;
   }
   /* line 624, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss 
   #google_translate_element .goog-te-gadget .goog-te-gadget-simple {
