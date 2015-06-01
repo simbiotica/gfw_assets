@@ -907,8 +907,10 @@
   }
   #google_translate_element .goog-te-gadget img {
     display: inline;
+    width: auto;
+    height: auto;
   }
-  /* line 624, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+  /* line 624, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss 
   #google_translate_element .goog-te-gadget .goog-te-gadget-simple {
     border: none;
     background: none;
