@@ -1061,8 +1061,8 @@
   }
 
   /* line 234, logos/*.png */
-  .logos-sprite, .layout-footer .partner-box .row .wri-logo, .layout-footer .logo-ul a.wri, .layout-footer .logo-ul a.wri:hover, .layout-footer .logo-ul a.google, .layout-footer .logo-ul a.google:hover, .layout-footer .logo-ul a.esri, .layout-footer .logo-ul a.esri:hover, .layout-footer .logo-ul a.universitymaryland, .layout-footer .logo-ul a.universitymaryland:hover, .layout-footer .logo-ul a.unep, .layout-footer .logo-ul a.unep:hover, .layout-footer .logo-ul a.imazon, .layout-footer .logo-ul a.imazon:hover, .layout-footer .logo-ul a.cfgd, .layout-footer .logo-ul a.cfgd:hover, .layout-footer .logo-ul a.osfac, .layout-footer .logo-ul a.osfac:hover, .layout-footer .logo-ul a.gfwca, .layout-footer .logo-ul a.gfwca:hover, .layout-footer .logo-ul a.scanex, .layout-footer .logo-ul a.scanex:hover, .layout-footer .logo-ul a.twrus, .layout-footer .logo-ul a.twrus:hover, .layout-footer .logo-ul a.norwegian, .layout-footer .logo-ul a.norwegian:hover, .layout-footer .logo-ul a.usaid, .layout-footer .logo-ul a.usaid:hover, .layout-footer .logo-ul a.gef, .layout-footer .logo-ul a.gef:hover, .layout-footer .logo-ul a.ukaid, .layout-footer .logo-ul a.ukaid:hover, .layout-footer .logo-ul a.tilia, .layout-footer .logo-ul a.tilia:hover, .layout-footer .logo-ul a.goodall, .layout-footer .logo-ul a.goodall:hover, .layout-footer .logo-ul a.cartodb, .layout-footer .logo-ul a.cartodb:hover, .layout-footer .logo-ul a.vizzuality, .layout-footer .logo-ul a.vizzuality:hover, .layout-footer .logo-ul a.blueraster, .layout-footer .logo-ul a.blueraster:hover, .layout-footer .logo-ul a.sida, .layout-footer .logo-ul a.sida:hover, .layout-footer .logo-ul a.danida, .layout-footer .logo-ul a.danida:hover, .layout-footer .logo-ul a.cgiar, .layout-footer .logo-ul a.cgiar:hover, .layout-footer .logo-ul a.dutchforeign, .layout-footer .logo-ul a.dutchforeign:hover, .layout-footer .logo-ul a.moore, .layout-footer .logo-ul a.moore:hover, .layout-footer .logo-ul a.bnpb, .layout-footer .logo-ul a.bnpb:hover, .layout-footer .logo-ul a.redd, .layout-footer .logo-ul a.redd:hover, .layout-footer .logo-ul a.digitalglobe, .layout-footer .logo-ul a.digitalglobe:hover, .layout-footer .logo-ul a.ciat, .layout-footer .logo-ul a.ciat:hover, .layout-footer .logo-ul a.ejn, .layout-footer .logo-ul a.ejn:hover, .layout-footer .logo-ul a.ioi, .layout-footer .logo-ul a.ioi:hover, .layout-footer .logo-ul a.osinfor, .layout-footer .logo-ul a.osinfor:hover, .layout-footer .logo-ul a.resolve, .layout-footer .logo-ul a.resolve:hover, .layout-footer .logo-ul a.rfuk, .layout-footer .logo-ul a.rfuk:hover, .layout-footer .logo-ul a.rm, .layout-footer .logo-ul a.rm:hover, .layout-footer .logo-ul a.unilever, .layout-footer .logo-ul a.unilever:hover, .layout-footer .logo-ul a.zsl, .layout-footer .logo-ul a.zsl:hover, .layout-footer .logo-ul a.clua, .layout-footer .logo-ul a.clua:hover, .layout-footer .logo-ul a.mongabay, .layout-footer .logo-ul a.mongabay:hover, .layout-footer .logo-ul a.muyissi, .layout-footer .logo-ul a.muyissi:hover, .layout-footer .logo-ul a.rspo, .layout-footer .logo-ul a.rspo:hover, .layout-footer .logo-ul a.unepwcmc, .layout-footer .logo-ul a.unepwcmc:hover, .layout-footer .logo-ul a.whrc, .layout-footer .logo-ul a.whrc:hover, .layout-footer .logo-ul a.ewmi, .layout-footer .logo-ul a.ewmi:hover, .layout-footer .logo-ul a.opendevmekong, .layout-footer .logo-ul a.opendevmekong:hover, .layout-footer .logo-ul a.inab, .layout-footer .logo-ul a.inab:hover, .layout-footer .logo-ul a.bobolink, .layout-footer .logo-ul a.vizzuality-big, .layout-footer .logo-ul a.vizzuality-big:hover {
-    background: url(http://gfw-nav.herokuapp.com/assets/logos-s8314bcc8f7-4e64d86e937b5c29cd26b89fdca21c0c.png) no-repeat;
+  .logos-sprite, .logo-ul a.wri, .logo-ul a.wri:hover, .logo-ul a.google, .logo-ul a.google:hover, .logo-ul a.esri, .logo-ul a.esri:hover, .logo-ul a.universitymaryland, .logo-ul a.universitymaryland:hover, .logo-ul a.unep, .logo-ul a.unep:hover, .logo-ul a.imazon, .logo-ul a.imazon:hover, .logo-ul a.cfgd, .logo-ul a.cfgd:hover, .logo-ul a.osfac, .logo-ul a.osfac:hover, .logo-ul a.gfwca, .logo-ul a.gfwca:hover, .logo-ul a.scanex, .logo-ul a.scanex:hover, .logo-ul a.twrus, .logo-ul a.twrus:hover, .logo-ul a.norwegian, .logo-ul a.norwegian:hover, .logo-ul a.usaid, .logo-ul a.usaid:hover, .logo-ul a.gef, .logo-ul a.gef:hover, .logo-ul a.ukaid, .logo-ul a.ukaid:hover, .logo-ul a.tilia, .logo-ul a.tilia:hover, .logo-ul a.goodall, .logo-ul a.goodall:hover, .logo-ul a.cartodb, .logo-ul a.cartodb:hover, .logo-ul a.vizzuality, .logo-ul a.vizzuality:hover, .logo-ul a.blueraster, .logo-ul a.blueraster:hover, .logo-ul a.sida, .logo-ul a.sida:hover, .logo-ul a.danida, .logo-ul a.danida:hover, .logo-ul a.cgiar, .logo-ul a.cgiar:hover, .logo-ul a.dutchforeign, .logo-ul a.dutchforeign:hover, .logo-ul a.moore, .logo-ul a.moore:hover, .logo-ul a.bnpb, .logo-ul a.bnpb:hover, .logo-ul a.redd, .logo-ul a.redd:hover, .logo-ul a.digitalglobe, .logo-ul a.digitalglobe:hover, .logo-ul a.ciat, .logo-ul a.ciat:hover, .logo-ul a.ejn, .logo-ul a.ejn:hover, .logo-ul a.ioi, .logo-ul a.ioi:hover, .logo-ul a.osinfor, .logo-ul a.osinfor:hover, .logo-ul a.resolve, .logo-ul a.resolve:hover, .logo-ul a.rfuk, .logo-ul a.rfuk:hover, .logo-ul a.rm, .logo-ul a.rm:hover, .logo-ul a.unilever, .logo-ul a.unilever:hover, .logo-ul a.zsl, .logo-ul a.zsl:hover, .logo-ul a.clua, .logo-ul a.clua:hover, .logo-ul a.mongabay, .logo-ul a.mongabay:hover, .logo-ul a.muyissi, .logo-ul a.muyissi:hover, .logo-ul a.rspo, .logo-ul a.rspo:hover, .logo-ul a.unepwcmc, .logo-ul a.unepwcmc:hover, .logo-ul a.whrc, .logo-ul a.whrc:hover, .logo-ul a.ewmi, .logo-ul a.ewmi:hover, .logo-ul a.opendevcam, .logo-ul a.opendevcam:hover, .logo-ul a.inab, .logo-ul a.inab:hover, .logo-ul a.orbital, .logo-ul a.orbital:hover, .logo-ul a.bei, .logo-ul a.bei:hover, .logo-ul a.cambridge, .logo-ul a.cambridge:hover, .logo-ul a.bobolink, .logo-ul a.vizzuality-big, .logo-ul a.vizzuality-big:hover {
+    background: url(http://www.globalforestwatch.org/assets/logos-s24af7fe52c-68266fd4652226e4e2a1e4ac60dfbdfc.png) no-repeat;
 
   }
 
@@ -1457,483 +1457,512 @@
   -o-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
-/* line 310, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 316, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.wri {
   height: 32px;
   width: 95px;
-  background-position: 0 -4204px;
+  background-position: 0 -4714px;
 }
-/* line 312, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 318, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.wri:hover {
-  background-position: 0 -1884px;
+  background-position: 0 -2114px;
 }
-/* line 316, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 322, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.google {
   height: 29px;
   width: 85px;
-  background-position: 0 -4897px;
+  background-position: 0 -5407px;
 }
-/* line 318, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 324, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.google:hover {
-  background-position: 0 -1013px;
+  background-position: 0 -1065px;
 }
-/* line 322, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 328, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.esri {
   height: 33px;
   width: 87px;
-  background-position: 0 -4171px;
+  background-position: 0 -4681px;
 }
-/* line 324, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 330, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.esri:hover {
-  background-position: 0 -1851px;
+  background-position: 0 -2081px;
 }
-/* line 328, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 334, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.universitymaryland {
   height: 51px;
   width: 56px;
-  background-position: 0 -3711px;
+  background-position: 0 -4221px;
 }
-/* line 330, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 336, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.universitymaryland:hover {
-  background-position: 0 -1099px;
+  background-position: 0 -1214px;
 }
-/* line 334, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 340, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.unep {
   height: 57px;
   width: 49px;
-  background-position: 0 -3485px;
+  background-position: 0 -3925px;
 }
-/* line 336, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 342, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.unep:hover {
-  background-position: 0 -1376px;
+  background-position: 0 -1554px;
 }
-/* line 340, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 346, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.imazon {
   height: 24px;
   width: 79px;
-  background-position: 0 -5123px;
+  background-position: 0 -5633px;
 }
-/* line 342, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 348, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.imazon:hover {
-  background-position: 0 -2923px;
+  background-position: 0 -3223px;
 }
-/* line 346, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 352, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.cfgd {
   height: 40px;
   width: 84px;
-  background-position: 0 -3557px;
+  background-position: 0 -3997px;
 }
-/* line 348, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 354, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.cfgd:hover {
-  background-position: 0 -1433px;
+  background-position: 0 -1611px;
 }
-/* line 352, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 358, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.osfac {
   height: 56px;
   width: 44px;
-  background-position: 0 -3973px;
+  background-position: 0 -4483px;
 }
-/* line 354, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 360, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.osfac:hover {
-  background-position: 0 -1473px;
+  background-position: 0 -1651px;
 }
-/* line 358, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 364, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.gfwca {
   height: 44px;
   width: 42px;
-  background-position: 0 -4682px;
+  background-position: 0 -5192px;
 }
-/* line 360, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 366, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.gfwca:hover {
-  background-position: 0 -3177px;
+  background-position: 0 -3547px;
 }
-/* line 364, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 370, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.scanex {
   height: 20px;
   width: 110px;
-  background-position: 0 -4766px;
+  background-position: 0 -5276px;
 }
-/* line 366, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 372, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.scanex:hover {
-  background-position: 0 -2715px;
+  background-position: 0 -3015px;
 }
-/* line 370, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 376, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.twrus {
   height: 28px;
   width: 110px;
-  background-position: 0 -4432px;
+  background-position: 0 -4942px;
 }
-/* line 372, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 378, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.twrus:hover {
-  background-position: 0 -2550px;
+  background-position: 0 -2850px;
 }
-/* line 376, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 382, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.norwegian {
   height: 46px;
   width: 110px;
-  background-position: 0 -3814px;
+  background-position: 0 -4324px;
 }
-/* line 378, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 384, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.norwegian:hover {
-  background-position: 0 -3439px;
+  background-position: 0 -3879px;
 }
-/* line 382, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 388, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.usaid {
   height: 64px;
   width: 80px;
-  background-position: 0 -3076px;
+  background-position: 0 -3446px;
 }
-/* line 384, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 390, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.usaid:hover {
-  background-position: 0 -849px;
+  background-position: 0 -901px;
 }
-/* line 388, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 394, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.gef {
   height: 59px;
   width: 51px;
-  background-position: 0 -4029px;
+  background-position: 0 -4539px;
 }
-/* line 390, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 396, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.gef:hover {
-  background-position: 0 -1712px;
+  background-position: 0 -1890px;
 }
-/* line 394, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 400, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.ukaid {
   height: 47px;
   width: 43px;
-  background-position: 0 -4826px;
+  background-position: 0 -5336px;
 }
-/* line 396, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 402, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.ukaid:hover {
-  background-position: 0 -3392px;
+  background-position: 0 -3832px;
 }
-/* line 400, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 406, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.tilia {
   height: 25px;
   width: 67px;
-  background-position: 0 -5369px;
+  background-position: 0 -5879px;
 }
-/* line 402, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 408, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.tilia:hover {
-  background-position: 0 -5344px;
+  background-position: 0 -5854px;
 }
-/* line 406, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 412, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.goodall {
   height: 26px;
   width: 110px;
-  background-position: 0 -5246px;
+  background-position: 0 -5756px;
 }
-/* line 408, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 414, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.goodall:hover {
-  background-position: 0 -4236px;
+  background-position: 0 -4746px;
 }
-/* line 412, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 418, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.cartodb {
   height: 39px;
   width: 110px;
-  background-position: 0 -4088px;
+  background-position: 0 -4598px;
 }
-/* line 414, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 420, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.cartodb:hover {
-  background-position: 0 -2077px;
+  background-position: 0 -2307px;
 }
-/* line 418, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 424, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.vizzuality {
   height: 58px;
   width: 109px;
-  background-position: 0 -3018px;
+  background-position: 0 -3388px;
 }
-/* line 420, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 426, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.vizzuality:hover {
-  background-position: 0 -791px;
+  background-position: 0 -843px;
 }
-/* line 424, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 430, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.blueraster {
   height: 48px;
   width: 110px;
-  background-position: 0 -3625px;
+  background-position: 0 -4135px;
 }
-/* line 426, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 432, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.blueraster:hover {
-  background-position: 0 -2402px;
+  background-position: 0 -2632px;
 }
-/* line 430, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 436, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.sida {
   height: 55px;
   width: 110px;
-  background-position: 0 -2788px;
+  background-position: 0 -3088px;
 }
-/* line 432, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 438, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.sida:hover {
-  background-position: 0 -1942px;
+  background-position: 0 -2172px;
 }
-/* line 436, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 442, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.danida {
   height: 15px;
   width: 82px;
-  background-position: 0 -5108px;
+  background-position: 0 -5618px;
 }
-/* line 438, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 444, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.danida:hover {
-  background-position: 0 -3542px;
+  background-position: 0 -3982px;
 }
-/* line 442, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 448, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.cgiar {
   height: 43px;
   width: 124px;
-  background-position: 0 -2880px;
+  background-position: 0 -3180px;
 }
-/* line 444, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 450, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.cgiar:hover {
-  background-position: 0 -913px;
+  background-position: 0 -965px;
 }
-/* line 448, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 454, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.dutchforeign {
   height: 80px;
   width: 106px;
-  background-position: 0 -4954px;
+  background-position: 0 -5464px;
 }
-/* line 450, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 456, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.dutchforeign:hover {
-  background-position: 0 -4352px;
+  background-position: 0 -4862px;
 }
-/* line 454, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 460, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.moore {
   height: 37px;
   width: 96px;
-  background-position: 0 -3140px;
+  background-position: 0 -3510px;
 }
-/* line 456, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 462, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.moore:hover {
-  background-position: 0 -1529px;
+  background-position: 0 -1707px;
 }
-/* line 461, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 467, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.bnpb {
   height: 64px;
   width: 50px;
-  background-position: 0 -5034px;
+  background-position: 0 -5544px;
 }
-/* line 463, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 469, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.bnpb:hover {
-  background-position: 0 -4288px;
+  background-position: 0 -4798px;
 }
-/* line 467, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 473, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.redd {
   height: 62px;
   width: 95px;
-  background-position: 0 -5282px;
+  background-position: 0 -5792px;
 }
-/* line 469, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 475, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.redd:hover {
-  background-position: 0 -4460px;
+  background-position: 0 -4970px;
 }
-/* line 473, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 479, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.digitalglobe {
   height: 38px;
   width: 120px;
-  background-position: 0 -3673px;
+  background-position: 0 -4183px;
 }
-/* line 475, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 481, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.digitalglobe:hover {
-  background-position: 0 -2947px;
+  background-position: 0 -3317px;
 }
-/* line 479, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 485, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.ciat {
   height: 57px;
   width: 120px;
-  background-position: 0 -2578px;
+  background-position: 0 -2878px;
 }
-/* line 481, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 487, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.ciat:hover {
-  background-position: 0 -956px;
+  background-position: 0 -1008px;
 }
-/* line 485, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 491, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.ejn {
   height: 64px;
   width: 80px;
-  background-position: 0 -3328px;
+  background-position: 0 -3768px;
 }
-/* line 487, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 493, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.ejn:hover {
-  background-position: 0 -2486px;
+  background-position: 0 -2786px;
 }
-/* line 491, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 497, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.ioi {
   height: 10px;
   width: 110px;
-  background-position: 0 -5272px;
+  background-position: 0 -5782px;
 }
-/* line 493, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 499, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.ioi:hover {
-  background-position: 0 -5098px;
+  background-position: 0 -5608px;
 }
-/* line 497, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 503, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.osinfor {
   height: 80px;
   width: 86px;
-  background-position: 0 -2635px;
+  background-position: 0 -2935px;
 }
-/* line 499, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 505, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.osinfor:hover {
-  background-position: 0 -1230px;
+  background-position: 0 -1345px;
 }
-/* line 503, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 509, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.resolve {
   height: 28px;
   width: 110px;
-  background-position: 0 -4926px;
+  background-position: 0 -5436px;
 }
-/* line 505, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 511, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.resolve:hover {
-  background-position: 0 -3597px;
+  background-position: 0 -4037px;
 }
-/* line 509, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 515, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.rfuk {
   height: 37px;
   width: 110px;
-  background-position: 0 -3221px;
+  background-position: 0 -3591px;
 }
-/* line 511, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 517, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.rfuk:hover {
-  background-position: 0 -2843px;
+  background-position: 0 -3143px;
 }
-/* line 515, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 521, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.rm {
   height: 66px;
   width: 110px;
-  background-position: 0 -1646px;
+  background-position: 0 -1824px;
 }
-/* line 517, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 523, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.rm:hover {
-  background-position: 0 -1310px;
+  background-position: 0 -1425px;
 }
-/* line 521, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 527, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.unilever {
   height: 80px;
   width: 88px;
-  background-position: 0 -1997px;
+  background-position: 0 -2227px;
 }
-/* line 523, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 529, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.unilever:hover {
-  background-position: 0 -1566px;
+  background-position: 0 -1744px;
 }
-/* line 527, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 533, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.zsl {
   height: 73px;
   width: 110px;
-  background-position: 0 -2329px;
+  background-position: 0 -2559px;
 }
-/* line 529, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 535, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.zsl:hover {
-  background-position: 0 -2256px;
+  background-position: 0 -2486px;
 }
-/* line 533, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 539, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.clua {
   height: 26px;
   width: 110px;
-  background-position: 0 -4262px;
+  background-position: 0 -4772px;
 }
-/* line 535, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 541, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.clua:hover {
-  background-position: 0 -1916px;
+  background-position: 0 -2146px;
 }
-/* line 539, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 545, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.mongabay {
   height: 40px;
   width: 110px;
-  background-position: 0 -4522px;
+  background-position: 0 -5032px;
 }
-/* line 541, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 547, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.mongabay:hover {
-  background-position: 0 -4786px;
+  background-position: 0 -5296px;
 }
-/* line 545, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 551, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.muyissi {
   height: 80px;
   width: 80px;
-  background-position: 0 -1150px;
+  background-position: 0 -1265px;
 }
-/* line 547, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 553, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.muyissi:hover {
   background-position: 0 -368px;
 }
-/* line 551, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 557, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.rspo {
   height: 33px;
   width: 110px;
-  background-position: 0 -3940px;
+  background-position: 0 -4450px;
 }
-/* line 553, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 559, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.rspo:hover {
-  background-position: 0 -2985px;
+  background-position: 0 -3355px;
 }
-/* line 557, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 563, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.unepwcmc {
   height: 60px;
   width: 110px;
-  background-position: 0 -2116px;
+  background-position: 0 -2346px;
 }
-/* line 559, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 565, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.unepwcmc:hover {
   background-position: 0 -448px;
 }
-/* line 563, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 569, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.whrc {
   height: 80px;
   width: 87px;
-  background-position: 0 -2176px;
+  background-position: 0 -2406px;
 }
-/* line 565, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 571, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.whrc:hover {
-  background-position: 0 -508px;
+  background-position: 0 -560px;
 }
-/* line 569, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 575, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.ewmi {
   height: 40px;
   width: 126px;
-  background-position: 0 -4726px;
-}
-/* line 571, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
-.layout-footer .logo-ul a.ewmi:hover {
-  background-position: 0 -4642px;
-}
-/* line 575, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
-.layout-footer .logo-ul a.opendevmekong {
-  height: 80px;
-  width: 80px;
-  background-position: 0 -4562px;
+  background-position: 0 -5236px;
 }
 /* line 577, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
-.layout-footer .logo-ul a.opendevmekong:hover {
-  background-position: 0 -3860px;
+.layout-footer .logo-ul a.ewmi:hover {
+  background-position: 0 -5152px;
 }
 /* line 581, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+.layout-footer .logo-ul a.opendevcam {
+  height: 70px;
+  width: 70px;
+  background-position: 0 -4065px;
+}
+/* line 583, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+.layout-footer .logo-ul a.opendevcam:hover {
+  background-position: 0 -3698px;
+}
+/* line 587, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.inab {
   height: 80px;
   width: 106px;
-  background-position: 0 -1771px;
+  background-position: 0 -1949px;
 }
-/* line 583, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 589, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.inab:hover {
   background-position: 0 -231px;
 }
-/* line 588, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 593, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+.layout-footer .logo-ul a.orbital {
+  height: 70px;
+  width: 101px;
+  background-position: 0 -3247px;
+}
+/* line 595, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+.layout-footer .logo-ul a.orbital:hover {
+  background-position: 0 -2680px;
+}
+/* line 599, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+.layout-footer .logo-ul a.bei {
+  height: 63px;
+  width: 130px;
+  background-position: 0 -1491px;
+}
+/* line 601, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+.layout-footer .logo-ul a.bei:hover {
+  background-position: 0 -1094px;
+}
+/* line 605, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+.layout-footer .logo-ul a.cambridge {
+  height: 52px;
+  width: 130px;
+  background-position: 0 -2029px;
+}
+/* line 607, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+.layout-footer .logo-ul a.cambridge:hover {
+  background-position: 0 -508px;
+}
+/* line 612, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.bobolink {
   height: 53px;
   width: 105px;
-  background-position: 0 -2735px;
+  background-position: 0 -3035px;
 }
-/* line 591, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 615, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.vizzuality-big {
   height: 58px;
   width: 109px;
-  background-position: 0 -3018px;
+  background-position: 0 -3388px;
 }
-/* line 593, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 617, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .logo-ul a.vizzuality-big:hover {
-  background-position: 0 -791px;
+  background-position: 0 -843px;
 }
-
 
 .layout-footer .terms {
   text-align: center;
