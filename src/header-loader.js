@@ -33,8 +33,8 @@ function googleTranslateElementInit() {
 
     var links = {
         htmlHeader: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7fd84d2301de1fe7c4be31cac77b2da74798e8b1/src/header.html',
-        htmlFooter: 'https://cdn.rawgit.com/simbiotica/gfw_assets/acf40ed4e8f1fbed6dea5f10c9cd063d13f8c04a/src/footer.html',
-        css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/d95a68997e627ae1e35200114a3ba1c1afe0b73d/src/gfw-styles.css',
+        htmlFooter: 'https://cdn.rawgit.com/simbiotica/gfw_assets/2bb07069a1e0741b77a7e62b67374b53f7a1b9e1/src/footer.html',
+        css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/b40864060847dabf391258628ae7e4c640eb2f50/src/gfw-styles.css',
         translate: 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
     }
 
