@@ -1285,13 +1285,20 @@
   }
 }
 
-/* line 126, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+/* line 132, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .partner-box .row .wri-logo {
   display: block;
   width: 200px;
   height: 70px;
   margin: 0 auto;
-  background-position: 0 -3258px;
+  background-image: url(http://www.globalforestwatch.org/assets/logo-wri.png);
+  background-size: contain;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 132, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+  .layout-footer .partner-box .row .wri-logo {
+    background-image: url(http://www.globalforestwatch.org/assets/logo-wri@2x.png);
+  }
 }
 @media (min-width: 850px) {
   /* line 127, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
@@ -1438,6 +1445,11 @@
   -ms-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
   transform: translate(0, -50%);
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  -ms-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s;
 }
 
 /* line 299, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
