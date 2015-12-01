@@ -374,6 +374,9 @@
 .layout-header .layout-header-top nav > div > ul > li > a:hover.shape-fire svg, .layout-header .layout-header-top nav > div > ul > li > a.current.shape-fire svg, .layout-header .layout-header-top nav > div > ul > li .link:hover.shape-fire svg, .layout-header .layout-header-top nav > div > ul > li .link.current.shape-fire svg {
   fill: #ed1846;
 }
+.layout-header .layout-header-top nav > div > ul > li > a:hover.shape-climate svg, .layout-header .layout-header-top nav > div > ul > li > a.current.shape-climate svg, .layout-header .layout-header-top nav > div > ul > li .link:hover.shape-climate svg, .layout-header .layout-header-top nav > div > ul > li .link.current.shape-climate svg {
+  fill: #5B80A0;
+}
 /* line 190, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
 .layout-header .layout-header-top nav > div > ul > li > a:hover.shape-commodities svg, .layout-header .layout-header-top nav > div > ul > li > a.current.shape-commodities svg, .layout-header .layout-header-top nav > div > ul > li .link:hover.shape-commodities svg, .layout-header .layout-header-top nav > div > ul > li .link.current.shape-commodities svg {
   fill: #e98300;
@@ -1158,6 +1161,14 @@
 /* line 63, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .apps-footer ul li a:hover.fire h3 {
   color: #ed1846;
+}
+/* line 62, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+.layout-footer .apps-footer ul li a:hover.climate svg {
+  fill: #5B80A0;
+}
+/* line 63, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
+.layout-footer .apps-footer ul li a:hover.climate h3 {
+  color: #5B80A0;
 }
 /* line 66, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_footer1600.scss */
 .layout-footer .apps-footer ul li a:hover.commodities svg {
