@@ -32,9 +32,9 @@ function googleTranslateElementInit() {
     var current = (scriptPram) ? scriptPram.getAttribute('data-current') : '.home_data';
 
     var links = {
-        htmlHeader: 'https://cdn.rawgit.com/simbiotica/gfw_assets/21043378f1cdca366081f21d371b8e52d186794e/src/header.html',
-        htmlFooter: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7270758bba3c500ba8ca336e833af374bb6a6a2a/src/footer.html',
-        css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/4af52f12f11a7af827d1e3fbce92c8e3fd72321d/src/gfw-styles.css',
+        htmlHeader: 'https://cdn.rawgit.com/simbiotica/gfw_assets/376324042ea151fd2c275888d294511424563c8c/src/header.html',
+        htmlFooter: 'https://cdn.rawgit.com/simbiotica/gfw_assets/f0a2e4ed4c9cfa7ed7b7ba3915bdf9297ff7379a/src/footer.html',
+        css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/f0a2e4ed4c9cfa7ed7b7ba3915bdf9297ff7379a/src/gfw-styles.css',
         translate: 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
     }
 
