@@ -32,9 +32,9 @@ function googleTranslateElementInit() {
     var current = (scriptPram) ? scriptPram.getAttribute('data-current') : '.home_data';
 
     var links = {
-        htmlHeader: 'https://cdn.rawgit.com/simbiotica/gfw_assets/d401a6cc7fd126a3eeec2a698a9406b4ee8b4649/src/header.html',
-        htmlFooter: 'https://cdn.rawgit.com/simbiotica/gfw_assets/f0a2e4ed4c9cfa7ed7b7ba3915bdf9297ff7379a/src/footer.html',
-        css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/f0a2e4ed4c9cfa7ed7b7ba3915bdf9297ff7379a/src/gfw-styles.css',
+        htmlHeader: 'src/header.html',
+        htmlFooter: 'src/footer.html',
+        css: 'src/gfw-styles.css',
         translate: 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
     }
 
@@ -101,10 +101,13 @@ function init(_header,_footer){
     $footer = $('#footerMenu');
     $siteMap = $('#siteMap');
     $mobileMenu = $('#mobileMenu');
+    $appsMenu = $('#appsSubmenu');
+    $btnAppsMenu = $('#btnAppsMenu');
     $translate = $('#google_translate_element');
     createMenu();
     $window.on('resize',createMenu); 
     $('#btn-menu').on('click', toggleMenu);
+    $('#btnAppsMenu').on('click', toggleAppMenu);
     initSlick();
   }
 }
@@ -125,21 +128,41 @@ function initSlick () {
 function toggleMenu(e){
   $(e.currentTarget).toggleClass('active');
   if ($(e.currentTarget).hasClass('active')) {
-    $htmlbody.addClass('active');
+    $htmlbody.addClass('is-no-scroll');
     $el.addClass('active');
     $navMobile.addClass('active');
   }else{
-    $htmlbody.removeClass('active');
+    $htmlbody.removeClass('is-no-scroll');
     $el.removeClass('active');
     $navMobile.removeClass('active');
   }
 }
 
+function toggleAppMenu(e){
+  if (mobile) {
+    e && e.preventDefault();
+    $(e.currentTarget).toggleClass('active');
+    if ($(e.currentTarget).hasClass('active')) {
+      $htmlbody.addClass('is-no-scroll');
+      $appsMenu.addClass('active');
+      $btnAppsMenu.find('.shape-apps').children('.icon').toggle();
+    }else{
+      $htmlbody.removeClass('is-no-scroll');
+      $appsMenu.removeClass('active');
+      $btnAppsMenu.find('.shape-apps').children('.icon').toggle();
+    }
+  }
+}
+
+
+
 function createMenu(){
   if ($window.width() > 850) {
+    mobile = false;
     $footer.appendTo($siteMap);
     $translate.appendTo($('#google_translate_element_box1'));
   }else{
+    mobile =  true;
     $footer.appendTo($mobileMenu);
     $translate.appendTo($('#google_translate_element_box2'));
   }
