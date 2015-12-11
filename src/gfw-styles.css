@@ -923,6 +923,8 @@
 .layout-header .home-submenu > ul > li > ul li {
   font-size: 11px;
   margin: 10px 0 0;
+  display: block;
+  text-transform: none;  
 }
 /* line 385, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
 .layout-header .home-submenu > ul > li > ul li:first-child {
