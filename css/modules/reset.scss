@@ -41,7 +41,7 @@ html, body{
     cursor: pointer;
   }
 
-  .-inner {
+  .wrapper {
     position: relative;
     margin: 0 auto;
     padding: 0 30px;
@@ -49,10 +49,12 @@ html, body{
 
     @media (min-width: $br-mobile){
       max-width: 1024px;
+      padding: 0 15px;
     }
 
     @media (min-width: $br-desktop){
       max-width: 1200px;
+      padding: 0 30px;
     }
   }
 
