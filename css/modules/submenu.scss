@@ -1,0 +1,165 @@
+#headerGFW {
+  .m-header-submenu {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: $white;
+    line-height: 1.25;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: $shadow1;
+
+    &:after {
+      content: "";
+      position: absolute;
+      transform: rotate(45deg);
+      background: white;
+      width: 10px;
+      height: 10px;
+      border: 1px solid $border1;
+      border-bottom: none;
+      border-right: none;
+      top: -5px;
+    }
+
+    &.-active {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+
+    ///////////////
+    // HOME MENU //
+    ///////////////
+    &.-home {
+      width: 100%;
+      font-size: 12px;
+      padding: 35px 0;
+
+      &:after {
+        left: 13px;
+      } 
+
+      h3 {
+        text-transform: uppercase;
+        font-weight: 500;
+        &.-title {
+          text-align: center;
+          padding: 0 0 35px;
+          a {
+            color: $primary-color;
+            display: inline-block;
+            border-bottom: 2px solid $primary-color;
+          }          
+        }
+      }
+
+      > ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        > li {
+          width: 20%;
+          padding: 0 25px;
+          border-left: 1px solid $border1;
+          
+          &:first-child {
+            border-left: none;
+          }      
+
+          a {
+            color: $dark;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+
+          > ul {
+            font-size: 11px;
+            margin: 15px 0 0;
+            > li{
+              margin: 15px 0 0;
+              &:first-child {
+                margin: 0;
+              }
+            }
+          }
+        }     
+      }
+    }
+
+
+    ///////////////
+    // APPS MENU //
+    ///////////////
+    &.-apps {
+      width: 400px;
+      display: flex;
+      flex-wrap: wrap;
+      
+      &:after {
+        left: 48px;
+      }
+
+      > li {
+        position: relative;
+        width: 33.333%;
+        border-left: 1px solid $border1;
+        z-index: 2;
+
+        &:nth-child(3n+1) {
+          border-left: none;
+        }
+
+        &:nth-child(n+4) {
+          border-top: 1px solid $border1;
+        }
+
+        > a {
+          display: block;
+          position: relative;
+          padding-bottom: 100%;
+          color: $dark;
+        }
+        
+        .app-wrapper {
+          position: absolute;
+          width: 100%;
+          top: 33px;
+          left: 0;
+          
+          svg {
+            display: block;
+            width: auto;
+            height: 30px;
+            max-width: 40px;
+            margin: 0 auto;
+            fill: $light;
+          }
+
+          span {
+            display: block;
+            text-align: center;
+            padding: 10px 12px 0;
+            font-size: 12px;
+            text-transform: uppercase;
+          }
+        }
+
+        &:hover, &.-current {
+          &.shape-fires { svg { fill: $red; } }
+          &.shape-commodities { svg { fill: $orange; } }
+          &.shape-climate { svg { fill: $blue; } }
+          svg {
+            fill: $primary-color;
+          }
+        }
+
+        &.-current {
+          background: #f7f7f7;
+        }
+      }
+    }
+  }
+}

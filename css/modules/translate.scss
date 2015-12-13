@@ -1,0 +1,51 @@
+/* line 700, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
+#googleTranslate .goog-te-gadget {
+  font-family: inherit;
+  text-align: center;
+  .goog-te-gadget-simple {
+    border: none;
+    background: none;
+    align-items: center;
+    display: flex;
+    height: 35px;    
+    .goog-te-menu-value {
+      color: #000;
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 28px;
+      position: relative;
+      padding-right: 16px;
+      
+      span {
+        margin: 0 3px 0 0px;
+      }
+      span:first-child {
+        display: inline-block;
+        margin: 3px 5px 0;
+      }
+      span:last-child {
+        margin: 0;
+        visibility: hidden;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        height: 16px;
+        width: 16px;
+        transform: translate(0, -55%);
+        &:before {
+          content: "";
+          visibility: visible;
+          display: block;
+          height: 100%;
+          width: 100%;
+          background: url(http://www.globalforestwatch.org/assets/svg-icons/arrow-down.svg) no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+
+
+  }
+}
+
