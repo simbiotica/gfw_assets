@@ -3,8 +3,18 @@
   background: #EEE;
   border-bottom: 1px solid $border1;
   -webkit-font-smoothing: antialiased;
-  position: relative;
   z-index: 10;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  @media (min-width: $br-mobile){
+    position: relative;
+    bottom: auto;
+    left: auto;
+  }
+
 
   li {
     list-style: none;
@@ -19,7 +29,20 @@
 
   .m-header-nav {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;   
+    
+    &.-primary {
+
+    }
+
+    &.-secondary {
+      display: none;
+
+      @media (min-width: $br-mobile){
+        display: flex;
+      }
+    }
+
   }
 
   .m-header-item {
@@ -53,15 +76,43 @@
 
     // Default items
     &.-default {
-      width: 35px;
-      height: 35px;
-      > a > span {
-        display: none;
+      @media (min-width: $br-mobile){
+        width: 35px;
+        height: 35px;
       }
-      &:hover {
-        .m-header-submenu {
-          opacity: 1;
-          visibility: visible;
+
+      > a {
+        padding: 10px;
+        display: block;
+        
+        @media (min-width: $br-mobile){
+          padding: 0;
+          display: flex;
+        }
+
+        > span {
+          display: block;
+          line-height: 1;
+          margin: 2px 0 0;
+          font-size: 10px;
+          @media (min-width: $br-mobile){
+            display: none;
+          }
+        }
+
+        > svg {
+          display: block;
+          height: 18px;
+          margin: 0 auto;
+        }
+      }
+
+      @media (min-width: $br-mobile){
+        &:hover {
+          .m-header-submenu {
+            opacity: 1;
+            visibility: visible;
+          }
         }
       }
     }
@@ -70,13 +121,67 @@
     &.-text {
       min-width: 35px;
       margin: 0 0 0 20px;
+      
       &:first-child {
         margin: 0;
       }
 
-      > a > span {
-        display: inline-block;
-        margin: 5px 0 0 5px;
+      > a {
+        &:hover {
+          > span {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+        
+        // It should act as a name => mobile
+        // It should act as a tooltip => tablet
+        // It should act as a rig-name => desktop
+        > span {
+          display: inline-block;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translate(-50%,0);
+
+          padding: 5px 10px 3px;
+
+          background: $dark;
+          color: $white;
+          opacity: 0;
+          visibility: hidden;
+          white-space: nowrap;
+
+          &:after {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            transform: translate(-50%,0) rotate(45deg);
+            background: $dark;
+          }
+
+
+          @media (min-width: $br-desktop){
+            opacity: 1;
+            visibility: visible;
+            
+            margin: 5px 0 0 5px;
+            padding: 0;
+            
+            background: none;
+            color: $dark;
+
+            position: static;
+            transform: translate(0,0);
+  
+            &:after {
+              display: none;
+            }
+          }
+        }
       }
     }
 
@@ -94,11 +199,13 @@
           }
         }
         input {
+          border: none;
+          background: none;
+          box-shadow: none;
+
           padding: 0 5px;
           margin: 0 0 0 5px;          
-          border: 1px solid $border1;
-          background: $white;
-          box-shadow: none;
+          border-bottom: 2px solid $light;
           line-height: 24px;
           outline: none;
         }

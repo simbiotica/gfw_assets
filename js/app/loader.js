@@ -12,7 +12,8 @@ var loader = {
     // Setters
     this.setElements();
     this.setParams({
-      current: this.$script.data('current')
+      current: this.$script.data('current'),
+      mobile: ($(window).width() <= 850) ? true : false,
     });
     this.setPromises()
     

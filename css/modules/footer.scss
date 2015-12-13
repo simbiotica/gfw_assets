@@ -2,6 +2,10 @@
   font-family: "Fira Sans", Helvetica, serif;
   background: $footer-background;
   z-index: 11;
+  display: none;
+  @media (min-width: $br-mobile){
+    display: block;
+  }
 
   ///////////////
   // FOOTER APPS //

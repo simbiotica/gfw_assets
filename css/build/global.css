@@ -39,7 +39,7 @@ html.-no-scroll, body.-no-scroll {
 #headerGFW .wrapper, #footerGFW .wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0px;
   width: 100%;
 }
 @media (min-width: 850px) {
@@ -48,7 +48,7 @@ html.-no-scroll, body.-no-scroll {
     padding: 0 15px;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   #headerGFW .wrapper, #footerGFW .wrapper {
     max-width: 1200px;
     padding: 0 30px;
@@ -60,8 +60,18 @@ html.-no-scroll, body.-no-scroll {
   background: #EEE;
   border-bottom: 1px solid #e5e5df;
   -webkit-font-smoothing: antialiased;
-  position: relative;
   z-index: 10;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+@media (min-width: 850px) {
+  #headerGFW {
+    position: relative;
+    bottom: auto;
+    left: auto;
+  }
 }
 #headerGFW li {
   list-style: none;
@@ -75,6 +85,14 @@ html.-no-scroll, body.-no-scroll {
 #headerGFW .m-header-nav {
   display: flex;
   justify-content: space-between;
+}
+#headerGFW .m-header-nav.-secondary {
+  display: none;
+}
+@media (min-width: 850px) {
+  #headerGFW .m-header-nav.-secondary {
+    display: flex;
+  }
 }
 #headerGFW .m-header-item > a {
   position: relative;
@@ -99,16 +117,43 @@ html.-no-scroll, body.-no-scroll {
   transition: all 0.15s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   fill: #b6b6ba;
 }
-#headerGFW .m-header-item.-default {
-  width: 35px;
-  height: 35px;
+@media (min-width: 850px) {
+  #headerGFW .m-header-item.-default {
+    width: 35px;
+    height: 35px;
+  }
+}
+#headerGFW .m-header-item.-default > a {
+  padding: 10px;
+  display: block;
+}
+@media (min-width: 850px) {
+  #headerGFW .m-header-item.-default > a {
+    padding: 0;
+    display: flex;
+  }
 }
 #headerGFW .m-header-item.-default > a > span {
-  display: none;
+  display: block;
+  line-height: 1;
+  margin: 2px 0 0;
+  font-size: 10px;
 }
-#headerGFW .m-header-item.-default:hover .m-header-submenu {
-  opacity: 1;
-  visibility: visible;
+@media (min-width: 850px) {
+  #headerGFW .m-header-item.-default > a > span {
+    display: none;
+  }
+}
+#headerGFW .m-header-item.-default > a > svg {
+  display: block;
+  height: 18px;
+  margin: 0 auto;
+}
+@media (min-width: 850px) {
+  #headerGFW .m-header-item.-default:hover .m-header-submenu {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 #headerGFW .m-header-item.-text {
   min-width: 35px;
@@ -117,9 +162,47 @@ html.-no-scroll, body.-no-scroll {
 #headerGFW .m-header-item.-text:first-child {
   margin: 0;
 }
+#headerGFW .m-header-item.-text > a:hover > span {
+  opacity: 1;
+  visibility: visible;
+}
 #headerGFW .m-header-item.-text > a > span {
   display: inline-block;
-  margin: 5px 0 0 5px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 5px 10px 3px;
+  background: #555;
+  color: #FFF;
+  opacity: 0;
+  visibility: hidden;
+  white-space: nowrap;
+}
+#headerGFW .m-header-item.-text > a > span:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, 0) rotate(45deg);
+  background: #555;
+}
+@media (min-width: 1200px) {
+  #headerGFW .m-header-item.-text > a > span {
+    opacity: 1;
+    visibility: visible;
+    margin: 5px 0 0 5px;
+    padding: 0;
+    background: none;
+    color: #555;
+    position: static;
+    transform: translate(0, 0);
+  }
+  #headerGFW .m-header-item.-text > a > span:after {
+    display: none;
+  }
 }
 #headerGFW .m-header-item.-search {
   margin: 0 0 0 20px;
@@ -134,11 +217,12 @@ html.-no-scroll, body.-no-scroll {
   fill: #97bd3d;
 }
 #headerGFW .m-header-item.-search form input {
+  border: none;
+  background: none;
+  box-shadow: none;
   padding: 0 5px;
   margin: 0 0 0 5px;
-  border: 1px solid #e5e5df;
-  background: #FFF;
-  box-shadow: none;
+  border-bottom: 2px solid #b6b6ba;
   line-height: 24px;
   outline: none;
 }
@@ -235,9 +319,34 @@ html.-no-scroll, body.-no-scroll {
   margin: 0;
 }
 #headerGFW .m-header-submenu.-apps {
-  width: 400px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+}
+@media (min-width: 600px) {
+  #headerGFW .m-header-submenu.-apps {
+    width: 400px;
+    height: 400px;
+  }
+}
+#headerGFW .m-header-submenu.-apps.-active {
+  position: fixed;
+  top: auto;
+  bottom: 50px;
+  left: 0;
+}
+#headerGFW .m-header-submenu.-apps.-active:after {
+  bottom: -5px;
+  left: 63px;
+  top: auto;
+  border: 1px solid #e5e5df;
+  border-left: none;
+  border-top: none;
+}
+@media (min-width: 850px) {
+  #headerGFW .m-header-submenu.-apps.-active {
+    position: absolute;
+  }
 }
 #headerGFW .m-header-submenu.-apps:after {
   left: 48px;
@@ -379,6 +488,12 @@ The `sprites` mixin generates identical output to the CSS template
   font-family: "Fira Sans", Helvetica, serif;
   background: #eceee8;
   z-index: 11;
+  display: none;
+}
+@media (min-width: 850px) {
+  #footerGFW {
+    display: block;
+  }
 }
 #footerGFW .m-footer-apps {
   display: flex;

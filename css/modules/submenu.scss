@@ -94,10 +94,34 @@
     // APPS MENU //
     ///////////////
     &.-apps {
-      width: 400px;
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
-      
+
+      @media (min-width: $br-mobile-portrait){
+        width: 400px;
+        height: 400px;
+      }        
+
+      &.-active {
+        position: fixed;
+        top: auto;
+        bottom: 50px;
+        left: 0;
+        &:after {
+          bottom: -5px;
+          left: 63px;
+          top: auto;
+          border: 1px solid $border1;
+          border-left: none;
+          border-top: none;            
+        }
+        
+        @media (min-width: $br-mobile){
+          position: absolute;
+        }        
+      }
+
       &:after {
         left: 48px;
       }

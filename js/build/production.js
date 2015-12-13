@@ -59,23 +59,34 @@ function googleTranslateElementInit() {
 var app = {
   init: function(params) {
     this.params = params;
+    // Setters
     this.setElements();
     this.setCurrent();
+
+    // Inits
     this.initSlick();
     this.initTranslate();
+    this.initEvents();
   },
 
   // Setters
   setElements: function() {
     this.$head = $('head');
-    this.$submenuApps = $('#submenuApps');
-    this.$footerCarousel = $('#footerCarousel');
+    this.$header = $('#headerGFW');
+    this.$footer = $('#headerGFW');
+
+    // Header
+    this.$btnSubmenuApps = this.$header.find('#btnSubmenuApps');
+    this.$submenuApps = this.$header.find('#submenuApps');
+    // Footer
+    this.$footerCarousel = this.$footer.find('#footerCarousel');
   },
 
   setCurrent: function() {
     this.$submenuApps.find(this.params.current).addClass('-current');
   },
 
+  // Inits
   initSlick: function() {
     this.$footerCarousel.slick({
       infinite: true,
@@ -90,6 +101,19 @@ var app = {
 
   initTranslate: function() {
     this.$head.append('<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>');
+  },
+
+  initEvents: function() {
+    this.$header.on('click', '#btnSubmenuApps', this.toogleHomeMenu.bind(this));
+  },
+
+  // Toggles
+  toogleHomeMenu: function(e) {
+    if (!!this.params.mobile) {
+      e && e.preventDefault();
+      this.$submenuApps.toggleClass('-active');
+    }
+    
   }
 }
 var loader = {
@@ -106,7 +130,8 @@ var loader = {
     // Setters
     this.setElements();
     this.setParams({
-      current: this.$script.data('current')
+      current: this.$script.data('current'),
+      mobile: ($(window).width() <= 850) ? true : false,
     });
     this.setPromises()
     
