@@ -96,12 +96,9 @@
     &.-apps {
       width: 100%;
       max-width: 400px;
-      display: flex;
-      flex-wrap: wrap;
-      overflow-y: auto;        
-
+      overflow-y: auto;  
       @media (min-width: $br-mobile-portrait){
-        height: 400px;
+        overflow-y: visible;  
       }        
 
       &.-active {
@@ -114,8 +111,9 @@
           display: none;
         }
         
-        @media (min-width: $br-mobile){
+        @media (min-width: $br-mobile-portrait){
           position: absolute;
+          max-height: none;
         }        
       }
 
@@ -123,80 +121,90 @@
         left: 48px;
       }
 
-      > li {
-        position: relative;
-        width: 50%;
-        border-left: 1px solid $border1;
-        z-index: 2;
-        
-        @media (max-width: $br-mobile-portrait - 1){
-          &:nth-child(2n+1) {
-            border-left: 1px solid $border1;
-          }
-
-          &:nth-child(n+3) {  
-            border-top: 1px solid $border1;
-          }
-        }
+      > ul {
+        display: flex;
+        flex-wrap: wrap;
 
         @media (min-width: $br-mobile-portrait){
-          width: 33.333%;
-          &:nth-child(3n+1) {
-            border-left: none;
-          }
+          height: 402px;
+          overflow-y: auto; 
+        }        
 
-          &:nth-child(n+4) {
-            border-top: 1px solid $border1;
-          }          
-        }
-
-        > a {
-          display: block;
+        > li {
           position: relative;
-          color: $dark;
-          padding: 30px 0;
-          @media (min-width: $br-mobile-portrait){
-            padding: 0 0 100%;
+          width: 50%;
+          border-left: 1px solid $border1;
+          z-index: 2;
+          
+          @media (max-width: $br-mobile-portrait - 1){
+            &:nth-child(2n+1) {
+              border-left: 1px solid $border1;
+            }
+
+            &:nth-child(n+3) {  
+              border-top: 1px solid $border1;
+            }
           }
-        }
-        
-        .app-wrapper {
-          width: 100%;
+
           @media (min-width: $br-mobile-portrait){
-            position: absolute;
-            top: 33px;
-            left: 0;
+            width: 33.333%;
+            &:nth-child(3n+1) {
+              border-left: none;
+            }
+
+            &:nth-child(n+4) {
+              border-top: 1px solid $border1;
+            }          
+          }
+
+          > a {
+            display: block;
+            position: relative;
+            color: $dark;
+            padding: 30px 0;
+            @media (min-width: $br-mobile-portrait){
+              padding: 0 0 100%;
+            }
           }
           
-          svg {
-            display: block;
-            width: auto;
-            height: 30px;
-            max-width: 40px;
-            margin: 0 auto;
-            fill: $light;
+          .app-wrapper {
+            width: 100%;
+            @media (min-width: $br-mobile-portrait){
+              position: absolute;
+              top: 33px;
+              left: 0;
+            }
+            
+            svg {
+              display: block;
+              width: auto;
+              height: 30px;
+              max-width: 40px;
+              margin: 0 auto;
+              fill: $light;
+            }
+
+            span {
+              display: block;
+              text-align: center;
+              padding: 10px 12px 0;
+              font-size: 12px;
+              text-transform: uppercase;
+            }
           }
 
-          span {
-            display: block;
-            text-align: center;
-            padding: 10px 12px 0;
-            font-size: 12px;
-            text-transform: uppercase;
+          &:hover, &.-current {
+            &.shape-fires { svg { fill: $red; } }
+            &.shape-commodities { svg { fill: $orange; } }
+            &.shape-climate { svg { fill: $blue; } }
+            svg {
+              fill: $primary-color;
+            }
           }
-        }
 
-        &:hover, &.-current {
-          &.shape-fires { svg { fill: $red; } }
-          &.shape-commodities { svg { fill: $orange; } }
-          &.shape-climate { svg { fill: $blue; } }
-          svg {
-            fill: $primary-color;
+          &.-current {
+            background: #f7f7f7;
           }
-        }
-
-        &.-current {
-          background: #f7f7f7;
         }
       }
     }
