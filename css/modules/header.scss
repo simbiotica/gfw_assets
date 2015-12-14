@@ -236,7 +236,7 @@
 
     // HOVERS
     @media (min-width: $br-mobile){
-      &:hover {
+      &:hover, &.-current  {
         > a:after {
           content: "";
           width: 100%;

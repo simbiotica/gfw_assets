@@ -269,7 +269,7 @@ html.-no-scroll, body.-no-scroll {
   margin: 0 20px;
 }
 @media (min-width: 850px) {
-  #headerGFW .m-header-item:hover > a:after {
+  #headerGFW .m-header-item:hover > a:after, #headerGFW .m-header-item.-current > a:after {
     content: "";
     width: 100%;
     height: 2px;
@@ -278,7 +278,7 @@ html.-no-scroll, body.-no-scroll {
     left: 0;
     background: #97bd3d;
   }
-  #headerGFW .m-header-item:hover > a > svg {
+  #headerGFW .m-header-item:hover > a > svg, #headerGFW .m-header-item.-current > a > svg {
     fill: #97bd3d;
   }
 }
@@ -436,6 +436,10 @@ html.-no-scroll, body.-no-scroll {
 @media (min-width: 420px) {
   #headerGFW .m-header-submenu.-apps {
     overflow-y: visible;
+  }
+}
+@media (min-width: 850px) {
+  #headerGFW .m-header-submenu.-apps {
     max-width: 400px;
   }
 }
@@ -473,7 +477,6 @@ html.-no-scroll, body.-no-scroll {
     height: 402px;
     overflow-y: auto;
     max-height: none;
-    max-width: none;
   }
 }
 @media (min-width: 850px) {

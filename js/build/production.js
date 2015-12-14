@@ -63,6 +63,7 @@ var app = {
     // Setters
     this.setElements();
     this.setCurrent();
+    this.setUrls();
 
     // Inits
     this.initSlick();
@@ -76,19 +77,39 @@ var app = {
     this.$htmlbody = $('html,body');
     this.$header = $('#headerGFW');
     this.$footer = $('#footerGFW');
+    this.$links = $('#headerGFW a, #footerGFW a');
 
     // Header
     this.$headerSubmenu = this.$header.find('.m-header-submenu');
     this.$headerSubmenuBtns = this.$header.find('.m-header-submenu-btn');
-
-    this.$submenuApps = this.$header.find('#submenuApps');
 
     // Footer
     this.$footerCarousel = this.$footer.find('#footerCarousel');
   },
 
   setCurrent: function() {
-    this.$submenuApps.find(this.params.current).addClass('-current');
+    this.$header.find(this.params.current).addClass('-current');
+  },
+
+  setUrls: function() {
+    switch(location.hostname) {
+      case 'localhost':
+        this.params.hostname = 'http://localhost:5000'
+      break;
+
+      case 'gfw-nav.herokuapp.com':
+        this.params.hostname = 'http://gfw-nav.herokuapp.com'
+      break;
+
+      default: 
+        this.params.hostname = 'http://www.globalforestwatch.org'
+    }
+    this.$links.each(function(k,v){
+      var href = $(v).attr('href');
+      if (href.charAt(0) == '/') {
+        $(v).attr('href', this.params.hostname + href);
+      }
+    }.bind(this));
   },
 
   // Inits

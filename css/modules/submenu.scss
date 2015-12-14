@@ -170,6 +170,9 @@
 
       @media (min-width: $br-mobile-portrait){
         overflow-y: visible;  
+      }        
+
+      @media (min-width: $br-mobile){
         max-width: 400px;
       }        
 
@@ -206,8 +209,7 @@
         @media (min-width: $br-mobile-portrait){
           height: 402px;
           overflow-y: auto; 
-          max-height: none; 
-          max-width: none;
+          max-height: none;
         }        
 
         @media (min-width: $br-mobile){
