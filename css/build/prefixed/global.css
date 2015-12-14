@@ -45,13 +45,13 @@ html.-no-scroll, body.-no-scroll {
 @media (min-width: 850px) {
   #headerGFW .wrapper, #footerGFW .wrapper {
     max-width: 1024px;
-    padding: 0 15px;
+    width: 95%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   #headerGFW .wrapper, #footerGFW .wrapper {
     max-width: 1200px;
-    padding: 0 30px;
+    width: 75%;
   }
 }
 #headerGFW .-hidden, #footerGFW .-hidden {
@@ -248,7 +248,7 @@ html.-no-scroll, body.-no-scroll {
           transform: translate(-50%, 0) rotate(45deg);
   background: #555;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   #headerGFW .m-header-item.-text > a > span {
     opacity: 1;
     visibility: visible;
@@ -286,11 +286,14 @@ html.-no-scroll, body.-no-scroll {
   border: none;
   background: none;
   box-shadow: none;
+  border-radius: 0;
   padding: 0 5px;
   margin: 0 0 0 5px;
   border-bottom: 2px solid #b6b6ba;
   line-height: 24px;
   outline: none;
+  font-size: 10px;
+  font-family: inherit;
 }
 #headerGFW .m-header-item.-translate {
   margin: 0 20px;
@@ -773,11 +776,11 @@ The `sprites` mixin generates identical output to the CSS template
 #footerGFW .m-footer-info .m-footer-partner > p {
   font-size: 12px;
   color: #555;
+  margin: 0 0 5px;
 }
 #footerGFW .m-footer-info .m-footer-partner svg {
   display: block;
-  border: 1px solid #555;
-  fill: transparent;
+  width: 200px;
 }
 #footerGFW .m-footer-info .m-footer-contact {
   font-size: 12px;

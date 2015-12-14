@@ -56,12 +56,12 @@
       > p {
         font-size: 12px;
         color: $dark;
+        margin: 0 0 5px;
       }
 
       svg {
         display: block;
-        border: 1px solid $dark;
-        fill: transparent;
+        width: 200px;
       }
     }
 

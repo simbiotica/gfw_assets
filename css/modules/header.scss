@@ -182,7 +182,7 @@
           }
 
 
-          @media (min-width: $br-desktop){
+          @media (min-width: $br-desktopbig){
             opacity: 1;
             visibility: visible;
             
@@ -220,12 +220,17 @@
           border: none;
           background: none;
           box-shadow: none;
+          border-radius: 0;          
 
           padding: 0 5px;
           margin: 0 0 0 5px;          
           border-bottom: 2px solid $light;
           line-height: 24px;
           outline: none;
+          
+          font-size: 10px;
+          font-family: inherit;
+          
         }
       }
     }
