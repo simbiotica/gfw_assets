@@ -56,7 +56,7 @@ var app = {
 
   // Inits
   initSlick: function() {
-    console.log(this$footerCarousel);
+    console.log(this.$footerCarousel);
     this.$footerCarousel.slick({
       infinite: true,
       slidesToShow: 5,
