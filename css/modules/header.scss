@@ -45,6 +45,14 @@
 
   }
 
+  .m-header-backdrop {
+    position: fixed;
+    z-index: 1;
+    background: rgba(0,0,0, 0.25);
+    width: 100%;
+    height: 100%;
+  }
+
   .m-header-item {
     // HOVERS
     > a {
@@ -90,6 +98,7 @@
         &.-active {
           background: $white;
           border-color: $border1;
+          z-index: 3;
           @media (min-width: $br-mobile){
             background: none;
             border-color: transparent;

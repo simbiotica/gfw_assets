@@ -3,7 +3,7 @@
     position: absolute;
     top: 35px;
     left: 0;
-    background: $white;
+    z-index: 2;
     line-height: 1.25;
     opacity: 0;
     visibility: hidden;
@@ -25,6 +25,11 @@
     &.-active {
       opacity: 1;
       visibility: visible;
+    }
+
+    > ul {
+      background: $white;
+      z-index: 2;
     }
     
 
@@ -58,7 +63,7 @@
         @media (min-width: $br-mobile){
           position: absolute;
           max-height: none;
-        }        
+        }  
       }
 
       &:after {
@@ -108,6 +113,8 @@
 
       > ul {
         width: 100%;
+        position: relative;
+
         @media (min-width: $br-mobile){
           display: flex;
           justify-content: space-between;
@@ -133,10 +140,11 @@
 
           > ul {
             font-size: 15px;
-            margin: 15px 0;
+            padding: 15px 0;
 
             @media (min-width: $br-mobile){
               margin: 15px 0 0;
+              padding: 0;
               font-size: 11px;
             }        
 
@@ -168,6 +176,7 @@
         top: auto;
         bottom: 50px;
         left: 0;
+        height: 100%;        
         max-height: calc(100% - 50px);
         &:after {
           display: none;
@@ -186,10 +195,16 @@
       > ul {
         display: flex;
         flex-wrap: wrap;
+        position: absolute;
+        bottom: 0;
+        max-height: 100%;          
 
         @media (min-width: $br-mobile-portrait){
           height: 402px;
           overflow-y: auto; 
+          position: relative;
+          bottom: auto;
+          max-height: none;                    
         }        
 
         > li {

@@ -1,6 +1,7 @@
 var app = {
   init: function(params) {
     this.params = params;
+    
     // Setters
     this.setElements();
     this.setCurrent();
@@ -19,6 +20,9 @@ var app = {
     this.$footer = $('#footerGFW');
 
     // Header
+    this.$headerSubmenu = this.$header.find('.m-header-submenu');
+    this.$headerSubmenuBtns = this.$header.find('.m-header-submenu-btn');
+
     this.$btnSubmenuApps = this.$header.find('#btnSubmenuApps');
     this.$submenuApps = this.$header.find('#submenuApps');
 
@@ -51,28 +55,50 @@ var app = {
   },
 
   initEvents: function() {
-    this.$header.on('click', '#btnSubmenuHome', this.toogleHomeMenu.bind(this));
-    this.$header.on('click', '#btnSubmenuApps', this.toogleAppsMenu.bind(this));
+    this.$header.on('click', '#btnSubmenuHome', this.showHomeMenu.bind(this));
+    this.$header.on('click', '#btnSubmenuApps', this.showAppsMenu.bind(this));
+    this.$header.on('click', '.m-header-backdrop', this.hideSubmenus.bind(this));
   },
 
   // Toggles
-  toogleHomeMenu: function(e) {
+  showHomeMenu: function(e) {
     if (!!this.params.mobile) {
       e && e.preventDefault();
-      this.$htmlbody.toggleClass('-no-scroll');
-      this.$submenuHome.toggleClass('-active');
-      this.$btnSubmenuHome.toggleClass('-active').find('svg').toggle();
-
+ 
+      if (!$(e.currentTarget).hasClass('-active')) {
+        this.hideSubmenus();
+        this.$htmlbody.addClass('-no-scroll');
+        this.$submenuHome.addClass('-active');
+        this.$btnSubmenuHome.addClass('-active').find('svg').toggle();
+      } else {
+        this.hideSubmenus();
+      }
     }
   },
 
-  toogleAppsMenu: function(e) {
+  showAppsMenu: function(e) {
     if (!!this.params.mobile) {
       e && e.preventDefault();
-      this.$htmlbody.toggleClass('-no-scroll');
-      this.$submenuApps.toggleClass('-active');
-      this.$btnSubmenuApps.toggleClass('-active').find('svg').toggle();
+
+      if (!$(e.currentTarget).hasClass('-active')) {
+        this.hideSubmenus();
+        this.$htmlbody.toggleClass('-no-scroll');
+        this.$submenuApps.toggleClass('-active');
+        this.$btnSubmenuApps.toggleClass('-active').find('svg').toggle();
+      } else {
+        this.hideSubmenus();
+      }
 
     } 
   },
+
+  hideSubmenus: function() {
+    this.$htmlbody.removeClass('-no-scroll');
+    this.$headerSubmenu.removeClass('-active');
+    this.$headerSubmenuBtns.each(function(){
+      if ($(this).hasClass('-active')) {
+        $(this).removeClass('-active').find('svg').toggle();
+      }
+    });
+  }
 }

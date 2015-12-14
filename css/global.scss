@@ -23,10 +23,14 @@ $transition1: all 0.15s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 $shadow1: 0 0 4px rgba(142, 142, 142, 0.5);
 // Imports
 @import 'modules/reset';
+
 // header
 @import 'modules/header';
 @import 'modules/submenu';
 @import 'modules/translate';
+
+// section
+@import 'modules/section';
 
 // footer
 @import 'modules/logos';

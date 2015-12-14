@@ -115,6 +115,13 @@ html.-no-scroll, body.-no-scroll {
     display: flex;
   }
 }
+#headerGFW .m-header-backdrop {
+  position: fixed;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+}
 #headerGFW .m-header-item > a {
   position: relative;
   display: flex;
@@ -153,6 +160,7 @@ html.-no-scroll, body.-no-scroll {
 #headerGFW .m-header-item.-default > a.-active {
   background: #FFF;
   border-color: #e5e5df;
+  z-index: 3;
 }
 @media (min-width: 850px) {
   #headerGFW .m-header-item.-default > a.-active {
@@ -281,7 +289,7 @@ html.-no-scroll, body.-no-scroll {
   position: absolute;
   top: 35px;
   left: 0;
-  background: #FFF;
+  z-index: 2;
   line-height: 1.25;
   opacity: 0;
   visibility: hidden;
@@ -302,6 +310,10 @@ html.-no-scroll, body.-no-scroll {
 #headerGFW .m-header-submenu.-active {
   opacity: 1;
   visibility: visible;
+}
+#headerGFW .m-header-submenu > ul {
+  background: #FFF;
+  z-index: 2;
 }
 #headerGFW .m-header-submenu.-home {
   width: 100%;
@@ -377,6 +389,7 @@ html.-no-scroll, body.-no-scroll {
 }
 #headerGFW .m-header-submenu.-home > ul {
   width: 100%;
+  position: relative;
 }
 @media (min-width: 850px) {
   #headerGFW .m-header-submenu.-home > ul {
@@ -402,11 +415,12 @@ html.-no-scroll, body.-no-scroll {
 }
 #headerGFW .m-header-submenu.-home > ul > li > ul {
   font-size: 15px;
-  margin: 15px 0;
+  padding: 15px 0;
 }
 @media (min-width: 850px) {
   #headerGFW .m-header-submenu.-home > ul > li > ul {
     margin: 15px 0 0;
+    padding: 0;
     font-size: 11px;
   }
 }
@@ -431,6 +445,7 @@ html.-no-scroll, body.-no-scroll {
   top: auto;
   bottom: 50px;
   left: 0;
+  height: 100%;
   max-height: calc(100% - 50px);
 }
 #headerGFW .m-header-submenu.-apps.-active:after {
@@ -448,11 +463,17 @@ html.-no-scroll, body.-no-scroll {
 #headerGFW .m-header-submenu.-apps > ul {
   display: flex;
   flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  max-height: 100%;
 }
 @media (min-width: 420px) {
   #headerGFW .m-header-submenu.-apps > ul {
     height: 402px;
     overflow-y: auto;
+    position: relative;
+    bottom: auto;
+    max-height: none;
   }
 }
 #headerGFW .m-header-submenu.-apps > ul > li {
@@ -578,6 +599,29 @@ html.-no-scroll, body.-no-scroll {
   width: 100%;
   background: url(http://www.globalforestwatch.org/assets/svg-icons/arrow-down.svg) no-repeat center;
   background-size: contain;
+}
+
+.section-test *, .section-test *:after, .section-test *:before {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+.section-test .wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+}
+@media (min-width: 850px) {
+  .section-test .wrapper {
+    max-width: 1024px;
+    padding: 0 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-test .wrapper {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
 }
 
 /*
