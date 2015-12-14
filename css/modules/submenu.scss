@@ -95,11 +95,12 @@
     ///////////////
     &.-apps {
       width: 100%;
+      max-width: 400px;
       display: flex;
       flex-wrap: wrap;
+      overflow-y: auto;        
 
       @media (min-width: $br-mobile-portrait){
-        width: 400px;
         height: 400px;
       }        
 
@@ -108,13 +109,9 @@
         top: auto;
         bottom: 50px;
         left: 0;
+        max-height: calc(100% - 50px);
         &:after {
-          bottom: -5px;
-          left: 63px;
-          top: auto;
-          border: 1px solid $border1;
-          border-left: none;
-          border-top: none;            
+          display: none;
         }
         
         @media (min-width: $br-mobile){
@@ -128,30 +125,48 @@
 
       > li {
         position: relative;
-        width: 33.333%;
+        width: 50%;
         border-left: 1px solid $border1;
         z-index: 2;
+        
+        @media (max-width: $br-mobile-portrait - 1){
+          &:nth-child(2n+1) {
+            border-left: 1px solid $border1;
+          }
 
-        &:nth-child(3n+1) {
-          border-left: none;
+          &:nth-child(n+3) {  
+            border-top: 1px solid $border1;
+          }
         }
 
-        &:nth-child(n+4) {
-          border-top: 1px solid $border1;
+        @media (min-width: $br-mobile-portrait){
+          width: 33.333%;
+          &:nth-child(3n+1) {
+            border-left: none;
+          }
+
+          &:nth-child(n+4) {
+            border-top: 1px solid $border1;
+          }          
         }
 
         > a {
           display: block;
           position: relative;
-          padding-bottom: 100%;
           color: $dark;
+          padding: 30px 0;
+          @media (min-width: $br-mobile-portrait){
+            padding: 0 0 100%;
+          }
         }
         
         .app-wrapper {
-          position: absolute;
           width: 100%;
-          top: 33px;
-          left: 0;
+          @media (min-width: $br-mobile-portrait){
+            position: absolute;
+            top: 33px;
+            left: 0;
+          }
           
           svg {
             display: block;

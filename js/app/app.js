@@ -15,7 +15,7 @@ var app = {
   setElements: function() {
     this.$head = $('head');
     this.$header = $('#headerGFW');
-    this.$footer = $('#headerGFW');
+    this.$footer = $('#footerGFW');
 
     // Header
     this.$btnSubmenuApps = this.$header.find('#btnSubmenuApps');
@@ -30,6 +30,7 @@ var app = {
 
   // Inits
   initSlick: function() {
+    console.log('footerCarousel');
     this.$footerCarousel.slick({
       infinite: true,
       slidesToShow: 5,
@@ -54,6 +55,7 @@ var app = {
     if (!!this.params.mobile) {
       e && e.preventDefault();
       this.$submenuApps.toggleClass('-active');
+      this.$btnSubmenuApps.toggleClass('-active');
     }
     
   }
