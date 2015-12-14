@@ -78,6 +78,10 @@ var app = {
     // Header
     this.$btnSubmenuApps = this.$header.find('#btnSubmenuApps');
     this.$submenuApps = this.$header.find('#submenuApps');
+
+    this.$btnSubmenuHome = this.$header.find('#btnSubmenuHome');
+    this.$submenuHome = this.$header.find('#submenuHome');
+
     // Footer
     this.$footerCarousel = this.$footer.find('#footerCarousel');
   },
@@ -88,7 +92,6 @@ var app = {
 
   // Inits
   initSlick: function() {
-    console.log('footerCarousel');
     this.$footerCarousel.slick({
       infinite: true,
       slidesToShow: 5,
@@ -105,18 +108,26 @@ var app = {
   },
 
   initEvents: function() {
-    this.$header.on('click', '#btnSubmenuApps', this.toogleHomeMenu.bind(this));
+    this.$header.on('click', '#btnSubmenuHome', this.toogleHomeMenu.bind(this));
+    this.$header.on('click', '#btnSubmenuApps', this.toogleAppsMenu.bind(this));
   },
 
   // Toggles
   toogleHomeMenu: function(e) {
     if (!!this.params.mobile) {
       e && e.preventDefault();
+      this.$submenuHome.toggleClass('-active');
+      this.$btnSubmenuHome.toggleClass('-active');
+    }
+  },
+
+  toogleAppsMenu: function(e) {
+    if (!!this.params.mobile) {
+      e && e.preventDefault();
       this.$submenuApps.toggleClass('-active');
       this.$btnSubmenuApps.toggleClass('-active');
-    }
-    
-  }
+    } 
+  },
 }
 var loader = {
 

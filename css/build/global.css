@@ -303,7 +303,30 @@ html.-no-scroll, body.-no-scroll {
 #headerGFW .m-header-submenu.-home {
   width: 100%;
   font-size: 12px;
-  padding: 35px 0;
+  padding: 0;
+  overflow-y: auto;
+}
+@media (min-width: 850px) {
+  #headerGFW .m-header-submenu.-home {
+    overflow-y: visible;
+    padding: 35px 0;
+  }
+}
+#headerGFW .m-header-submenu.-home.-active {
+  position: fixed;
+  top: auto;
+  bottom: 50px;
+  left: 0;
+  max-height: calc(100% - 50px);
+}
+#headerGFW .m-header-submenu.-home.-active:after {
+  display: none;
+}
+@media (min-width: 850px) {
+  #headerGFW .m-header-submenu.-home.-active {
+    position: absolute;
+    max-height: none;
+  }
 }
 #headerGFW .m-header-submenu.-home:after {
   left: 13px;
@@ -311,10 +334,26 @@ html.-no-scroll, body.-no-scroll {
 #headerGFW .m-header-submenu.-home h3 {
   text-transform: uppercase;
   font-weight: 500;
+  border-top: 1px solid #e5e5df;
+  font-size: 16px;
+  background: #F2F2F3;
+}
+@media (min-width: 850px) {
+  #headerGFW .m-header-submenu.-home h3 {
+    border-top: none;
+    font-size: 12px;
+    background: none;
+  }
 }
 #headerGFW .m-header-submenu.-home h3.-title {
   text-align: center;
   padding: 0 0 35px;
+  display: none;
+}
+@media (min-width: 850px) {
+  #headerGFW .m-header-submenu.-home h3.-title {
+    display: block;
+  }
 }
 #headerGFW .m-header-submenu.-home h3.-title a {
   color: #97bd3d;
@@ -323,16 +362,22 @@ html.-no-scroll, body.-no-scroll {
 }
 #headerGFW .m-header-submenu.-home > ul {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
-#headerGFW .m-header-submenu.-home > ul > li {
-  width: 20%;
-  padding: 0 25px;
-  border-left: 1px solid #e5e5df;
+@media (min-width: 850px) {
+  #headerGFW .m-header-submenu.-home > ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
-#headerGFW .m-header-submenu.-home > ul > li:first-child {
-  border-left: none;
+@media (min-width: 850px) {
+  #headerGFW .m-header-submenu.-home > ul > li {
+    width: 20%;
+    padding: 0 25px;
+    border-left: 1px solid #e5e5df;
+  }
+  #headerGFW .m-header-submenu.-home > ul > li:first-child {
+    border-left: none;
+  }
 }
 #headerGFW .m-header-submenu.-home > ul > li a {
   color: #555;
