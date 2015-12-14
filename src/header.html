@@ -2,7 +2,7 @@
   <div class="m-header">
     <ul class="m-header-nav -primary">
       <li class="m-header-item -default shape-home">
-        <a id="btnSubmenuHome" class="m-header-submenu-btn" href="/">
+        <a id="btnSubmenuHome" data-submenu="#submenuHome" class="m-header-submenu-btn" href="/">
           <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-home"></use></svg>
           <svg style="display: none;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-close"></use></svg>
           <span>Home</span>
@@ -74,7 +74,7 @@
         </div>
       </li>
       <li class="m-header-item -default shape-apps">
-        <a id="btnSubmenuApps" class="m-header-submenu-btn" href="/">
+        <a id="btnSubmenuApps" data-submenu="#submenuApps" class="m-header-submenu-btn" href="/">
           <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-apps"></use></svg>
           <svg style="display: none;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-close"></use></svg>          
           <span>Apps</span>
@@ -109,7 +109,79 @@
       </li>    
       <li class="m-header-item -translate"><div id="googleTranslate"></div></li>    
     </ul>
-    
+    <ul class="m-header-nav -mobile">
+      <li class="m-header-item -default shape-menu">
+        <a id="btnSubmenuMenu" data-submenu="#submenuMenu" class="m-header-submenu-btn" href="/">
+          <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-menu"></use></svg>
+          <svg style="display: none;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-close"></use></svg>
+          <span>Menú</span>
+        </a>
+        <!-- HOME SUBMENU -->
+        <div id="submenuMenu" class="m-header-submenu scroll-dark -home -menu">
+          <div class="m-header-backdrop"></div>
+          <ul>
+            <li>
+              <h3><a href="http://www.globalforestwatch.org/explore">Explore</a></h3>
+              <ul>
+                <li><a href="http://www.globalforestwatch.org/map">GFW Interactive Map</a></li>
+                <li><a href="http://www.globalforestwatch.org/countries">Country Profiles &amp; Rankings</a></li>
+                <li><a class="mobile-friendly" href="http://commodities.globalforestwatch.org/">Commodities</a></li>
+                <li><a class="mobile-friendly" href="http://fires.globalforestwatch.org/">Fires</a></li>
+                <li><a class="mobile-friendly" href="http://climate.globalforestwatch.org/">Climate</a></li>
+                <li><a href="http://www.globalforestwatch.org/explore/applications">All applications</a></li>
+                <li><a class="mobile-friendly" href="http://data.globalforestwatch.org/">Download Data</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3><a href="http://www.globalforestwatch.org/stayinformed">Stay informed</a></h3>
+              <ul>
+                <li><a href="http://blog.globalforestwatch.org/">Blog</a></li>
+                <li><a href="http://www.globalforestwatch.org/stayinformed/crowdsourced-stories">Crowdsourced stories</a></li>
+                <li><a href="http://www.wri.org/global-forest-watch-stay-informed" target="_blank">Newsletter</a></li>
+                <li><a href="http://www.globalforestwatch.org/stayinformed/publications">Publications</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3><a href="http://www.globalforestwatch.org/getinvolved">GET INVOLVED</a></h3>
+              <ul>
+                <li><a href="http://www.globalforestwatch.org/getinvolved/develop-your-own-app">Develop your own app</a></li>
+                <li><a href="http://www.globalforestwatch.org/stories/new">Submit a story</a></li>
+                <li><a href="http://www.globalforestwatch.org/getinvolved/share-data">Share data</a></li>
+                <li><a href="http://www.globalforestwatch.org/getinvolved/help-improve-data">Help improve data</a></li>
+                <li><a href="https://groups.google.com/forum/#!forum/globalforestwatch" target="_blank">Join the discussion</a></li>
+                <li><a href="http://www.globalforestwatch.org/getinvolved/apply-to-the-small-grants-fund">Apply to the Small Grants Fund</a></li>
+                <li><a href="http://www.globalforestwatch.org/getinvolved/provide-feedback" target="_blank">Provide feedback</a></li>
+                <li><a href="http://www.globalforestwatch.org/getinvolved/help-improve-translations">Help improve translations</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3><a href="http://www.globalforestwatch.org/howto">How to</a></h3>
+              <ul class="submenu">
+                <li><a href="http://www.globalforestwatch.org/howto/view-data">Visualize data</a></li>
+                <li><a href="http://www.globalforestwatch.org/howto/view-statistics">View statistics</a></li>
+                <li><a href="http://www.globalforestwatch.org/howto/analyze-forest-change">Analyze forest change</a></li>
+                <li><a href="http://www.globalforestwatch.org/howto/subscribe-to-alerts-and-user-stories">Subscribe to alerts and user stories</a></li>
+                <li><a href="http://www.globalforestwatch.org/howto/submit-a-story">Submit a story</a></li>
+                <li><a href="http://www.globalforestwatch.org/howto/odp">Open Data Portal</a></li>
+                <li><a href="http://www.globalforestwatch.org/howto/faqs">FAQs</a></li>
+                <li><a href="http://www.globalforestwatch.org/howto/training-modules">Training modules</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3><a href="http://www.globalforestwatch.org/about">About</a></h3>
+              <ul>
+                <li><a href="http://www.globalforestwatch.org/about/about-gfw">About GFW</a></li>
+                <li><a href="http://www.globalforestwatch.org/about/the-gfw-partnership">The GFW partnership</a></li>
+                <li><a href="http://www.globalforestwatch.org/about/videos">Videos</a></li>
+                <li><a href="http://www.globalforestwatch.org/about/awards_and_testimonials">Awards &amp; testimonials</a></li>
+                <li><a href="http://www.globalforestwatch.org/about/data_policy">Data policy</a></li>
+                <li><a href="http://www.globalforestwatch.org/about/contact-us">Contact us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>    
   </div>
 </div>
 

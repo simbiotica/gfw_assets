@@ -47,6 +47,7 @@
         overflow-y: visible;  
         padding: 35px 0;
         text-align: left;
+        background: $white;
       }        
 
       &.-active {
@@ -165,10 +166,11 @@
     ///////////////
     &.-apps {
       width: 100%;
-      max-width: 400px;
       overflow-y: auto;  
+
       @media (min-width: $br-mobile-portrait){
         overflow-y: visible;  
+        max-width: 400px;
       }        
 
       &.-active {
@@ -182,7 +184,7 @@
           display: none;
         }
         
-        @media (min-width: $br-mobile-portrait){
+        @media (min-width: $br-mobile){
           position: absolute;
           max-height: none;
         }        
@@ -193,18 +195,24 @@
       }
 
       > ul {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         position: absolute;
         bottom: 0;
-        max-height: 100%;          
+        max-height: 100%;
+        max-width: 400px;          
 
         @media (min-width: $br-mobile-portrait){
           height: 402px;
           overflow-y: auto; 
+          max-height: none; 
+          max-width: none;
+        }        
+
+        @media (min-width: $br-mobile){
           position: relative;
           bottom: auto;
-          max-height: none;                    
         }        
 
         > li {
@@ -286,4 +294,15 @@
       }
     }
   }
+  .m-header-backdrop {
+    position: fixed;
+    z-index: 1;
+    background: rgba(0,0,0, 0.25);
+    width: 100%;
+    height: 100%;
+    @media (min-width: $br-mobile){
+      display: none;
+    }        
+  }
+
 }

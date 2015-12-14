@@ -81,11 +81,7 @@ var app = {
     this.$headerSubmenu = this.$header.find('.m-header-submenu');
     this.$headerSubmenuBtns = this.$header.find('.m-header-submenu-btn');
 
-    this.$btnSubmenuApps = this.$header.find('#btnSubmenuApps');
     this.$submenuApps = this.$header.find('#submenuApps');
-
-    this.$btnSubmenuHome = this.$header.find('#btnSubmenuHome');
-    this.$submenuHome = this.$header.find('#submenuHome');
 
     // Footer
     this.$footerCarousel = this.$footer.find('#footerCarousel');
@@ -113,36 +109,19 @@ var app = {
   },
 
   initEvents: function() {
-    this.$header.on('click', '#btnSubmenuHome', this.showHomeMenu.bind(this));
-    this.$header.on('click', '#btnSubmenuApps', this.showAppsMenu.bind(this));
+    this.$header.on('click', '.m-header-submenu-btn', this.showMenu.bind(this));
     this.$header.on('click', '.m-header-backdrop', this.hideSubmenus.bind(this));
   },
 
-  // Toggles
-  showHomeMenu: function(e) {
-    if (!!this.params.mobile) {
-      e && e.preventDefault();
- 
-      if (!$(e.currentTarget).hasClass('-active')) {
-        this.hideSubmenus();
-        this.$htmlbody.addClass('-no-scroll');
-        this.$submenuHome.addClass('-active');
-        this.$btnSubmenuHome.addClass('-active').find('svg').toggle();
-      } else {
-        this.hideSubmenus();
-      }
-    }
-  },
-
-  showAppsMenu: function(e) {
+  showMenu: function(e) {
     if (!!this.params.mobile) {
       e && e.preventDefault();
 
       if (!$(e.currentTarget).hasClass('-active')) {
         this.hideSubmenus();
         this.$htmlbody.toggleClass('-no-scroll');
-        this.$submenuApps.toggleClass('-active');
-        this.$btnSubmenuApps.toggleClass('-active').find('svg').toggle();
+        $(e.currentTarget).toggleClass('-active').find('svg').toggle();
+        $($(e.currentTarget).data('submenu')).toggleClass('-active');
       } else {
         this.hideSubmenus();
       }

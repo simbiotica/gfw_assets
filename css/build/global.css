@@ -115,12 +115,10 @@ html.-no-scroll, body.-no-scroll {
     display: flex;
   }
 }
-#headerGFW .m-header-backdrop {
-  position: fixed;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.25);
-  width: 100%;
-  height: 100%;
+@media (min-width: 850px) {
+  #headerGFW .m-header-nav.-mobile {
+    display: none;
+  }
 }
 #headerGFW .m-header-item > a {
   position: relative;
@@ -327,6 +325,7 @@ html.-no-scroll, body.-no-scroll {
     overflow-y: visible;
     padding: 35px 0;
     text-align: left;
+    background: #FFF;
   }
 }
 #headerGFW .m-header-submenu.-home.-active {
@@ -432,12 +431,12 @@ html.-no-scroll, body.-no-scroll {
 }
 #headerGFW .m-header-submenu.-apps {
   width: 100%;
-  max-width: 400px;
   overflow-y: auto;
 }
 @media (min-width: 420px) {
   #headerGFW .m-header-submenu.-apps {
     overflow-y: visible;
+    max-width: 400px;
   }
 }
 #headerGFW .m-header-submenu.-apps.-active {
@@ -451,7 +450,7 @@ html.-no-scroll, body.-no-scroll {
 #headerGFW .m-header-submenu.-apps.-active:after {
   display: none;
 }
-@media (min-width: 420px) {
+@media (min-width: 850px) {
   #headerGFW .m-header-submenu.-apps.-active {
     position: absolute;
     max-height: none;
@@ -461,19 +460,26 @@ html.-no-scroll, body.-no-scroll {
   left: 48px;
 }
 #headerGFW .m-header-submenu.-apps > ul {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   position: absolute;
   bottom: 0;
   max-height: 100%;
+  max-width: 400px;
 }
 @media (min-width: 420px) {
   #headerGFW .m-header-submenu.-apps > ul {
     height: 402px;
     overflow-y: auto;
+    max-height: none;
+    max-width: none;
+  }
+}
+@media (min-width: 850px) {
+  #headerGFW .m-header-submenu.-apps > ul {
     position: relative;
     bottom: auto;
-    max-height: none;
   }
 }
 #headerGFW .m-header-submenu.-apps > ul > li {
@@ -551,6 +557,18 @@ html.-no-scroll, body.-no-scroll {
 }
 #headerGFW .m-header-submenu.-apps > ul > li.-current {
   background: #f7f7f7;
+}
+#headerGFW .m-header-backdrop {
+  position: fixed;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 850px) {
+  #headerGFW .m-header-backdrop {
+    display: none;
+  }
 }
 
 /* line 700, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_header1600.scss */
