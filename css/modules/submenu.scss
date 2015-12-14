@@ -36,10 +36,12 @@
       font-size: 12px;
       padding: 0;
       overflow-y: auto;  
+      text-align: center;
       
       @media (min-width: $br-mobile){
         overflow-y: visible;  
         padding: 35px 0;
+        text-align: left;
       }        
 
       &.-active {
@@ -65,7 +67,6 @@
 
       h3 {
         text-transform: uppercase;
-        font-weight: 500;
 
         border-top: 1px solid $border1;
         font-size: 16px;
@@ -74,8 +75,18 @@
         @media (min-width: $br-mobile){
           border-top: none;
           font-size: 12px;
+          font-weight: 500;
           background: none;
-        }        
+        } 
+
+        > a {
+          padding: 15px 0;
+          display: block;
+          @media (min-width: $br-mobile){
+            padding: 0;
+            display: inline;
+          } 
+        }       
 
         
         &.-title {
@@ -121,8 +132,14 @@
           }
 
           > ul {
-            font-size: 11px;
-            margin: 15px 0 0;
+            font-size: 15px;
+            margin: 15px 0;
+
+            @media (min-width: $br-mobile){
+              margin: 15px 0 0;
+              font-size: 11px;
+            }        
+
             > li{
               margin: 15px 0 0;
               &:first-child {

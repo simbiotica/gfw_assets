@@ -58,6 +58,10 @@ html, body{
     }
   }
 
+  .-hidden {
+    display: none;
+  }
+
   .scroll-dark {
     -webkit-overflow-scrolling: touch;
     /* Let's get this party started */

@@ -72,6 +72,7 @@ var app = {
   // Setters
   setElements: function() {
     this.$head = $('head');
+    this.$htmlbody = $('html,body');
     this.$header = $('#headerGFW');
     this.$footer = $('#footerGFW');
 
@@ -116,16 +117,20 @@ var app = {
   toogleHomeMenu: function(e) {
     if (!!this.params.mobile) {
       e && e.preventDefault();
+      this.$htmlbody.toggleClass('-no-scroll');
       this.$submenuHome.toggleClass('-active');
-      this.$btnSubmenuHome.toggleClass('-active');
+      this.$btnSubmenuHome.toggleClass('-active').find('svg').toggle();
+
     }
   },
 
   toogleAppsMenu: function(e) {
     if (!!this.params.mobile) {
       e && e.preventDefault();
+      this.$htmlbody.toggleClass('-no-scroll');
       this.$submenuApps.toggleClass('-active');
-      this.$btnSubmenuApps.toggleClass('-active');
+      this.$btnSubmenuApps.toggleClass('-active').find('svg').toggle();
+
     } 
   },
 }

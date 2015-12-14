@@ -54,6 +54,9 @@ html.-no-scroll, body.-no-scroll {
     padding: 0 30px;
   }
 }
+#headerGFW .-hidden, #footerGFW .-hidden {
+  display: none;
+}
 #headerGFW .scroll-dark, #footerGFW .scroll-dark {
   -webkit-overflow-scrolling: touch;
   /* Let's get this party started */
@@ -305,11 +308,13 @@ html.-no-scroll, body.-no-scroll {
   font-size: 12px;
   padding: 0;
   overflow-y: auto;
+  text-align: center;
 }
 @media (min-width: 850px) {
   #headerGFW .m-header-submenu.-home {
     overflow-y: visible;
     padding: 35px 0;
+    text-align: left;
   }
 }
 #headerGFW .m-header-submenu.-home.-active {
@@ -333,7 +338,6 @@ html.-no-scroll, body.-no-scroll {
 }
 #headerGFW .m-header-submenu.-home h3 {
   text-transform: uppercase;
-  font-weight: 500;
   border-top: 1px solid #e5e5df;
   font-size: 16px;
   background: #F2F2F3;
@@ -342,7 +346,18 @@ html.-no-scroll, body.-no-scroll {
   #headerGFW .m-header-submenu.-home h3 {
     border-top: none;
     font-size: 12px;
+    font-weight: 500;
     background: none;
+  }
+}
+#headerGFW .m-header-submenu.-home h3 > a {
+  padding: 15px 0;
+  display: block;
+}
+@media (min-width: 850px) {
+  #headerGFW .m-header-submenu.-home h3 > a {
+    padding: 0;
+    display: inline;
   }
 }
 #headerGFW .m-header-submenu.-home h3.-title {
@@ -386,8 +401,14 @@ html.-no-scroll, body.-no-scroll {
   color: #97bd3d;
 }
 #headerGFW .m-header-submenu.-home > ul > li > ul {
-  font-size: 11px;
-  margin: 15px 0 0;
+  font-size: 15px;
+  margin: 15px 0;
+}
+@media (min-width: 850px) {
+  #headerGFW .m-header-submenu.-home > ul > li > ul {
+    margin: 15px 0 0;
+    font-size: 11px;
+  }
 }
 #headerGFW .m-header-submenu.-home > ul > li > ul > li {
   margin: 15px 0 0;
