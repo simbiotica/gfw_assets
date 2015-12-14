@@ -1,9 +1,9 @@
 var loader = {
 
   urls: {
-    header: '/src/header.html',
-    footer: '/src/footer.html',
-    css: '/css/build/minified/global.css',
+    header: 'https://raw.githubusercontent.com/simbiotica/gfw_assets/develop/src/header.html',
+    footer: 'https://raw.githubusercontent.com/simbiotica/gfw_assets/develop/src/footer.html',
+    css: 'https://raw.githubusercontent.com/simbiotica/gfw_assets/develop/css/build/minified/global.css',
     slick: 'http://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js',
     // translate: 'http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
   },

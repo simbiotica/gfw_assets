@@ -81,7 +81,7 @@ html.-no-scroll, body.-no-scroll {
   background: #EEE;
   border-bottom: 1px solid #e5e5df;
   -webkit-font-smoothing: antialiased;
-  z-index: 10;
+  z-index: 11;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -761,757 +761,757 @@ The `sprites` mixin generates identical output to the CSS template
   transform: translate(0, -50%);
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.afc {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -572px -470px;
   width: 80px;
   height: 69px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.afc:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -652px 0px;
   width: 80px;
   height: 69px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.airbus {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -30px;
   width: 130px;
   height: 30px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.airbus:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px 0px;
   width: 130px;
   height: 30px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.bei {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -212px -198px;
   width: 130px;
   height: 63px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.bei:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -342px -198px;
   width: 130px;
   height: 63px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.bigdataclimatechallengewinner {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: 0px 0px;
   width: 215px;
   height: 99px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.bigdataclimatechallengewinner:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: 0px -99px;
   width: 215px;
   height: 99px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.blueraster {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -190px -561px;
   width: 110px;
   height: 48px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.blueraster:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -300px -561px;
   width: 110px;
   height: 48px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.bnpb {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -422px;
   width: 50px;
   height: 64px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.bnpb:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -782px -422px;
   width: 50px;
   height: 64px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.bobolinkfundation {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -369px -766px;
   width: 87px;
   height: 24px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.bobolinkfundation:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -282px -766px;
   width: 87px;
   height: 24px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.cambridge {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -86px -421px;
   width: 130px;
   height: 52px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.cambridge:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -216px -421px;
   width: 130px;
   height: 52px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.cartodb {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -550px -663px;
   width: 110px;
   height: 39px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.cartodb:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -440px -663px;
   width: 110px;
   height: 39px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.centerforglobaldevelopment {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -382px;
   width: 84px;
   height: 40px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.centerforglobaldevelopment:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -342px;
   width: 84px;
   height: 40px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.cgiar {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -346px -421px;
   width: 124px;
   height: 43px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.cgiar:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -440px -501px;
   width: 124px;
   height: 43px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.ciat {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -322px -351px;
   width: 120px;
   height: 57px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.ciat:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -202px -351px;
   width: 120px;
   height: 57px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.clua {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -195px -473px;
   width: 110px;
   height: 26px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.clua:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -358px -707px;
   width: 110px;
   height: 26px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.danida {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -484px -400px;
   width: 82px;
   height: 15px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.danida:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -689px;
   width: 82px;
   height: 15px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.digitalglobe {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -252px -623px;
   width: 120px;
   height: 38px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.digitalglobe:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -372px -623px;
   width: 120px;
   height: 38px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.ejn {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -652px -261px;
   width: 80px;
   height: 64px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.ejn:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -652px -69px;
   width: 80px;
   height: 64px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.esri {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -470px -421px;
   width: 87px;
   height: 33px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.esri:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -51px -707px;
   width: 87px;
   height: 33px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.ewmi {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: 0px -623px;
   width: 126px;
   height: 40px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.ewmi:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -126px -623px;
   width: 126px;
   height: 40px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.gef {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -427px -114px;
   width: 51px;
   height: 59px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.gef:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: 0px -707px;
   width: 51px;
   height: 59px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.generation {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -311px;
   width: 110px;
   height: 31px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.generation:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -280px;
   width: 110px;
   height: 31px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.globalforestwatchcanada {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -862px -364px;
   width: 42px;
   height: 44px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.globalforestwatchcanada:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -862px -320px;
   width: 42px;
   height: 44px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.google {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -112px -766px;
   width: 85px;
   height: 29px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.google:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -197px -766px;
   width: 85px;
   height: 29px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.icf {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -248px -707px;
   width: 110px;
   height: 26px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.icf:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -305px -473px;
   width: 110px;
   height: 26px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.imazon {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -456px -766px;
   width: 79px;
   height: 24px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.imazon:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -652px -599px;
   width: 79px;
   height: 24px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.inab {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -215px -114px;
   width: 106px;
   height: 80px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.inab:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -321px -114px;
   width: 106px;
   height: 80px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.ioi {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -212px -261px;
   width: 110px;
   height: 10px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.ioi:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -322px -261px;
   width: 110px;
   height: 10px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.ministiere {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -652px -532px;
   width: 70px;
   height: 67px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.ministiere:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -652px -465px;
   width: 70px;
   height: 67px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.ministryofforeignaffairs {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: 0px -198px;
   width: 106px;
   height: 80px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.ministryofforeignaffairs:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -106px -198px;
   width: 106px;
   height: 80px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.moises {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -110px -663px;
   width: 110px;
   height: 44px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.moises:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: 0px -663px;
   width: 110px;
   height: 44px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.mongabay {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -220px -663px;
   width: 110px;
   height: 40px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.mongabay:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -330px -663px;
   width: 110px;
   height: 40px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.moore {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -206px;
   width: 96px;
   height: 37px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.moore:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -243px;
   width: 96px;
   height: 37px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.muyissi {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -572px -240px;
   width: 80px;
   height: 80px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.muyissi:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -572px 0px;
   width: 80px;
   height: 80px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.norwegianministri {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -520px -561px;
   width: 110px;
   height: 46px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.norwegianministri:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -410px -561px;
   width: 110px;
   height: 46px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.opendevcam {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -652px -325px;
   width: 70px;
   height: 70px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.opendevcam:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -652px -395px;
   width: 70px;
   height: 70px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.opendevmekong {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -572px -160px;
   width: 80px;
   height: 80px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.opendevmekong:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -572px -80px;
   width: 80px;
   height: 80px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.orbital {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -101px -351px;
   width: 101px;
   height: 70px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.orbital:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: 0px -351px;
   width: 101px;
   height: 70px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.osfac {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -862px -170px;
   width: 44px;
   height: 56px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.osfac:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -862px -114px;
   width: 44px;
   height: 56px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.osinfor {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: 0px -421px;
   width: 86px;
   height: 80px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.osinfor:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -484px -320px;
   width: 86px;
   height: 80px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.raisg {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -572px -395px;
   width: 80px;
   height: 75px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.raisg:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -572px -320px;
   width: 80px;
   height: 75px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.redd {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -95px -561px;
   width: 95px;
   height: 62px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.redd:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: 0px -561px;
   width: 95px;
   height: 62px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.resolve {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -486px;
   width: 110px;
   height: 28px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.resolve:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -542px;
   width: 110px;
   height: 28px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.rfuk {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -492px -623px;
   width: 110px;
   height: 37px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.rfuk:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -602px -623px;
   width: 110px;
   height: 37px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.rm {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -330px -278px;
   width: 110px;
   height: 66px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.rm:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -220px -278px;
   width: 110px;
   height: 66px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.rspo {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -140px;
   width: 110px;
   height: 33px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.rspo:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -173px;
   width: 110px;
   height: 33px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.rtrs {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -778px -60px;
   width: 46px;
   height: 80px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.rtrs:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -60px;
   width: 46px;
   height: 80px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.scannex {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -171px -740px;
   width: 110px;
   height: 20px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.scannex:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -281px -740px;
   width: 110px;
   height: 20px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.sida {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -330px -501px;
   width: 110px;
   height: 55px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.sida:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -220px -501px;
   width: 110px;
   height: 55px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.specialachievement {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -215px 0px;
   width: 269px;
   height: 57px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.specialachievement:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -215px -57px;
   width: 269px;
   height: 57px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.thejanegoodallinstitute {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -415px -473px;
   width: 110px;
   height: 26px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.thejanegoodallinstitute:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -138px -707px;
   width: 110px;
   height: 26px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.thetiliafund {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: 0px -817px;
   width: 67px;
   height: 25px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.thetiliafund:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -660px -663px;
   width: 67px;
   height: 25px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.tipos {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -514px;
   width: 110px;
   height: 28px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.tipos:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -570px;
   width: 110px;
   height: 28px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.ukaid {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -862px -273px;
   width: 43px;
   height: 47px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.ukaid:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -862px -226px;
   width: 43px;
   height: 47px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.unep {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -862px 0px;
   width: 49px;
   height: 57px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.unep:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -862px -57px;
   width: 49px;
   height: 57px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.unepwcmc {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -110px -501px;
   width: 110px;
   height: 60px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.unepwcmc:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: 0px -501px;
   width: 110px;
   height: 60px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.unilever {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -484px 0px;
   width: 88px;
   height: 80px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.unilever:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -484px -80px;
   width: 88px;
   height: 80px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.universityofmaryland {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: 0px -766px;
   width: 56px;
   height: 51px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.universityofmaryland:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -56px -766px;
   width: 56px;
   height: 51px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.urthecast {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -578px -707px;
   width: 110px;
   height: 23px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.urthecast:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -468px -707px;
   width: 110px;
   height: 23px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.usaid {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -652px -133px;
   width: 80px;
   height: 64px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.usaid:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -652px -197px;
   width: 80px;
   height: 64px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.vizzuality {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -86px -473px;
   width: 109px;
   height: 27px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.vizzuality:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -662px;
   width: 109px;
   height: 27px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.whrc {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -484px -240px;
   width: 87px;
   height: 80px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.whrc:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -484px -160px;
   width: 87px;
   height: 80px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.wri {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -598px;
   width: 95px;
   height: 32px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.wri:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -732px -630px;
   width: 95px;
   height: 32px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.zeroextinction {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -51px -740px;
   width: 120px;
   height: 20px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.zeroextinction:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -688px -707px;
   width: 120px;
   height: 20px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.zsl {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: 0px -278px;
   width: 110px;
   height: 73px;
 }
 #footerGFW .m-footer-logos .m-footer-carousel li a.zsl:hover {
-  background-image: url(../../images/sprites/logos.png);
+  background-image: url(http://localhost:8000/images/sprites/logos.png);
   background-position: -110px -278px;
   width: 110px;
   height: 73px;
