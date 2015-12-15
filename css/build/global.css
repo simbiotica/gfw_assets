@@ -432,6 +432,8 @@ html.-no-scroll, body.-no-scroll {
   }
 }
 #headerGfw .m-header-submenu.-home > ul > li > ul > li {
+  display: block;
+  text-transform: none;
   margin: 15px 0 0;
 }
 #headerGfw .m-header-submenu.-home > ul > li > ul > li:first-child {
