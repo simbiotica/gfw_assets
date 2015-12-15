@@ -1,0 +1,262 @@
+#headerGFW {
+  font-family: "Fira Sans", Helvetica, serif;
+  background: #EEE;
+  border-bottom: 1px solid $border1;
+  -webkit-font-smoothing: antialiased;
+  z-index: 11;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  @media (min-width: $br-mobile){
+    position: relative;
+    bottom: auto;
+    left: auto;
+  }
+
+
+  li {
+    list-style: none;
+  }
+
+  .m-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+  }
+
+  .m-header-nav {
+    display: flex;
+    justify-content: space-between;   
+    
+    &.-primary {
+
+    }
+
+    &.-secondary {
+      display: none;
+
+      @media (min-width: $br-mobile){
+        display: flex;
+      }
+    }
+
+    &.-mobile {
+      @media (min-width: $br-mobile){
+        display: none;
+      }
+    }
+
+  }
+
+  .m-header-item {
+    // HOVERS
+    > a {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      color: $dark;
+      text-decoration: none;
+      > span {
+        line-height: 28px;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: $black;
+      }
+
+
+    }
+
+    svg {
+      display: inline-block;
+      width: 18px;
+      height: 35px;
+      transition: $transition1;
+      fill: $light;
+    }
+
+    // Default items
+    &.-default {
+      @media (min-width: $br-mobile){
+        width: 35px;
+        height: 35px;
+      }
+
+      > a {
+        padding: 10px 15px;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;        
+        display: block;
+
+        &.-active {
+          background: $white;
+          border-color: $border1;
+          z-index: 3;
+          @media (min-width: $br-mobile){
+            background: none;
+            border-color: transparent;
+          }
+        }
+        
+        @media (min-width: $br-mobile){
+          padding: 0;
+          display: flex;
+        }
+
+        > span {
+          display: block;
+          line-height: 1;
+          margin: 2px 0 0;
+          font-size: 10px;
+          @media (min-width: $br-mobile){
+            display: none;
+          }
+        }
+
+        > svg {
+          display: block;
+          height: 18px;
+          margin: 0 auto;
+        }
+      }
+
+      @media (min-width: $br-mobile){
+        &:hover {
+          .m-header-submenu {
+            opacity: 1;
+            visibility: visible;
+            transition: all 0s linear 0s;
+          }
+        }
+      }
+    }
+
+    // Text items
+    &.-text {
+      min-width: 35px;
+      margin: 0 0 0 20px;
+      
+      &:first-child {
+        margin: 0;
+      }
+
+      > a {
+        &:hover {
+          > span {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+        
+        // It should act as a name => mobile
+        // It should act as a tooltip => tablet
+        // It should act as a rig-name => desktop
+        > span {
+          display: inline-block;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translate(-50%,0);
+
+          padding: 5px 10px 3px;
+
+          background: $dark;
+          color: $white;
+          opacity: 0;
+          visibility: hidden;
+          white-space: nowrap;
+
+          &:after {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            transform: translate(-50%,0) rotate(45deg);
+            background: $dark;
+          }
+
+
+          @media (min-width: $br-desktop){
+            opacity: 1;
+            visibility: visible;
+            
+            margin: 5px 0 0 5px;
+            padding: 0;
+            
+            background: none;
+            color: $dark;
+
+            position: static;
+            transform: translate(0,0);
+  
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    // Search items
+    &.-search {
+      margin: 0 0 0 20px;
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        button {
+          &:hover {
+            fill: $primary-color;
+          }
+        }
+        input {
+          border: none;
+          background: none;
+          box-shadow: none;
+          border-radius: 0;          
+
+          padding: 0 5px;
+          margin: 0 0 0 5px;          
+          border-bottom: 2px solid $light;
+          line-height: 24px;
+          outline: none;
+          
+          font-size: 10px;
+          font-family: inherit;
+          
+        }
+      }
+    }
+
+    &.-translate {
+      margin: 0 20px;
+    }
+
+    // HOVERS
+    @media (min-width: $br-mobile){
+      &:hover, &.-current  {
+        > a:after {
+          content: "";
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: $primary-color;
+        }
+
+        > a > svg {
+          fill: $primary-color;
+        }
+      }      
+    }
+  }
+}
