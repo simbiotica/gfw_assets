@@ -8,18 +8,18 @@ var app = {
     this.setUrls();
 
     // Inits
-    this.initSlick();
     this.initTranslate();
     this.initEvents();
+    this.initSlick();
   },
 
   // Setters
   setElements: function() {
     this.$head = $('head');
     this.$htmlbody = $('html,body');
-    this.$header = $('#headerGFW');
-    this.$footer = $('#footerGFW');
-    this.$links = $('#headerGFW a, #footerGFW a');
+    this.$header = $('#headerGfw');
+    this.$footer = $('#footerGfw');
+    this.$links = $('#headerGfw a, #footerGfw a');
     this.$linksSubmenu = $('#submenuApps a');
 
     // Header
@@ -70,7 +70,17 @@ var app = {
 
   },
 
+
   // Inits
+  initTranslate: function() {
+    this.$head.append('<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>');
+  },
+
+  initEvents: function() {
+    this.$header.on('click', '.m-header-submenu-btn', this.showMenus.bind(this));
+    this.$header.on('click', '.m-header-backdrop', this.hideMenus.bind(this));
+  },
+
   initSlick: function() {
     this.$footerCarousel.slick({
       infinite: true,
@@ -83,32 +93,23 @@ var app = {
     });    
   },
 
-  initTranslate: function() {
-    this.$head.append('<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>');
-  },
-
-  initEvents: function() {
-    this.$header.on('click', '.m-header-submenu-btn', this.showMenu.bind(this));
-    this.$header.on('click', '.m-header-backdrop', this.hideSubmenus.bind(this));
-  },
-
-  showMenu: function(e) {
+  showMenus: function(e) {
     if (!!this.params.mobile) {
       e && e.preventDefault();
 
       if (!$(e.currentTarget).hasClass('-active')) {
-        this.hideSubmenus();
+        this.hideMenus();
         this.$htmlbody.toggleClass('-no-scroll');
         $(e.currentTarget).toggleClass('-active').find('svg').toggle();
         $($(e.currentTarget).data('submenu')).toggleClass('-active');
       } else {
-        this.hideSubmenus();
+        this.hideMenus();
       }
 
     } 
   },
 
-  hideSubmenus: function() {
+  hideMenus: function() {
     this.$htmlbody.removeClass('-no-scroll');
     this.$headerSubmenu.removeClass('-active');
     this.$headerSubmenuBtns.each(function(){

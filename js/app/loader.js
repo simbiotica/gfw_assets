@@ -6,6 +6,12 @@ var loader = {
     css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/css/build/global.css',
   },
 
+  urls_dev: {
+    header: 'http://localhost:8000/src/header.html',
+    footer: 'http://localhost:8000/src/footer.html',
+    css: 'http://localhost:8000/css/build/global.css',
+  },
+
   init: function() {
     // Setters
     this.setElements();
@@ -24,8 +30,8 @@ var loader = {
   setElements: function() {
     this.$script = $('#loader-gfw');
     this.$head   = $('head');
-    this.$header = $('#headerGFW');
-    this.$footer = $('#footerGFW');
+    this.$header = $('#headerGfw');
+    this.$footer = $('#footerGfw');
   },
 
   setParams: function(obj) {
@@ -34,7 +40,7 @@ var loader = {
 
   setPromises: function() {
     this.promises = [];
-    $.each(this.urls, function(k,v){
+    $.each(this.urls_dev, function(k,v){
       var deferred = new $.Deferred();
       $.ajax({
         url: v,

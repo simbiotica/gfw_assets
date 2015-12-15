@@ -40,18 +40,18 @@ var app = {
     this.setUrls();
 
     // Inits
-    this.initSlick();
     this.initTranslate();
     this.initEvents();
+    this.initSlick();
   },
 
   // Setters
   setElements: function() {
     this.$head = $('head');
     this.$htmlbody = $('html,body');
-    this.$header = $('#headerGFW');
-    this.$footer = $('#footerGFW');
-    this.$links = $('#headerGFW a, #footerGFW a');
+    this.$header = $('#headerGfw');
+    this.$footer = $('#footerGfw');
+    this.$links = $('#headerGfw a, #footerGfw a');
     this.$linksSubmenu = $('#submenuApps a');
 
     // Header
@@ -102,7 +102,17 @@ var app = {
 
   },
 
+
   // Inits
+  initTranslate: function() {
+    this.$head.append('<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>');
+  },
+
+  initEvents: function() {
+    this.$header.on('click', '.m-header-submenu-btn', this.showMenus.bind(this));
+    this.$header.on('click', '.m-header-backdrop', this.hideMenus.bind(this));
+  },
+
   initSlick: function() {
     this.$footerCarousel.slick({
       infinite: true,
@@ -115,32 +125,23 @@ var app = {
     });    
   },
 
-  initTranslate: function() {
-    this.$head.append('<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>');
-  },
-
-  initEvents: function() {
-    this.$header.on('click', '.m-header-submenu-btn', this.showMenu.bind(this));
-    this.$header.on('click', '.m-header-backdrop', this.hideSubmenus.bind(this));
-  },
-
-  showMenu: function(e) {
+  showMenus: function(e) {
     if (!!this.params.mobile) {
       e && e.preventDefault();
 
       if (!$(e.currentTarget).hasClass('-active')) {
-        this.hideSubmenus();
+        this.hideMenus();
         this.$htmlbody.toggleClass('-no-scroll');
         $(e.currentTarget).toggleClass('-active').find('svg').toggle();
         $($(e.currentTarget).data('submenu')).toggleClass('-active');
       } else {
-        this.hideSubmenus();
+        this.hideMenus();
       }
 
     } 
   },
 
-  hideSubmenus: function() {
+  hideMenus: function() {
     this.$htmlbody.removeClass('-no-scroll');
     this.$headerSubmenu.removeClass('-active');
     this.$headerSubmenuBtns.each(function(){
@@ -156,6 +157,12 @@ var loader = {
     header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/src/header.html',
     footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/src/footer.html',
     css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/css/build/global.css',
+  },
+
+  urls_dev: {
+    header: 'http://localhost:8000/src/header.html',
+    footer: 'http://localhost:8000/src/footer.html',
+    css: 'http://localhost:8000/css/build/global.css',
   },
 
   init: function() {
@@ -176,8 +183,8 @@ var loader = {
   setElements: function() {
     this.$script = $('#loader-gfw');
     this.$head   = $('head');
-    this.$header = $('#headerGFW');
-    this.$footer = $('#footerGFW');
+    this.$header = $('#headerGfw');
+    this.$footer = $('#footerGfw');
   },
 
   setParams: function(obj) {
@@ -186,7 +193,7 @@ var loader = {
 
   setPromises: function() {
     this.promises = [];
-    $.each(this.urls, function(k,v){
+    $.each(this.urls_dev, function(k,v){
       var deferred = new $.Deferred();
       $.ajax({
         url: v,
