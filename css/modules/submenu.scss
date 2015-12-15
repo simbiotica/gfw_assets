@@ -3,11 +3,12 @@
     position: absolute;
     top: 35px;
     left: 0;
-    z-index: 2;
+    z-index: 3;
     line-height: 1.25;
     opacity: 0;
     visibility: hidden;
     box-shadow: $shadow1;
+    transition: all 0s linear .125s;
 
     &:after {
       content: "";
@@ -23,6 +24,7 @@
     }
 
     &.-active {
+      transition: all 0s linear 0s;
       opacity: 1;
       visibility: visible;
     }
@@ -40,6 +42,7 @@
       width: 100%;
       font-size: 12px;
       padding: 0;
+      z-index: 4;
       overflow-y: auto;  
       text-align: center;
       
@@ -105,9 +108,17 @@
           }        
           
           a {
-            color: $primary-color;
+            background: $primary-color;
+            color: $white;
             display: inline-block;
-            border-bottom: 2px solid $primary-color;
+            padding: 10px 15px;
+            border-radius: 20px;
+            transition: $transition1;
+            
+            &:hover {
+              background: #789631;
+            }
+
           }          
         }
       }

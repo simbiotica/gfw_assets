@@ -130,6 +130,7 @@
           .m-header-submenu {
             opacity: 1;
             visibility: visible;
+            transition: all 0s linear 0s;
           }
         }
       }
@@ -182,7 +183,7 @@
           }
 
 
-          @media (min-width: $br-desktopbig){
+          @media (min-width: $br-desktop){
             opacity: 1;
             visibility: visible;
             

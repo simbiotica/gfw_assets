@@ -1,9 +1,4 @@
 @charset "UTF-8";
-html, body {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
 html.-no-scroll, body.-no-scroll {
   overflow: hidden;
 }
@@ -192,6 +187,7 @@ html.-no-scroll, body.-no-scroll {
   #headerGFW .m-header-item.-default:hover .m-header-submenu {
     opacity: 1;
     visibility: visible;
+    transition: all 0s linear 0s;
   }
 }
 #headerGFW .m-header-item.-text {
@@ -228,7 +224,7 @@ html.-no-scroll, body.-no-scroll {
   transform: translate(-50%, 0) rotate(45deg);
   background: #555;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   #headerGFW .m-header-item.-text > a > span {
     opacity: 1;
     visibility: visible;
@@ -290,11 +286,12 @@ html.-no-scroll, body.-no-scroll {
   position: absolute;
   top: 35px;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   line-height: 1.25;
   opacity: 0;
   visibility: hidden;
   box-shadow: 0 0 4px rgba(142, 142, 142, 0.5);
+  transition: all 0s linear .125s;
 }
 #headerGFW .m-header-submenu:after {
   content: "";
@@ -309,6 +306,7 @@ html.-no-scroll, body.-no-scroll {
   top: -5px;
 }
 #headerGFW .m-header-submenu.-active {
+  transition: all 0s linear 0s;
   opacity: 1;
   visibility: visible;
 }
@@ -320,6 +318,7 @@ html.-no-scroll, body.-no-scroll {
   width: 100%;
   font-size: 12px;
   padding: 0;
+  z-index: 4;
   overflow-y: auto;
   text-align: center;
 }
@@ -385,9 +384,15 @@ html.-no-scroll, body.-no-scroll {
   }
 }
 #headerGFW .m-header-submenu.-home h3.-title a {
-  color: #97bd3d;
+  background: #97bd3d;
+  color: #FFF;
   display: inline-block;
-  border-bottom: 2px solid #97bd3d;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: all 0.15s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+#headerGFW .m-header-submenu.-home h3.-title a:hover {
+  background: #789631;
 }
 #headerGFW .m-header-submenu.-home > ul {
   width: 100%;
