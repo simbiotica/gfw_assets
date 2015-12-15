@@ -1,9 +1,9 @@
 var loader = {
 
   urls: {
-    header: 'http://localhost:8000/src/header.html',
-    footer: 'http://localhost:8000/src/footer.html',
-    css: 'http://localhost:8000/css/build/minified/global.css',
+    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/src/header.html',
+    footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/src/footer.html',
+    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/css/build/global.css',
   },
 
   init: function() {
