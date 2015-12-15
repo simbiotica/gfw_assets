@@ -20,10 +20,12 @@ var app = {
     this.$header = $('#headerGFW');
     this.$footer = $('#footerGFW');
     this.$links = $('#headerGFW a, #footerGFW a');
+    this.$linksSubmenu = $('#submenuApps a');
 
     // Header
     this.$headerSubmenu = this.$header.find('.m-header-submenu');
     this.$headerSubmenuBtns = this.$header.find('.m-header-submenu-btn');
+
 
     // Footer
     this.$footerCarousel = this.$footer.find('#footerCarousel');
@@ -34,17 +36,23 @@ var app = {
   },
 
   setUrls: function() {
+    this.params.targets = false;
     switch(location.hostname) {
       case 'localhost':
-        this.params.hostname = 'http://localhost:5000'
+        this.params.hostname = 'http://localhost:5000';
       break;
 
       case 'gfw-nav.herokuapp.com':
         this.params.hostname = 'http://gfw-nav.herokuapp.com'
       break;
 
+      case 'www.globalforestwatch.org':
+        this.params.hostname = 'http://www.globalforestwatch.org'
+      break;
+
       default: 
         this.params.hostname = 'http://www.globalforestwatch.org'
+        this.params.targets = true;
     }
     this.$links.each(function(k,v){
       var href = $(v).attr('href');
@@ -52,6 +60,14 @@ var app = {
         $(v).attr('href', this.params.hostname + href);
       }
     }.bind(this));
+
+    this.$linksSubmenu.each(function(k,v){
+      var external = $(v).hasClass('external-link');
+      if (this.params.targets) {
+        (!!external) ? $(v).removeAttr('target') : $(v).attr('target','_blank');
+      }
+    }.bind(this));
+
   },
 
   // Inits
