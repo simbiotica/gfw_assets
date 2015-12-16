@@ -2321,7 +2321,7 @@ var loader = {
   urls: {
     header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/19d9efe7595704ac2e7d267064ed338ec9d2d37a/src/header.html',
     footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/src/footer.html',
-    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/19d9efe7595704ac2e7d267064ed338ec9d2d37a/css/build/global.css',
+    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/81bec1f015bbd149f2c84064f955140a066956c4/css/build/global.css',
   },
 
   urls_dev: {
@@ -2358,7 +2358,7 @@ var loader = {
 
   setPromises: function() {
     this.promises = [];
-    $.each(this.urls_dev, function(k,v){
+    $.each(this.urls, function(k,v){
       var deferred = new $.Deferred();
       $.ajax({
         url: v,
