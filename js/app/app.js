@@ -34,6 +34,7 @@ var app = {
   },
 
   setCurrent: function() {
+    console.log(this.params.current);
     this.$header.find(this.params.current).addClass('-current');
   },
 
@@ -83,6 +84,32 @@ var app = {
     this.$header.on('click', '.m-header-backdrop', this.hideMenus.bind(this));
   },
 
+  showMenus: function(e) {
+    if (!!this.params.mobile) {
+      e && e.preventDefault();
+
+      if (!$(e.currentTarget).hasClass('-active')) {
+        this.hideMenus();
+        this.$htmlbody.toggleClass('-no-scroll');
+        $(e.currentTarget).toggleClass('-active').find('svg').toggle();
+        $($(e.currentTarget).data('submenu')).toggleClass('-active');
+      } else {
+        this.hideMenus();
+      }
+
+    } 
+  },
+
+  hideMenus: function() {
+    this.$htmlbody.removeClass('-no-scroll');
+    this.$headerSubmenu.removeClass('-active');
+    this.$headerSubmenuBtns.each(function(){
+      if ($(this).hasClass('-active')) {
+        $(this).removeClass('-active').find('svg').toggle();
+      }
+    });
+  },
+
   initSlick: function() {
     var $footer = this.$footerCarousel;
     /* Slick 1.4.1 */
@@ -92,8 +119,6 @@ var app = {
     }(function($) {
       $(function() {
         'use strict';
-        var Slick = window.Slick || {};
-
         Slick = (function() {
 
           var instanceUid = 0;
@@ -2212,7 +2237,8 @@ var app = {
             _.autoPlay();
           }
 
-        };        
+        };
+
         $.fn.slick = function() {
           var _ = this,
             opt = arguments[0],
@@ -2242,30 +2268,4 @@ var app = {
       });
     }));    
   },
-
-  showMenus: function(e) {
-    if (!!this.params.mobile) {
-      e && e.preventDefault();
-
-      if (!$(e.currentTarget).hasClass('-active')) {
-        this.hideMenus();
-        this.$htmlbody.toggleClass('-no-scroll');
-        $(e.currentTarget).toggleClass('-active').find('svg').toggle();
-        $($(e.currentTarget).data('submenu')).toggleClass('-active');
-      } else {
-        this.hideMenus();
-      }
-
-    } 
-  },
-
-  hideMenus: function() {
-    this.$htmlbody.removeClass('-no-scroll');
-    this.$headerSubmenu.removeClass('-active');
-    this.$headerSubmenuBtns.each(function(){
-      if ($(this).hasClass('-active')) {
-        $(this).removeClass('-active').find('svg').toggle();
-      }
-    });
-  }
 }

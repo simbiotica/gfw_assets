@@ -40,7 +40,7 @@ var loader = {
 
   setPromises: function() {
     this.promises = [];
-    $.each(this.urls, function(k,v){
+    $.each(this.urls_dev, function(k,v){
       var deferred = new $.Deferred();
       $.ajax({
         url: v,
