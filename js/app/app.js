@@ -34,7 +34,6 @@ var app = {
   },
 
   setCurrent: function() {
-    console.log(this.params.current);
     this.$header.find(this.params.current).addClass('-current');
   },
 
@@ -111,6 +110,8 @@ var app = {
   },
 
   initSlick: function() {
+    console.log('and here?');
+
     var $footer = this.$footerCarousel;
     /* Slick 1.4.1 */
     (function(factory) {
