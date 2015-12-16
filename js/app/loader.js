@@ -1,4 +1,4 @@
-var loader = {
+var loaderGFW = {
 
   urls: {
     header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/857a0662fbff2460ee563b8b25ab812965974bfe/src/header.html',
@@ -64,7 +64,7 @@ var loader = {
         css: args[2],
       })
       this.printData();
-      app.init(this.params);
+      appGFW.init(this.params);
     }.bind(this));
   },
 
@@ -77,5 +77,5 @@ var loader = {
 }
 
 $(document).ready(function(){
-  loader.init();
+  loaderGFW.init();
 })

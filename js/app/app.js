@@ -1,4 +1,4 @@
-var app = {
+var appGFW = {
   init: function(params) {
     this.params = params;
     
