@@ -12,7 +12,7 @@ var app = {
     this.initEvents();
 
     // slick load
-    window.onload = this.initSlick.bind(this);
+    $(document).ready(this.initSlick.bind(this));
   },
 
   // Setters
