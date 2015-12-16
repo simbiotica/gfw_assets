@@ -110,7 +110,6 @@ var app = {
   },
 
   initSlick: function() {
-    console.log('and here?');
 
     var $footer = this.$footerCarousel;
     /* Slick 1.4.1 */
@@ -120,7 +119,6 @@ var app = {
     }(function($) {
       $(function() {
         'use strict';
-        console.log('does it enter here?');
         Slick = (function() {
 
           var instanceUid = 0;
@@ -2257,8 +2255,6 @@ var app = {
           }
           return _;
         };
-        console.log($footer);
-        console.log($.fn.slick);
         $footer.slick({
           infinite: true,
           slidesToShow: 5,

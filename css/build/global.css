@@ -76,7 +76,7 @@ html.-no-scroll, body.-no-scroll {
   background: #EEE;
   border-bottom: 1px solid #e5e5df;
   -webkit-font-smoothing: antialiased;
-  z-index: 11;
+  z-index: 1000;
   position: fixed;
   bottom: 0;
   left: 0;
