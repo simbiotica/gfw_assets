@@ -690,6 +690,7 @@ The `sprites` mixin generates identical output to the CSS template
   background: #eceee8;
   z-index: 11;
   display: none;
+  clear: both;
 }
 @media (min-width: 850px) {
   #footerGfw {
