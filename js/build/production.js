@@ -2318,7 +2318,7 @@ var app = {
 var loader = {
 
   urls: {
-    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/19d9efe7595704ac2e7d267064ed338ec9d2d37a/src/header.html',
+    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/857a0662fbff2460ee563b8b25ab812965974bfe/src/header.html',
     footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/src/footer.html',
     css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/643b858926f33473882746dab05b98ed7585660d/css/build/minified/global.css',
   },
