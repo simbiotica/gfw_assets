@@ -1,9 +1,15 @@
-var loader = {
+var loaderGFW = {
 
   urls: {
+    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/857a0662fbff2460ee563b8b25ab812965974bfe/src/header.html',
+    footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/src/footer.html',
+    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/ef0c3a20c0b0ab7d0b9939506070afdd40c9d2cc/css/build/minified/global.css',
+  },
+
+  urls_dev: {
     header: 'http://localhost:8000/src/header.html',
     footer: 'http://localhost:8000/src/footer.html',
-    css: 'http://localhost:8000/css/build/minified/global.css',
+    css: 'http://localhost:8000/css/build/global.css',
   },
 
   init: function() {
@@ -24,8 +30,8 @@ var loader = {
   setElements: function() {
     this.$script = $('#loader-gfw');
     this.$head   = $('head');
-    this.$header = $('#headerGFW');
-    this.$footer = $('#footerGFW');
+    this.$header = $('#headerGfw');
+    this.$footer = $('#footerGfw');
   },
 
   setParams: function(obj) {
@@ -58,7 +64,7 @@ var loader = {
         css: args[2],
       })
       this.printData();
-      app.init(this.params);
+      appGFW.init(this.params);
     }.bind(this));
   },
 
@@ -71,5 +77,5 @@ var loader = {
 }
 
 $(document).ready(function(){
-  loader.init();
+  loaderGFW.init();
 })

@@ -1,8 +1,9 @@
-#footerGFW {
+#footerGfw {
   font-family: "Fira Sans", Helvetica, serif;
   background: $footer-background;
   z-index: 11;
   display: none;
+  clear: both;
   @media (min-width: $br-mobile){
     display: block;
   }

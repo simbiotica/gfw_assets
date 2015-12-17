@@ -1,4 +1,4 @@
-#headerGFW {
+#headerGfw {
   .m-header-submenu {
     position: absolute;
     top: 35px;
@@ -111,7 +111,7 @@
             background: $primary-color;
             color: $white;
             display: inline-block;
-            padding: 10px 15px;
+            padding: 10px 15px 8px;
             border-radius: 20px;
             transition: $transition1;
             
@@ -161,6 +161,8 @@
             }        
 
             > li{
+              display: block;
+              text-transform: none;              
               margin: 15px 0 0;
               &:first-child {
                 margin: 0;
