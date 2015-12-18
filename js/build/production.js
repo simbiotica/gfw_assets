@@ -2337,9 +2337,9 @@ var appGFW = {
 var loaderGFW = {
 
   urls: {
-    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/857a0662fbff2460ee563b8b25ab812965974bfe/src/header.html',
-    footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/src/footer.html',
-    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/ef0c3a20c0b0ab7d0b9939506070afdd40c9d2cc/css/build/minified/global.css',
+    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/8c83bac911bb0379a4c7f54bb2e7fc057dec7f32/src/header.html',
+    footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/8c83bac911bb0379a4c7f54bb2e7fc057dec7f32/src/footer.html',
+    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/8c83bac911bb0379a4c7f54bb2e7fc057dec7f32/css/build/minified/global.css',
   },
 
   urls_dev: {
@@ -2375,7 +2375,7 @@ var loaderGFW = {
 
   setPromises: function() {
     this.promises = [];
-    $.each(this.urls_dev, function(k,v){
+    $.each(this.urls, function(k,v){
       var deferred = new $.Deferred();
       $.ajax({
         url: v,
