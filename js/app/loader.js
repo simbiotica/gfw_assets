@@ -39,6 +39,8 @@ var loaderGFW = {
 
   setPromises: function() {
     this.promises = [];
+    // If you want to develop you should change this.urls => this.urls_dev 
+    // It may be better if we set this var by branches
     $.each(this.urls, function(k,v){
       var deferred = new $.Deferred();
       $.ajax({
