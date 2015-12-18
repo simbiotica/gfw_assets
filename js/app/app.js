@@ -13,6 +13,12 @@ var appGFW = {
 
     // slick load
     $(document).ready(this.initSlick.bind(this));
+
+    // resize function
+    $(window).on('resize', this.setMobileParam.bind(this));
+    this.setMobileParam({
+      mobile: ($(window).width() <= 850) ? true : false,
+    });
   },
 
   // Setters
@@ -72,6 +78,15 @@ var appGFW = {
 
   },
 
+  setParams: function(obj) {
+    this.params = $.extend({}, this.params, obj);
+  },
+
+  setMobileParam: function() {
+    this.setParams({
+      mobile: ($(window).width() <= 850) ? true : false,
+    });
+  },
 
   // Inits
   initTranslate: function() {
@@ -83,6 +98,7 @@ var appGFW = {
     this.$header.on('click', '.m-header-backdrop', this.hideMenus.bind(this));
   },
 
+  // Events related to UI
   showMenus: function(e) {
     if (!!this.params.mobile) {
       e && e.preventDefault();
@@ -109,6 +125,7 @@ var appGFW = {
     });
   },
 
+  // Ididn't find other way to do this. We should review this code :)
   initSlick: function() {
 
     var $footer = this.$footerCarousel;
