@@ -1,7 +1,8 @@
 #headerGfw {
   .m-header-submenu {
     position: absolute;
-    top: 35px;
+    top: auto;
+    bottom: 50px;
     left: 0;
     z-index: 3;
     line-height: 1.25;
@@ -9,6 +10,10 @@
     visibility: hidden;
     box-shadow: $shadow1;
     transition: all 0s linear .125s;
+    @media (min-width: $br-mobile){
+      top: 35px;
+      bottom: auto;
+    }        
 
     &:after {
       content: "";

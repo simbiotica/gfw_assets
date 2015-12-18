@@ -17,7 +17,6 @@ var loaderGFW = {
     this.setElements();
     this.setParams({
       current: this.$script.data('current'),
-      mobile: ($(window).width() <= 850) ? true : false,
     });
     this.setPromises()
     
@@ -40,7 +39,7 @@ var loaderGFW = {
 
   setPromises: function() {
     this.promises = [];
-    $.each(this.urls, function(k,v){
+    $.each(this.urls_dev, function(k,v){
       var deferred = new $.Deferred();
       $.ajax({
         url: v,

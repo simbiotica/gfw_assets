@@ -169,10 +169,11 @@ html.-no-scroll, body.-no-scroll {
 #headerGfw .m-header-item.-default > a.-active {
   background: #FFF;
   border-color: #e5e5df;
-  z-index: 3;
+  z-index: 5;
 }
 @media (min-width: 850px) {
   #headerGfw .m-header-item.-default > a.-active {
+    z-index: 3;
     background: none;
     border-color: transparent;
   }
@@ -311,7 +312,8 @@ html.-no-scroll, body.-no-scroll {
 
 #headerGfw .m-header-submenu {
   position: absolute;
-  top: 35px;
+  top: auto;
+  bottom: 50px;
   left: 0;
   z-index: 3;
   line-height: 1.25;
@@ -319,6 +321,12 @@ html.-no-scroll, body.-no-scroll {
   visibility: hidden;
   box-shadow: 0 0 4px rgba(142, 142, 142, 0.5);
   transition: all 0s linear .125s;
+}
+@media (min-width: 850px) {
+  #headerGfw .m-header-submenu {
+    top: 35px;
+    bottom: auto;
+  }
 }
 #headerGfw .m-header-submenu:after {
   content: "";
