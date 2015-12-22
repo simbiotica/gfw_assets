@@ -1,9 +1,9 @@
 var loaderGFW = {
 
   urls: {
-    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/b61c67ad78492c3e9958cf9b03e6a057b890bde3/src/header.html',
-    footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/52d36437c3a2c909114628f9a671404b717b3f1a/src/footer.html',
-    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/f1de000f3605c4cccd26f23543a325136cb7f352/css/build/minified/global.css',
+    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/e129b2de024e610433b56988e158eb3f1bef1126/src/header.html',
+    footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/8c83bac911bb0379a4c7f54bb2e7fc057dec7f32/src/footer.html',
+    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/8c83bac911bb0379a4c7f54bb2e7fc057dec7f32/css/build/minified/global.css',
   },
 
   urls_dev: {
