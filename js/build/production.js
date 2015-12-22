@@ -96,6 +96,10 @@ var appGFW = {
         this.$toggleMyGFW.toggleClass('-hidden', false);
       break;
 
+      case 'staging.globalforestwatch.org':
+        this.params.hostname = 'http://staging.globalforestwatch.org'
+      break;
+
       case 'www.globalforestwatch.org':
         this.params.hostname = 'http://www.globalforestwatch.org';
       break;
