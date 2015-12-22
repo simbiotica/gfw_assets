@@ -103,6 +103,10 @@ var appGFW = {
         this.params.hostname = 'http://gfw-nav.herokuapp.com'
       break;
 
+      case 'staging.globalforestwatch.org':
+        this.params.hostname = 'http://staging.globalforestwatch.org'
+      break;
+
       case 'www.globalforestwatch.org':
         this.params.hostname = 'http://www.globalforestwatch.org'
       break;
