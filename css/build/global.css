@@ -653,13 +653,35 @@ html.-no-scroll, body.-no-scroll {
 @media (min-width: 850px) {
   .section-test .wrapper {
     max-width: 1024px;
-    padding: 0 15px;
+    width: 95%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .section-test .wrapper {
     max-width: 1200px;
-    padding: 0 30px;
+    width: 75%;
+  }
+}
+
+#headerGfw .feedback-link, #footerGfw .feedback-link {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 250;
+  background: #FFD24D;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #555;
+  text-decoration: none;
+  padding: 8px;
+  cursor: pointer;
+  transform: rotate(90deg) translate(50%, 0);
+  transform-origin: 100% 0;
+}
+@media (min-width: 850px) {
+  #headerGfw .feedback-link, #footerGfw .feedback-link {
+    display: block;
   }
 }
 
