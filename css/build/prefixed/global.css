@@ -73,6 +73,26 @@ html.-no-scroll, body.-no-scroll {
   background: rgba(85, 85, 85, 0.8);
 }
 
+@-webkit-keyframes standard {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes standard {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 #headerGfw .btn, #footerGfw .btn {
   -webkit-appearance: none;
   border: 1px solid transparent;
@@ -1022,6 +1042,40 @@ html.-no-scroll, body.-no-scroll {
             transform: translate(-50%, -60%);
   }
 }
+#headerGfw .feedback-modal .modal-window .modal-spinner, #footerGfw .feedback-modal .modal-window .modal-spinner {
+  display: none;
+  pointer-events: none;
+}
+#headerGfw .feedback-modal .modal-window .modal-spinner:before, #footerGfw .feedback-modal .modal-window .modal-spinner:before {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .6;
+}
+#headerGfw .feedback-modal .modal-window .modal-spinner:after, #footerGfw .feedback-modal .modal-window .modal-spinner:after {
+  z-index: 2;
+  content: '';
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -20px;
+  transition: all .75s ease 0s;
+  border-radius: 100%;
+  border-top: 5px solid #97bd3d;
+  border-right: 5px solid #eee;
+  border-bottom: 5px solid #eee;
+  border-left: 5px solid #eee;
+  animation: standard .75s infinite linear;
+  -webkit-animation: standard .75s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
 #headerGfw .feedback-modal .modal-window .modal-close, #footerGfw .feedback-modal .modal-window .modal-close {
   display: block;
   position: absolute;
@@ -1217,10 +1271,10 @@ html.-no-scroll, body.-no-scroll {
 #headerGfw .feedback-modal .modal-content p, #footerGfw .feedback-modal .modal-content p {
   line-height: 1.25;
 }
-#headerGfw .feedback-modal .modal-content p a:not(.btn), #footerGfw .feedback-modal .modal-content p a:not(.btn) {
+#headerGfw .feedback-modal .modal-content a:not(.btn), #footerGfw .feedback-modal .modal-content a:not(.btn) {
   color: #97bd3d;
 }
-#headerGfw .feedback-modal .modal-content p a:not(.btn):hover, #footerGfw .feedback-modal .modal-content p a:not(.btn):hover {
+#headerGfw .feedback-modal .modal-content a:not(.btn):hover, #footerGfw .feedback-modal .modal-content a:not(.btn):hover {
   color: #88aa37;
 }
 #headerGfw .feedback-modal .modal-steps, #footerGfw .feedback-modal .modal-steps {

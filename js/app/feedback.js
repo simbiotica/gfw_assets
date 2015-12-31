@@ -27,6 +27,7 @@ var feedbackModal = {
     this.$contentWrapper = this.$el.find('.modal-wrapper');
     this.$backdrop =       this.$el.find('.modal-backdrop');
     this.$close =          this.$el.find('.modal-close');
+    this.$spinner =        this.$el.find('.modal-spinner');
 
     this.$modalStep =      this.$el.find('.modal-step');
     this.$modalStepBtn =   this.$el.find('.modal-step-btn');
@@ -120,15 +121,20 @@ var feedbackModal = {
   },
 
   actionSend: function(){
+    this.$spinner.show(0);
     $.ajax({
-      url: 'http://www.globalforestwatch.org/feedback',
+      url: 'http://localhost:5000/feedback_jsonp',
+      jsonp: "callback",
+      dataType: "jsonp",
       data: this.serializeObject(this.$form.serializeArray()),
-      success: function() {
+      success: function(data) {
         this.changeStep(3);
+        this.$spinner.hide(0);
       }.bind(this),
 
-      error: function() {
+      error: function(data) {
         this.changeStep(4);
+        this.$spinner.hide(0);
       }.bind(this)
     });
   },

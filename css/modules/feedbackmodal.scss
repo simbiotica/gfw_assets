@@ -58,7 +58,12 @@ $heightModal: auto;
         min-height: 100px;
         transform: translate(-50%,-60%);
       }
+      .modal-spinner {
+        display: none;
+        @include spinner (40px, 5px, $primary-color);
+        pointer-events: none;
 
+      }
       .modal-close {
         display: block;
         position: absolute;
@@ -259,11 +264,11 @@ $heightModal: auto;
 
       p {
         line-height: 1.25;
-        a:not(.btn){
-          color: $primary-color;
-          &:hover{
-            color: darken($primary-color,5%);
-          }
+      }
+      a:not(.btn){
+        color: $primary-color;
+        &:hover{
+          color: darken($primary-color,5%);
         }
       }
 
