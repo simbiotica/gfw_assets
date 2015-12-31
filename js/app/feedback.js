@@ -3,6 +3,8 @@ var feedbackModal = {
   init: function() {
     this._initVars();
     this._setListeners();
+    this._setHiddenInputs();
+    this._setColors();
   },
 
   _setListeners: function() {
@@ -35,6 +37,9 @@ var feedbackModal = {
     this.$form =           this.$el.find('#feedback-form');
     this.$textarea =       this.$el.find('#feedback-textarea');
     this.$email =          this.$el.find('#feedback-email');
+    this.$hostname =       this.$el.find('#feedback-hostname');
+
+    this.$dinamicColor =   this.$el.find('.js-dinamic-color')
 
     this.hidden = true;
     this.mobile = (this.$window.width() > 850) ? false : true;
@@ -74,6 +79,33 @@ var feedbackModal = {
     this.$el.toggleClass('-active', !this.hidden);
     //Prevent scroll beyond modal window.
     this.$htmlbody.toggleClass('-no-scroll', !this.hidden);
+  },
+
+  _setColors: function() {
+    switch(location.hostname) {
+      case 'fires.globalforestwatch.org':
+        this.color = 'red';
+      break;
+
+      case 'commodities.globalforestwatch.org':
+        this.color = 'orange';
+      break;
+
+      case 'climate.globalforestwatch.org':
+        this.color = 'blue';
+      break;
+
+      default: 
+        this.color = 'green';
+    }
+
+    this.$dinamicColor.each(function(k,v){
+      $(v).removeClass('green').addClass(this.color);
+    }.bind(this));
+  },
+
+  _setHiddenInputs: function() {
+    this.$hostname.val(location.hostname);
   },
 
   hide: function(e) {

@@ -58,12 +58,22 @@ $heightModal: auto;
         min-height: 100px;
         transform: translate(-50%,-60%);
       }
+
       .modal-spinner {
         display: none;
         @include spinner (40px, 5px, $primary-color);
         pointer-events: none;
-
+        &.red {
+          @include spinner (40px, 5px, $red);
+        }
+        &.orange {
+          @include spinner (40px, 5px, $orange);
+        }
+        &.blue {
+          @include spinner (40px, 5px, $blue);
+        }  
       }
+
       .modal-close {
         display: block;
         position: absolute;
@@ -88,6 +98,7 @@ $heightModal: auto;
 
   // Styles
   .feedback-modal{
+
     .modal-backdrop {
       background: rgba(0,0,0,0.25);
     }
@@ -265,11 +276,30 @@ $heightModal: auto;
       p {
         line-height: 1.25;
       }
+      
       a:not(.btn){
         color: $primary-color;
         &:hover{
           color: darken($primary-color,5%);
         }
+        &.red {
+          color: $red;
+          &:hover {
+            color: darken($red, 25%);
+          }
+        }
+        &.orange {
+          color: $orange;
+          &:hover {
+            color: darken($orange, 25%);
+          }
+        }
+        &.blue {
+          color: $blue;
+          &:hover {
+            color: darken($blue, 25%);
+          }
+        }        
       }
 
     }
@@ -307,6 +337,15 @@ $heightModal: auto;
         padding: 20px;
         border: 1px solid $primary-color;
         border-radius: 2px;
+        &.red {
+          border: 1px solid $red;
+        }
+        &.orange {
+          border: 1px solid $orange;
+        }
+        &.blue {
+          border: 1px solid $blue;
+        }
       }
     }
 

@@ -198,7 +198,7 @@
     <a href="#" class="modal-close js-modal-close">
       <svg><use xlink:href="#shape-close"></use></svg>
     </a>
-    <div class="modal-spinner"></div>
+    <div class="modal-spinner js-dinamic-color"></div>
     <div class="modal-wrapper scroll-dark">
       <div class="modal-content">
         <ul class="modal-steps">
@@ -230,15 +230,16 @@
             </header>
             <div class="modal-step-content">
               <form id="feedback-form" class="feedback-form">
+                <input name="hostname" id="feedback-hostname" type="hidden"/>
                 <textarea name="feedback" id="feedback-textarea" placeholder="Type something"></textarea>
-                <div class="feedback-tester">
+                <div class="feedback-tester js-dinamic-color">
                   <p>Interested in testing new features and helping to improve the website?  Sign up to <strong>become an official GFW tester!</strong></p>
                   <div class="radio-box js-radio-box">
-                    <div class="custom-radio">
+                    <div class="custom-radio js-dinamic-color">
                       <input id="signup_true1" name="signup" type="radio" value="true">
                       <label for="signup_true1"><span></span>Yes, sign me up.</label>
                     </div>
-                    <div class="custom-radio">
+                    <div class="custom-radio js-dinamic-color">
                       <input id="signup_false1" name="signup" type="radio" value="false" checked="checked">
                       <label for="signup_false1"><span></span>No thanks.</label>
                     </div>
@@ -247,8 +248,8 @@
                     <input id="feedback-email" name="email" placeholder="Email" type="email">
                   </p>
                 </div>
-                <div class="feedback-tester">
-                  <p>Want to be the first to know about Global Forest Watch updates?  Sign up for <a href="http://www.wri.org/global-forest-watch-updates-and-newsletter" target="_blank">our newsletter</a>. </p>
+                <div class="feedback-tester js-dinamic-color">
+                  <p>Want to be the first to know about Global Forest Watch updates?  Sign up for <a class="js-dinamic-color" href="http://www.wri.org/global-forest-watch-updates-and-newsletter" target="_blank">our newsletter</a>. </p>
                 </div>
               </form>
             </div>
@@ -262,13 +263,13 @@
             </header>
             <div class="modal-step-content">
               <ul class="bullets">
-                <li>Threshold settings for the UMD/Google tree cover loss data (read more <a href="http://blog.globalforestwatch.org/2014/09/four-ways-gfw-just-became-more-useful/">here</a>)</li>
-                <li>Enhanced analysis functionality (i.e., for protected areas, subnational jurisdictions, and forest use concessions) (read more <a href="http://blog.globalforestwatch.org/2014/09/four-ways-gfw-just-became-more-useful/">here</a>)</li>
+                <li>Threshold settings for the UMD/Google tree cover loss data (read more <a class="js-dinamic-color" href="http://blog.globalforestwatch.org/2014/09/four-ways-gfw-just-became-more-useful/">here</a>)</li>
+                <li>Enhanced analysis functionality (i.e., for protected areas, subnational jurisdictions, and forest use concessions) (read more <a class="js-dinamic-color" href="http://blog.globalforestwatch.org/2014/09/four-ways-gfw-just-became-more-useful/">here</a>)</li>
                 <li>Time slider for the NASA active fires data and information about each fire</li>
-                <li>“Share this map view” feature (read more <a href="http://blog.globalforestwatch.org/2014/05/five-gfw-site-updates/">here</a>)</li>
+                <li>“Share this map view” feature (read more <a class="js-dinamic-color" href="http://blog.globalforestwatch.org/2014/05/five-gfw-site-updates/">here</a>)</li>
                 <li>A new homepage that better directs users to what they are looking for and communicates a clearer purpose</li>
               </ul>
-              <p>Do you have questions about how to use GFW? Be sure to visit the <a href="/howto">How To</a> page, and if you still need help email <a href="mailto:gfw@wri.org">gfw@wri.org</a>. You can also connect with us on social media or by posting a comment to the <a href="https://groups.google.com/forum/#!forum/globalforestwatch" target="_blank">GFW Discussion Forum</a>.</p>
+              <p>Do you have questions about how to use GFW? Be sure to visit the <a class="js-dinamic-color" href="/howto">How To</a> page, and if you still need help email <a class="js-dinamic-color" href="mailto:gfw@wri.org">gfw@wri.org</a>. You can also connect with us on social media or by posting a comment to the <a class="js-dinamic-color" href="https://groups.google.com/forum/#!forum/globalforestwatch" target="_blank">GFW Discussion Forum</a>.</p>
             </div>
           </li>
 
@@ -286,10 +287,10 @@
       <span class="gradient"></span>
       <ul class="m-btncontainer -center -steps">
         <li>
-          <button data-step="1" class="btn green medium uppercase modal-step-btn js-btn-continue -active">Continue</button>
-          <button data-step="2" class="btn green medium uppercase modal-step-btn js-btn-submit">Submit</button>
-          <button data-step="3" class="btn green medium uppercase modal-step-btn js-btn-close">Close</button>
-          <button data-step="4" class="btn green medium uppercase modal-step-btn js-btn-close">Close</button>
+          <button data-step="1" class="btn green medium uppercase modal-step-btn js-dinamic-color js-btn-continue -active">Continue</button>
+          <button data-step="2" class="btn green medium uppercase modal-step-btn js-dinamic-color js-btn-submit">Submit</button>
+          <button data-step="3" class="btn green medium uppercase modal-step-btn js-dinamic-color js-btn-close">Close</button>
+          <button data-step="4" class="btn green medium uppercase modal-step-btn js-dinamic-color js-btn-close">Close</button>
         </li>
       </ul>
     </footer>

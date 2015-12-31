@@ -44,20 +44,6 @@
     }
 
     // Colors
-    &.dark {
-      color: $white;
-      background: $dark;
-      &:hover {
-        background: darken($dark,25%);
-      }
-    }
-    &.white {
-      color: $dark;
-      background: $white;
-      &:hover {
-        background: darken($white,10%);
-      }
-    }
     &.gray {
       color: $dark;
       background: $white;
@@ -75,6 +61,42 @@
       &.disabled{
         &:hover {
           background: $primary-color;
+        }
+      }
+    }
+    &.red {
+      color: $white;
+      background: $red;
+      &:hover {
+        background: darken($red,10%);
+      }
+      &.disabled{
+        &:hover {
+          background: $red;
+        }
+      }
+    }
+    &.orange {
+      color: $white;
+      background: $orange;
+      &:hover {
+        background: darken($orange,10%);
+      }
+      &.disabled{
+        &:hover {
+          background: $orange;
+        }
+      }
+    }
+    &.blue {
+      color: $white;
+      background: $blue;
+      &:hover {
+        background: darken($blue,10%);
+      }
+      &.disabled{
+        &:hover {
+          background: $blue;
         }
       }
     }

@@ -101,6 +101,21 @@
       &:first-child {
         margin: 0;
       }
+      &.red {
+        label span:after {
+          background: $red;
+        }
+      }
+      &.orange {
+        label span:after {
+          background: $orange;
+        }
+      }
+      &.blue {
+        label span:after {
+          background: $blue;
+        }
+      }  
     }
 
     label {
