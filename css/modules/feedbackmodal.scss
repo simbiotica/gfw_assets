@@ -160,6 +160,10 @@ $heightModal: auto;
 
           font-size: 15px;
           color: $dark;
+          border: none;
+          box-shadow: none;
+          background: transparent;
+          border-radius: 0;
         }
       }
     }
@@ -276,7 +280,7 @@ $heightModal: auto;
       p {
         line-height: 1.25;
       }
-      
+
       a:not(.btn){
         color: $primary-color;
         &:hover{
@@ -305,7 +309,8 @@ $heightModal: auto;
     }
 
     .modal-steps {
-      padding: 20px 20px 70px;
+      // This !important is here because ODP has some weird styles
+      padding: 20px 20px 70px !important;
       > li {
         display: none;
         &.-active {

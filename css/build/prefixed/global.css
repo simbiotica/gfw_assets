@@ -102,6 +102,10 @@ html.-no-scroll, body.-no-scroll {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  top: 0;
+  left: 0;
+  -webkit-transform: none;
+          transform: none;
   font-family: "Fira Sans";
 }
 
@@ -228,6 +232,7 @@ html.-no-scroll, body.-no-scroll {
   font-size: 14px;
   border-radius: 3px;
   outline: none;
+  line-height: normal;
 }
 #headerGfw textarea, #footerGfw textarea {
   height: 182px;
@@ -1259,6 +1264,10 @@ html.-no-scroll, body.-no-scroll {
   outline: none;
   font-size: 15px;
   color: #555;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  border-radius: 0;
 }
 #headerGfw .feedback-modal .modal-header, #footerGfw .feedback-modal .modal-header {
   position: absolute;
@@ -1411,7 +1420,7 @@ html.-no-scroll, body.-no-scroll {
   color: #2d3f4f;
 }
 #headerGfw .feedback-modal .modal-steps, #footerGfw .feedback-modal .modal-steps {
-  padding: 20px 20px 70px;
+  padding: 20px 20px 70px !important;
 }
 #headerGfw .feedback-modal .modal-steps > li, #footerGfw .feedback-modal .modal-steps > li {
   display: none;
