@@ -149,7 +149,8 @@ $heightModal: auto;
         width: 100%;
         top: 0;
         left: 0;
-        padding: 20px;
+        padding: 20px 20px 0;
+        border-bottom: 66px solid transparent;
         @media (min-width: $br-mobile){
           max-height: 450px;
         }
@@ -310,7 +311,7 @@ $heightModal: auto;
 
     .modal-steps {
       // This !important is here because ODP has some weird styles
-      padding: 20px 20px 70px !important;
+      padding: 20px !important;
       > li {
         display: none;
         &.-active {

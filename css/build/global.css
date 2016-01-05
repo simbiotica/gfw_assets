@@ -1202,7 +1202,8 @@ html.-no-scroll, body.-no-scroll {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 20px;
+  padding: 20px 20px 0;
+  border-bottom: 66px solid transparent;
 }
 @media (min-width: 850px) {
   #headerGfw .feedback-modal .modal-window .modal-wrapper, #footerGfw .feedback-modal .modal-window .modal-wrapper {
@@ -1374,7 +1375,7 @@ html.-no-scroll, body.-no-scroll {
   color: #2d3f4f;
 }
 #headerGfw .feedback-modal .modal-steps, #footerGfw .feedback-modal .modal-steps {
-  padding: 20px 20px 70px !important;
+  padding: 20px !important;
 }
 #headerGfw .feedback-modal .modal-steps > li, #footerGfw .feedback-modal .modal-steps > li {
   display: none;

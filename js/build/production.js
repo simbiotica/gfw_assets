@@ -346,7 +346,7 @@ var feedbackModal = {
   actionSend: function(){
     this.$spinner.show(0);
     $.ajax({
-      url: 'http://localhost:5000/feedback_jsonp',
+      url: 'http://gfw-nav.herokuapp.com/feedback_jsonp',
       jsonp: "callback",
       dataType: "jsonp",
       data: this.serializeObject(this.$form.serializeArray()),
@@ -445,7 +445,7 @@ var loaderGFW = {
     this.promises = [];
     // If you want to develop you should change this.urls => this.urls_dev 
     // It may be better if we set this var by branches
-    $.each(this.urls_dev, function(k,v){
+    $.each(this.urls, function(k,v){
       var deferred = new $.Deferred();
       $.ajax({
         url: v,
