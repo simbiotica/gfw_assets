@@ -29,28 +29,16 @@ function googleTranslateElementInit() {
     },
     'googleTranslate');
 }
-var Slick = window.Slick || {};
-$.fn.slick = function() {
-  var _ = this,
-    opt = arguments[0],
-    args = Array.prototype.slice.call(arguments, 1),
-    l = _.length,
-    i = 0,
-    ret;
-  for (i; i < l; i++) {
-    if (typeof opt == 'object' || typeof opt == 'undefined')
-      _[i].slick = new Slick(_[i], opt);
-    else
-      ret = _[i].slick[opt].apply(_[i].slick, args);
-    if (typeof ret != 'undefined') return ret;
-  }
-  return _;
-};
 
-var appGFW = {
-  init: function(params) {
+window.GFW = window.GFW || {};
+window.GFW.NavBar = window.GFW.NavBar || {};
+
+(function(gfw) {
+
+gfw.Application = {
+  initialize: function(params) {
     this.params = params;
-    
+
     // Setters
     this.setElements();
     this.setCurrent();
@@ -83,7 +71,6 @@ var appGFW = {
     this.$headerSubmenu = this.$header.find('.m-header-submenu');
     this.$headerSubmenuBtns = this.$header.find('.m-header-submenu-btn');
 
-
     // Footer
     this.$footerCarousel = this.$footer.find('#footerCarousel');
   },
@@ -100,19 +87,19 @@ var appGFW = {
       break;
 
       case 'gfw-nav.herokuapp.com':
-        this.params.hostname = 'http://gfw-nav.herokuapp.com'
+        this.params.hostname = 'http://gfw-nav.herokuapp.com';
       break;
 
       case 'staging.globalforestwatch.org':
-        this.params.hostname = 'http://staging.globalforestwatch.org'
+        this.params.hostname = 'http://staging.globalforestwatch.org';
       break;
 
       case 'www.globalforestwatch.org':
-        this.params.hostname = 'http://www.globalforestwatch.org'
+        this.params.hostname = 'http://www.globalforestwatch.org';
       break;
 
-      default: 
-        this.params.hostname = 'http://www.globalforestwatch.org'
+      default:
+        this.params.hostname = 'http://www.globalforestwatch.org';
         this.params.targets = true;
     }
     this.$links.each(function(k,v){
@@ -165,7 +152,7 @@ var appGFW = {
         this.hideMenus();
       }
 
-    } 
+    }
   },
 
   hideMenus: function() {

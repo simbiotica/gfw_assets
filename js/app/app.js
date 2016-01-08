@@ -1,7 +1,12 @@
-var appGFW = {
-  init: function(params) {
+window.GFW = window.GFW || {};
+window.GFW.NavBar = window.GFW.NavBar || {};
+
+(function(gfw) {
+
+gfw.Application = {
+  initialize: function(params) {
     this.params = params;
-    
+
     // Setters
     this.setElements();
     this.setCurrent();
@@ -34,7 +39,6 @@ var appGFW = {
     this.$headerSubmenu = this.$header.find('.m-header-submenu');
     this.$headerSubmenuBtns = this.$header.find('.m-header-submenu-btn');
 
-
     // Footer
     this.$footerCarousel = this.$footer.find('#footerCarousel');
   },
@@ -51,19 +55,19 @@ var appGFW = {
       break;
 
       case 'gfw-nav.herokuapp.com':
-        this.params.hostname = 'http://gfw-nav.herokuapp.com'
+        this.params.hostname = 'http://gfw-nav.herokuapp.com';
       break;
 
       case 'staging.globalforestwatch.org':
-        this.params.hostname = 'http://staging.globalforestwatch.org'
+        this.params.hostname = 'http://staging.globalforestwatch.org';
       break;
 
       case 'www.globalforestwatch.org':
-        this.params.hostname = 'http://www.globalforestwatch.org'
+        this.params.hostname = 'http://www.globalforestwatch.org';
       break;
 
-      default: 
-        this.params.hostname = 'http://www.globalforestwatch.org'
+      default:
+        this.params.hostname = 'http://www.globalforestwatch.org';
         this.params.targets = true;
     }
     this.$links.each(function(k,v){
@@ -116,7 +120,7 @@ var appGFW = {
         this.hideMenus();
       }
 
-    } 
+    }
   },
 
   hideMenus: function() {
@@ -2288,4 +2292,6 @@ var appGFW = {
       });
     }));    
   },
-}
+};
+
+})(window.GFW.NavBar);

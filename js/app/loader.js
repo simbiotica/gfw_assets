@@ -1,5 +1,6 @@
-var loaderGFW = {
+(function() {
 
+var loaderGFW = {
   urls: {
     header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/e129b2de024e610433b56988e158eb3f1bef1126/src/header.html',
     footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/8c83bac911bb0379a4c7f54bb2e7fc057dec7f32/src/footer.html',
@@ -12,17 +13,16 @@ var loaderGFW = {
     css: 'http://localhost:8000/css/build/global.css',
   },
 
-  init: function() {
+  initialize: function() {
     // Setters
     this.setElements();
     this.setParams({
       current: this.$script.data('current'),
     });
-    this.setPromises()
-    
+    this.setPromises();
+
     // Get data
     this.getData();
-    
   },
 
   // Setters
@@ -34,14 +34,14 @@ var loaderGFW = {
   },
 
   setParams: function(obj) {
-    this.params = $.extend({}, this.params, obj)
+    this.params = $.extend({}, this.params, obj);
   },
 
   setPromises: function() {
     this.promises = [];
-    // If you want to develop you should change this.urls => this.urls_dev 
+    // If you want to develop you should change this.urls => this.urls_dev
     // It may be better if we set this var by branches
-    $.each(this.urls, function(k,v){
+    $.each(this.urls_dev, function(k,v){
       var deferred = new $.Deferred();
       $.ajax({
         url: v,
@@ -63,9 +63,9 @@ var loaderGFW = {
         header: args[0],
         footer: args[1],
         css: args[2],
-      })
+      });
       this.printData();
-      appGFW.init(this.params);
+      window.GFW.NavBar.Application.initialize(this.params);
     }.bind(this));
   },
 
@@ -75,8 +75,10 @@ var loaderGFW = {
     this.$header.html(this.params.header).show(0);
     this.$footer.html(this.params.footer).show(0);
   },
-}
+};
 
 $(document).ready(function(){
-  loaderGFW.init();
-})
+  loaderGFW.initialize();
+});
+
+})();
