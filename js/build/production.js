@@ -17,28 +17,16 @@ function googleTranslateElementInit() {
     },
     'googleTranslate');
 }
-var Slick = window.Slick || {};
-$.fn.slick = function() {
-  var _ = this,
-    opt = arguments[0],
-    args = Array.prototype.slice.call(arguments, 1),
-    l = _.length,
-    i = 0,
-    ret;
-  for (i; i < l; i++) {
-    if (typeof opt == 'object' || typeof opt == 'undefined')
-      _[i].slick = new Slick(_[i], opt);
-    else
-      ret = _[i].slick[opt].apply(_[i].slick, args);
-    if (typeof ret != 'undefined') return ret;
-  }
-  return _;
-};
 
-var appGFW = {
-  init: function(params) {
+window.GFW = window.GFW || {};
+window.GFW.NavBar = window.GFW.NavBar || {};
+
+(function(gfw) {
+
+gfw.Application = {
+  initialize: function(params) {
     this.params = params;
-    
+
     // Setters
     this.setElements();
     this.setCurrent();
@@ -93,18 +81,25 @@ var appGFW = {
 
       case 'gfw-nav.herokuapp.com':
         this.params.hostname = 'http://gfw-nav.herokuapp.com';
+<<<<<<< ffa603a27eb3a332f7216c98dcc65e8293186c9f
         this.$toggleMyGFW.toggleClass('-hidden', false);
+=======
+>>>>>>> Improve the project namespacing and generally clean up
       break;
 
       case 'staging.globalforestwatch.org':
-        this.params.hostname = 'http://staging.globalforestwatch.org'
+        this.params.hostname = 'http://staging.globalforestwatch.org';
       break;
 
       case 'www.globalforestwatch.org':
         this.params.hostname = 'http://www.globalforestwatch.org';
       break;
 
+<<<<<<< ffa603a27eb3a332f7216c98dcc65e8293186c9f
       default: 
+=======
+      default:
+>>>>>>> Improve the project namespacing and generally clean up
         this.params.hostname = 'http://www.globalforestwatch.org';
         this.params.targets = true;
     }
@@ -162,7 +157,7 @@ var appGFW = {
         this.hideMenus();
       }
 
-    } 
+    }
   },
 
   hideMenus: function() {
