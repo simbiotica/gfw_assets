@@ -49,28 +49,9 @@ gfw.Application = {
   },
 
   setUrls: function() {
-    this.params.targets = false;
-    switch(location.hostname) {
-      case 'localhost':
-        this.params.hostname = 'http://localhost:5000';
-      break;
+    this.params.targets = gfw.Utils.isDefaultHost();
+    this.params.hostname = gfw.Utils.getHost();
 
-      case 'gfw-nav.herokuapp.com':
-        this.params.hostname = 'http://gfw-nav.herokuapp.com';
-      break;
-
-      case 'staging.globalforestwatch.org':
-        this.params.hostname = 'http://staging.globalforestwatch.org';
-      break;
-
-      case 'www.globalforestwatch.org':
-        this.params.hostname = 'http://www.globalforestwatch.org';
-      break;
-
-      default:
-        this.params.hostname = 'http://www.globalforestwatch.org';
-        this.params.targets = true;
-    }
     this.$links.each(function(k,v){
       var href = $(v).attr('href');
       if (href.charAt(0) == '/') {
@@ -84,7 +65,6 @@ gfw.Application = {
         (!!external) ? $(v).removeAttr('target') : $(v).attr('target','_blank');
       }
     }.bind(this));
-
   },
 
   setParams: function(obj) {
