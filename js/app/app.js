@@ -15,6 +15,7 @@ gfw.Application = {
     // Inits
     this.initTranslate();
     this.initEvents();
+    this.initMyGFW();
 
     // slick load
     $(document).ready(this.initSlick.bind(this));
@@ -104,6 +105,12 @@ gfw.Application = {
   initEvents: function() {
     this.$header.on('click', '.m-header-submenu-btn', this.showMenus.bind(this));
     this.$header.on('click', '.m-header-backdrop', this.hideMenus.bind(this));
+  },
+
+  initMyGFW: function() {
+    var loginButton = new gfw.myGFW.LoginButton({
+      $el: $('#my-gfw-container')});
+    loginButton.render();
   },
 
   // Events related to UI
