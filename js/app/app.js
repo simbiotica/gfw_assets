@@ -18,8 +18,7 @@ gfw.Application = {
     this.initFeedback();
     this.initMyGFW();
 
-    // slick load
-    $(document).ready(this.initSlick.bind(this));
+    $(document).ready(this.initLogos.bind(this));
 
     // resize function
     $(window).on('resize', this.setMobileParam.bind(this));
@@ -98,7 +97,7 @@ gfw.Application = {
 
   initMyGFW: function() {
     var loginButton = new gfw.myGFW.LoginButton({
-      $el: $('#my-gfw-container')});
+      el: document.getElementById('my-gfw-container')});
     loginButton.render();
   },
 
@@ -129,16 +128,15 @@ gfw.Application = {
     });
   },
 
-  initSlick: function() {
-    this.$footerCarousel.slick({
-      infinite: true,
-      slidesToShow: 5,
-      slidesToScroll: 5,
-      speed: 500,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      slide: 'li'
+  initLogos: function() {
+    var sliderEl = document.querySelector('#my-gfw-slider');
+    var slider = lory(sliderEl, {
+      infinite: 1,
+      slidesToScroll: 1,
+      slideSpeed: 500
     });
+
+    setInterval(slider.next.bind(slider), 3000);
   },
 };
 

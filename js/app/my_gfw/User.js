@@ -6,13 +6,19 @@ window.GFW.NavBar = window.GFW.NavBar || {};
 gfw.myGFW = gfw.myGFW || {};
 
 var User = gfw.myGFW.User = {
-  isLoggedIn: function() {
-    return $.ajax({
-      dataType: "json",
-      url: 'http://localhost:8080/user',
-      crossDomain: true,
-      xhrFields: {withCredentials: true}
-    });
+  isLoggedIn: function(options) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'http://localhost:8080/user', true);
+    xhr.withCredentials = true;
+    xhr.onreadystatechange = function() {
+      var responseStatus = xhr.status;
+      if (responseStatus === 401) {
+        options.failure();
+      } else {
+        options.success();
+      }
+    };
+    xhr.send();
   }
 };
 

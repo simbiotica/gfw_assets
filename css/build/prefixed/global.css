@@ -1624,786 +1624,6 @@ The `sprites` mixin generates identical output to the CSS template
   color: #555;
   font-weight: 400;
 }
-#footerGfw .m-footer-logos {
-  padding: 30px 10px;
-  display: none;
-}
-@media (min-width: 850px) {
-  #footerGfw .m-footer-logos {
-    display: block;
-  }
-}
-#footerGfw .m-footer-logos .m-footer-carousel {
-  padding: 0 50px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li {
-  display: block;
-  height: 100px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a {
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.afc {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -572px -470px;
-  width: 80px;
-  height: 69px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.afc:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -652px 0px;
-  width: 80px;
-  height: 69px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.airbus {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -30px;
-  width: 130px;
-  height: 30px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.airbus:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px 0px;
-  width: 130px;
-  height: 30px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.bei {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -212px -198px;
-  width: 130px;
-  height: 63px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.bei:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -342px -198px;
-  width: 130px;
-  height: 63px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.bigdataclimatechallengewinner {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: 0px 0px;
-  width: 215px;
-  height: 99px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.bigdataclimatechallengewinner:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: 0px -99px;
-  width: 215px;
-  height: 99px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.blueraster {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -190px -561px;
-  width: 110px;
-  height: 48px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.blueraster:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -300px -561px;
-  width: 110px;
-  height: 48px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.bnpb {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -422px;
-  width: 50px;
-  height: 64px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.bnpb:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -782px -422px;
-  width: 50px;
-  height: 64px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.bobolinkfundation {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -369px -766px;
-  width: 87px;
-  height: 24px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.bobolinkfundation:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -282px -766px;
-  width: 87px;
-  height: 24px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.cambridge {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -86px -421px;
-  width: 130px;
-  height: 52px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.cambridge:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -216px -421px;
-  width: 130px;
-  height: 52px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.cartodb {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -550px -663px;
-  width: 110px;
-  height: 39px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.cartodb:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -440px -663px;
-  width: 110px;
-  height: 39px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.centerforglobaldevelopment {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -382px;
-  width: 84px;
-  height: 40px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.centerforglobaldevelopment:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -342px;
-  width: 84px;
-  height: 40px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.cgiar {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -346px -421px;
-  width: 124px;
-  height: 43px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.cgiar:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -440px -501px;
-  width: 124px;
-  height: 43px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.ciat {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -322px -351px;
-  width: 120px;
-  height: 57px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.ciat:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -202px -351px;
-  width: 120px;
-  height: 57px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.clua {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -195px -473px;
-  width: 110px;
-  height: 26px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.clua:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -358px -707px;
-  width: 110px;
-  height: 26px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.danida {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -484px -400px;
-  width: 82px;
-  height: 15px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.danida:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -689px;
-  width: 82px;
-  height: 15px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.digitalglobe {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -252px -623px;
-  width: 120px;
-  height: 38px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.digitalglobe:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -372px -623px;
-  width: 120px;
-  height: 38px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.ejn {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -652px -261px;
-  width: 80px;
-  height: 64px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.ejn:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -652px -69px;
-  width: 80px;
-  height: 64px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.esri {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -470px -421px;
-  width: 87px;
-  height: 33px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.esri:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -51px -707px;
-  width: 87px;
-  height: 33px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.ewmi {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: 0px -623px;
-  width: 126px;
-  height: 40px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.ewmi:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -126px -623px;
-  width: 126px;
-  height: 40px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.gef {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -427px -114px;
-  width: 51px;
-  height: 59px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.gef:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: 0px -707px;
-  width: 51px;
-  height: 59px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.generation {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -311px;
-  width: 110px;
-  height: 31px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.generation:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -280px;
-  width: 110px;
-  height: 31px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.globalforestwatchcanada {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -862px -364px;
-  width: 42px;
-  height: 44px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.globalforestwatchcanada:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -862px -320px;
-  width: 42px;
-  height: 44px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.google {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -112px -766px;
-  width: 85px;
-  height: 29px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.google:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -197px -766px;
-  width: 85px;
-  height: 29px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.icf {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -248px -707px;
-  width: 110px;
-  height: 26px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.icf:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -305px -473px;
-  width: 110px;
-  height: 26px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.imazon {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -456px -766px;
-  width: 79px;
-  height: 24px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.imazon:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -652px -599px;
-  width: 79px;
-  height: 24px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.inab {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -215px -114px;
-  width: 106px;
-  height: 80px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.inab:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -321px -114px;
-  width: 106px;
-  height: 80px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.ioi {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -212px -261px;
-  width: 110px;
-  height: 10px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.ioi:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -322px -261px;
-  width: 110px;
-  height: 10px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.ministiere {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -652px -532px;
-  width: 70px;
-  height: 67px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.ministiere:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -652px -465px;
-  width: 70px;
-  height: 67px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.ministryofforeignaffairs {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: 0px -198px;
-  width: 106px;
-  height: 80px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.ministryofforeignaffairs:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -106px -198px;
-  width: 106px;
-  height: 80px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.moises {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -110px -663px;
-  width: 110px;
-  height: 44px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.moises:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: 0px -663px;
-  width: 110px;
-  height: 44px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.mongabay {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -220px -663px;
-  width: 110px;
-  height: 40px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.mongabay:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -330px -663px;
-  width: 110px;
-  height: 40px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.moore {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -206px;
-  width: 96px;
-  height: 37px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.moore:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -243px;
-  width: 96px;
-  height: 37px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.muyissi {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -572px -240px;
-  width: 80px;
-  height: 80px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.muyissi:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -572px 0px;
-  width: 80px;
-  height: 80px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.norwegianministri {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -520px -561px;
-  width: 110px;
-  height: 46px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.norwegianministri:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -410px -561px;
-  width: 110px;
-  height: 46px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.opendevcam {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -652px -325px;
-  width: 70px;
-  height: 70px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.opendevcam:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -652px -395px;
-  width: 70px;
-  height: 70px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.opendevmekong {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -572px -160px;
-  width: 80px;
-  height: 80px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.opendevmekong:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -572px -80px;
-  width: 80px;
-  height: 80px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.orbital {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -101px -351px;
-  width: 101px;
-  height: 70px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.orbital:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: 0px -351px;
-  width: 101px;
-  height: 70px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.osfac {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -862px -170px;
-  width: 44px;
-  height: 56px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.osfac:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -862px -114px;
-  width: 44px;
-  height: 56px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.osinfor {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: 0px -421px;
-  width: 86px;
-  height: 80px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.osinfor:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -484px -320px;
-  width: 86px;
-  height: 80px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.raisg {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -572px -395px;
-  width: 80px;
-  height: 75px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.raisg:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -572px -320px;
-  width: 80px;
-  height: 75px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.redd {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -95px -561px;
-  width: 95px;
-  height: 62px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.redd:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: 0px -561px;
-  width: 95px;
-  height: 62px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.resolve {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -486px;
-  width: 110px;
-  height: 28px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.resolve:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -542px;
-  width: 110px;
-  height: 28px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.rfuk {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -492px -623px;
-  width: 110px;
-  height: 37px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.rfuk:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -602px -623px;
-  width: 110px;
-  height: 37px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.rm {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -330px -278px;
-  width: 110px;
-  height: 66px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.rm:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -220px -278px;
-  width: 110px;
-  height: 66px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.rspo {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -140px;
-  width: 110px;
-  height: 33px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.rspo:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -173px;
-  width: 110px;
-  height: 33px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.rtrs {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -778px -60px;
-  width: 46px;
-  height: 80px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.rtrs:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -60px;
-  width: 46px;
-  height: 80px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.scannex {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -171px -740px;
-  width: 110px;
-  height: 20px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.scannex:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -281px -740px;
-  width: 110px;
-  height: 20px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.sida {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -330px -501px;
-  width: 110px;
-  height: 55px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.sida:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -220px -501px;
-  width: 110px;
-  height: 55px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.specialachievement {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -215px 0px;
-  width: 269px;
-  height: 57px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.specialachievement:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -215px -57px;
-  width: 269px;
-  height: 57px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.thejanegoodallinstitute {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -415px -473px;
-  width: 110px;
-  height: 26px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.thejanegoodallinstitute:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -138px -707px;
-  width: 110px;
-  height: 26px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.thetiliafund {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: 0px -817px;
-  width: 67px;
-  height: 25px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.thetiliafund:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -660px -663px;
-  width: 67px;
-  height: 25px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.tipos {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -514px;
-  width: 110px;
-  height: 28px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.tipos:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -570px;
-  width: 110px;
-  height: 28px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.ukaid {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -862px -273px;
-  width: 43px;
-  height: 47px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.ukaid:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -862px -226px;
-  width: 43px;
-  height: 47px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.unep {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -862px 0px;
-  width: 49px;
-  height: 57px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.unep:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -862px -57px;
-  width: 49px;
-  height: 57px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.unepwcmc {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -110px -501px;
-  width: 110px;
-  height: 60px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.unepwcmc:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: 0px -501px;
-  width: 110px;
-  height: 60px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.unilever {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -484px 0px;
-  width: 88px;
-  height: 80px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.unilever:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -484px -80px;
-  width: 88px;
-  height: 80px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.universityofmaryland {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: 0px -766px;
-  width: 56px;
-  height: 51px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.universityofmaryland:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -56px -766px;
-  width: 56px;
-  height: 51px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.urthecast {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -578px -707px;
-  width: 110px;
-  height: 23px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.urthecast:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -468px -707px;
-  width: 110px;
-  height: 23px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.usaid {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -652px -133px;
-  width: 80px;
-  height: 64px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.usaid:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -652px -197px;
-  width: 80px;
-  height: 64px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.vizzuality {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -86px -473px;
-  width: 109px;
-  height: 27px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.vizzuality:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -662px;
-  width: 109px;
-  height: 27px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.whrc {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -484px -240px;
-  width: 87px;
-  height: 80px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.whrc:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -484px -160px;
-  width: 87px;
-  height: 80px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.wri {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -598px;
-  width: 95px;
-  height: 32px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.wri:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -732px -630px;
-  width: 95px;
-  height: 32px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.zeroextinction {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -51px -740px;
-  width: 120px;
-  height: 20px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.zeroextinction:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -688px -707px;
-  width: 120px;
-  height: 20px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.zsl {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: 0px -278px;
-  width: 110px;
-  height: 73px;
-}
-#footerGfw .m-footer-logos .m-footer-carousel li a.zsl:hover {
-  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
-  background-position: -110px -278px;
-  width: 110px;
-  height: 73px;
-}
 #footerGfw .m-footer-terms {
   text-align: center;
   padding: 0 0 60px;
@@ -2426,6 +1646,881 @@ The `sprites` mixin generates identical output to the CSS template
 }
 #footerGfw .m-footer-terms a:hover {
   text-decoration: underline;
+}
+
+#my-gfw-slider {
+  position: relative;
+  padding: 30px 10px;
+  display: none;
+}
+@media (min-width: 850px) {
+  #my-gfw-slider {
+    display: block;
+  }
+}
+#my-gfw-slider .m-footer-carousel {
+  padding: 0 50px;
+}
+#my-gfw-slider .m-footer-carousel li {
+  display: inline-block;
+  height: 100px;
+}
+#my-gfw-slider .m-footer-carousel li a {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+#my-gfw-slider .m-footer-carousel li a.afc {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -572px -470px;
+  width: 80px;
+  height: 69px;
+}
+#my-gfw-slider .m-footer-carousel li a.afc:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -652px 0px;
+  width: 80px;
+  height: 69px;
+}
+#my-gfw-slider .m-footer-carousel li a.airbus {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -30px;
+  width: 130px;
+  height: 30px;
+}
+#my-gfw-slider .m-footer-carousel li a.airbus:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px 0px;
+  width: 130px;
+  height: 30px;
+}
+#my-gfw-slider .m-footer-carousel li a.bei {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -212px -198px;
+  width: 130px;
+  height: 63px;
+}
+#my-gfw-slider .m-footer-carousel li a.bei:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -342px -198px;
+  width: 130px;
+  height: 63px;
+}
+#my-gfw-slider .m-footer-carousel li a.bigdataclimatechallengewinner {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: 0px 0px;
+  width: 215px;
+  height: 99px;
+}
+#my-gfw-slider .m-footer-carousel li a.bigdataclimatechallengewinner:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: 0px -99px;
+  width: 215px;
+  height: 99px;
+}
+#my-gfw-slider .m-footer-carousel li a.blueraster {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -190px -561px;
+  width: 110px;
+  height: 48px;
+}
+#my-gfw-slider .m-footer-carousel li a.blueraster:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -300px -561px;
+  width: 110px;
+  height: 48px;
+}
+#my-gfw-slider .m-footer-carousel li a.bnpb {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -422px;
+  width: 50px;
+  height: 64px;
+}
+#my-gfw-slider .m-footer-carousel li a.bnpb:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -782px -422px;
+  width: 50px;
+  height: 64px;
+}
+#my-gfw-slider .m-footer-carousel li a.bobolinkfundation {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -369px -766px;
+  width: 87px;
+  height: 24px;
+}
+#my-gfw-slider .m-footer-carousel li a.bobolinkfundation:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -282px -766px;
+  width: 87px;
+  height: 24px;
+}
+#my-gfw-slider .m-footer-carousel li a.cambridge {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -86px -421px;
+  width: 130px;
+  height: 52px;
+}
+#my-gfw-slider .m-footer-carousel li a.cambridge:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -216px -421px;
+  width: 130px;
+  height: 52px;
+}
+#my-gfw-slider .m-footer-carousel li a.cartodb {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -550px -663px;
+  width: 110px;
+  height: 39px;
+}
+#my-gfw-slider .m-footer-carousel li a.cartodb:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -440px -663px;
+  width: 110px;
+  height: 39px;
+}
+#my-gfw-slider .m-footer-carousel li a.centerforglobaldevelopment {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -382px;
+  width: 84px;
+  height: 40px;
+}
+#my-gfw-slider .m-footer-carousel li a.centerforglobaldevelopment:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -342px;
+  width: 84px;
+  height: 40px;
+}
+#my-gfw-slider .m-footer-carousel li a.cgiar {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -346px -421px;
+  width: 124px;
+  height: 43px;
+}
+#my-gfw-slider .m-footer-carousel li a.cgiar:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -440px -501px;
+  width: 124px;
+  height: 43px;
+}
+#my-gfw-slider .m-footer-carousel li a.ciat {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -322px -351px;
+  width: 120px;
+  height: 57px;
+}
+#my-gfw-slider .m-footer-carousel li a.ciat:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -202px -351px;
+  width: 120px;
+  height: 57px;
+}
+#my-gfw-slider .m-footer-carousel li a.clua {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -195px -473px;
+  width: 110px;
+  height: 26px;
+}
+#my-gfw-slider .m-footer-carousel li a.clua:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -358px -707px;
+  width: 110px;
+  height: 26px;
+}
+#my-gfw-slider .m-footer-carousel li a.danida {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -484px -400px;
+  width: 82px;
+  height: 15px;
+}
+#my-gfw-slider .m-footer-carousel li a.danida:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -689px;
+  width: 82px;
+  height: 15px;
+}
+#my-gfw-slider .m-footer-carousel li a.digitalglobe {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -252px -623px;
+  width: 120px;
+  height: 38px;
+}
+#my-gfw-slider .m-footer-carousel li a.digitalglobe:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -372px -623px;
+  width: 120px;
+  height: 38px;
+}
+#my-gfw-slider .m-footer-carousel li a.ejn {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -652px -261px;
+  width: 80px;
+  height: 64px;
+}
+#my-gfw-slider .m-footer-carousel li a.ejn:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -652px -69px;
+  width: 80px;
+  height: 64px;
+}
+#my-gfw-slider .m-footer-carousel li a.esri {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -470px -421px;
+  width: 87px;
+  height: 33px;
+}
+#my-gfw-slider .m-footer-carousel li a.esri:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -51px -707px;
+  width: 87px;
+  height: 33px;
+}
+#my-gfw-slider .m-footer-carousel li a.ewmi {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: 0px -623px;
+  width: 126px;
+  height: 40px;
+}
+#my-gfw-slider .m-footer-carousel li a.ewmi:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -126px -623px;
+  width: 126px;
+  height: 40px;
+}
+#my-gfw-slider .m-footer-carousel li a.gef {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -427px -114px;
+  width: 51px;
+  height: 59px;
+}
+#my-gfw-slider .m-footer-carousel li a.gef:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: 0px -707px;
+  width: 51px;
+  height: 59px;
+}
+#my-gfw-slider .m-footer-carousel li a.generation {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -311px;
+  width: 110px;
+  height: 31px;
+}
+#my-gfw-slider .m-footer-carousel li a.generation:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -280px;
+  width: 110px;
+  height: 31px;
+}
+#my-gfw-slider .m-footer-carousel li a.globalforestwatchcanada {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -862px -364px;
+  width: 42px;
+  height: 44px;
+}
+#my-gfw-slider .m-footer-carousel li a.globalforestwatchcanada:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -862px -320px;
+  width: 42px;
+  height: 44px;
+}
+#my-gfw-slider .m-footer-carousel li a.google {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -112px -766px;
+  width: 85px;
+  height: 29px;
+}
+#my-gfw-slider .m-footer-carousel li a.google:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -197px -766px;
+  width: 85px;
+  height: 29px;
+}
+#my-gfw-slider .m-footer-carousel li a.icf {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -248px -707px;
+  width: 110px;
+  height: 26px;
+}
+#my-gfw-slider .m-footer-carousel li a.icf:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -305px -473px;
+  width: 110px;
+  height: 26px;
+}
+#my-gfw-slider .m-footer-carousel li a.imazon {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -456px -766px;
+  width: 79px;
+  height: 24px;
+}
+#my-gfw-slider .m-footer-carousel li a.imazon:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -652px -599px;
+  width: 79px;
+  height: 24px;
+}
+#my-gfw-slider .m-footer-carousel li a.inab {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -215px -114px;
+  width: 106px;
+  height: 80px;
+}
+#my-gfw-slider .m-footer-carousel li a.inab:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -321px -114px;
+  width: 106px;
+  height: 80px;
+}
+#my-gfw-slider .m-footer-carousel li a.ioi {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -212px -261px;
+  width: 110px;
+  height: 10px;
+}
+#my-gfw-slider .m-footer-carousel li a.ioi:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -322px -261px;
+  width: 110px;
+  height: 10px;
+}
+#my-gfw-slider .m-footer-carousel li a.ministiere {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -652px -532px;
+  width: 70px;
+  height: 67px;
+}
+#my-gfw-slider .m-footer-carousel li a.ministiere:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -652px -465px;
+  width: 70px;
+  height: 67px;
+}
+#my-gfw-slider .m-footer-carousel li a.ministryofforeignaffairs {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: 0px -198px;
+  width: 106px;
+  height: 80px;
+}
+#my-gfw-slider .m-footer-carousel li a.ministryofforeignaffairs:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -106px -198px;
+  width: 106px;
+  height: 80px;
+}
+#my-gfw-slider .m-footer-carousel li a.moises {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -110px -663px;
+  width: 110px;
+  height: 44px;
+}
+#my-gfw-slider .m-footer-carousel li a.moises:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: 0px -663px;
+  width: 110px;
+  height: 44px;
+}
+#my-gfw-slider .m-footer-carousel li a.mongabay {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -220px -663px;
+  width: 110px;
+  height: 40px;
+}
+#my-gfw-slider .m-footer-carousel li a.mongabay:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -330px -663px;
+  width: 110px;
+  height: 40px;
+}
+#my-gfw-slider .m-footer-carousel li a.moore {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -206px;
+  width: 96px;
+  height: 37px;
+}
+#my-gfw-slider .m-footer-carousel li a.moore:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -243px;
+  width: 96px;
+  height: 37px;
+}
+#my-gfw-slider .m-footer-carousel li a.muyissi {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -572px -240px;
+  width: 80px;
+  height: 80px;
+}
+#my-gfw-slider .m-footer-carousel li a.muyissi:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -572px 0px;
+  width: 80px;
+  height: 80px;
+}
+#my-gfw-slider .m-footer-carousel li a.norwegianministri {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -520px -561px;
+  width: 110px;
+  height: 46px;
+}
+#my-gfw-slider .m-footer-carousel li a.norwegianministri:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -410px -561px;
+  width: 110px;
+  height: 46px;
+}
+#my-gfw-slider .m-footer-carousel li a.opendevcam {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -652px -325px;
+  width: 70px;
+  height: 70px;
+}
+#my-gfw-slider .m-footer-carousel li a.opendevcam:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -652px -395px;
+  width: 70px;
+  height: 70px;
+}
+#my-gfw-slider .m-footer-carousel li a.opendevmekong {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -572px -160px;
+  width: 80px;
+  height: 80px;
+}
+#my-gfw-slider .m-footer-carousel li a.opendevmekong:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -572px -80px;
+  width: 80px;
+  height: 80px;
+}
+#my-gfw-slider .m-footer-carousel li a.orbital {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -101px -351px;
+  width: 101px;
+  height: 70px;
+}
+#my-gfw-slider .m-footer-carousel li a.orbital:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: 0px -351px;
+  width: 101px;
+  height: 70px;
+}
+#my-gfw-slider .m-footer-carousel li a.osfac {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -862px -170px;
+  width: 44px;
+  height: 56px;
+}
+#my-gfw-slider .m-footer-carousel li a.osfac:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -862px -114px;
+  width: 44px;
+  height: 56px;
+}
+#my-gfw-slider .m-footer-carousel li a.osinfor {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: 0px -421px;
+  width: 86px;
+  height: 80px;
+}
+#my-gfw-slider .m-footer-carousel li a.osinfor:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -484px -320px;
+  width: 86px;
+  height: 80px;
+}
+#my-gfw-slider .m-footer-carousel li a.raisg {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -572px -395px;
+  width: 80px;
+  height: 75px;
+}
+#my-gfw-slider .m-footer-carousel li a.raisg:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -572px -320px;
+  width: 80px;
+  height: 75px;
+}
+#my-gfw-slider .m-footer-carousel li a.redd {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -95px -561px;
+  width: 95px;
+  height: 62px;
+}
+#my-gfw-slider .m-footer-carousel li a.redd:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: 0px -561px;
+  width: 95px;
+  height: 62px;
+}
+#my-gfw-slider .m-footer-carousel li a.resolve {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -486px;
+  width: 110px;
+  height: 28px;
+}
+#my-gfw-slider .m-footer-carousel li a.resolve:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -542px;
+  width: 110px;
+  height: 28px;
+}
+#my-gfw-slider .m-footer-carousel li a.rfuk {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -492px -623px;
+  width: 110px;
+  height: 37px;
+}
+#my-gfw-slider .m-footer-carousel li a.rfuk:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -602px -623px;
+  width: 110px;
+  height: 37px;
+}
+#my-gfw-slider .m-footer-carousel li a.rm {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -330px -278px;
+  width: 110px;
+  height: 66px;
+}
+#my-gfw-slider .m-footer-carousel li a.rm:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -220px -278px;
+  width: 110px;
+  height: 66px;
+}
+#my-gfw-slider .m-footer-carousel li a.rspo {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -140px;
+  width: 110px;
+  height: 33px;
+}
+#my-gfw-slider .m-footer-carousel li a.rspo:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -173px;
+  width: 110px;
+  height: 33px;
+}
+#my-gfw-slider .m-footer-carousel li a.rtrs {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -778px -60px;
+  width: 46px;
+  height: 80px;
+}
+#my-gfw-slider .m-footer-carousel li a.rtrs:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -60px;
+  width: 46px;
+  height: 80px;
+}
+#my-gfw-slider .m-footer-carousel li a.scannex {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -171px -740px;
+  width: 110px;
+  height: 20px;
+}
+#my-gfw-slider .m-footer-carousel li a.scannex:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -281px -740px;
+  width: 110px;
+  height: 20px;
+}
+#my-gfw-slider .m-footer-carousel li a.sida {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -330px -501px;
+  width: 110px;
+  height: 55px;
+}
+#my-gfw-slider .m-footer-carousel li a.sida:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -220px -501px;
+  width: 110px;
+  height: 55px;
+}
+#my-gfw-slider .m-footer-carousel li a.specialachievement {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -215px 0px;
+  width: 269px;
+  height: 57px;
+}
+#my-gfw-slider .m-footer-carousel li a.specialachievement:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -215px -57px;
+  width: 269px;
+  height: 57px;
+}
+#my-gfw-slider .m-footer-carousel li a.thejanegoodallinstitute {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -415px -473px;
+  width: 110px;
+  height: 26px;
+}
+#my-gfw-slider .m-footer-carousel li a.thejanegoodallinstitute:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -138px -707px;
+  width: 110px;
+  height: 26px;
+}
+#my-gfw-slider .m-footer-carousel li a.thetiliafund {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: 0px -817px;
+  width: 67px;
+  height: 25px;
+}
+#my-gfw-slider .m-footer-carousel li a.thetiliafund:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -660px -663px;
+  width: 67px;
+  height: 25px;
+}
+#my-gfw-slider .m-footer-carousel li a.tipos {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -514px;
+  width: 110px;
+  height: 28px;
+}
+#my-gfw-slider .m-footer-carousel li a.tipos:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -570px;
+  width: 110px;
+  height: 28px;
+}
+#my-gfw-slider .m-footer-carousel li a.ukaid {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -862px -273px;
+  width: 43px;
+  height: 47px;
+}
+#my-gfw-slider .m-footer-carousel li a.ukaid:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -862px -226px;
+  width: 43px;
+  height: 47px;
+}
+#my-gfw-slider .m-footer-carousel li a.unep {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -862px 0px;
+  width: 49px;
+  height: 57px;
+}
+#my-gfw-slider .m-footer-carousel li a.unep:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -862px -57px;
+  width: 49px;
+  height: 57px;
+}
+#my-gfw-slider .m-footer-carousel li a.unepwcmc {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -110px -501px;
+  width: 110px;
+  height: 60px;
+}
+#my-gfw-slider .m-footer-carousel li a.unepwcmc:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: 0px -501px;
+  width: 110px;
+  height: 60px;
+}
+#my-gfw-slider .m-footer-carousel li a.unilever {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -484px 0px;
+  width: 88px;
+  height: 80px;
+}
+#my-gfw-slider .m-footer-carousel li a.unilever:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -484px -80px;
+  width: 88px;
+  height: 80px;
+}
+#my-gfw-slider .m-footer-carousel li a.universityofmaryland {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: 0px -766px;
+  width: 56px;
+  height: 51px;
+}
+#my-gfw-slider .m-footer-carousel li a.universityofmaryland:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -56px -766px;
+  width: 56px;
+  height: 51px;
+}
+#my-gfw-slider .m-footer-carousel li a.urthecast {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -578px -707px;
+  width: 110px;
+  height: 23px;
+}
+#my-gfw-slider .m-footer-carousel li a.urthecast:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -468px -707px;
+  width: 110px;
+  height: 23px;
+}
+#my-gfw-slider .m-footer-carousel li a.usaid {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -652px -133px;
+  width: 80px;
+  height: 64px;
+}
+#my-gfw-slider .m-footer-carousel li a.usaid:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -652px -197px;
+  width: 80px;
+  height: 64px;
+}
+#my-gfw-slider .m-footer-carousel li a.vizzuality {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -86px -473px;
+  width: 109px;
+  height: 27px;
+}
+#my-gfw-slider .m-footer-carousel li a.vizzuality:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -662px;
+  width: 109px;
+  height: 27px;
+}
+#my-gfw-slider .m-footer-carousel li a.whrc {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -484px -240px;
+  width: 87px;
+  height: 80px;
+}
+#my-gfw-slider .m-footer-carousel li a.whrc:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -484px -160px;
+  width: 87px;
+  height: 80px;
+}
+#my-gfw-slider .m-footer-carousel li a.wri {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -598px;
+  width: 95px;
+  height: 32px;
+}
+#my-gfw-slider .m-footer-carousel li a.wri:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -732px -630px;
+  width: 95px;
+  height: 32px;
+}
+#my-gfw-slider .m-footer-carousel li a.zeroextinction {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -51px -740px;
+  width: 120px;
+  height: 20px;
+}
+#my-gfw-slider .m-footer-carousel li a.zeroextinction:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -688px -707px;
+  width: 120px;
+  height: 20px;
+}
+#my-gfw-slider .m-footer-carousel li a.zsl {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: 0px -278px;
+  width: 110px;
+  height: 73px;
+}
+#my-gfw-slider .m-footer-carousel li a.zsl:hover {
+  background-image: url(https://cdn.rawgit.com/simbiotica/gfw_assets/39365520305b62793c15efa9fefc712206e21493/images/sprites/logos.png);
+  background-position: -110px -278px;
+  width: 110px;
+  height: 73px;
+}
+#my-gfw-slider .m-footer-carousel {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#my-gfw-slider .frame {
+  width: 957px;
+  margin: 0 auto !important;
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#my-gfw-slider .slides {
+  height: 160px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  white-space: nowrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#my-gfw-slider .js_prev,
+#my-gfw-slider .js_next {
+  position: absolute;
+  top: 60px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: #E0E0D9;
+  color: transparent;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+#my-gfw-slider .js_prev:hover, #my-gfw-slider .js_prev:focus,
+#my-gfw-slider .js_next:hover,
+#my-gfw-slider .js_next:focus {
+  outline: none;
+  background: #97bd3d;
+  color: transparent;
+}
+#my-gfw-slider .js_prev:hover:before, #my-gfw-slider .js_prev:focus:before,
+#my-gfw-slider .js_next:hover:before,
+#my-gfw-slider .js_next:focus:before {
+  opacity: 1;
+}
+#my-gfw-slider .js_prev:before, #my-gfw-slider .js_prev:before,
+#my-gfw-slider .js_next:before,
+#my-gfw-slider .js_next:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#my-gfw-slider .js_prev {
+  left: 10px;
+}
+#my-gfw-slider .js_prev:before {
+  background: url(http://www.globalforestwatch.org/assets/svg-icons/arrow-left.svg) center no-repeat;
+}
+#my-gfw-slider .js_next {
+  right: 10px;
+}
+#my-gfw-slider .js_next:before {
+  background: url(http://www.globalforestwatch.org/assets/svg-icons/arrow-right.svg) center no-repeat;
+}
+#my-gfw-slider li.js_slide {
+  display: inline-block;
+  position: relative;
+  width: 975px;
 }
 
 #footerGfw {

@@ -6,19 +6,20 @@ window.GFW.NavBar = window.GFW.NavBar || {};
 gfw.myGFW = gfw.myGFW || {};
 
 var LoginButton = gfw.myGFW.LoginButton = function(options) {
-  this.$el = options.$el || $('<div>');
+  this.el = options.el || document.createElement('div');
   this.checkStatus();
 };
 
 LoginButton.prototype.render = function() {
-  var template;
+  var id;
   if (this.loggedIn === true) {
-    template = $('#my-gfw-menu-loggedin-template').html();
+    id = 'my-gfw-menu-loggedin-template';
   } else {
-    template = $('#my-gfw-menu-loggedout-template').html();
+    id = 'my-gfw-menu-loggedout-template';
   }
 
-  this.$el.html(template);
+  var template = document.getElementById(id).innerHTML;
+  this.el.innerHTML = template;
   this.delegateEvents();
 
   return this;
@@ -26,18 +27,21 @@ LoginButton.prototype.render = function() {
 
 LoginButton.prototype.checkStatus = function() {
   var context = this;
-  gfw.myGFW.User.isLoggedIn().then(function() {
-    context.loggedIn = true;
-  }).fail(function() {
-    context.loggedIn = false;
-  }).always(function() {
-    context.render();
+  gfw.myGFW.User.isLoggedIn({
+    success: function() {
+      context.loggedIn = true;
+      context.render();
+    },
+    failure: function() {
+      context.loggedIn = false;
+      context.render();
+    }
   });
 };
 
 LoginButton.prototype.showModal = function() {
-  var modalView = new gfw.myGFW.LoginModal();
-  this.$el.append(modalView.$el);
+  var modalView = new gfw.myGFW.LoginModal({
+    el: document.getElementById('my-gfw-modal')});
 };
 
 LoginButton.prototype.signOut = function() {
@@ -46,8 +50,15 @@ LoginButton.prototype.signOut = function() {
 };
 
 LoginButton.prototype.delegateEvents = function() {
-  this.$el.on('click', '#my-gfw-open-modal', this.showModal.bind(this));
-  this.$el.on('click', '#my-gfw-sign-out', this.signOut);
+  var openModal = document.getElementById('my-gfw-open-modal');
+  if (openModal !== null) {
+    openModal.addEventListener('click', this.showModal.bind(this));
+  }
+
+  var signOut = document.getElementById('my-gfw-sign-out');
+  if (signOut !== null) {
+    signOut.onclick = this.signOut;
+  }
 };
 
 })(window.GFW.NavBar);

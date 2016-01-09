@@ -186,16 +186,14 @@
 </div>
 
 <script id="my-gfw-menu-modal-template" type="text/x-template">
-  <div class="modal is-active" id="my-gfw-modal">
-    <div class="modal-backdrop"></div>
-    <div class="modal-window">
-      <a href="#" class="modal-close" id="my-gfw-modal-close">
-        <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-close"></use></svg>
-      </a>
-      <div class="modal-wrapper">
-        <div class="modal-content">
-          <a href="http://localhost:8080/auth/twitter" style="display: block; margin-top: 50px;">Login with twitter</a>
-        </div>
+  <div class="modal-backdrop"></div>
+  <div class="modal-window">
+    <a href="#" class="modal-close" id="my-gfw-modal-close">
+      <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-close"></use></svg>
+    </a>
+    <div class="modal-wrapper">
+      <div class="modal-content">
+        <a href="http://localhost:8080/auth/twitter" style="display: block; margin-top: 50px;">Login with twitter</a>
       </div>
     </div>
   </div>
@@ -206,6 +204,8 @@
     <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-mygfw"></use></svg>
     <span>Log in to My GFW</span>
   </a>
+  <div class="modal" id="my-gfw-modal">
+  </div>
 </script>
 
 <script id="my-gfw-menu-loggedin-template" type="text/x-template">
