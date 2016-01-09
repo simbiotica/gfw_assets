@@ -16,6 +16,7 @@ gfw.Application = {
     this.initTranslate();
     this.initEvents();
     this.initFeedback();
+    this.initMyGFW();
 
     // slick load
     $(document).ready(this.initSlick.bind(this));
@@ -113,6 +114,12 @@ gfw.Application = {
 
   initFeedback: function() {
     feedbackModal.init();
+  },
+
+  initMyGFW: function() {
+    var loginButton = new gfw.myGFW.LoginButton({
+      $el: $('#my-gfw-container')});
+    loginButton.render();
   },
 
   // Events related to UI

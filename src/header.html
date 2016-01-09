@@ -76,12 +76,12 @@
       <li class="m-header-item -default shape-apps">
         <a id="btnSubmenuApps" data-submenu="#submenuApps" class="m-header-submenu-btn" href="/">
           <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-apps"></use></svg>
-          <svg style="display: none;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-close"></use></svg>          
+          <svg style="display: none;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-close"></use></svg>
           <span>Apps</span>
         </a>
         <!-- APPS SUBMENU -->
-        <div id="submenuApps" class="m-header-submenu scroll-dark -apps">   
-          <div class="m-header-backdrop"></div>     
+        <div id="submenuApps" class="m-header-submenu scroll-dark -apps">
+          <div class="m-header-backdrop"></div>
           <ul class="scroll-dark">
             <li class="shape-map"><a href="/map"><div class="app-wrapper"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-map"></use></svg><span>GFW Map Interactive</span></div></a></li>
             <li class="shape-countries"><a href="/countries"><div class="app-wrapper"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-countries"></use></svg><span>Country Profiles & Rankings</span></div></a></li>
@@ -97,17 +97,17 @@
       </li>
     </ul>
     <ul class="m-header-nav -secondary">
-      <li class="m-header-item -text shape-mygfw"><a href="/my_gfw"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-mygfw"></use></svg><span>My GFW</span></a></li>
-      <li class="m-header-item -text shape-blog"><a class="external-link" href="http://blog.globalforestwatch.org/" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-blog"></use></svg><span>Blog</span></a></li>    
-      <li class="m-header-item -text shape-howto"><a href="/howto"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-howto"></use></svg><span>How to</span></a></li>    
-      <li class="m-header-item -text shape-odp"><a class="external-link" href="http://data.globalforestwatch.org/" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-odp" target="_blank"></use></svg><span>Open Data Portal</span></a></li>    
+      <li class="m-header-item -text shape-blog"><a class="external-link" href="http://blog.globalforestwatch.org/" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-blog"></use></svg><span>Blog</span></a></li>
+      <li class="m-header-item -text shape-howto"><a href="/howto"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-howto"></use></svg><span>How to</span></a></li>
+      <li class="m-header-item -text shape-odp"><a class="external-link" href="http://data.globalforestwatch.org/" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-odp" target="_blank"></use></svg><span>Open Data Portal</span></a></li>
+      <li class="m-header-item -text shape-mygfw" id="my-gfw-container"></li>
       <li class="m-header-item -search">
         <form action="http://www.globalforestwatch.org/search">
           <button type="submit"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-search"></use></svg></button>
           <input type="text" name="query" id="search-input" placeholder="Search GFW website">
         </form>
-      </li>    
-      <li class="m-header-item -translate"><div id="googleTranslate"></div></li>    
+      </li>
+      <li class="m-header-item -translate"><div id="googleTranslate"></div></li>
     </ul>
     <ul class="m-header-nav -mobile">
       <li class="m-header-item -default shape-menu">
@@ -181,15 +181,43 @@
           </ul>
         </div>
       </li>
-    </ul>    
+    </ul>
   </div>
 </div>
 
+<script id="my-gfw-menu-modal-template" type="text/x-template">
+  <div class="modal is-active" id="my-gfw-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-window">
+      <a href="#" class="modal-close" id="my-gfw-modal-close">
+        <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-close"></use></svg>
+      </a>
+      <div class="modal-wrapper">
+        <div class="modal-content">
+          <a href="http://localhost:8080/auth/twitter" style="display: block; margin-top: 50px;">Login with twitter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
 
+<script id="my-gfw-menu-loggedout-template" type="text/x-template">
+  <a href="#" id="my-gfw-open-modal">
+    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-mygfw"></use></svg>
+    <span>Log in to My GFW</span>
+  </a>
+</script>
 
-
-
-
+<script id="my-gfw-menu-loggedin-template" type="text/x-template">
+  <a href="/my_gfw">
+    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-h-mygfw"></use></svg>
+    <span>My GFW</span>
+  </a>
+  <ul class="submenu">
+    <li><a href="/my_gfw">Edit Profile</a></li>
+    <li><a href="#" id="my-gfw-sign-out">Sign Out</a></li>
+  </ul>
+</script>
 
 <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
