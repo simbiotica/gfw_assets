@@ -328,13 +328,19 @@ var feedbackModal = {
       if (!!this.$textarea.val() && this.validateEmail(this.$email.val())) {
         this.actionSend();
       } else {
-        alert('Please, fill the email and the feedback textarea to continue. Be sure that the email format is correct');
+        if (!this.$textarea.val() && this.validateEmail(this.$email.val())) {
+          alert('Please enter feedback to continue');
+        } else if (!!this.$textarea.val() && !this.validateEmail(this.$email.val())) {
+          alert('Please enter an email address to continue.');
+        } else {
+          alert('Please enter feedback and an email address to continue');
+        }
       }
     } else {
       if (!!this.$textarea.val()) {
         this.actionSend();
       } else {
-        alert('Please, fill the feedback textarea to continue');
+        alert('Please enter feedback to continue');
       }
     }
   },
