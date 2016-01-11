@@ -1195,6 +1195,7 @@ html.-no-scroll, body.-no-scroll {
   fill: #3c3c3c;
 }
 #headerGfw .feedback-modal .modal-window .modal-wrapper, #footerGfw .feedback-modal .modal-window .modal-wrapper {
+  position: relative;
   overflow-x: hidden;
   overflow-y: auto;
   height: 100%;
@@ -1340,6 +1341,8 @@ html.-no-scroll, body.-no-scroll {
   padding: 10px 0 0;
   margin-left: 20px;
   line-height: 1.25;
+  display: list-item;
+  text-transform: none;
 }
 #headerGfw .feedback-modal .modal-content .bullets > li:first-child, #footerGfw .feedback-modal .modal-content .bullets > li:first-child {
   padding: 0;
@@ -1379,6 +1382,7 @@ html.-no-scroll, body.-no-scroll {
 }
 #headerGfw .feedback-modal .modal-steps > li, #footerGfw .feedback-modal .modal-steps > li {
   display: none;
+  text-transform: none;
 }
 #headerGfw .feedback-modal .modal-steps > li.-active, #footerGfw .feedback-modal .modal-steps > li.-active {
   display: block;
