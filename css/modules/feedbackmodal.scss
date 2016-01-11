@@ -142,6 +142,7 @@ $heightModal: auto;
 
       // MODAL WRAPPER
       .modal-wrapper{
+        position: relative;
         overflow-x: hidden;
         overflow-y: auto;
         height: 100%;
@@ -270,6 +271,8 @@ $heightModal: auto;
           padding: 10px 0 0;
           margin-left: 20px;
           line-height: 1.25;
+          display: list-item;
+          text-transform: none;
           &:first-child{
             padding: 0;
           }
@@ -314,6 +317,7 @@ $heightModal: auto;
       padding: 20px !important;
       > li {
         display: none;
+        text-transform: none;
         &.-active {
           display: block;
         }
