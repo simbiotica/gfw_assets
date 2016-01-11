@@ -325,22 +325,16 @@ var feedbackModal = {
   actionSubmit: function(e) {
     //Check if any input are filled. Should we use a plugin?
     if (this.$email.hasClass('required')) {
-      if (!!this.$textarea.val() && this.validateEmail(this.$email.val())) {
+      if (this.validateEmail(this.$email.val())) {
         this.actionSend();
       } else {
-        if (!this.$textarea.val() && this.validateEmail(this.$email.val())) {
-          alert('Please enter feedback to continue');
-        } else if (!!this.$textarea.val() && !this.validateEmail(this.$email.val())) {
-          alert('Please enter an email address to continue.');
-        } else {
-          alert('Please enter feedback and an email address to continue');
-        }
+        alert('Please enter an email address to continue');
       }
     } else {
       if (!!this.$textarea.val()) {
         this.actionSend();
       } else {
-        alert('Please enter feedback to continue');
+        alert('Please enter feedback, or sign up to be a GFW tester and enter an email address to continue');
       }
     }
   },
