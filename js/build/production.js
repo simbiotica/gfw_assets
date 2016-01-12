@@ -169,20 +169,10 @@ LoginButton.prototype.showModal = function() {
     el: document.getElementById('my-gfw-modal')});
 };
 
-LoginButton.prototype.signOut = function() {
-  document.cookie = "_eauth=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
-  location.reload();
-};
-
 LoginButton.prototype.delegateEvents = function() {
   var openModal = document.getElementById('my-gfw-open-modal');
   if (openModal !== null) {
     openModal.addEventListener('click', this.showModal.bind(this));
-  }
-
-  var signOut = document.getElementById('my-gfw-sign-out');
-  if (signOut !== null) {
-    signOut.onclick = this.signOut;
   }
 };
 
