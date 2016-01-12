@@ -44,6 +44,11 @@ window.GFW.NavBar = window.GFW.NavBar || {};
     'staging.globalforestwatch.org': 'staging.globalforestwatch.org'
   };
 
+  var API_URLS = {
+    'localhost': 'localhost:8080',
+    'www.globalforestwatch.org': 'api.globalforestwatch.org'
+  };
+
   gfw.Utils.getHost = function() {
     var currentLocation = window.location.hostname;
     if (URLS[currentLocation] === undefined) {
@@ -58,6 +63,19 @@ window.GFW.NavBar = window.GFW.NavBar || {};
     return (URLS[currentLocation] === undefined);
   };
 
+  gfw.Utils.getAPIHost = function() {
+    if (window.gfw && window.gfw.config) {
+      return window.gfw.config.GFW_API_HOST;
+    }
+
+    var currentLocation = window.location.hostname;
+    if (API_URLS[curentLocation] === undefined) {
+      currentLocation = DEFAULT_URL;
+    }
+
+    return 'http://' + API_URLS[currentLocation];
+  };
+
 })(window.GFW.NavBar);
 
 window.GFW = window.GFW || {};
@@ -70,7 +88,7 @@ gfw.myGFW = gfw.myGFW || {};
 var User = gfw.myGFW.User = {
   isLoggedIn: function(options) {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://localhost:8080/user', true);
+    xhr.open('GET', gfw.Utils.getAPIHost() + '/user', true);
     xhr.withCredentials = true;
     xhr.onreadystatechange = function() {
       var responseStatus = xhr.status;
@@ -105,14 +123,30 @@ LoginModal.prototype.render = function() {
   this.el.innerHTML = template;
   this.el.classList.add('is-active');
   this.delegateEvents();
+  this.setupLinks();
 
   return this;
 };
 
 LoginModal.prototype.delegateEvents = function() {
-  var modalClose = this.el.getElementsByClassName('modal-close')[0];
+  var modalClose = this.el.getElementsByClassName('my-gfw-modal-close')[0];
   if (modalClose !== null) {
     modalClose.onclick = this.close.bind(this);
+  }
+
+  var modalBackdrop = this.el.getElementsByClassName('my-gfw-modal-backdrop')[0];
+  if (modalBackdrop !== null) {
+    modalBackdrop.onclick = this.close.bind(this);
+  }
+};
+
+LoginModal.prototype.setupLinks = function() {
+  var links = document.getElementsByClassName('my-gfw-sign-in');
+
+  var i = 0;
+  for (; i < links.length; i++) {
+    var link = links[i];
+    link.href = gfw.Utils.getAPIHost() + link.getAttribute('href');
   }
 };
 
@@ -146,6 +180,7 @@ LoginButton.prototype.render = function() {
   var template = document.getElementById(id).innerHTML;
   this.el.innerHTML = template;
   this.delegateEvents();
+  this.setupLinks();
 
   return this;
 };
@@ -173,6 +208,13 @@ LoginButton.prototype.delegateEvents = function() {
   var openModal = document.getElementById('my-gfw-open-modal');
   if (openModal !== null) {
     openModal.addEventListener('click', this.showModal.bind(this));
+  }
+};
+
+LoginButton.prototype.setupLinks = function() {
+  var link = document.getElementById('my-gfw-sign-out');
+  if (link !== null) {
+    link.href = gfw.Utils.getAPIHost() + link.getAttribute('href');
   }
 };
 

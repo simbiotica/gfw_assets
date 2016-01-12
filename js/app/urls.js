@@ -13,6 +13,11 @@ window.GFW.NavBar = window.GFW.NavBar || {};
     'staging.globalforestwatch.org': 'staging.globalforestwatch.org'
   };
 
+  var API_URLS = {
+    'localhost': 'localhost:8080',
+    'www.globalforestwatch.org': 'api.globalforestwatch.org'
+  };
+
   gfw.Utils.getHost = function() {
     var currentLocation = window.location.hostname;
     if (URLS[currentLocation] === undefined) {
@@ -25,6 +30,19 @@ window.GFW.NavBar = window.GFW.NavBar || {};
   gfw.Utils.isDefaultHost = function() {
     var currentLocation = window.location.hostname;
     return (URLS[currentLocation] === undefined);
+  };
+
+  gfw.Utils.getAPIHost = function() {
+    if (window.gfw && window.gfw.config) {
+      return window.gfw.config.GFW_API_HOST;
+    }
+
+    var currentLocation = window.location.hostname;
+    if (API_URLS[curentLocation] === undefined) {
+      currentLocation = DEFAULT_URL;
+    }
+
+    return 'http://' + API_URLS[currentLocation];
   };
 
 })(window.GFW.NavBar);

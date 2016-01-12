@@ -1711,6 +1711,103 @@ The `sprites` mixin generates identical output to the CSS template
   background: #fafafa;
 }
 
+#my-gfw-modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+}
+#my-gfw-modal.is-active {
+  display: flex;
+}
+#my-gfw-modal .my-gfw-modal-backdrop {
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#my-gfw-modal .my-gfw-modal-window {
+  background: white;
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  position: relative;
+  width: 475px;
+  height: 325px;
+  padding: 30px 50px;
+}
+#my-gfw-modal .my-gfw-modal-close {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+}
+#my-gfw-modal .my-gfw-modal-close svg {
+  fill: #555;
+}
+#my-gfw-modal .my-gfw-modal-close:hover svg {
+  fill: #3c3c3c;
+}
+#my-gfw-modal header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#my-gfw-modal header h2 {
+  font-size: 24px;
+  width: 300px;
+}
+#my-gfw-modal .my-gfw-content {
+  display: flex;
+  width: 100%;
+  height: 85%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+#my-gfw-modal .my-gfw-authentication {
+  margin-top: 20px;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#my-gfw-modal .my-gfw-authentication li {
+  width: 250px;
+  display: block;
+  height: 50px;
+  text-align: center;
+}
+#my-gfw-modal .my-gfw-authentication li a {
+  color: white;
+  width: 100%;
+  display: inline-block;
+  height: 100%;
+  padding: 18px;
+}
+#my-gfw-modal .my-gfw-authentication .my-gfw-sign-in-twitter {
+  background-color: #598dca;
+}
+#my-gfw-modal .my-gfw-authentication .my-gfw-sign-in-facebook {
+  background-color: #39579b;
+}
+#my-gfw-modal .my-gfw-authentication .my-gfw-sign-in-google {
+  background-color: #da4735;
+}
+
 #footerGfw {
   /* Slider */
   /* Arrows */
