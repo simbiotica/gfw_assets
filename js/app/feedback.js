@@ -156,7 +156,7 @@ var feedbackModal = {
   actionSend: function(){
     this.$spinner.show(0);
     $.ajax({
-      url: 'http://gfw-nav.herokuapp.com/feedback_jsonp',
+      url: 'http://www.globalforestwatch.org/feedback_jsonp',
       jsonp: "callback",
       dataType: "jsonp",
       data: this.serializeObject(this.$form.serializeArray()),

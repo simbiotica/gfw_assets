@@ -35,9 +35,12 @@ var appGFW = {
     this.$headerSubmenu = this.$header.find('.m-header-submenu');
     this.$headerSubmenuBtns = this.$header.find('.m-header-submenu-btn');
 
-
     // Footer
     this.$footerCarousel = this.$footer.find('#footerCarousel');
+
+    // My GFW
+    this.$toggleMyGFW = this.$header.find('#toggleMyGFW');
+    
   },
 
   setCurrent: function() {
@@ -52,15 +55,16 @@ var appGFW = {
       break;
 
       case 'gfw-nav.herokuapp.com':
-        this.params.hostname = 'http://gfw-nav.herokuapp.com'
+        this.params.hostname = 'http://gfw-nav.herokuapp.com';
+        this.$toggleMyGFW.toggleClass('-hidden', false);
       break;
 
       case 'www.globalforestwatch.org':
-        this.params.hostname = 'http://www.globalforestwatch.org'
+        this.params.hostname = 'http://www.globalforestwatch.org';
       break;
 
       default: 
-        this.params.hostname = 'http://www.globalforestwatch.org'
+        this.params.hostname = 'http://www.globalforestwatch.org';
         this.params.targets = true;
     }
     this.$links.each(function(k,v){
