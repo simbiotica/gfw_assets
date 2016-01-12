@@ -21,6 +21,7 @@ LoginButton.prototype.render = function() {
   var template = document.getElementById(id).innerHTML;
   this.el.innerHTML = template;
   this.delegateEvents();
+  this.setupLinks();
 
   return this;
 };
@@ -48,6 +49,13 @@ LoginButton.prototype.delegateEvents = function() {
   var openModal = document.getElementById('my-gfw-open-modal');
   if (openModal !== null) {
     openModal.addEventListener('click', this.showModal.bind(this));
+  }
+};
+
+LoginButton.prototype.setupLinks = function() {
+  var link = document.getElementById('my-gfw-sign-out');
+  if (link !== null) {
+    link.href = gfw.Utils.getAPIHost() + link.getAttribute('href');
   }
 };
 

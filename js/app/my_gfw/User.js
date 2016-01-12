@@ -8,7 +8,7 @@ gfw.myGFW = gfw.myGFW || {};
 var User = gfw.myGFW.User = {
   isLoggedIn: function(options) {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://localhost:8080/user', true);
+    xhr.open('GET', gfw.Utils.getAPIHost() + '/user', true);
     xhr.withCredentials = true;
     xhr.onreadystatechange = function() {
       var responseStatus = xhr.status;
