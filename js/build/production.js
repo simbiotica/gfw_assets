@@ -199,7 +199,7 @@ var feedbackModal = {
   },
 
   _setListeners: function() {
-    this.$body.on('click', '#feedbackLink', this.show.bind(this));
+    this.$body.on('click', '.feedback-link', this.show.bind(this));
 
     this.$el.on('click', '.js-modal-close', this.hide.bind(this));
     this.$el.on('click', '.js-btn-continue', this.actionContinue.bind(this));
