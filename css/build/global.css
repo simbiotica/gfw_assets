@@ -941,7 +941,7 @@ html.-no-scroll, body.-no-scroll {
   }
 }
 
-#headerGfw .feedback-link, #footerGfw .feedback-link {
+#headerGfw .feedback-link-fixed, #footerGfw .feedback-link-fixed {
   display: none;
   position: fixed;
   top: 50%;
@@ -958,7 +958,7 @@ html.-no-scroll, body.-no-scroll {
   transform-origin: 100% 0;
 }
 @media (min-width: 850px) {
-  #headerGfw .feedback-link, #footerGfw .feedback-link {
+  #headerGfw .feedback-link-fixed, #footerGfw .feedback-link-fixed {
     display: block;
   }
 }
