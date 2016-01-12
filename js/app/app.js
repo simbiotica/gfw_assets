@@ -105,7 +105,6 @@ gfw.Application = {
       } else {
         this.hideMenus();
       }
-
     }
   },
 
