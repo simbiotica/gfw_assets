@@ -135,7 +135,7 @@ gfw.Application = {
 
   initLogos: function() {
     var sliderEl = document.querySelector('#my-gfw-slider');
-    var slider = lory(sliderEl, {
+    var slider = window.lory.lory(sliderEl, {
       infinite: 1,
       slidesToScroll: 1,
       slideSpeed: 500
