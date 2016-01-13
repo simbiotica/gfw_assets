@@ -16,6 +16,7 @@ gfw.Application = {
     this.initTranslate();
     this.initEvents();
     this.initMyGFW();
+    this.initFeedback();
 
     $(document).ready(this.initLogos.bind(this));
 
@@ -48,7 +49,7 @@ gfw.Application = {
   },
 
   setUrls: function() {
-    this.params.targets = !gfw.Utils.isDefaultHost();
+    this.params.targets = gfw.Utils.isDefaultHost();
     this.params.hostname = gfw.Utils.getHost();
 
     this.$links.each(function(k,v){
@@ -96,6 +97,10 @@ gfw.Application = {
     } else {
       containerEl.style.display = 'none';
     }
+  },
+
+  initFeedback: function() {
+    feedbackModal.init();
   },
 
   // Events related to UI

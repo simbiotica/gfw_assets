@@ -12,12 +12,12 @@
 
     @media (min-width: $br-mobile){
       max-width: 1024px;
-      padding: 0 15px;
+      width: 95%;
     }
 
-    @media (min-width: $br-desktop){
+    @media (min-width: $br-desktopbig){
       max-width: 1200px;
-      padding: 0 30px;
+      width: 75%;
     }
-  }  
+  }
 }

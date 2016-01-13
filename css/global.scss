@@ -22,8 +22,18 @@ $orange: #e98300;
 $blue: #5b80a0;
 $transition1: all 0.15s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 $shadow1: 0 0 4px rgba(142, 142, 142, 0.5);
+$border1: #E5E5DF;
+
+// animations
+$easeInSine:  cubic-bezier(0.470, 0.000, 0.745, 0.715);
+$easeOutSine:  cubic-bezier(0.390, 0.575, 0.565, 1.000);
+$easeInOutSine:  cubic-bezier(0.445, 0.050, 0.550, 0.950);
+
 // Imports
 @import 'modules/reset';
+@import 'modules/mixins';
+@import 'modules/buttons';
+@import 'modules/form';
 
 // header
 @import 'modules/header';
@@ -32,6 +42,10 @@ $shadow1: 0 0 4px rgba(142, 142, 142, 0.5);
 
 // section
 @import 'modules/section';
+
+// feedback
+@import 'modules/feedbacklink';
+@import 'modules/feedbackmodal';
 
 // footer
 @import 'modules/logos';

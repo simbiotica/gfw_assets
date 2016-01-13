@@ -1,0 +1,21 @@
+#headerGfw, #footerGfw {
+  .feedback-link-fixed {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 250;
+    background: #FFD24D;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $dark;
+    text-decoration: none;
+    padding: 8px;
+    cursor: pointer;
+    transform: rotate(90deg) translate(50%, 0);
+    transform-origin: 100% 0;  
+    @media (min-width: $br-mobile){
+      display: block;
+    }
+  }
+}
