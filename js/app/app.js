@@ -48,7 +48,7 @@ gfw.Application = {
   },
 
   setUrls: function() {
-    this.params.targets = gfw.Utils.isDefaultHost();
+    this.params.targets = !gfw.Utils.isDefaultHost();
     this.params.hostname = gfw.Utils.getHost();
 
     this.$links.each(function(k,v){
@@ -87,9 +87,15 @@ gfw.Application = {
   },
 
   initMyGFW: function() {
-    var loginButton = new gfw.myGFW.LoginButton({
-      el: document.getElementById('my-gfw-container')});
-    loginButton.render();
+    var containerEl = document.getElementById('my-gfw-container');
+
+    if (gfw.Utils.isDefaultHost() === true) {
+      var loginButton = new gfw.myGFW.LoginButton({
+        el: containerEl});
+      loginButton.render();
+    } else {
+      containerEl.style.display = 'none';
+    }
   },
 
   // Events related to UI

@@ -12,7 +12,7 @@ var User = gfw.myGFW.User = {
     xhr.withCredentials = true;
     xhr.onreadystatechange = function() {
       var responseStatus = xhr.status;
-      if (responseStatus === 401) {
+      if (responseStatus !== 200) {
         options.failure();
       } else {
         options.success();
