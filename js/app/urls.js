@@ -15,7 +15,9 @@ window.GFW.NavBar = window.GFW.NavBar || {};
 
   var API_URLS = {
     'localhost': 'localhost:8080',
-    'www.globalforestwatch.org': 'api.globalforestwatch.org'
+    'www.globalforestwatch.org': 'api.globalforestwatch.org',
+    'gfw-nav.herokuapp.com': 'http://staging.api-staging.globalforestwatch.org',
+    'staging.globalforestwatch.org': 'http://staging.api-staging.globalforestwatch.org'
   };
 
   gfw.Utils.getHost = function() {
