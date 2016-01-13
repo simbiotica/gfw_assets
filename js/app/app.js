@@ -130,14 +130,22 @@ gfw.Application = {
   },
 
   initLogos: function() {
-    var sliderEl = document.querySelector('#my-gfw-slider');
+    var sliderEl = document.querySelector('#my-gfw-slider'),
+        sliderTimer;
+
+    var cancelTimer = function() { clearInterval(sliderTimer); };
+    var nextEl = sliderEl.getElementsByClassName('js_next')[0],
+        prevEl = sliderEl.getElementsByClassName('js_prev')[0];
+    nextEl.addEventListener('click', cancelTimer);
+    prevEl.addEventListener('click', cancelTimer);
+
     var slider = window.lory.lory(sliderEl, {
-      infinite: 1,
+      infinite: 5,
       slidesToScroll: 1,
       slideSpeed: 500
     });
 
-    setInterval(slider.next.bind(slider), 3000);
+    sliderTimer = setInterval(slider.next.bind(slider), 3000);
   },
 };
 
