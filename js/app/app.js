@@ -100,7 +100,7 @@ gfw.Application = {
   },
 
   initFeedback: function() {
-    feedbackModal.init();
+    gfw.feedbackModal.init();
   },
 
   // Events related to UI
