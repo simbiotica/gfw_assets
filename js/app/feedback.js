@@ -1,5 +1,10 @@
 // https://cdn.rawgit.com/simbiotica/gfw_assets/0612702e5ec4cc8e1cc75c4a4a63c8274f7ea870/js/build/production.js
-var feedbackModal = {
+window.GFW = window.GFW || {};
+window.GFW.NavBar = window.GFW.NavBar || {};
+
+(function(gfw) {
+
+gfw.feedbackModal = {
 
   init: function() {
     this._initVars();
@@ -26,7 +31,7 @@ var feedbackModal = {
     this.$body =      $('body');
     this.$htmlbody =  $('html, body');
     this.$el =        $('#feedbackModal');
-    
+
     this.$content =        this.$el.find('.modal-content');
     this.$contentWrapper = this.$el.find('.modal-wrapper');
     this.$backdrop =       this.$el.find('.modal-backdrop');
@@ -41,7 +46,7 @@ var feedbackModal = {
     this.$email =          this.$el.find('#feedback-email');
     this.$hostname =       this.$el.find('#feedback-hostname');
 
-    this.$dinamicColor =   this.$el.find('.js-dinamic-color')
+    this.$dinamicColor =   this.$el.find('.js-dinamic-color');
 
     this.hidden = true;
     this.mobile = (this.$window.width() > 850) ? false : true;
@@ -97,7 +102,7 @@ var feedbackModal = {
         this.color = 'blue';
       break;
 
-      default: 
+      default:
         this.color = 'green';
     }
 
@@ -233,4 +238,6 @@ var feedbackModal = {
     var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
   },
-}
+};
+
+})(window.GFW.NavBar);

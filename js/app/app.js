@@ -92,7 +92,7 @@ gfw.Application = {
   },
 
   initFeedback: function() {
-    feedbackModal.init();
+    gfw.feedbackModal.init();
   },
 
   initMyGFW: function() {
