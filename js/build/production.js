@@ -604,9 +604,9 @@ gfw.Application = {
 
 var loaderGFW = {
   urls: {
-    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/b61c67ad78492c3e9958cf9b03e6a057b890bde3/src/header.html',
-    footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/bf34b7cc11c7a931e08493252de34cfdcf0924e7/src/footer.html',
-    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/bf34b7cc11c7a931e08493252de34cfdcf0924e7/css/build/minified/global.css',
+    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/src/header.html',
+    footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/src/footer.html',
+    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/css/build/global.css',
   },
 
   urls_dev: {
