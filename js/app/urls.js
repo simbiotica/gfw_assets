@@ -29,7 +29,7 @@ window.GFW.NavBar = window.GFW.NavBar || {};
 
   gfw.Utils.isDefaultHost = function() {
     var currentLocation = window.location.hostname;
-    return (URLS[currentLocation] === undefined);
+    return (URLS[currentLocation] !== undefined);
   };
 
   gfw.Utils.getAPIHost = function() {
@@ -38,7 +38,7 @@ window.GFW.NavBar = window.GFW.NavBar || {};
     }
 
     var currentLocation = window.location.hostname;
-    if (API_URLS[curentLocation] === undefined) {
+    if (API_URLS[currentLocation] === undefined) {
       currentLocation = DEFAULT_URL;
     }
 
