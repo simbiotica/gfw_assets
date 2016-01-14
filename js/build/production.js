@@ -512,6 +512,7 @@ gfw.Application = {
   },
 
   setUrls: function() {
+<<<<<<< cce8bca252a0e1a4152ed382432f4603dcbb4f21
 <<<<<<< 5fa8d40131509d46d4aafaa33ac5626613bd6a04
 <<<<<<< 1f7a3de0860aa75aefa34ccd57ca179fcbbc174e
     this.params.targets = false;
@@ -549,6 +550,9 @@ gfw.Application = {
 =======
     this.params.targets = !gfw.Utils.isDefaultHost();
 >>>>>>> Fix lory on Fires + Commodities
+=======
+    this.params.targets = !gfw.Utils.isDefaultHost();
+>>>>>>> Fix target=_blank
     this.params.hostname = gfw.Utils.getHost();
 
 >>>>>>> Switches to using Lory.js for the carousel (waaaaay smaller than slick)
