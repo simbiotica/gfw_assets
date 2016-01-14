@@ -498,7 +498,7 @@ gfw.Application = {
   },
 
   setUrls: function() {
-    this.params.targets = gfw.Utils.isDefaultHost();
+    this.params.targets = !gfw.Utils.isDefaultHost();
     this.params.hostname = gfw.Utils.getHost();
 
     this.$links.each(function(k,v){
