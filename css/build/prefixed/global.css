@@ -2592,8 +2592,8 @@ The `sprites` mixin generates identical output to the CSS template
   z-index: 2;
   position: relative;
   width: 475px;
-  height: 325px;
-  padding: 30px 50px;
+  height: 285px;
+  padding: 30px 50px 53px 50px;
 }
 #my-gfw-modal .my-gfw-modal-close {
   display: block;
@@ -2643,7 +2643,7 @@ The `sprites` mixin generates identical output to the CSS template
 }
 #my-gfw-modal .my-gfw-authentication {
   margin-top: 20px;
-  height: 80%;
+  height: 100%;
   width: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2663,13 +2663,29 @@ The `sprites` mixin generates identical output to the CSS template
   display: block;
   height: 50px;
   text-align: center;
+  position: relative;
 }
 #my-gfw-modal .my-gfw-authentication li a {
   color: white;
+  text-transform: uppercase;
+  font-size: 14px;
   width: 100%;
-  display: inline-block;
   height: 100%;
-  padding: 18px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#my-gfw-modal .my-gfw-authentication li a svg {
+  fill: white;
+  position: absolute;
+  top: 7px;
+  left: 15px;
 }
 #my-gfw-modal .my-gfw-authentication .my-gfw-sign-in-twitter {
   background-color: #598dca;
