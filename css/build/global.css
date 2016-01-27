@@ -1,6 +1,9 @@
 @charset "UTF-8";
 html.-no-scroll, body.-no-scroll {
   overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 
 #headerGfw *, #headerGfw *:after, #headerGfw *:before, #footerGfw *, #footerGfw *:after, #footerGfw *:before {
@@ -621,6 +624,7 @@ html.-no-scroll, body.-no-scroll {
   top: auto;
   bottom: 50px;
   left: 0;
+  height: 100%;
   max-height: calc(100% - 50px);
 }
 #headerGfw .m-header-submenu.-home.-active:after {
@@ -682,13 +686,20 @@ html.-no-scroll, body.-no-scroll {
 }
 #headerGfw .m-header-submenu.-home > ul {
   width: 100%;
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  max-height: 100%;
 }
 @media (min-width: 850px) {
   #headerGfw .m-header-submenu.-home > ul {
     display: flex;
+    position: relative;
+    bottom: auto;
     justify-content: space-between;
   }
+}
+#headerGfw .m-header-submenu.-home > ul > li {
+  background: #FFF;
 }
 @media (min-width: 850px) {
   #headerGfw .m-header-submenu.-home > ul > li {
