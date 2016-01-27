@@ -63,6 +63,7 @@
         top: auto;
         bottom: 50px;
         left: 0;
+        height: 100%;
         max-height: calc(100% - 50px);
         
         &:after {
@@ -130,14 +131,18 @@
 
       > ul {
         width: 100%;
-        position: relative;
-
+        position: absolute;
+        bottom: 0;
+        max-height: 100%;
         @media (min-width: $br-mobile){
           display: flex;
+          position: relative;
+          bottom: auto;
           justify-content: space-between;
         }        
 
         > li {
+          background: $white;
           @media (min-width: $br-mobile){
             width: 20%;
             padding: 0 25px;
