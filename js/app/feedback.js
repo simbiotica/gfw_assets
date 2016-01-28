@@ -6,6 +6,7 @@ var feedbackModal = {
     this._setListeners();
     this._setHiddenInputs();
     this._setColors();
+    this._checkForParams();
   },
 
   _setListeners: function() {
@@ -107,6 +108,27 @@ var feedbackModal = {
 
   _setHiddenInputs: function() {
     this.$hostname.val(location.hostname);
+  },
+
+  _checkForParams: function() {
+    var params = this.getQueryParams();
+    if (!!params && !!params['show_feedback']) {
+      this.show();
+    }
+  },
+
+  getQueryParams: function() {
+    var qs = document.location.search;
+    qs = qs.split('+').join(' ');
+
+    var params = {},
+        tokens,
+        re = /[?&]?([^=]+)=([^&]*)/g;
+
+    while (tokens = re.exec(qs)) {
+      params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+    }
+    return params;
   },
 
   hide: function(e) {
