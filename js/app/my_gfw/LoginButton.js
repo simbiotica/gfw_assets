@@ -40,7 +40,12 @@ LoginButton.prototype.checkStatus = function() {
   });
 };
 
-LoginButton.prototype.showModal = function() {
+LoginButton.prototype.showModal = function(event) {
+  if (event !== undefined) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+
   var modalView = new gfw.myGFW.LoginModal({
     el: document.getElementById('my-gfw-modal')});
 };
