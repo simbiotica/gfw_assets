@@ -148,14 +148,19 @@ LoginModal.prototype.delegateEvents = function() {
 LoginModal.prototype.setupLinks = function() {
   var links = document.getElementsByClassName('my-gfw-sign-in');
 
-  var i = 0;
-  for (; i < links.length; i++) {
-    var link = links[i];
+  var i, link;
+  for (i = 0; i < links.length; i++) {
+    link = links[i];
     link.href = gfw.Utils.getAPIHost() + link.getAttribute('href');
   }
 };
 
-LoginModal.prototype.close = function() {
+LoginModal.prototype.close = function(event) {
+  if (event !== undefined) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+
   this.el.classList.remove('is-active');
   this.el.innerHTML = '';
 };
@@ -204,7 +209,12 @@ LoginButton.prototype.checkStatus = function() {
   });
 };
 
-LoginButton.prototype.showModal = function() {
+LoginButton.prototype.showModal = function(event) {
+  if (event !== undefined) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+
   var modalView = new gfw.myGFW.LoginModal({
     el: document.getElementById('my-gfw-modal')});
 };
