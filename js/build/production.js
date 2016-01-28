@@ -6,19 +6,6 @@ if(!window.jQuery) {
   //# sourceMappingURL=jquery.min.map
 }
 
-// Load fonts
-WebFontConfig = {
-  google: { families: [ 'Fira+Sans:300,400,500:latin' ] }
-};
-(function() {
-  var wf = document.createElement('script');
-  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-  wf.type = 'text/javascript';
-  wf.async = 'true';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(wf, s);
-})(); 
-
 // Google translate
 function googleTranslateElementInit() {
   new google.translate.TranslateElement(
@@ -411,7 +398,7 @@ var loaderGFW = {
   urls: {
     header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/b61c67ad78492c3e9958cf9b03e6a057b890bde3/src/header.html',
     footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/bf34b7cc11c7a931e08493252de34cfdcf0924e7/src/footer.html',
-    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/bf34b7cc11c7a931e08493252de34cfdcf0924e7/css/build/minified/global.css',
+    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/f1de000f3605c4cccd26f23543a325136cb7f352/css/build/minified/global.css',
   },
 
   urls_dev: {
@@ -480,8 +467,8 @@ var loaderGFW = {
   // Print
   printData: function() {
     this.$head.append('<style>'+this.params.css+'</style>');
-    this.$header.html(this.params.header).show(0);
-    this.$footer.html(this.params.footer).show(0);
+    this.$header.html(this.params.header).delay(100).show(0);
+    this.$footer.html(this.params.footer).delay(100).show(0);
   },
 }
 
