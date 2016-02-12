@@ -895,6 +895,9 @@ html.-no-scroll, body.-no-scroll {
 #headerGfw .m-header-submenu.-apps > ul > li:hover.shape-climate svg, #headerGfw .m-header-submenu.-apps > ul > li.-current.shape-climate svg {
   fill: #5b80a0;
 }
+#headerGfw .m-header-submenu.-apps > ul > li:hover.shape-water svg, #headerGfw .m-header-submenu.-apps > ul > li.-current.shape-water svg {
+  fill: #4099ce;
+}
 #headerGfw .m-header-submenu.-apps > ul > li:hover svg, #headerGfw .m-header-submenu.-apps > ul > li.-current svg {
   fill: #97bd3d;
 }

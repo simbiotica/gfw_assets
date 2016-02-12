@@ -302,6 +302,7 @@
             &.shape-fires { svg { fill: $red; } }
             &.shape-commodities { svg { fill: $orange; } }
             &.shape-climate { svg { fill: $blue; } }
+            &.shape-water { svg { fill: $bluewater; } }
             svg {
               fill: $primary-color;
             }
