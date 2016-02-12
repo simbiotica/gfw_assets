@@ -987,6 +987,7 @@ var feedbackModal = {
 >>>>>>> Switches to using Lory.js for the carousel (waaaaay smaller than slick)
 var loaderGFW = {
   urls: {
+<<<<<<< 7efa1fb33568196ae14af8239bccff18e14cf17b
 <<<<<<< bd500f2d3d71605f473270de05a250fe2f56e63f
 <<<<<<< 1c9b42519952910dadd7e4d83a553005fb835264
     header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/b61c67ad78492c3e9958cf9b03e6a057b890bde3/src/header.html',
@@ -1000,6 +1001,11 @@ var loaderGFW = {
     footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/src/footer.html',
     css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/css/build/global.css',
 >>>>>>> Update URLs
+=======
+    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/ff2ba884c4e09b626c03b1287b946665c9e7a36e/src/header.html',
+    footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/src/footer.html',
+    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/72f7ee6a037783c6087db9fd06347bca521f3448/css/build/global.css',
+>>>>>>> Water icon added
   },
 
   urls_dev: {
