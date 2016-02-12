@@ -1004,8 +1004,12 @@ var loaderGFW = {
 =======
     header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/ff2ba884c4e09b626c03b1287b946665c9e7a36e/src/header.html',
     footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/src/footer.html',
+<<<<<<< b9e16b21ab64f49ba5beba8e2da468e45fbe03c5
     css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/72f7ee6a037783c6087db9fd06347bca521f3448/css/build/global.css',
 >>>>>>> Water icon added
+=======
+    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/14da456802ffb9139584bbf92a72fda735a9ef0e/css/build/global.css',
+>>>>>>> Water color added
   },
 
   urls_dev: {
