@@ -1070,15 +1070,22 @@ var loaderGFW = {
         css: args[2],
       });
       this.printData();
-      window.GFW.NavBar.Application.initialize(this.params);
     }.bind(this));
   },
 
   // Print
   printData: function() {
     this.$head.append('<style>'+this.params.css+'</style>');
+<<<<<<< e4c806e46e1b60d7637e6a72edffc2fc4f678e27
     this.$header.html(this.params.header).delay(100).show(0);
     this.$footer.html(this.params.footer).delay(100).show(0);
+=======
+    setTimeout(function(){
+      this.$header.html(this.params.header).show(0);
+      this.$footer.html(this.params.footer).show(0);
+      window.GFW.NavBar.Application.initialize(this.params);
+    }.bind(this), 250)
+>>>>>>> Prevent showing the big house. Just added a timeout before append the header and the footer
   },
 };
 

@@ -65,7 +65,6 @@ var loaderGFW = {
         css: args[2],
       });
       this.printData();
-      window.GFW.NavBar.Application.initialize(this.params);
     }.bind(this));
   },
 
