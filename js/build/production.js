@@ -603,7 +603,7 @@ var loaderGFW = {
   urls: {
     header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/ff2ba884c4e09b626c03b1287b946665c9e7a36e/src/header.html',
     footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/src/footer.html',
-    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/72f7ee6a037783c6087db9fd06347bca521f3448/css/build/global.css',
+    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/14da456802ffb9139584bbf92a72fda735a9ef0e/css/build/global.css',
   },
 
   urls_dev: {
