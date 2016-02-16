@@ -21,8 +21,12 @@ var menuGFW = {
         this.menu = menujsonGFW['climate'];
       break;
 
-      default:
-        this.menu = menujsonGFW['default'];
+      case 'howto.globalforestwatch.org':
+        this.menu = gfw.menujsonGFW['howto'];
+      break;
+
+      default: 
+        this.menu = gfw.menujsonGFW['default'];
     }
   },
 
