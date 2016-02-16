@@ -27,6 +27,10 @@ gfw.menuGFW = {
         this.menu = gfw.menujsonGFW['climate'];
       break;
 
+      case 'howto.globalforestwatch.org':
+        this.menu = gfw.menujsonGFW['howto'];
+      break;
+
       default: 
         this.menu = gfw.menujsonGFW['default'];
     }

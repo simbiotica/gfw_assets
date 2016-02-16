@@ -613,7 +613,8 @@ window.GFW.NavBar = window.GFW.NavBar || {};
           name: 'Contact us',
           link: '/about/contact-us',
         }]
-      }],
+      }
+    ],
 
     'climate' : [{
         name: 'Map',
@@ -631,7 +632,76 @@ window.GFW.NavBar = window.GFW.NavBar || {};
         name: 'About',
         link: '/about',
       }
+    ],
+
+    'howto' : [
+      {
+        name: 'Search by theme',
+        link: '',
+        submenu: [
+          {
+            name: "Visualize data",
+            link: "/gfw-howto/themes/visualize-data"
+          },
+          {
+            name: "View statistics",
+            link: "/gfw-howto/themes/view-statistics"
+          },
+          {
+            name: "Analyze data",
+            link: "/gfw-howto/themes/analyze-data"
+          },
+          {
+            name: "Suscribe to alerts",
+            link: "/gfw-howto/themes/suscribe-to-alerts"
+          },
+          {
+            name: "Submit a story",
+            link: "/gfw-howto/themes/submit-a-story"
+          },
+          {
+            name: "Tutorial videos",
+            link: "/gfw-howto/themes/tutorial-videos"
+          },
+          {
+            name: "Webinars",
+            link: "/gfw-howto/themes/webinars"
+          },
+          {
+            name: "Training modules",
+            link: "/gfw-howto/themes/training-modules"
+          },
+          {
+            name: "FAQ's",
+            link: "/gfw-howto/faqs"
+          }
+        ]
+      },
+      {
+        name: 'Search by app',
+        link: '',
+        submenu: [
+          {
+            name: "Gfw",
+            link: "/gfw-howto/apps/gfw"
+          },
+          {
+            name: "Climate",
+            link: "/gfw-howto/apps/climate"
+          },
+          {
+            name: "Fires",
+            link: "/gfw-howto/apps/fires"
+          },
+          {
+            name: "Commodities",
+            link: "/gfw-howto/apps/commodities"
+          }
+        ]
+      }
+
     ]
+
   };
 
 })(window.GFW.NavBar);
@@ -664,6 +734,10 @@ gfw.menuGFW = {
 
       case 'climate.globalforestwatch.org':
         this.menu = gfw.menujsonGFW['climate'];
+      break;
+
+      case 'howto.globalforestwatch.org':
+        this.menu = gfw.menujsonGFW['howto'];
       break;
 
       default: 

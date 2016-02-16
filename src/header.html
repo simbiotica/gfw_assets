@@ -130,7 +130,13 @@
             <ul>
               <% for ( var i = 0; i < menu.length; i++ ) { %>
                 <li>
-                  <h3><a href="<%= menu[i].link %>"><%= menu[i].name %></a></h3>
+                  <h3>
+                    <% if (!!menu[i].link) { %>
+                      <a href="<%= menu[i].link %>"><%= menu[i].name %></a>
+                    <%} else {%>
+                      <span><%= menu[i].name %></span>
+                    <%}%>
+                  </h3>
                   <% if(!!menu[i].submenu && !!menu[i].submenu.length) { %>
                     <ul>
                       <% for ( var j = 0; j < menu[i].submenu.length; j++ ) { %>
