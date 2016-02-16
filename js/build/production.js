@@ -6,19 +6,7 @@ if(!window.jQuery) {
   //# sourceMappingURL=jquery.min.map
 }
 
-// Load fonts
-WebFontConfig = {
-  google: { families: [ 'Fira+Sans:300,400,500:latin' ] }
-};
-(function() {
-  var wf = document.createElement('script');
-  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-  wf.type = 'text/javascript';
-  wf.async = 'true';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(wf, s);
-})(); 
-
+!function(e,t){e.lory=t()}(this,function(){return function(e){function t(o){if(n[o])return n[o].exports;var i=n[o]={exports:{},id:o,loaded:!1};return e[o].call(i.exports,i,i.exports,t),i.loaded=!0,i.exports}var n={};return t.m=e,t.c=n,t.p="",t(0)}([function(e,t,n){e.exports=n(1)},function(e,t,n){"use strict";function o(e){return e&&e.__esModule?e:{"default":e}}function i(e,t){function n(e,t){var n=D,o=n.classNameActiveSlide;e.forEach(function(e,t){e.classList.contains(o)&&e.classList.remove(o)}),e[t].classList.add(o)}function o(e){var t=D,n=t.infinite,o=e.slice(0,n),i=e.slice(e.length-n,e.length);return o.forEach(function(e){var t=e.cloneNode(!0);B.appendChild(t)}),i.reverse().forEach(function(e){var t=e.cloneNode(!0);B.insertBefore(t,B.firstChild)}),B.addEventListener(O.transitionEnd,y),v.call(B.children)}function i(t,n,o){(0,c["default"])(e,t+".lory."+n,o)}function a(e,t,n){var o=B&&B.style;o&&(o[O.transition+"TimingFunction"]=n,o[O.transition+"Duration"]=t+"ms",O.hasTranslate3d?o[O.transform]="translate3d("+e+"px, 0, 0)":o[O.transform]="translate("+e+"px, 0)")}function d(e,t){var o=D,r=o.slideSpeed,s=o.slidesToScroll,d=o.infinite,c=o.rewind,l=o.rewindSpeed,u=o.ease,f=o.classNameActiveSlide,m=r,p=t?A+1:A-1,h=Math.round(N-S);i("before","slide",{index:A,nextSlide:p}),"number"!=typeof e&&(e=t?A+s:A-s),e=Math.min(Math.max(e,0),_.length-1),d&&void 0===t&&(e+=d);var b=Math.min(Math.max(-1*_[e].offsetLeft,-1*h),0);c&&Math.abs(M.x)===h&&t&&(b=0,e=0,m=l),a(b,m,u),M.x=b,_[e].offsetLeft<=h&&(A=e),!d||Math.abs(b)!==h&&0!==Math.abs(b)||(t&&(A=d),t||(A=_.length-2*d),M.x=-1*_[A].offsetLeft,P=function(){a(-1*_[A].offsetLeft,0,void 0)}),f&&n(v.call(_),A),i("after","slide",{currentSlide:A})}function l(){i("before","init"),O=(0,s["default"])(),D=r({},u["default"],t);var a=D,d=a.classNameFrame,c=a.classNameSlideContainer,l=a.classNamePrevCtrl,m=a.classNameNextCtrl,p=a.enableMouseEvents,E=a.classNameActiveSlide;j=e.getElementsByClassName(d)[0],B=j.getElementsByClassName(c)[0],k=e.getElementsByClassName(l)[0],T=e.getElementsByClassName(m)[0],M={x:B.offsetLeft,y:B.offsetTop},_=D.infinite?o(v.call(B.children)):v.call(B.children),f(),E&&n(_,A),k&&T&&(k.addEventListener("click",h),T.addEventListener("click",b)),B.addEventListener("touchstart",x),p&&(B.addEventListener("mousedown",x),B.addEventListener("click",w)),D.window.addEventListener("resize",C),i("after","init")}function f(){var e=D,t=e.infinite,n=e.ease,o=e.rewindSpeed;N=B.getBoundingClientRect().width||B.offsetWidth,S=j.getBoundingClientRect().width||j.offsetWidth,S===N&&(N=_.reduce(function(e,t){return e+t.getBoundingClientRect().width||t.offsetWidth},0)),A=0,t?(a(-1*_[A+t].offsetLeft,0,null),A+=t,M.x=-1*_[A].offsetLeft):a(0,o,n)}function m(e){d(e)}function p(){return A-D.infinite||0}function h(){d(!1,!1)}function b(){d(!1,!0)}function E(){i("before","destroy"),B.removeEventListener(O.transitionEnd,y),B.removeEventListener("touchstart",x),B.removeEventListener("touchmove",L),B.removeEventListener("touchend",g),B.removeEventListener("mousemove",L),B.removeEventListener("mousedown",x),B.removeEventListener("mouseup",g),B.removeEventListener("mouseleave",g),B.removeEventListener("click",w),D.window.removeEventListener("resize",C),k&&k.removeEventListener("click",h),T&&T.removeEventListener("click",b),i("after","destroy")}function y(){P&&(P(),P=void 0)}function x(e){var t=D,n=t.enableMouseEvents,o=e.touches?e.touches[0]:e;n&&(B.addEventListener("mousemove",L),B.addEventListener("mouseup",g),B.addEventListener("mouseleave",g)),B.addEventListener("touchmove",L),B.addEventListener("touchend",g);var r=o.pageX,a=o.pageY;z={x:r,y:a,time:Date.now()},R=void 0,F={},i("on","touchstart",{event:e})}function L(e){var t=e.touches?e.touches[0]:e,n=t.pageX,o=t.pageY;F={x:n-z.x,y:o-z.y},"undefined"==typeof R&&(R=!!(R||Math.abs(F.x)<Math.abs(F.y))),!R&&z&&(e.preventDefault(),a(M.x+F.x,0,null)),i("on","touchmove",{event:e})}function g(e){var t=z?Date.now()-z.time:void 0,n=Number(t)<300&&Math.abs(F.x)>25||Math.abs(F.x)>S/3,o=!A&&F.x>0||A===_.length-1&&F.x<0,r=F.x<0;R||(n&&!o?d(!1,r):a(M.x,D.snapBackSpeed)),z=void 0,B.removeEventListener("touchmove",L),B.removeEventListener("touchend",g),B.removeEventListener("mousemove",L),B.removeEventListener("mouseup",g),B.removeEventListener("mouseleave",g),i("on","touchend",{event:e})}function w(e){F.x&&e.preventDefault()}function C(e){f(),i("on","resize",{event:e})}var M=void 0,N=void 0,S=void 0,_=void 0,j=void 0,B=void 0,k=void 0,T=void 0,O=void 0,P=void 0,A=0,D={};"undefined"!=typeof jQuery&&e instanceof jQuery&&(e=e[0]);var z=void 0,F=void 0,R=void 0;return l(),{setup:l,reset:f,slideTo:m,returnIndex:p,prev:h,next:b,destroy:E}}var r=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var o in n)Object.prototype.hasOwnProperty.call(n,o)&&(e[o]=n[o])}return e};Object.defineProperty(t,"__esModule",{value:!0}),t.lory=i;var a=n(2),s=o(a),d=n(3),c=o(d),l=n(5),u=o(l),v=Array.prototype.slice},function(e,t){(function(e){"use strict";function n(){var t=void 0,n=void 0,o=void 0,i=void 0;return function(){var r=document.createElement("_"),a=r.style,s=void 0;""===a[s="webkitTransition"]&&(o="webkitTransitionEnd",n=s),""===a[s="transition"]&&(o="transitionend",n=s),""===a[s="webkitTransform"]&&(t=s),""===a[s="msTransform"]&&(t=s),""===a[s="transform"]&&(t=s),document.body.insertBefore(r,null),a[t]="translate3d(0, 0, 0)",i=!!e.getComputedStyle(r).getPropertyValue(t),document.body.removeChild(r)}(),{transform:t,transition:n,transitionEnd:o,hasTranslate3d:i}}Object.defineProperty(t,"__esModule",{value:!0}),t["default"]=n}).call(t,function(){return this}())},function(e,t,n){"use strict";function o(e){return e&&e.__esModule?e:{"default":e}}function i(e,t,n){var o=new a["default"](t,{bubbles:!0,cancelable:!0,detail:n});e.dispatchEvent(o)}Object.defineProperty(t,"__esModule",{value:!0}),t["default"]=i;var r=n(4),a=o(r)},function(e,t){(function(t){function n(){try{var e=new o("cat",{detail:{foo:"bar"}});return"cat"===e.type&&"bar"===e.detail.foo}catch(t){}return!1}var o=t.CustomEvent;e.exports=n()?o:"function"==typeof document.createEvent?function(e,t){var n=document.createEvent("CustomEvent");return t?n.initCustomEvent(e,t.bubbles,t.cancelable,t.detail):n.initCustomEvent(e,!1,!1,void 0),n}:function(e,t){var n=document.createEventObject();return n.type=e,t?(n.bubbles=Boolean(t.bubbles),n.cancelable=Boolean(t.cancelable),n.detail=t.detail):(n.bubbles=!1,n.cancelable=!1,n.detail=void 0),n}}).call(t,function(){return this}())},function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t["default"]={slidesToScroll:1,slideSpeed:300,rewindSpeed:600,snapBackSpeed:200,ease:"ease",rewind:!1,infinite:!1,classNameFrame:"js_frame",classNameSlideContainer:"js_slides",classNamePrevCtrl:"js_prev",classNameNextCtrl:"js_next",classNameActiveSlide:"active",enableMouseEvents:!1,window:window}}])});
 // Google translate
 function googleTranslateElementInit() {
   new google.translate.TranslateElement(
@@ -30,23 +18,6 @@ function googleTranslateElementInit() {
     },
     'googleTranslate');
 }
-var Slick = window.Slick || {};
-$.fn.slick = function() {
-  var _ = this,
-    opt = arguments[0],
-    args = Array.prototype.slice.call(arguments, 1),
-    l = _.length,
-    i = 0,
-    ret;
-  for (i; i < l; i++) {
-    if (typeof opt == 'object' || typeof opt == 'undefined')
-      _[i].slick = new Slick(_[i], opt);
-    else
-      ret = _[i].slick[opt].apply(_[i].slick, args);
-    if (typeof ret != 'undefined') return ret;
-  }
-  return _;
-};
 
 // Simple JavaScript Templating
 // John Resig - http://ejohn.org/ - MIT Licensed
@@ -84,158 +55,216 @@ $.fn.slick = function() {
   };
 })();
 
-var appGFW = {
-  init: function(params) {
-    this.params = params;
-    
-    // Setters
-    this.setElements();
-    this.setCurrent();
-    this.setUrls();
+window.GFW = window.GFW || {};
+window.GFW.NavBar = window.GFW.NavBar || {};
 
-    // Inits
-    this.initTranslate();
-    this.initEvents();
-    this.initFeedback();
-    this.initMobileMenu();
+(function(gfw) {
 
-    // slick load
-    $(document).ready(this.initSlick.bind(this));
+  gfw.Utils = gfw.Utils || {};
 
-    // resize function
-    $(window).on('resize', this.setMobileParam.bind(this));
-    this.setMobileParam({
-      mobile: ($(window).width() <= 850) ? true : false,
-    });
-  },
+  var DEFAULT_URL = 'www.globalforestwatch.org';
+  var URLS = {
+    'www.globalforestwatch.org': 'www.globalforestwatch.org',
+    'localhost': 'localhost:5000',
+    'gfw-nav.herokuapp.com': 'gfw-nav.herokuapp.com',
+    'staging.globalforestwatch.org': 'staging.globalforestwatch.org'
+  };
 
-  // Setters
-  setElements: function() {
-    this.$head = $('head');
-    this.$htmlbody = $('html,body');
-    this.$header = $('#headerGfw');
-    this.$footer = $('#footerGfw');
-    this.$links = $('#headerGfw a, #footerGfw a');
-    this.$linksSubmenu = $('#submenuApps a');
+  var API_URLS = {
+    'localhost': 'localhost:8080',
+    'www.globalforestwatch.org': 'api.globalforestwatch.org',
+    'gfw-nav.herokuapp.com': 'http://staging.api-staging.globalforestwatch.org',
+    'staging.globalforestwatch.org': 'http://staging.api-staging.globalforestwatch.org'
+  };
 
-    // Header
-    this.$headerSubmenu = this.$header.find('.m-header-submenu');
-    this.$headerSubmenuBtns = this.$header.find('.m-header-submenu-btn');
-
-    // Footer
-    this.$footerCarousel = this.$footer.find('#footerCarousel');
-
-    // My GFW
-    this.$toggleMyGFW = this.$header.find('#toggleMyGFW');
-    
-  },
-
-  setCurrent: function() {
-    this.$header.find(this.params.current).addClass('-current');
-  },
-
-  setUrls: function() {
-    this.params.targets = false;
-    switch(location.hostname) {
-      case 'localhost':
-        this.params.hostname = 'http://localhost:5000';
-      break;
-
-      case 'gfw-nav.herokuapp.com':
-        this.params.hostname = 'http://gfw-nav.herokuapp.com';
-        this.$toggleMyGFW.toggleClass('-hidden', false);
-      break;
-
-      case 'www.globalforestwatch.org':
-        this.params.hostname = 'http://www.globalforestwatch.org';
-      break;
-
-      default: 
-        this.params.hostname = 'http://www.globalforestwatch.org';
-        this.params.targets = true;
+  gfw.Utils.getHost = function() {
+    var currentLocation = window.location.hostname;
+    if (URLS[currentLocation] === undefined) {
+      currentLocation = DEFAULT_URL;
     }
-    this.$links.each(function(k,v){
-      var href = $(v).attr('href');
-      if (href.charAt(0) == '/') {
-        $(v).attr('href', this.params.hostname + href);
-      }
-    }.bind(this));
 
-    this.$linksSubmenu.each(function(k,v){
-      var external = $(v).hasClass('external-link');
-      if (this.params.targets) {
-        (!!external) ? $(v).removeAttr('target') : $(v).attr('target','_blank');
-      }
-    }.bind(this));
+    return 'http://' + URLS[currentLocation];
+  };
 
-  },
+  gfw.Utils.isDefaultHost = function() {
+    var currentLocation = window.location.hostname;
+    return (URLS[currentLocation] !== undefined);
+  };
 
-  setParams: function(obj) {
-    this.params = $.extend({}, this.params, obj);
-  },
+  gfw.Utils.getAPIHost = function() {
+    if (window.gfw && window.gfw.config) {
+      return window.gfw.config.GFW_API_HOST;
+    }
 
-  setMobileParam: function() {
-    this.setParams({
-      mobile: ($(window).width() <= 850) ? true : false,
-    });
-  },
+    var currentLocation = window.location.hostname;
+    if (API_URLS[currentLocation] === undefined) {
+      currentLocation = DEFAULT_URL;
+    }
 
-  // Inits
-  initTranslate: function() {
-    this.$head.append('<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>');
-  },
+    return 'http://' + API_URLS[currentLocation];
+  };
 
-  initEvents: function() {
-    this.$header.on('click', '.m-header-submenu-btn', this.showMenus.bind(this));
-    this.$header.on('click', '.m-header-backdrop', this.hideMenus.bind(this));
-  },
+})(window.GFW.NavBar);
 
-  initFeedback: function() {
-    feedbackModal.init();
-  },
+window.GFW = window.GFW || {};
+window.GFW.NavBar = window.GFW.NavBar || {};
 
-  initMobileMenu: function() {
-    menuGFW.init();
-  },
+(function(gfw) {
 
-  // Events related to UI
-  showMenus: function(e) {
-    if (!!this.params.mobile) {
-      e && e.preventDefault();
+gfw.myGFW = gfw.myGFW || {};
 
-      if (!$(e.currentTarget).hasClass('-active')) {
-        this.hideMenus();
-        this.$htmlbody.toggleClass('-no-scroll');
-        $(e.currentTarget).toggleClass('-active').find('svg').toggle();
-        $($(e.currentTarget).data('submenu')).toggleClass('-active');
+var User = gfw.myGFW.User = {
+  isLoggedIn: function(options) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', gfw.Utils.getAPIHost() + '/user', true);
+    xhr.withCredentials = true;
+    xhr.onreadystatechange = function() {
+      var responseStatus = xhr.status;
+      if (responseStatus !== 200) {
+        options.failure();
       } else {
-        this.hideMenus();
+        options.success();
       }
+    };
+    xhr.send();
+  }
+};
 
-    } 
-  },
+})(window.GFW.NavBar);
 
-  hideMenus: function() {
-    this.$htmlbody.removeClass('-no-scroll');
-    this.$headerSubmenu.removeClass('-active');
-    this.$headerSubmenuBtns.each(function(){
-      if ($(this).hasClass('-active')) {
-        $(this).removeClass('-active').find('svg').toggle();
-      }
-    });
-  },
+window.GFW = window.GFW || {};
+window.GFW.NavBar = window.GFW.NavBar || {};
 
-  // I didn't find other way to do this. We should review this code :)
-  initSlick: function() {
+(function(gfw) {
 
-    var $footer = this.$footerCarousel;
-    !function(i){"use strict";i(jQuery)}(function(i){i(function(){"use strict";Slick=function(){function e(e,o){var s,n,l,r=this;if(r.defaults={accessibility:!0,adaptiveHeight:!1,appendArrows:i(e),appendDots:i(e),arrows:!0,asNavFor:null,prevArrow:'<button type="button" data-role="none" class="slick-prev" aria-label="previous">Previous</button>',nextArrow:'<button type="button" data-role="none" class="slick-next" aria-label="next">Next</button>',autoplay:!1,autoplaySpeed:3e3,centerMode:!1,centerPadding:"50px",cssEase:"ease",customPaging:function(i,e){return'<button type="button" data-role="none">'+(e+1)+"</button>"},dots:!1,dotsClass:"slick-dots",draggable:!0,easing:"linear",edgeFriction:.35,fade:!1,focusOnSelect:!1,infinite:!0,initialSlide:0,lazyLoad:"ondemand",mobileFirst:!1,pauseOnHover:!0,pauseOnDotsHover:!1,respondTo:"window",responsive:null,rtl:!1,slide:"",slidesToShow:1,slidesToScroll:1,speed:500,swipe:!0,swipeToSlide:!1,touchMove:!0,touchThreshold:5,useCSS:!0,variableWidth:!1,vertical:!1,waitForAnimate:!0},r.initials={animating:!1,dragging:!1,autoPlayTimer:null,currentDirection:0,currentLeft:null,currentSlide:0,direction:1,$dots:null,listWidth:null,listHeight:null,loadIndex:0,$nextArrow:null,$prevArrow:null,slideCount:null,slideWidth:null,$slideTrack:null,$slides:null,sliding:!1,slideOffset:0,swipeLeft:null,$list:null,touchObject:{},transformsEnabled:!1},i.extend(r,r.initials),r.activeBreakpoint=null,r.animType=null,r.animProp=null,r.breakpoints=[],r.breakpointSettings=[],r.cssTransitions=!1,r.hidden="hidden",r.paused=!1,r.positionProp=null,r.respondTo=null,r.shouldClick=!0,r.$slider=i(e),r.$slidesCache=null,r.transformType=null,r.transitionType=null,r.visibilityChange="visibilitychange",r.windowWidth=0,r.windowTimer=null,s=i(e).data("slick")||{},r.options=i.extend({},r.defaults,s,o),r.currentSlide=r.options.initialSlide,r.originalSettings=r.options,n=r.options.responsive||null,n&&n.length>-1){r.respondTo=r.options.respondTo||"window";for(l in n)n.hasOwnProperty(l)&&(r.breakpoints.push(n[l].breakpoint),r.breakpointSettings[n[l].breakpoint]=n[l].settings);r.breakpoints.sort(function(i,e){return r.options.mobileFirst===!0?i-e:e-i})}"undefined"!=typeof document.mozHidden?(r.hidden="mozHidden",r.visibilityChange="mozvisibilitychange"):"undefined"!=typeof document.msHidden?(r.hidden="msHidden",r.visibilityChange="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(r.hidden="webkitHidden",r.visibilityChange="webkitvisibilitychange"),r.autoPlay=i.proxy(r.autoPlay,r),r.autoPlayClear=i.proxy(r.autoPlayClear,r),r.changeSlide=i.proxy(r.changeSlide,r),r.clickHandler=i.proxy(r.clickHandler,r),r.selectHandler=i.proxy(r.selectHandler,r),r.setPosition=i.proxy(r.setPosition,r),r.swipeHandler=i.proxy(r.swipeHandler,r),r.dragHandler=i.proxy(r.dragHandler,r),r.keyHandler=i.proxy(r.keyHandler,r),r.autoPlayIterator=i.proxy(r.autoPlayIterator,r),r.instanceUid=t++,r.htmlExpr=/^(?:\s*(<[\w\W]+>)[^>]*)$/,r.init(),r.checkResponsive(!0)}var t=0;return e}(),Slick.prototype.addSlide=Slick.prototype.slickAdd=function(e,t,o){var s=this;if("boolean"==typeof t)o=t,t=null;else if(0>t||t>=s.slideCount)return!1;s.unload(),"number"==typeof t?0===t&&0===s.$slides.length?i(e).appendTo(s.$slideTrack):o?i(e).insertBefore(s.$slides.eq(t)):i(e).insertAfter(s.$slides.eq(t)):o===!0?i(e).prependTo(s.$slideTrack):i(e).appendTo(s.$slideTrack),s.$slides=s.$slideTrack.children(this.options.slide),s.$slideTrack.children(this.options.slide).detach(),s.$slideTrack.append(s.$slides),s.$slides.each(function(e,t){i(t).attr("data-slick-index",e)}),s.$slidesCache=s.$slides,s.reinit()},Slick.prototype.animateHeight=function(){var i=this;if(1===i.options.slidesToShow&&i.options.adaptiveHeight===!0&&i.options.vertical===!1){var e=i.$slides.eq(i.currentSlide).outerHeight(!0);i.$list.animate({height:e},i.options.speed)}},Slick.prototype.animateSlide=function(e,t){var o={},s=this;s.animateHeight(),s.options.rtl===!0&&s.options.vertical===!1&&(e=-e),s.transformsEnabled===!1?s.options.vertical===!1?s.$slideTrack.animate({left:e},s.options.speed,s.options.easing,t):s.$slideTrack.animate({top:e},s.options.speed,s.options.easing,t):s.cssTransitions===!1?(s.options.rtl===!0&&(s.currentLeft=-s.currentLeft),i({animStart:s.currentLeft}).animate({animStart:e},{duration:s.options.speed,easing:s.options.easing,step:function(i){i=Math.ceil(i),s.options.vertical===!1?(o[s.animType]="translate("+i+"px, 0px)",s.$slideTrack.css(o)):(o[s.animType]="translate(0px,"+i+"px)",s.$slideTrack.css(o))},complete:function(){t&&t.call()}})):(s.applyTransition(),e=Math.ceil(e),s.options.vertical===!1?o[s.animType]="translate3d("+e+"px, 0px, 0px)":o[s.animType]="translate3d(0px,"+e+"px, 0px)",s.$slideTrack.css(o),t&&setTimeout(function(){s.disableTransition(),t.call()},s.options.speed))},Slick.prototype.asNavFor=function(e){var t=this,o=null!==t.options.asNavFor?i(t.options.asNavFor).slick("getSlick"):null;null!==o&&o.slideHandler(e,!0)},Slick.prototype.applyTransition=function(i){var e=this,t={};e.options.fade===!1?t[e.transitionType]=e.transformType+" "+e.options.speed+"ms "+e.options.cssEase:t[e.transitionType]="opacity "+e.options.speed+"ms "+e.options.cssEase,e.options.fade===!1?e.$slideTrack.css(t):e.$slides.eq(i).css(t)},Slick.prototype.autoPlay=function(){var i=this;i.autoPlayTimer&&clearInterval(i.autoPlayTimer),i.slideCount>i.options.slidesToShow&&i.paused!==!0&&(i.autoPlayTimer=setInterval(i.autoPlayIterator,i.options.autoplaySpeed))},Slick.prototype.autoPlayClear=function(){var i=this;i.autoPlayTimer&&clearInterval(i.autoPlayTimer)},Slick.prototype.autoPlayIterator=function(){var i=this;i.options.infinite===!1?1===i.direction?(i.currentSlide+1===i.slideCount-1&&(i.direction=0),i.slideHandler(i.currentSlide+i.options.slidesToScroll)):(i.currentSlide-1===0&&(i.direction=1),i.slideHandler(i.currentSlide-i.options.slidesToScroll)):i.slideHandler(i.currentSlide+i.options.slidesToScroll)},Slick.prototype.buildArrows=function(){var e=this;e.options.arrows===!0&&e.slideCount>e.options.slidesToShow&&(e.$prevArrow=i(e.options.prevArrow),e.$nextArrow=i(e.options.nextArrow),e.htmlExpr.test(e.options.prevArrow)&&e.$prevArrow.appendTo(e.options.appendArrows),e.htmlExpr.test(e.options.nextArrow)&&e.$nextArrow.appendTo(e.options.appendArrows),e.options.infinite!==!0&&e.$prevArrow.addClass("slick-disabled"))},Slick.prototype.buildDots=function(){var e,t,o=this;if(o.options.dots===!0&&o.slideCount>o.options.slidesToShow){for(t='<ul class="'+o.options.dotsClass+'">',e=0;e<=o.getDotCount();e+=1)t+="<li>"+o.options.customPaging.call(this,o,e)+"</li>";t+="</ul>",o.$dots=i(t).appendTo(o.options.appendDots),o.$dots.find("li").first().addClass("slick-active").attr("aria-hidden","false")}},Slick.prototype.buildOut=function(){var e=this;e.$slides=e.$slider.children(e.options.slide+":not(.slick-cloned)").addClass("slick-slide"),e.slideCount=e.$slides.length,e.$slides.each(function(e,t){i(t).attr("data-slick-index",e)}),e.$slidesCache=e.$slides,e.$slider.addClass("slick-slider"),e.$slideTrack=0===e.slideCount?i('<div class="slick-track"/>').appendTo(e.$slider):e.$slides.wrapAll('<div class="slick-track"/>').parent(),e.$list=e.$slideTrack.wrap('<div aria-live="polite" class="slick-list"/>').parent(),e.$slideTrack.css("opacity",0),(e.options.centerMode===!0||e.options.swipeToSlide===!0)&&(e.options.slidesToScroll=1),i("img[data-lazy]",e.$slider).not("[src]").addClass("slick-loading"),e.setupInfinite(),e.buildArrows(),e.buildDots(),e.updateDots(),e.options.accessibility===!0&&e.$list.prop("tabIndex",0),e.setSlideClasses("number"==typeof this.currentSlide?this.currentSlide:0),e.options.draggable===!0&&e.$list.addClass("draggable")},Slick.prototype.checkResponsive=function(e){var t,o,s,n=this,l=n.$slider.width(),r=window.innerWidth||i(window).width();if("window"===n.respondTo?s=r:"slider"===n.respondTo?s=l:"min"===n.respondTo&&(s=Math.min(r,l)),n.originalSettings.responsive&&n.originalSettings.responsive.length>-1&&null!==n.originalSettings.responsive){o=null;for(t in n.breakpoints)n.breakpoints.hasOwnProperty(t)&&(n.originalSettings.mobileFirst===!1?s<n.breakpoints[t]&&(o=n.breakpoints[t]):s>n.breakpoints[t]&&(o=n.breakpoints[t]));null!==o?null!==n.activeBreakpoint?o!==n.activeBreakpoint&&(n.activeBreakpoint=o,"unslick"===n.breakpointSettings[o]?n.unslick():(n.options=i.extend({},n.originalSettings,n.breakpointSettings[o]),e===!0&&(n.currentSlide=n.options.initialSlide),n.refresh())):(n.activeBreakpoint=o,"unslick"===n.breakpointSettings[o]?n.unslick():(n.options=i.extend({},n.originalSettings,n.breakpointSettings[o]),e===!0&&(n.currentSlide=n.options.initialSlide),n.refresh())):null!==n.activeBreakpoint&&(n.activeBreakpoint=null,n.options=n.originalSettings,e===!0&&(n.currentSlide=n.options.initialSlide),n.refresh())}},Slick.prototype.changeSlide=function(e,t){var o,s,n,l=this,r=i(e.target);switch(r.is("a")&&e.preventDefault(),n=l.slideCount%l.options.slidesToScroll!==0,o=n?0:(l.slideCount-l.currentSlide)%l.options.slidesToScroll,e.data.message){case"previous":s=0===o?l.options.slidesToScroll:l.options.slidesToShow-o,l.slideCount>l.options.slidesToShow&&l.slideHandler(l.currentSlide-s,!1,t);break;case"next":s=0===o?l.options.slidesToScroll:o,l.slideCount>l.options.slidesToShow&&l.slideHandler(l.currentSlide+s,!1,t);break;case"index":var d=0===e.data.index?0:e.data.index||i(e.target).parent().index()*l.options.slidesToScroll;l.slideHandler(l.checkNavigable(d),!1,t);break;default:return}},Slick.prototype.checkNavigable=function(i){var e,t,o=this;if(e=o.getNavigableIndexes(),t=0,i>e[e.length-1])i=e[e.length-1];else for(var s in e){if(i<e[s]){i=t;break}t=e[s]}return i},Slick.prototype.clickHandler=function(i){var e=this;e.shouldClick===!1&&(i.stopImmediatePropagation(),i.stopPropagation(),i.preventDefault())},Slick.prototype.destroy=function(){var e=this;e.autoPlayClear(),e.touchObject={},i(".slick-cloned",e.$slider).remove(),e.$dots&&e.$dots.remove(),e.$prevArrow&&"object"!=typeof e.options.prevArrow&&e.$prevArrow.remove(),e.$nextArrow&&"object"!=typeof e.options.nextArrow&&e.$nextArrow.remove(),e.$slides.removeClass("slick-slide slick-active slick-center slick-visible").attr("aria-hidden","true").removeAttr("data-slick-index").css({position:"",left:"",top:"",zIndex:"",opacity:"",width:""}),e.$slider.removeClass("slick-slider"),e.$slider.removeClass("slick-initialized"),e.$list.off(".slick"),i(window).off(".slick-"+e.instanceUid),i(document).off(".slick-"+e.instanceUid),e.$slider.html(e.$slides)},Slick.prototype.disableTransition=function(i){var e=this,t={};t[e.transitionType]="",e.options.fade===!1?e.$slideTrack.css(t):e.$slides.eq(i).css(t)},Slick.prototype.fadeSlide=function(i,e){var t=this;t.cssTransitions===!1?(t.$slides.eq(i).css({zIndex:1e3}),t.$slides.eq(i).animate({opacity:1},t.options.speed,t.options.easing,e)):(t.applyTransition(i),t.$slides.eq(i).css({opacity:1,zIndex:1e3}),e&&setTimeout(function(){t.disableTransition(i),e.call()},t.options.speed))},Slick.prototype.filterSlides=Slick.prototype.slickFilter=function(i){var e=this;null!==i&&(e.unload(),e.$slideTrack.children(this.options.slide).detach(),e.$slidesCache.filter(i).appendTo(e.$slideTrack),e.reinit())},Slick.prototype.getCurrent=Slick.prototype.slickCurrentSlide=function(){var i=this;return i.currentSlide},Slick.prototype.getDotCount=function(){var i=this,e=0,t=0,o=0;if(i.options.infinite===!0)o=Math.ceil(i.slideCount/i.options.slidesToScroll);else if(i.options.centerMode===!0)o=i.slideCount;else for(;e<i.slideCount;)++o,e=t+i.options.slidesToShow,t+=i.options.slidesToScroll<=i.options.slidesToShow?i.options.slidesToScroll:i.options.slidesToShow;return o-1},Slick.prototype.getLeft=function(i){var e,t,o,s=this,n=0;return s.slideOffset=0,t=s.$slides.first().outerHeight(),s.options.infinite===!0?(s.slideCount>s.options.slidesToShow&&(s.slideOffset=s.slideWidth*s.options.slidesToShow*-1,n=t*s.options.slidesToShow*-1),s.slideCount%s.options.slidesToScroll!==0&&i+s.options.slidesToScroll>s.slideCount&&s.slideCount>s.options.slidesToShow&&(i>s.slideCount?(s.slideOffset=(s.options.slidesToShow-(i-s.slideCount))*s.slideWidth*-1,n=(s.options.slidesToShow-(i-s.slideCount))*t*-1):(s.slideOffset=s.slideCount%s.options.slidesToScroll*s.slideWidth*-1,n=s.slideCount%s.options.slidesToScroll*t*-1))):i+s.options.slidesToShow>s.slideCount&&(s.slideOffset=(i+s.options.slidesToShow-s.slideCount)*s.slideWidth,n=(i+s.options.slidesToShow-s.slideCount)*t),s.slideCount<=s.options.slidesToShow&&(s.slideOffset=0,n=0),s.options.centerMode===!0&&s.options.infinite===!0?s.slideOffset+=s.slideWidth*Math.floor(s.options.slidesToShow/2)-s.slideWidth:s.options.centerMode===!0&&(s.slideOffset=0,s.slideOffset+=s.slideWidth*Math.floor(s.options.slidesToShow/2)),e=s.options.vertical===!1?i*s.slideWidth*-1+s.slideOffset:i*t*-1+n,s.options.variableWidth===!0&&(o=s.slideCount<=s.options.slidesToShow||s.options.infinite===!1?s.$slideTrack.children(".slick-slide").eq(i):s.$slideTrack.children(".slick-slide").eq(i+s.options.slidesToShow),e=o[0]?-1*o[0].offsetLeft:0,s.options.centerMode===!0&&(o=s.options.infinite===!1?s.$slideTrack.children(".slick-slide").eq(i):s.$slideTrack.children(".slick-slide").eq(i+s.options.slidesToShow+1),e=o[0]?-1*o[0].offsetLeft:0,e+=(s.$list.width()-o.outerWidth())/2)),e},Slick.prototype.getOption=Slick.prototype.slickGetOption=function(i){var e=this;return e.options[i]},Slick.prototype.getNavigableIndexes=function(){var i,e=this,t=0,o=0,s=[];for(e.options.infinite===!1?(i=e.slideCount-e.options.slidesToShow+1,e.options.centerMode===!0&&(i=e.slideCount)):(t=-1*e.slideCount,o=-1*e.slideCount,i=2*e.slideCount);i>t;)s.push(t),t=o+e.options.slidesToScroll,o+=e.options.slidesToScroll<=e.options.slidesToShow?e.options.slidesToScroll:e.options.slidesToShow;return s},Slick.prototype.getSlick=function(){return this},Slick.prototype.getSlideCount=function(){var e,t,o,s=this;return o=s.options.centerMode===!0?s.slideWidth*Math.floor(s.options.slidesToShow/2):0,s.options.swipeToSlide===!0?(s.$slideTrack.find(".slick-slide").each(function(e,n){return n.offsetLeft-o+i(n).outerWidth()/2>-1*s.swipeLeft?(t=n,!1):void 0}),e=Math.abs(i(t).attr("data-slick-index")-s.currentSlide)||1):s.options.slidesToScroll},Slick.prototype.goTo=Slick.prototype.slickGoTo=function(i,e){var t=this;t.changeSlide({data:{message:"index",index:parseInt(i)}},e)},Slick.prototype.init=function(){var e=this;i(e.$slider).hasClass("slick-initialized")||(i(e.$slider).addClass("slick-initialized"),e.buildOut(),e.setProps(),e.startLoad(),e.loadSlider(),e.initializeEvents(),e.updateArrows(),e.updateDots()),e.$slider.trigger("init",[e])},Slick.prototype.initArrowEvents=function(){var i=this;i.options.arrows===!0&&i.slideCount>i.options.slidesToShow&&(i.$prevArrow.on("click.slick",{message:"previous"},i.changeSlide),i.$nextArrow.on("click.slick",{message:"next"},i.changeSlide))},Slick.prototype.initDotEvents=function(){var e=this;e.options.dots===!0&&e.slideCount>e.options.slidesToShow&&i("li",e.$dots).on("click.slick",{message:"index"},e.changeSlide),e.options.dots===!0&&e.options.pauseOnDotsHover===!0&&e.options.autoplay===!0&&i("li",e.$dots).on("mouseenter.slick",function(){e.paused=!0,e.autoPlayClear()}).on("mouseleave.slick",function(){e.paused=!1,e.autoPlay()})},Slick.prototype.initializeEvents=function(){var e=this;e.initArrowEvents(),e.initDotEvents(),e.$list.on("touchstart.slick mousedown.slick",{action:"start"},e.swipeHandler),e.$list.on("touchmove.slick mousemove.slick",{action:"move"},e.swipeHandler),e.$list.on("touchend.slick mouseup.slick",{action:"end"},e.swipeHandler),e.$list.on("touchcancel.slick mouseleave.slick",{action:"end"},e.swipeHandler),e.$list.on("click.slick",e.clickHandler),e.options.autoplay===!0&&(i(document).on(e.visibilityChange,function(){e.visibility()}),e.options.pauseOnHover===!0&&(e.$list.on("mouseenter.slick",function(){e.paused=!0,e.autoPlayClear()}),e.$list.on("mouseleave.slick",function(){e.paused=!1,e.autoPlay()}))),e.options.accessibility===!0&&e.$list.on("keydown.slick",e.keyHandler),e.options.focusOnSelect===!0&&i(e.$slideTrack).children().on("click.slick",e.selectHandler),i(window).on("orientationchange.slick.slick-"+e.instanceUid,function(){e.checkResponsive(),e.setPosition()}),i(window).on("resize.slick.slick-"+e.instanceUid,function(){i(window).width()!==e.windowWidth&&(clearTimeout(e.windowDelay),e.windowDelay=window.setTimeout(function(){e.windowWidth=i(window).width(),e.checkResponsive(),e.setPosition()},50))}),i("*[draggable!=true]",e.$slideTrack).on("dragstart",function(i){i.preventDefault()}),i(window).on("load.slick.slick-"+e.instanceUid,e.setPosition),i(document).on("ready.slick.slick-"+e.instanceUid,e.setPosition)},Slick.prototype.initUI=function(){var i=this;i.options.arrows===!0&&i.slideCount>i.options.slidesToShow&&(i.$prevArrow.show(),i.$nextArrow.show()),i.options.dots===!0&&i.slideCount>i.options.slidesToShow&&i.$dots.show(),i.options.autoplay===!0&&i.autoPlay()},Slick.prototype.keyHandler=function(i){var e=this;37===i.keyCode&&e.options.accessibility===!0?e.changeSlide({data:{message:"previous"}}):39===i.keyCode&&e.options.accessibility===!0&&e.changeSlide({data:{message:"next"}})},Slick.prototype.lazyLoad=function(){function e(e){i("img[data-lazy]",e).each(function(){var e=i(this),t=i(this).attr("data-lazy");e.load(function(){e.animate({opacity:1},200)}).css({opacity:0}).attr("src",t).removeAttr("data-lazy").removeClass("slick-loading")})}var t,o,s,n,l=this;l.options.centerMode===!0?l.options.infinite===!0?(s=l.currentSlide+(l.options.slidesToShow/2+1),n=s+l.options.slidesToShow+2):(s=Math.max(0,l.currentSlide-(l.options.slidesToShow/2+1)),n=2+(l.options.slidesToShow/2+1)+l.currentSlide):(s=l.options.infinite?l.options.slidesToShow+l.currentSlide:l.currentSlide,n=s+l.options.slidesToShow,l.options.fade===!0&&(s>0&&s--,n<=l.slideCount&&n++)),t=l.$slider.find(".slick-slide").slice(s,n),e(t),l.slideCount<=l.options.slidesToShow?(o=l.$slider.find(".slick-slide"),e(o)):l.currentSlide>=l.slideCount-l.options.slidesToShow?(o=l.$slider.find(".slick-cloned").slice(0,l.options.slidesToShow),e(o)):0===l.currentSlide&&(o=l.$slider.find(".slick-cloned").slice(-1*l.options.slidesToShow),e(o))},Slick.prototype.loadSlider=function(){var i=this;i.setPosition(),i.$slideTrack.css({opacity:1}),i.$slider.removeClass("slick-loading"),i.initUI(),"progressive"===i.options.lazyLoad&&i.progressiveLazyLoad()},Slick.prototype.next=Slick.prototype.slickNext=function(){var i=this;i.changeSlide({data:{message:"next"}})},Slick.prototype.pause=Slick.prototype.slickPause=function(){var i=this;i.autoPlayClear(),i.paused=!0},Slick.prototype.play=Slick.prototype.slickPlay=function(){var i=this;i.paused=!1,i.autoPlay()},Slick.prototype.postSlide=function(i){var e=this;e.$slider.trigger("afterChange",[e,i]),e.animating=!1,e.setPosition(),e.swipeLeft=null,e.options.autoplay===!0&&e.paused===!1&&e.autoPlay()},Slick.prototype.prev=Slick.prototype.slickPrev=function(){var i=this;i.changeSlide({data:{message:"previous"}})},Slick.prototype.progressiveLazyLoad=function(){var e,t,o=this;e=i("img[data-lazy]",o.$slider).length,e>0&&(t=i("img[data-lazy]",o.$slider).first(),t.attr("src",t.attr("data-lazy")).removeClass("slick-loading").load(function(){t.removeAttr("data-lazy"),o.progressiveLazyLoad(),o.options.adaptiveHeight===!0&&o.setPosition()}).error(function(){t.removeAttr("data-lazy"),o.progressiveLazyLoad()}))},Slick.prototype.refresh=function(){var e=this,t=e.currentSlide;e.destroy(),i.extend(e,e.initials),e.init(),e.changeSlide({data:{message:"index",index:t}},!0)},Slick.prototype.reinit=function(){var e=this;e.$slides=e.$slideTrack.children(e.options.slide).addClass("slick-slide"),e.slideCount=e.$slides.length,e.currentSlide>=e.slideCount&&0!==e.currentSlide&&(e.currentSlide=e.currentSlide-e.options.slidesToScroll),e.slideCount<=e.options.slidesToShow&&(e.currentSlide=0),e.setProps(),e.setupInfinite(),e.buildArrows(),e.updateArrows(),e.initArrowEvents(),e.buildDots(),e.updateDots(),e.initDotEvents(),e.options.focusOnSelect===!0&&i(e.$slideTrack).children().on("click.slick",e.selectHandler),e.setSlideClasses(0),e.setPosition(),e.$slider.trigger("reInit",[e])},Slick.prototype.removeSlide=Slick.prototype.slickRemove=function(i,e,t){var o=this;return"boolean"==typeof i?(e=i,i=e===!0?0:o.slideCount-1):i=e===!0?--i:i,o.slideCount<1||0>i||i>o.slideCount-1?!1:(o.unload(),t===!0?o.$slideTrack.children().remove():o.$slideTrack.children(this.options.slide).eq(i).remove(),o.$slides=o.$slideTrack.children(this.options.slide),o.$slideTrack.children(this.options.slide).detach(),o.$slideTrack.append(o.$slides),o.$slidesCache=o.$slides,void o.reinit())},Slick.prototype.setCSS=function(i){var e,t,o=this,s={};o.options.rtl===!0&&(i=-i),e="left"==o.positionProp?Math.ceil(i)+"px":"0px",t="top"==o.positionProp?Math.ceil(i)+"px":"0px",s[o.positionProp]=i,o.transformsEnabled===!1?o.$slideTrack.css(s):(s={},o.cssTransitions===!1?(s[o.animType]="translate("+e+", "+t+")",o.$slideTrack.css(s)):(s[o.animType]="translate3d("+e+", "+t+", 0px)",o.$slideTrack.css(s)))},Slick.prototype.setDimensions=function(){var i=this;if(i.options.vertical===!1?i.options.centerMode===!0&&i.$list.css({padding:"0px "+i.options.centerPadding}):(i.$list.height(i.$slides.first().outerHeight(!0)*i.options.slidesToShow),i.options.centerMode===!0&&i.$list.css({padding:i.options.centerPadding+" 0px"})),i.listWidth=i.$list.width(),i.listHeight=i.$list.height(),i.options.vertical===!1&&i.options.variableWidth===!1)i.slideWidth=Math.ceil(i.listWidth/i.options.slidesToShow),i.$slideTrack.width(Math.ceil(i.slideWidth*i.$slideTrack.children(".slick-slide").length));else if(i.options.variableWidth===!0){var e=0;i.slideWidth=Math.ceil(i.listWidth/i.options.slidesToShow),i.$slideTrack.children(".slick-slide").each(function(){e+=i.listWidth}),i.$slideTrack.width(Math.ceil(e)+1)}else i.slideWidth=Math.ceil(i.listWidth),i.$slideTrack.height(Math.ceil(i.$slides.first().outerHeight(!0)*i.$slideTrack.children(".slick-slide").length));var t=i.$slides.first().outerWidth(!0)-i.$slides.first().width();i.options.variableWidth===!1&&i.$slideTrack.children(".slick-slide").width(i.slideWidth-t)},Slick.prototype.setFade=function(){var e,t=this;t.$slides.each(function(o,s){e=t.slideWidth*o*-1,t.options.rtl===!0?i(s).css({position:"relative",right:e,top:0,zIndex:800,opacity:0}):i(s).css({position:"relative",left:e,top:0,zIndex:800,opacity:0})}),t.$slides.eq(t.currentSlide).css({zIndex:900,opacity:1})},Slick.prototype.setHeight=function(){var i=this;if(1===i.options.slidesToShow&&i.options.adaptiveHeight===!0&&i.options.vertical===!1){var e=i.$slides.eq(i.currentSlide).outerHeight(!0);i.$list.css("height",e)}},Slick.prototype.setOption=Slick.prototype.slickSetOption=function(i,e,t){var o=this;o.options[i]=e,t===!0&&(o.unload(),o.reinit())},Slick.prototype.setPosition=function(){var i=this;i.setDimensions(),i.setHeight(),i.options.fade===!1?i.setCSS(i.getLeft(i.currentSlide)):i.setFade(),i.$slider.trigger("setPosition",[i])},Slick.prototype.setProps=function(){var i=this,e=document.body.style;i.positionProp=i.options.vertical===!0?"top":"left","top"===i.positionProp?i.$slider.addClass("slick-vertical"):i.$slider.removeClass("slick-vertical"),(void 0!==e.WebkitTransition||void 0!==e.MozTransition||void 0!==e.msTransition)&&i.options.useCSS===!0&&(i.cssTransitions=!0),void 0!==e.OTransform&&(i.animType="OTransform",i.transformType="-o-transform",i.transitionType="OTransition",void 0===e.perspectiveProperty&&void 0===e.webkitPerspective&&(i.animType=!1)),void 0!==e.MozTransform&&(i.animType="MozTransform",i.transformType="-moz-transform",i.transitionType="MozTransition",void 0===e.perspectiveProperty&&void 0===e.MozPerspective&&(i.animType=!1)),void 0!==e.webkitTransform&&(i.animType="webkitTransform",i.transformType="-webkit-transform",i.transitionType="webkitTransition",void 0===e.perspectiveProperty&&void 0===e.webkitPerspective&&(i.animType=!1)),void 0!==e.msTransform&&(i.animType="msTransform",i.transformType="-ms-transform",i.transitionType="msTransition",void 0===e.msTransform&&(i.animType=!1)),void 0!==e.transform&&i.animType!==!1&&(i.animType="transform",i.transformType="transform",i.transitionType="transition"),i.transformsEnabled=null!==i.animType&&i.animType!==!1},Slick.prototype.setSlideClasses=function(i){var e,t,o,s,n=this;n.$slider.find(".slick-slide").removeClass("slick-active").attr("aria-hidden","true").removeClass("slick-center"),t=n.$slider.find(".slick-slide"),n.options.centerMode===!0?(e=Math.floor(n.options.slidesToShow/2),n.options.infinite===!0&&(i>=e&&i<=n.slideCount-1-e?n.$slides.slice(i-e,i+e+1).addClass("slick-active").attr("aria-hidden","false"):(o=n.options.slidesToShow+i,t.slice(o-e+1,o+e+2).addClass("slick-active").attr("aria-hidden","false")),0===i?t.eq(t.length-1-n.options.slidesToShow).addClass("slick-center"):i===n.slideCount-1&&t.eq(n.options.slidesToShow).addClass("slick-center")),n.$slides.eq(i).addClass("slick-center")):i>=0&&i<=n.slideCount-n.options.slidesToShow?n.$slides.slice(i,i+n.options.slidesToShow).addClass("slick-active").attr("aria-hidden","false"):t.length<=n.options.slidesToShow?t.addClass("slick-active").attr("aria-hidden","false"):(s=n.slideCount%n.options.slidesToShow,o=n.options.infinite===!0?n.options.slidesToShow+i:i,n.options.slidesToShow==n.options.slidesToScroll&&n.slideCount-i<n.options.slidesToShow?t.slice(o-(n.options.slidesToShow-s),o+s).addClass("slick-active").attr("aria-hidden","false"):t.slice(o,o+n.options.slidesToShow).addClass("slick-active").attr("aria-hidden","false")),"ondemand"===n.options.lazyLoad&&n.lazyLoad()},Slick.prototype.setupInfinite=function(){var e,t,o,s=this;if(s.options.fade===!0&&(s.options.centerMode=!1),s.options.infinite===!0&&s.options.fade===!1&&(t=null,s.slideCount>s.options.slidesToShow)){for(o=s.options.centerMode===!0?s.options.slidesToShow+1:s.options.slidesToShow,e=s.slideCount;e>s.slideCount-o;e-=1)t=e-1,i(s.$slides[t]).clone(!0).attr("id","").attr("data-slick-index",t-s.slideCount).prependTo(s.$slideTrack).addClass("slick-cloned");for(e=0;o>e;e+=1)t=e,i(s.$slides[t]).clone(!0).attr("id","").attr("data-slick-index",t+s.slideCount).appendTo(s.$slideTrack).addClass("slick-cloned");s.$slideTrack.find(".slick-cloned").find("[id]").each(function(){i(this).attr("id","")})}},Slick.prototype.selectHandler=function(e){var t=this,o=parseInt(i(e.target).parents(".slick-slide").attr("data-slick-index"));return o||(o=0),t.slideCount<=t.options.slidesToShow?(t.$slider.find(".slick-slide").removeClass("slick-active").attr("aria-hidden","true"),t.$slides.eq(o).addClass("slick-active").attr("aria-hidden","false"),t.options.centerMode===!0&&(t.$slider.find(".slick-slide").removeClass("slick-center"),t.$slides.eq(o).addClass("slick-center")),void t.asNavFor(o)):void t.slideHandler(o)},Slick.prototype.slideHandler=function(i,e,t){var o,s,n,l,r=null,d=this;return e=e||!1,d.animating===!0&&d.options.waitForAnimate===!0||d.options.fade===!0&&d.currentSlide===i||d.slideCount<=d.options.slidesToShow?void 0:(e===!1&&d.asNavFor(i),o=i,r=d.getLeft(o),l=d.getLeft(d.currentSlide),d.currentLeft=null===d.swipeLeft?l:d.swipeLeft,d.options.infinite===!1&&d.options.centerMode===!1&&(0>i||i>d.getDotCount()*d.options.slidesToScroll)?void(d.options.fade===!1&&(o=d.currentSlide,t!==!0?d.animateSlide(l,function(){d.postSlide(o)}):d.postSlide(o))):d.options.infinite===!1&&d.options.centerMode===!0&&(0>i||i>d.slideCount-d.options.slidesToScroll)?void(d.options.fade===!1&&(o=d.currentSlide,t!==!0?d.animateSlide(l,function(){d.postSlide(o)}):d.postSlide(o))):(d.options.autoplay===!0&&clearInterval(d.autoPlayTimer),s=0>o?d.slideCount%d.options.slidesToScroll!==0?d.slideCount-d.slideCount%d.options.slidesToScroll:d.slideCount+o:o>=d.slideCount?d.slideCount%d.options.slidesToScroll!==0?0:o-d.slideCount:o,d.animating=!0,d.$slider.trigger("beforeChange",[d,d.currentSlide,s]),n=d.currentSlide,d.currentSlide=s,d.setSlideClasses(d.currentSlide),d.updateDots(),d.updateArrows(),d.options.fade===!0?(t!==!0?d.fadeSlide(s,function(){d.postSlide(s)}):d.postSlide(s),void d.animateHeight()):void(t!==!0?d.animateSlide(r,function(){d.postSlide(s)}):d.postSlide(s))))},Slick.prototype.startLoad=function(){var i=this;i.options.arrows===!0&&i.slideCount>i.options.slidesToShow&&(i.$prevArrow.hide(),i.$nextArrow.hide()),i.options.dots===!0&&i.slideCount>i.options.slidesToShow&&i.$dots.hide(),i.$slider.addClass("slick-loading")},Slick.prototype.swipeDirection=function(){var i,e,t,o,s=this;return i=s.touchObject.startX-s.touchObject.curX,e=s.touchObject.startY-s.touchObject.curY,t=Math.atan2(e,i),o=Math.round(180*t/Math.PI),0>o&&(o=360-Math.abs(o)),45>=o&&o>=0?s.options.rtl===!1?"left":"right":360>=o&&o>=315?s.options.rtl===!1?"left":"right":o>=135&&225>=o?s.options.rtl===!1?"right":"left":"vertical"},Slick.prototype.swipeEnd=function(i){var e,t=this;if(t.dragging=!1,t.shouldClick=t.touchObject.swipeLength>10?!1:!0,void 0===t.touchObject.curX)return!1;if(t.touchObject.edgeHit===!0&&t.$slider.trigger("edge",[t,t.swipeDirection()]),t.touchObject.swipeLength>=t.touchObject.minSwipe)switch(t.swipeDirection()){case"left":e=t.options.swipeToSlide?t.checkNavigable(t.currentSlide+t.getSlideCount()):t.currentSlide+t.getSlideCount(),t.slideHandler(e),t.currentDirection=0,t.touchObject={},t.$slider.trigger("swipe",[t,"left"]);break;case"right":e=t.options.swipeToSlide?t.checkNavigable(t.currentSlide-t.getSlideCount()):t.currentSlide-t.getSlideCount(),t.slideHandler(e),t.currentDirection=1,t.touchObject={},t.$slider.trigger("swipe",[t,"right"])}else t.touchObject.startX!==t.touchObject.curX&&(t.slideHandler(t.currentSlide),t.touchObject={})},Slick.prototype.swipeHandler=function(i){var e=this;if(!(e.options.swipe===!1||"ontouchend"in document&&e.options.swipe===!1||e.options.draggable===!1&&-1!==i.type.indexOf("mouse")))switch(e.touchObject.fingerCount=i.originalEvent&&void 0!==i.originalEvent.touches?i.originalEvent.touches.length:1,e.touchObject.minSwipe=e.listWidth/e.options.touchThreshold,i.data.action){case"start":e.swipeStart(i);break;case"move":e.swipeMove(i);break;case"end":e.swipeEnd(i)}},Slick.prototype.swipeMove=function(i){var e,t,o,s,n,l=this;return n=void 0!==i.originalEvent?i.originalEvent.touches:null,!l.dragging||n&&1!==n.length?!1:(e=l.getLeft(l.currentSlide),l.touchObject.curX=void 0!==n?n[0].pageX:i.clientX,l.touchObject.curY=void 0!==n?n[0].pageY:i.clientY,l.touchObject.swipeLength=Math.round(Math.sqrt(Math.pow(l.touchObject.curX-l.touchObject.startX,2))),t=l.swipeDirection(),"vertical"!==t?(void 0!==i.originalEvent&&l.touchObject.swipeLength>4&&i.preventDefault(),s=(l.options.rtl===!1?1:-1)*(l.touchObject.curX>l.touchObject.startX?1:-1),o=l.touchObject.swipeLength,l.touchObject.edgeHit=!1,l.options.infinite===!1&&(0===l.currentSlide&&"right"===t||l.currentSlide>=l.getDotCount()&&"left"===t)&&(o=l.touchObject.swipeLength*l.options.edgeFriction,l.touchObject.edgeHit=!0),l.options.vertical===!1?l.swipeLeft=e+o*s:l.swipeLeft=e+o*(l.$list.height()/l.listWidth)*s,l.options.fade===!0||l.options.touchMove===!1?!1:l.animating===!0?(l.swipeLeft=null,!1):void l.setCSS(l.swipeLeft)):void 0)},Slick.prototype.swipeStart=function(i){var e,t=this;return 1!==t.touchObject.fingerCount||t.slideCount<=t.options.slidesToShow?(t.touchObject={},!1):(void 0!==i.originalEvent&&void 0!==i.originalEvent.touches&&(e=i.originalEvent.touches[0]),t.touchObject.startX=t.touchObject.curX=void 0!==e?e.pageX:i.clientX,t.touchObject.startY=t.touchObject.curY=void 0!==e?e.pageY:i.clientY,void(t.dragging=!0))},Slick.prototype.unfilterSlides=Slick.prototype.slickUnfilter=function(){var i=this;null!==i.$slidesCache&&(i.unload(),i.$slideTrack.children(this.options.slide).detach(),i.$slidesCache.appendTo(i.$slideTrack),i.reinit())},Slick.prototype.unload=function(){var e=this;i(".slick-cloned",e.$slider).remove(),e.$dots&&e.$dots.remove(),e.$prevArrow&&"object"!=typeof e.options.prevArrow&&e.$prevArrow.remove(),e.$nextArrow&&"object"!=typeof e.options.nextArrow&&e.$nextArrow.remove(),
-    e.$slides.removeClass("slick-slide slick-active slick-visible").attr("aria-hidden","true").css("width","")},Slick.prototype.unslick=function(){var i=this;i.destroy()},Slick.prototype.updateArrows=function(){var i,e=this;i=Math.floor(e.options.slidesToShow/2),e.options.arrows===!0&&e.options.infinite!==!0&&e.slideCount>e.options.slidesToShow&&(e.$prevArrow.removeClass("slick-disabled"),e.$nextArrow.removeClass("slick-disabled"),0===e.currentSlide?(e.$prevArrow.addClass("slick-disabled"),e.$nextArrow.removeClass("slick-disabled")):e.currentSlide>=e.slideCount-e.options.slidesToShow&&e.options.centerMode===!1?(e.$nextArrow.addClass("slick-disabled"),e.$prevArrow.removeClass("slick-disabled")):e.currentSlide>=e.slideCount-1&&e.options.centerMode===!0&&(e.$nextArrow.addClass("slick-disabled"),e.$prevArrow.removeClass("slick-disabled")))},Slick.prototype.updateDots=function(){var i=this;null!==i.$dots&&(i.$dots.find("li").removeClass("slick-active").attr("aria-hidden","true"),i.$dots.find("li").eq(Math.floor(i.currentSlide/i.options.slidesToScroll)).addClass("slick-active").attr("aria-hidden","false"))},Slick.prototype.visibility=function(){var i=this;document[i.hidden]?(i.paused=!0,i.autoPlayClear()):(i.paused=!1,i.autoPlay())},i.fn.slick=function(){var i,e=this,t=arguments[0],o=Array.prototype.slice.call(arguments,1),s=e.length,n=0;for(n;s>n;n++)if("object"==typeof t||"undefined"==typeof t?e[n].slick=new Slick(e[n],t):i=e[n].slick[t].apply(e[n].slick,o),"undefined"!=typeof i)return i;return e},$footer.slick({infinite:!0,slidesToShow:5,slidesToScroll:5,speed:500,autoplay:!0,autoplaySpeed:3e3,slide:"li"})})});    
-  },
+gfw.myGFW = gfw.myGFW || {};
 
-}
+var LoginModal = gfw.myGFW.LoginModal = function(options) {
+  this.el = options.el;
+  this.render();
+};
+
+LoginModal.prototype.render = function() {
+  var id = 'my-gfw-menu-modal-template',
+      template = document.getElementById(id).innerHTML;
+
+  this.el.innerHTML = template;
+  this.el.classList.add('is-active');
+  this.delegateEvents();
+  this.setupLinks();
+
+  return this;
+};
+
+LoginModal.prototype.delegateEvents = function() {
+  var modalClose = this.el.getElementsByClassName('my-gfw-modal-close')[0];
+  if (modalClose !== null) {
+    modalClose.onclick = this.close.bind(this);
+  }
+
+  var modalBackdrop = this.el.getElementsByClassName('my-gfw-modal-backdrop')[0];
+  if (modalBackdrop !== null) {
+    modalBackdrop.onclick = this.close.bind(this);
+  }
+};
+
+LoginModal.prototype.setupLinks = function() {
+  var links = document.getElementsByClassName('my-gfw-sign-in');
+
+  var i, link;
+  for (i = 0; i < links.length; i++) {
+    link = links[i];
+    link.href = gfw.Utils.getAPIHost() + link.getAttribute('href');
+  }
+};
+
+LoginModal.prototype.close = function(event) {
+  if (event !== undefined) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+
+  this.el.classList.remove('is-active');
+  this.el.innerHTML = '';
+};
+
+})(window.GFW.NavBar);
+
+window.GFW = window.GFW || {};
+window.GFW.NavBar = window.GFW.NavBar || {};
+
+(function(gfw) {
+
+gfw.myGFW = gfw.myGFW || {};
+
+var LoginButton = gfw.myGFW.LoginButton = function(options) {
+  this.el = options.el || document.createElement('div');
+  this.checkStatus();
+};
+
+LoginButton.prototype.render = function() {
+  var id;
+  if (this.loggedIn === true) {
+    id = 'my-gfw-menu-loggedin-template';
+  } else {
+    id = 'my-gfw-menu-loggedout-template';
+  }
+
+  var template = document.getElementById(id).innerHTML;
+  this.el.innerHTML = template;
+  this.delegateEvents();
+  this.setupLinks();
+
+  return this;
+};
+
+LoginButton.prototype.checkStatus = function() {
+  var context = this;
+  gfw.myGFW.User.isLoggedIn({
+    success: function() {
+      context.loggedIn = true;
+      context.render();
+    },
+    failure: function() {
+      context.loggedIn = false;
+      context.render();
+    }
+  });
+};
+
+LoginButton.prototype.showModal = function(event) {
+  if (event !== undefined) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+
+  var modalView = new gfw.myGFW.LoginModal({
+    el: document.getElementById('my-gfw-modal')});
+};
+
+LoginButton.prototype.delegateEvents = function() {
+  var openModal = document.getElementById('my-gfw-open-modal');
+  if (openModal !== null) {
+    openModal.addEventListener('click', this.showModal.bind(this));
+  }
+};
+
+LoginButton.prototype.setupLinks = function() {
+  var link = document.getElementById('my-gfw-sign-out');
+  if (link !== null) {
+    link.href = gfw.Utils.getAPIHost() + link.getAttribute('href');
+  }
+};
+
+})(window.GFW.NavBar);
+
 // https://cdn.rawgit.com/simbiotica/gfw_assets/0612702e5ec4cc8e1cc75c4a4a63c8274f7ea870/js/build/production.js
-var feedbackModal = {
+window.GFW = window.GFW || {};
+window.GFW.NavBar = window.GFW.NavBar || {};
+
+(function(gfw) {
+
+gfw.feedbackModal = {
 
   init: function() {
     this._initVars();
@@ -261,7 +290,7 @@ var feedbackModal = {
     this.$body =      $('body');
     this.$htmlbody =  $('html, body');
     this.$el =        $('#feedbackModal');
-    
+
     this.$content =        this.$el.find('.modal-content');
     this.$contentWrapper = this.$el.find('.modal-wrapper');
     this.$backdrop =       this.$el.find('.modal-backdrop');
@@ -276,7 +305,7 @@ var feedbackModal = {
     this.$email =          this.$el.find('#feedback-email');
     this.$hostname =       this.$el.find('#feedback-hostname');
 
-    this.$dinamicColor =   this.$el.find('.js-dinamic-color')
+    this.$dinamicColor =   this.$el.find('.js-dinamic-color');
 
     this.hidden = true;
     this.mobile = (this.$window.width() > 850) ? false : true;
@@ -332,7 +361,7 @@ var feedbackModal = {
         this.color = 'blue';
       break;
 
-      default: 
+      default:
         this.color = 'green';
     }
 
@@ -447,32 +476,391 @@ var feedbackModal = {
     var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
   },
-}
-var loaderGFW = {
+};
 
+})(window.GFW.NavBar);
+
+// https://cdn.rawgit.com/simbiotica/gfw_assets/0612702e5ec4cc8e1cc75c4a4a63c8274f7ea870/js/build/production.js
+window.GFW = window.GFW || {};
+window.GFW.NavBar = window.GFW.NavBar || {};
+
+(function(gfw) {
+
+  gfw.menujsonGFW = {
+    'default' : [{
+        name: 'Explore',
+        link: '/explore',
+        submenu: [{
+          name: 'GFW Interactive Map',
+          link: '/map',
+        },{
+          name: 'Country Profiles &amp; Rankings',
+          link: '/countries',
+        },{
+          name: 'Commodities',
+          link: 'http://commodities.globalforestwatch.org/',
+          classname: 'mobile-friendly', 
+        },{
+          name: 'Fires',
+          link: 'http://fires.globalforestwatch.org/',
+          classname: 'mobile-friendly', 
+        },{
+          name: 'Climate',
+          link: 'http://climate.globalforestwatch.org/',
+          classname: 'mobile-friendly', 
+        },{
+          name: 'All applications',
+          link: '/explore',
+        },{
+          name: 'Open Data Portal',
+          link: 'http://data.globalforestwatch.org/',
+          classname: 'mobile-friendly', 
+        }]
+      },{
+        name: 'Stay informed',
+        link: '/stayinformed',
+        submenu: [{
+          name: 'Blog',
+          link: 'http://blog.globalforestwatch.org/',
+        },{
+          name: 'Crowdsourced stories',
+          link: '/stayinformed/crowdsourced-stories',
+        },{
+          name: 'Newsletter',
+          link: 'http://www.wri.org/global-forest-watch-stay-informed',
+          target: '_blank',
+        },{
+          name: 'Publications',
+          link: '/stayinformed/publications',
+        }]
+      },{
+        name: 'Get Involved',
+        link: '/getinvolved',
+        submenu: [{
+          name: 'Develop your own app',
+          link: '/getinvolved/develop-your-own-app',
+        },{
+          name: 'Submit a story',
+          link: '/stories/new',
+        },{
+          name: 'Share data',
+          link: '/getinvolved/share-data',
+        },{
+          name: 'Help improve data',
+          link: '/getinvolved/help-improve-data',
+        },{
+          name: 'Join the discussion',
+          link: 'https://groups.google.com/forum/#!forum/globalforestwatch',
+          target: '_blank',
+        },{
+          name: 'Apply to the Small Grants Fund',
+          link: '/getinvolved/apply-to-the-small-grants-fund',
+        },{
+          name: 'Provide feedback',
+          link: '/getinvolved/provide-feedback',
+          classname: 'feedback-link',
+        },{
+          name: 'Help improve translations',
+          link: '/getinvolved/help-improve-translations',
+        }]
+      },{
+        name: 'How to',
+        link: '/howto',
+        submenu: [{
+          name: 'Visualize data',
+          link: '/howto/view-data',
+        },{
+          name: 'View statistics',
+          link: '/howto/view-statistics',
+        },{
+          name: 'Analyze forest change',
+          link: '/howto/analyze-forest-change',
+        },{
+          name: 'Subscribe to alerts and user stories',
+          link: '/howto/subscribe-to-alerts-and-user-stories',
+        },{
+          name: 'Submit a story',
+          link: '/howto/submit-a-story',
+        },{
+          name: 'Open Data Portal',
+          link: '/howto/odp',
+        },{
+          name: 'FAQs',
+          link: '/howto/faqs',
+        },{
+          name: 'Training modules',
+          link: '/howto/training-modules',
+        }]
+      },{
+        name: 'About',
+        link: '/about',
+        submenu: [{
+          name: 'About GFW',
+          link: '/about/about-gfw',
+        },{
+          name: 'The GFW partnership',
+          link: '/about/the-gfw-partnership',
+        },{
+          name: 'Videos',
+          link: '/about/videos',
+        },{
+          name: 'Awards &amp; testimonials',
+          link: '/about/awards_and_testimonials',
+        },{
+          name: 'Data policy',
+          link: '/about/data_policy',
+        },{
+          name: 'Contact us',
+          link: '/about/contact-us',
+        }]
+      }],
+
+    'climate' : [{
+        name: 'Map',
+        link: '/map',
+      },{
+        name: 'Country profiles',
+        link: '/countries',
+      },{
+        name: 'Country comparisons',
+        link: '/compare-countries',
+      },{
+        name: 'Pantropical overview',
+        link: '/pantropical',
+      },{
+        name: 'About',
+        link: '/about',
+      }
+    ]
+  };
+
+})(window.GFW.NavBar);
+
+
+// https://cdn.rawgit.com/simbiotica/gfw_assets/0612702e5ec4cc8e1cc75c4a4a63c8274f7ea870/js/build/production.js
+window.GFW = window.GFW || {};
+window.GFW.NavBar = window.GFW.NavBar || {};
+
+(function(gfw) {
+
+gfw.menuGFW = {
+  init: function(params) {
+    this.cacheVars();
+    // Choose the menu you want to render
+    this.switchMenu();
+    // Print it
+    this.printMenu();
+  },
+
+  cacheVars: function() {
+    this.$mobileMenu = $('#submenuMenuMobile');
+  },
+
+  switchMenu: function() {
+    switch(location.hostname) {
+      case 'localhost':
+        this.menu = gfw.menujsonGFW['default'];
+      break;
+
+      case 'climate.globalforestwatch.org':
+        this.menu = gfw.menujsonGFW['climate'];
+      break;
+
+      default: 
+        this.menu = gfw.menujsonGFW['default'];
+    }
+  },
+
+  printMenu: function() {
+    this.$mobileMenu.html(tmplGFW('mobileMenuTPL',{ menu: this.menu }));
+  }
+}
+
+})(window.GFW.NavBar);
+
+window.GFW = window.GFW || {};
+window.GFW.NavBar = window.GFW.NavBar || {};
+
+(function(gfw) {
+
+gfw.Application = {
+  initialize: function(params) {
+    this.params = params;
+
+    // Setters
+    this.setElements();
+    this.setCurrent();
+    this.setUrls();
+
+    // Inits
+    this.initTranslate();
+    this.initEvents();
+    this.initMyGFW();
+    this.initFeedback();
+    this.initMobileMenu();
+
+    $(document).ready(this.initLogos.bind(this));
+
+    // resize function
+    $(window).on('resize', this.setMobileParam.bind(this));
+    this.setMobileParam({
+      mobile: ($(window).width() <= 850) ? true : false,
+    });
+  },
+
+  // Setters
+  setElements: function() {
+    this.$head = $('head');
+    this.$htmlbody = $('html,body');
+    this.$header = $('#headerGfw');
+    this.$footer = $('#footerGfw');
+    this.$links = $('#headerGfw a, #footerGfw a');
+    this.$linksSubmenu = $('#submenuApps a');
+
+    // Header
+    this.$headerSubmenu = this.$header.find('.m-header-submenu');
+    this.$headerSubmenuBtns = this.$header.find('.m-header-submenu-btn');
+
+    // Footer
+    this.$footerCarousel = this.$footer.find('#footerCarousel');
+  },
+
+  setCurrent: function() {
+    this.$header.find(this.params.current).addClass('-current');
+  },
+
+  setUrls: function() {
+    this.params.targets = !gfw.Utils.isDefaultHost();
+    this.params.hostname = gfw.Utils.getHost();
+
+    this.$links.each(function(k,v){
+      var href = $(v).attr('href');
+      if (href.charAt(0) == '/') {
+        $(v).attr('href', this.params.hostname + href);
+      }
+    }.bind(this));
+
+    this.$linksSubmenu.each(function(k,v){
+      var external = $(v).hasClass('external-link');
+      if (this.params.targets) {
+        (!!external) ? $(v).removeAttr('target') : $(v).attr('target','_blank');
+      }
+    }.bind(this));
+  },
+
+  setParams: function(obj) {
+    this.params = $.extend({}, this.params, obj);
+  },
+
+  setMobileParam: function() {
+    this.setParams({
+      mobile: ($(window).width() <= 850) ? true : false,
+    });
+  },
+
+  // Inits
+  initTranslate: function() {
+    this.$head.append('<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>');
+  },
+
+  initEvents: function() {
+    this.$header.on('click', '.m-header-submenu-btn', this.showMenus.bind(this));
+    this.$header.on('click', '.m-header-backdrop', this.hideMenus.bind(this));
+  },
+
+  initMyGFW: function() {
+    var containerEl = document.getElementById('my-gfw-container');
+
+    if (gfw.Utils.isDefaultHost() === true) {
+      var loginButton = new gfw.myGFW.LoginButton({
+        el: containerEl});
+      loginButton.render();
+    } else {
+      containerEl.style.display = 'none';
+    }
+  },
+
+  initFeedback: function() {
+    gfw.feedbackModal.init();
+  },
+
+  initMobileMenu: function() {
+    gfw.menuGFW.init();
+  },
+
+  // Events related to UI
+  showMenus: function(e) {
+    if (!!this.params.mobile) {
+      e && e.preventDefault();
+
+      if (!$(e.currentTarget).hasClass('-active')) {
+        this.hideMenus();
+        this.$htmlbody.toggleClass('-no-scroll');
+        $(e.currentTarget).toggleClass('-active').find('svg').toggle();
+        $($(e.currentTarget).data('submenu')).toggleClass('-active');
+      } else {
+        this.hideMenus();
+      }
+    }
+  },
+
+  hideMenus: function() {
+    this.$htmlbody.removeClass('-no-scroll');
+    this.$headerSubmenu.removeClass('-active');
+    this.$headerSubmenuBtns.each(function(){
+      if ($(this).hasClass('-active')) {
+        $(this).removeClass('-active').find('svg').toggle();
+      }
+    });
+  },
+
+  initLogos: function() {
+    var sliderEl = document.querySelector('#my-gfw-slider'),
+        sliderTimer;
+
+    var cancelTimer = function() { clearInterval(sliderTimer); };
+    var nextEl = sliderEl.getElementsByClassName('js_next')[0],
+        prevEl = sliderEl.getElementsByClassName('js_prev')[0];
+    nextEl.addEventListener('click', cancelTimer);
+    prevEl.addEventListener('click', cancelTimer);
+
+    var slider = window.lory.lory(sliderEl, {
+      infinite: 5,
+      slidesToScroll: 1,
+      slideSpeed: 500
+    });
+
+    sliderTimer = setInterval(slider.next.bind(slider), 3000);
+  },
+};
+
+})(window.GFW.NavBar);
+
+(function() {
+
+var loaderGFW = {
   urls: {
-    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/b61c67ad78492c3e9958cf9b03e6a057b890bde3/src/header.html',
-    footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/bf34b7cc11c7a931e08493252de34cfdcf0924e7/src/footer.html',
-    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/bf34b7cc11c7a931e08493252de34cfdcf0924e7/css/build/minified/global.css',
+    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/ff2ba884c4e09b626c03b1287b946665c9e7a36e/src/header.html',
+    footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/src/footer.html',
+    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/14da456802ffb9139584bbf92a72fda735a9ef0e/css/build/global.css',
   },
 
   urls_dev: {
-    header: 'http://localhost:8000/src/header.html',
-    footer: 'http://localhost:8000/src/footer.html',
-    css: 'http://localhost:8000/css/build/global.css',
+    header: 'http://localhost:9000/src/header.html',
+    footer: 'http://localhost:9000/src/footer.html',
+    css: 'http://localhost:9000/css/build/global.css',
   },
 
-  init: function() {
+  initialize: function() {
     // Setters
     this.setElements();
     this.setParams({
       current: this.$script.data('current'),
     });
-    this.setPromises()
-    
+    this.setPromises();
+
     // Get data
     this.getData();
-    
   },
 
   // Setters
@@ -484,14 +872,14 @@ var loaderGFW = {
   },
 
   setParams: function(obj) {
-    this.params = $.extend({}, this.params, obj)
+    this.params = $.extend({}, this.params, obj);
   },
 
   setPromises: function() {
     this.promises = [];
-    // If you want to develop you should change this.urls => this.urls_dev 
+    // If you want to develop you should change this.urls => this.urls_dev
     // It may be better if we set this var by branches
-    $.each(this.urls, function(k,v){
+    $.each(this.urls_dev, function(k,v){
       var deferred = new $.Deferred();
       $.ajax({
         url: v,
@@ -513,201 +901,24 @@ var loaderGFW = {
         header: args[0],
         footer: args[1],
         css: args[2],
-      })
+      });
       this.printData();
-      appGFW.init(this.params);
     }.bind(this));
   },
 
   // Print
   printData: function() {
     this.$head.append('<style>'+this.params.css+'</style>');
-    this.$header.html(this.params.header).show(0);
-    this.$footer.html(this.params.footer).show(0);
+    setTimeout(function(){
+      this.$header.html(this.params.header).show(0);
+      this.$footer.html(this.params.footer).show(0);
+      window.GFW.NavBar.Application.initialize(this.params);
+    }.bind(this), 250)
   },
-}
+};
 
 $(document).ready(function(){
-  loaderGFW.init();
-})
+  loaderGFW.initialize();
+});
 
-var menuGFW = {
-  init: function(params) {
-    this.cacheVars();
-    // Choose the menu you want to render
-    this.switchMenu();
-    // Print it
-    this.printMenu();
-  },
-
-  cacheVars: function() {
-    this.$mobileMenu = $('#submenuMenuMobile');
-  },
-
-  switchMenu: function() {
-    switch(location.hostname) {
-      case 'localhost':
-        this.menu = menujsonGFW['default'];
-      break;
-
-      case 'climate.globalforestwatch.org':
-        this.menu = menujsonGFW['climate'];
-      break;
-
-      default: 
-        this.menu = menujsonGFW['default'];
-    }
-  },
-
-  printMenu: function() {
-    this.$mobileMenu.html(tmplGFW('mobileMenuTPL',{ menu: this.menu }));
-  }
-}
-var menujsonGFW = {
-  'default' : [{
-      name: 'Explore',
-      link: '/explore',
-      submenu: [{
-        name: 'GFW Interactive Map',
-        link: '/map',
-      },{
-        name: 'Country Profiles &amp; Rankings',
-        link: '/countries',
-      },{
-        name: 'Commodities',
-        link: 'http://commodities.globalforestwatch.org/',
-        classname: 'mobile-friendly', 
-      },{
-        name: 'Fires',
-        link: 'http://fires.globalforestwatch.org/',
-        classname: 'mobile-friendly', 
-      },{
-        name: 'Climate',
-        link: 'http://climate.globalforestwatch.org/',
-        classname: 'mobile-friendly', 
-      },{
-        name: 'All applications',
-        link: '/explore',
-      },{
-        name: 'Open Data Portal',
-        link: 'http://data.globalforestwatch.org/',
-        classname: 'mobile-friendly', 
-      }]
-    },{
-      name: 'Stay informed',
-      link: '/stayinformed',
-      submenu: [{
-        name: 'Blog',
-        link: 'http://blog.globalforestwatch.org/',
-      },{
-        name: 'Crowdsourced stories',
-        link: '/stayinformed/crowdsourced-stories',
-      },{
-        name: 'Newsletter',
-        link: 'http://www.wri.org/global-forest-watch-stay-informed',
-        target: '_blank',
-      },{
-        name: 'Publications',
-        link: '/stayinformed/publications',
-      }]
-    },{
-      name: 'Get Involved',
-      link: '/getinvolved',
-      submenu: [{
-        name: 'Develop your own app',
-        link: '/getinvolved/develop-your-own-app',
-      },{
-        name: 'Submit a story',
-        link: '/stories/new',
-      },{
-        name: 'Share data',
-        link: '/getinvolved/share-data',
-      },{
-        name: 'Help improve data',
-        link: '/getinvolved/help-improve-data',
-      },{
-        name: 'Join the discussion',
-        link: 'https://groups.google.com/forum/#!forum/globalforestwatch',
-        target: '_blank',
-      },{
-        name: 'Apply to the Small Grants Fund',
-        link: '/getinvolved/apply-to-the-small-grants-fund',
-      },{
-        name: 'Provide feedback',
-        link: '/getinvolved/provide-feedback',
-        classname: 'feedback-link',
-      },{
-        name: 'Help improve translations',
-        link: '/getinvolved/help-improve-translations',
-      }]
-    },{
-      name: 'How to',
-      link: '/howto',
-      submenu: [{
-        name: 'Visualize data',
-        link: '/howto/view-data',
-      },{
-        name: 'View statistics',
-        link: '/howto/view-statistics',
-      },{
-        name: 'Analyze forest change',
-        link: '/howto/analyze-forest-change',
-      },{
-        name: 'Subscribe to alerts and user stories',
-        link: '/howto/subscribe-to-alerts-and-user-stories',
-      },{
-        name: 'Submit a story',
-        link: '/howto/submit-a-story',
-      },{
-        name: 'Open Data Portal',
-        link: '/howto/odp',
-      },{
-        name: 'FAQs',
-        link: '/howto/faqs',
-      },{
-        name: 'Training modules',
-        link: '/howto/training-modules',
-      }]
-    },{
-      name: 'About',
-      link: '/about',
-      submenu: [{
-        name: 'About GFW',
-        link: '/about/about-gfw',
-      },{
-        name: 'The GFW partnership',
-        link: '/about/the-gfw-partnership',
-      },{
-        name: 'Videos',
-        link: '/about/videos',
-      },{
-        name: 'Awards &amp; testimonials',
-        link: '/about/awards_and_testimonials',
-      },{
-        name: 'Data policy',
-        link: '/about/data_policy',
-      },{
-        name: 'Contact us',
-        link: '/about/contact-us',
-      }]
-    }],
-
-  'climate' : [{
-      name: 'Map',
-      link: '/map',
-    },{
-      name: 'Country profiles',
-      link: '/countries',
-    },{
-      name: 'Country comparisons',
-      link: '/compare-countries',
-    },{
-      name: 'Pantropical overview',
-      link: '/pantropical',
-    },{
-      name: 'About',
-      link: '/about',
-    }
-  ]
-
-};
+})();

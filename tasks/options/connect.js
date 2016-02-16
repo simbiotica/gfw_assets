@@ -1,7 +1,7 @@
 module.exports = {
   server: {
     options: {
-      port: 8000,
+      port: 9000,
       base: './',
       middleware: function(connect, options, middlewares) {
         middlewares.unshift(function(req, res, next) {
@@ -11,7 +11,7 @@ module.exports = {
         });
 
         return middlewares;
-      }      
+      }
     }
   }
-}
+};

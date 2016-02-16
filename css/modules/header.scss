@@ -29,8 +29,8 @@
 
   .m-header-nav {
     display: flex;
-    justify-content: space-between;   
-    
+    justify-content: space-between;
+
     &.-primary {
 
     }
@@ -90,7 +90,7 @@
       > a {
         padding: 10px 15px;
         border-left: 1px solid transparent;
-        border-right: 1px solid transparent;        
+        border-right: 1px solid transparent;
         display: block;
 
         &.-active {
@@ -103,7 +103,7 @@
             border-color: transparent;
           }
         }
-        
+
         @media (min-width: $br-mobile){
           padding: 0;
           display: flex;
@@ -141,7 +141,7 @@
     &.-text {
       min-width: 35px;
       margin: 0 0 0 20px;
-      
+
       &:first-child {
         margin: 0;
       }
@@ -153,7 +153,7 @@
             visibility: visible;
           }
         }
-        
+
         // It should act as a name => mobile
         // It should act as a tooltip => tablet
         // It should act as a rig-name => desktop
@@ -187,16 +187,16 @@
           @media (min-width: $br-desktop){
             opacity: 1;
             visibility: visible;
-            
+
             margin: 5px 0 0 5px;
             padding: 0;
-            
+
             background: none;
             color: $dark;
 
             position: static;
             transform: translate(0,0);
-  
+
             &:after {
               display: none;
             }
@@ -222,17 +222,17 @@
           border: none;
           background: none;
           box-shadow: none;
-          border-radius: 0;          
+          border-radius: 0;
 
           padding: 0 5px;
-          margin: 0 0 0 5px;          
+          margin: 0 0 0 5px;
           border-bottom: 2px solid $light;
           line-height: 24px;
           outline: none;
-          
+
           font-size: 10px;
           font-family: inherit;
-          
+
         }
       }
     }
@@ -257,7 +257,7 @@
         > a > svg {
           fill: $primary-color;
         }
-      }      
+      }
     }
   }
 }

@@ -34,7 +34,7 @@
         }
         > h3 {
           text-align: center;
-          font-size: 14px; 
+          font-size: 14px;
           text-transform: uppercase;
           border-bottom: 2px solid transparent;
         }
@@ -80,7 +80,7 @@
         margin: 0 auto;
         @media (min-width: $br-mobile){
           margin: 0;
-        }        
+        }
       }
     }
 
@@ -93,7 +93,7 @@
       @media (min-width: $br-mobile){
         text-align: right;
         padding: 0;
-      }        
+      }
 
       h3 {
         font-weight: 400;
@@ -106,412 +106,6 @@
         a {
           color: $dark;
           font-weight: 400;
-        }
-      }
-    }
-  }
-
-  ///////////////
-  // FOOTER LOGOS //
-  ///////////////
-  .m-footer-logos {
-    padding: 30px 10px;
-    display: none;
-
-    @media (min-width: $br-mobile){
-      display: block;
-    }
-
-    .m-footer-carousel {
-      padding: 0 50px;
-      li {
-        display: block;
-        height: 100px;
-        a {
-          display: block;
-          margin: 0 auto;
-          position: relative;
-          top: 50%;
-          transform: translate(0, -50%);
-          
-          &.afc {
-            @include sprite($afc);
-            &:hover {
-              @include sprite($afchover);
-            }
-          }
-          &.airbus {
-            @include sprite($airbus);
-            &:hover {
-              @include sprite($airbushover);
-            }
-          }
-          &.bei {
-            @include sprite($bei);
-            &:hover {
-              @include sprite($beihover);
-            }
-          }
-          &.bigdataclimatechallengewinner {
-            @include sprite($bigdataclimatechallengewinner);
-            &:hover {
-              @include sprite($bigdataclimatechallengewinnerhover);
-            }
-          }
-          &.blueraster {
-            @include sprite($blueraster);
-            &:hover {
-              @include sprite($bluerasterhover);
-            }
-          }
-          &.bnpb {
-            @include sprite($bnpb);
-            &:hover {
-              @include sprite($bnpbhover);
-            }
-          }
-          &.bobolinkfundation {
-            @include sprite($bobolinkfundation);
-            &:hover {
-              @include sprite($bobolinkfundationhover);
-            }
-          }
-          &.cambridge {
-            @include sprite($cambridge);
-            &:hover {
-              @include sprite($cambridgehover);
-            }
-          }
-          &.cartodb {
-            @include sprite($cartodb);
-            &:hover {
-              @include sprite($cartodbhover);
-            }
-          }
-          &.centerforglobaldevelopment {
-            @include sprite($centerforglobaldevelopment);
-            &:hover {
-              @include sprite($centerforglobaldevelopmenthover);
-            }
-          }
-          &.cgiar {
-            @include sprite($cgiar);
-            &:hover {
-              @include sprite($cgiarhover);
-            }
-          }
-          &.ciat {
-            @include sprite($ciat);
-            &:hover {
-              @include sprite($ciathover);
-            }
-          }
-          &.clua {
-            @include sprite($clua);
-            &:hover {
-              @include sprite($cluahover);
-            }
-          }
-          &.danida {
-            @include sprite($danida);
-            &:hover {
-              @include sprite($danidahover);
-            }
-          }
-          &.digitalglobe {
-            @include sprite($digitalglobe);
-            &:hover {
-              @include sprite($digitalglobehover);
-            }
-          }
-          &.ejn {
-            @include sprite($ejn);
-            &:hover {
-              @include sprite($ejnhover);
-            }
-          }
-          &.esri {
-            @include sprite($esri);
-            &:hover {
-              @include sprite($esrihover);
-            }
-          }
-          &.ewmi {
-            @include sprite($ewmi);
-            &:hover {
-              @include sprite($ewmihover);
-            }
-          }
-          &.gef {
-            @include sprite($gef);
-            &:hover {
-              @include sprite($gefhover);
-            }
-          }
-          &.generation {
-            @include sprite($generation);
-            &:hover {
-              @include sprite($generationhover);
-            }
-          }
-          &.globalforestwatchcanada {
-            @include sprite($globalforestwatchcanada);
-            &:hover {
-              @include sprite($globalforestwatchcanadahover);
-            }
-          }
-          &.google {
-            @include sprite($google);
-            &:hover {
-              @include sprite($googlehover);
-            }
-          }
-          &.icf {
-            @include sprite($icf);
-            &:hover {
-              @include sprite($icfhover);
-            }
-          }
-          &.imazon {
-            @include sprite($imazon);
-            &:hover {
-              @include sprite($imazonhover);
-            }
-          }
-          &.inab {
-            @include sprite($inab);
-            &:hover {
-              @include sprite($inabhover);
-            }
-          }
-          &.ioi {
-            @include sprite($ioi);
-            &:hover {
-              @include sprite($ioihover);
-            }
-          }
-          &.ministiere {
-            @include sprite($ministiere);
-            &:hover {
-              @include sprite($ministierehover);
-            }
-          }
-          &.ministryofforeignaffairs {
-            @include sprite($ministryofforeignaffairs);
-            &:hover {
-              @include sprite($ministryofforeignaffairshover);
-            }
-          }
-          &.moises {
-            @include sprite($moises);
-            &:hover {
-              @include sprite($moiseshover);
-            }
-          }
-          &.mongabay {
-            @include sprite($mongabay);
-            &:hover {
-              @include sprite($mongabayhover);
-            }
-          }
-          &.moore {
-            @include sprite($moore);
-            &:hover {
-              @include sprite($moorehover);
-            }
-          }
-          &.muyissi {
-            @include sprite($muyissi);
-            &:hover {
-              @include sprite($muyissihover);
-            }
-          }
-          &.norwegianministri {
-            @include sprite($norwegianministri);
-            &:hover {
-              @include sprite($norwegianministrihover);
-            }
-          }
-          &.opendevcam {
-            @include sprite($opendevcam);
-            &:hover {
-              @include sprite($opendevcamhover);
-            }
-          }
-          &.opendevmekong {
-            @include sprite($opendevmekong);
-            &:hover {
-              @include sprite($opendevmekonghover);
-            }
-          }
-          &.orbital {
-            @include sprite($orbital);
-            &:hover {
-              @include sprite($orbitalhover);
-            }
-          }
-          &.osfac {
-            @include sprite($osfac);
-            &:hover {
-              @include sprite($osfachover);
-            }
-          }
-          &.osinfor {
-            @include sprite($osinfor);
-            &:hover {
-              @include sprite($osinforhover);
-            }
-          }
-          &.raisg {
-            @include sprite($raisg);
-            &:hover {
-              @include sprite($raisghover);
-            }
-          }
-          &.redd {
-            @include sprite($redd);
-            &:hover {
-              @include sprite($reddhover);
-            }
-          }
-          &.resolve {
-            @include sprite($resolve);
-            &:hover {
-              @include sprite($resolvehover);
-            }
-          }
-          &.rfuk {
-            @include sprite($rfuk);
-            &:hover {
-              @include sprite($rfukhover);
-            }
-          }
-          &.rm {
-            @include sprite($rm);
-            &:hover {
-              @include sprite($rmhover);
-            }
-          }
-          &.rspo {
-            @include sprite($rspo);
-            &:hover {
-              @include sprite($rspohover);
-            }
-          }
-          &.rtrs {
-            @include sprite($rtrs);
-            &:hover {
-              @include sprite($rtrshover);
-            }
-          }
-          &.scannex {
-            @include sprite($scannex);
-            &:hover {
-              @include sprite($scannexhover);
-            }
-          }
-          &.sida {
-            @include sprite($sida);
-            &:hover {
-              @include sprite($sidahover);
-            }
-          }
-          &.specialachievement {
-            @include sprite($specialachievement);
-            &:hover {
-              @include sprite($specialachievementhover);
-            }
-          }
-          &.thejanegoodallinstitute {
-            @include sprite($thejanegoodallinstitute);
-            &:hover {
-              @include sprite($thejanegoodallinstitutehover);
-            }
-          }
-          &.thetiliafund {
-            @include sprite($thetiliafund);
-            &:hover {
-              @include sprite($thetiliafundhover);
-            }
-          }
-          &.tipos {
-            @include sprite($tipos);
-            &:hover {
-              @include sprite($tiposhover);
-            }
-          }
-          &.ukaid {
-            @include sprite($ukaid);
-            &:hover {
-              @include sprite($ukaidhover);
-            }
-          }
-          &.unep {
-            @include sprite($unep);
-            &:hover {
-              @include sprite($unephover);
-            }
-          }
-          &.unepwcmc {
-            @include sprite($unepwcmc);
-            &:hover {
-              @include sprite($unepwcmchover);
-            }
-          }
-          &.unilever {
-            @include sprite($unilever);
-            &:hover {
-              @include sprite($unileverhover);
-            }
-          }
-          &.universityofmaryland {
-            @include sprite($universityofmaryland);
-            &:hover {
-              @include sprite($universityofmarylandhover);
-            }
-          }
-          &.urthecast {
-            @include sprite($urthecast);
-            &:hover {
-              @include sprite($urthecasthover);
-            }
-          }
-          &.usaid {
-            @include sprite($usaid);
-            &:hover {
-              @include sprite($usaidhover);
-            }
-          }
-          &.vizzuality {
-            @include sprite($vizzuality);
-            &:hover {
-              @include sprite($vizzualityhover);
-            }
-          }
-          &.whrc {
-            @include sprite($whrc);
-            &:hover {
-              @include sprite($whrchover);
-            }
-          }
-          &.wri {
-            @include sprite($wri);
-            &:hover {
-              @include sprite($wrihover);
-            }
-          }
-          &.zeroextinction {
-            @include sprite($zeroextinction);
-            &:hover {
-              @include sprite($zeroextinctionhover);
-            }
-          }
-          &.zsl {
-            @include sprite($zsl);
-            &:hover {
-              @include sprite($zslhover);
-            }
-          }
         }
       }
     }
@@ -536,6 +130,672 @@
       &:hover{
         text-decoration: underline;
       }
+    }
+  }
+}
+
+//////////////////
+// FOOTER LOGOS //
+//////////////////
+#my-gfw-slider {
+  position: relative;
+  padding: 30px 10px;
+  display: none;
+
+  @media (min-width: $br-mobile){
+    display: block;
+  }
+
+  .m-footer-carousel {
+    padding: 0 50px;
+
+    li {
+      display: inline-block;
+      height: 100px;
+
+      a {
+        display: inline-block;
+        margin: 0 auto;
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        &.afc {
+          @include sprite($afc);
+          &:hover {
+            @include sprite($afchover);
+          }
+        }
+        &.airbus {
+          @include sprite($airbus);
+          &:hover {
+            @include sprite($airbushover);
+          }
+        }
+        &.bei {
+          @include sprite($bei);
+          &:hover {
+            @include sprite($beihover);
+          }
+        }
+        &.bigdataclimatechallengewinner {
+          @include sprite($bigdataclimatechallengewinner);
+          &:hover {
+            @include sprite($bigdataclimatechallengewinnerhover);
+          }
+        }
+        &.blueraster {
+          @include sprite($blueraster);
+          &:hover {
+            @include sprite($bluerasterhover);
+          }
+        }
+        &.bnpb {
+          @include sprite($bnpb);
+          &:hover {
+            @include sprite($bnpbhover);
+          }
+        }
+        &.bobolinkfundation {
+          @include sprite($bobolinkfundation);
+          &:hover {
+            @include sprite($bobolinkfundationhover);
+          }
+        }
+        &.cambridge {
+          @include sprite($cambridge);
+          &:hover {
+            @include sprite($cambridgehover);
+          }
+        }
+        &.cartodb {
+          @include sprite($cartodb);
+          &:hover {
+            @include sprite($cartodbhover);
+          }
+        }
+        &.centerforglobaldevelopment {
+          @include sprite($centerforglobaldevelopment);
+          &:hover {
+            @include sprite($centerforglobaldevelopmenthover);
+          }
+        }
+        &.cgiar {
+          @include sprite($cgiar);
+          &:hover {
+            @include sprite($cgiarhover);
+          }
+        }
+        &.ciat {
+          @include sprite($ciat);
+          &:hover {
+            @include sprite($ciathover);
+          }
+        }
+        &.clua {
+          @include sprite($clua);
+          &:hover {
+            @include sprite($cluahover);
+          }
+        }
+        &.danida {
+          @include sprite($danida);
+          &:hover {
+            @include sprite($danidahover);
+          }
+        }
+        &.digitalglobe {
+          @include sprite($digitalglobe);
+          &:hover {
+            @include sprite($digitalglobehover);
+          }
+        }
+        &.ejn {
+          @include sprite($ejn);
+          &:hover {
+            @include sprite($ejnhover);
+          }
+        }
+        &.esri {
+          @include sprite($esri);
+          &:hover {
+            @include sprite($esrihover);
+          }
+        }
+        &.ewmi {
+          @include sprite($ewmi);
+          &:hover {
+            @include sprite($ewmihover);
+          }
+        }
+        &.gef {
+          @include sprite($gef);
+          &:hover {
+            @include sprite($gefhover);
+          }
+        }
+        &.generation {
+          @include sprite($generation);
+          &:hover {
+            @include sprite($generationhover);
+          }
+        }
+        &.globalforestwatchcanada {
+          @include sprite($globalforestwatchcanada);
+          &:hover {
+            @include sprite($globalforestwatchcanadahover);
+          }
+        }
+        &.google {
+          @include sprite($google);
+          &:hover {
+            @include sprite($googlehover);
+          }
+        }
+        &.icf {
+          @include sprite($icf);
+          &:hover {
+            @include sprite($icfhover);
+          }
+        }
+        &.imazon {
+          @include sprite($imazon);
+          &:hover {
+            @include sprite($imazonhover);
+          }
+        }
+        &.inab {
+          @include sprite($inab);
+          &:hover {
+            @include sprite($inabhover);
+          }
+        }
+        &.ioi {
+          @include sprite($ioi);
+          &:hover {
+            @include sprite($ioihover);
+          }
+        }
+        &.ministiere {
+          @include sprite($ministiere);
+          &:hover {
+            @include sprite($ministierehover);
+          }
+        }
+        &.ministryofforeignaffairs {
+          @include sprite($ministryofforeignaffairs);
+          &:hover {
+            @include sprite($ministryofforeignaffairshover);
+          }
+        }
+        &.moises {
+          @include sprite($moises);
+          &:hover {
+            @include sprite($moiseshover);
+          }
+        }
+        &.mongabay {
+          @include sprite($mongabay);
+          &:hover {
+            @include sprite($mongabayhover);
+          }
+        }
+        &.moore {
+          @include sprite($moore);
+          &:hover {
+            @include sprite($moorehover);
+          }
+        }
+        &.muyissi {
+          @include sprite($muyissi);
+          &:hover {
+            @include sprite($muyissihover);
+          }
+        }
+        &.norwegianministri {
+          @include sprite($norwegianministri);
+          &:hover {
+            @include sprite($norwegianministrihover);
+          }
+        }
+        &.opendevcam {
+          @include sprite($opendevcam);
+          &:hover {
+            @include sprite($opendevcamhover);
+          }
+        }
+        &.opendevmekong {
+          @include sprite($opendevmekong);
+          &:hover {
+            @include sprite($opendevmekonghover);
+          }
+        }
+        &.orbital {
+          @include sprite($orbital);
+          &:hover {
+            @include sprite($orbitalhover);
+          }
+        }
+        &.osfac {
+          @include sprite($osfac);
+          &:hover {
+            @include sprite($osfachover);
+          }
+        }
+        &.osinfor {
+          @include sprite($osinfor);
+          &:hover {
+            @include sprite($osinforhover);
+          }
+        }
+        &.raisg {
+          @include sprite($raisg);
+          &:hover {
+            @include sprite($raisghover);
+          }
+        }
+        &.redd {
+          @include sprite($redd);
+          &:hover {
+            @include sprite($reddhover);
+          }
+        }
+        &.resolve {
+          @include sprite($resolve);
+          &:hover {
+            @include sprite($resolvehover);
+          }
+        }
+        &.rfuk {
+          @include sprite($rfuk);
+          &:hover {
+            @include sprite($rfukhover);
+          }
+        }
+        &.rm {
+          @include sprite($rm);
+          &:hover {
+            @include sprite($rmhover);
+          }
+        }
+        &.rspo {
+          @include sprite($rspo);
+          &:hover {
+            @include sprite($rspohover);
+          }
+        }
+        &.rtrs {
+          @include sprite($rtrs);
+          &:hover {
+            @include sprite($rtrshover);
+          }
+        }
+        &.scannex {
+          @include sprite($scannex);
+          &:hover {
+            @include sprite($scannexhover);
+          }
+        }
+        &.sida {
+          @include sprite($sida);
+          &:hover {
+            @include sprite($sidahover);
+          }
+        }
+        &.specialachievement {
+          @include sprite($specialachievement);
+          &:hover {
+            @include sprite($specialachievementhover);
+          }
+        }
+        &.thejanegoodallinstitute {
+          @include sprite($thejanegoodallinstitute);
+          &:hover {
+            @include sprite($thejanegoodallinstitutehover);
+          }
+        }
+        &.thetiliafund {
+          @include sprite($thetiliafund);
+          &:hover {
+            @include sprite($thetiliafundhover);
+          }
+        }
+        &.tipos {
+          @include sprite($tipos);
+          &:hover {
+            @include sprite($tiposhover);
+          }
+        }
+        &.ukaid {
+          @include sprite($ukaid);
+          &:hover {
+            @include sprite($ukaidhover);
+          }
+        }
+        &.unep {
+          @include sprite($unep);
+          &:hover {
+            @include sprite($unephover);
+          }
+        }
+        &.unepwcmc {
+          @include sprite($unepwcmc);
+          &:hover {
+            @include sprite($unepwcmchover);
+          }
+        }
+        &.unilever {
+          @include sprite($unilever);
+          &:hover {
+            @include sprite($unileverhover);
+          }
+        }
+        &.universityofmaryland {
+          @include sprite($universityofmaryland);
+          &:hover {
+            @include sprite($universityofmarylandhover);
+          }
+        }
+        &.urthecast {
+          @include sprite($urthecast);
+          &:hover {
+            @include sprite($urthecasthover);
+          }
+        }
+        &.usaid {
+          @include sprite($usaid);
+          &:hover {
+            @include sprite($usaidhover);
+          }
+        }
+        &.vizzuality {
+          @include sprite($vizzuality);
+          &:hover {
+            @include sprite($vizzualityhover);
+          }
+        }
+        &.whrc {
+          @include sprite($whrc);
+          &:hover {
+            @include sprite($whrchover);
+          }
+        }
+        &.wri {
+          @include sprite($wri);
+          &:hover {
+            @include sprite($wrihover);
+          }
+        }
+        &.zeroextinction {
+          @include sprite($zeroextinction);
+          &:hover {
+            @include sprite($zeroextinctionhover);
+          }
+        }
+        &.zsl {
+          @include sprite($zsl);
+          &:hover {
+            @include sprite($zslhover);
+          }
+        }
+      }
+    }
+  }
+
+  .m-footer-carousel {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .frame {
+    width: 957px;
+    margin: 0 auto !important;
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .slides {
+    height: 160px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .js_prev,
+  .js_next {
+    position: absolute;
+    top: 60px;
+    display: block;
+    height: 50px;
+    width: 50px;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+    background: #E0E0D9;
+    color: transparent;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+
+    &:hover, &:focus {
+      outline: none;
+      background: $primary-color;
+      color: transparent;
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    &:before, &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .js_prev {
+    left: 10px;
+    &:before {
+      background: url(http://www.globalforestwatch.org/assets/svg-icons/arrow-left.svg) center no-repeat;
+    }
+  }
+
+  .js_next {
+    right: 10px;
+    &:before {
+      background: url(http://www.globalforestwatch.org/assets/svg-icons/arrow-right.svg) center no-repeat;
+    }
+  }
+
+  li.js_slide {
+    display: inline-block;
+    position: relative;
+    width: 975px;
+  }
+}
+
+#my-gfw-container {
+  .my-gfw-loggedin {
+    svg {
+      fill: #97bd3d;
+    }
+  }
+
+  > a:hover + .submenu,
+  .submenu:hover {
+    display: block;
+  }
+
+  .submenu {
+    display: none;
+    position: absolute;
+    width: 150px;
+    z-index: 1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    background: white;
+    transform: translate(-25%, 0px);
+    transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  .submenu li {
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    text-align: center;
+  }
+
+  .submenu li a {
+    color: #555;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+    &:hover {
+      background: #fafafa;
+    }
+  }
+}
+
+#my-gfw-modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+
+  &.is-active {
+    display: flex;
+  }
+
+  .my-gfw-modal-backdrop {
+    background: rgba(0,0,0,0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .my-gfw-modal-window {
+    background: white;
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+
+    position: relative;
+    width: 475px;
+    height: 285px;
+    padding: 30px 50px 53px 50px;
+  }
+
+  .my-gfw-modal-close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+
+    svg{
+      fill: $dark;
+    }
+
+    &:hover {
+      svg {
+        fill: darken($dark,10%);
+      }
+    }
+  }
+
+  header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-size: 24px;
+      width: 300px;
+    }
+  }
+
+  .my-gfw-content {
+    display: flex;
+    width: 100%;
+    height: 85%;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .my-gfw-authentication {
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    li {
+      width: 250px;
+      display: block;
+      height: 50px;
+      text-align: center;
+
+      position: relative;
+    }
+
+    li a {
+      color: white;
+      text-transform: uppercase;
+      font-size: 14px;
+
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li a svg {
+      fill: white;
+
+      position: absolute;
+      top: 7px;
+      left: 15px;
+    }
+
+    .my-gfw-sign-in-twitter {
+      background-color: #598dca;
+    }
+
+    .my-gfw-sign-in-facebook {
+      background-color: #39579b;
+    }
+
+    .my-gfw-sign-in-google {
+      background-color: #da4735;
     }
   }
 }
