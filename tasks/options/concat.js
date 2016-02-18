@@ -12,6 +12,9 @@ module.exports = {
 
       'js/app/feedback.js',
 
+      'js/app/menujson.js',
+      'js/app/menu.js',
+
       'js/app/app.js',
       'js/app/loader.js',
     ],

@@ -19,6 +19,42 @@ function googleTranslateElementInit() {
     'googleTranslate');
 }
 
+// Simple JavaScript Templating
+// John Resig - http://ejohn.org/ - MIT Licensed
+(function(){
+  var cacheGFW = {};
+
+  this.tmplGFW = function tmplGFW(str, data){
+    // Figure out if we're getting a template, or if we need to
+    // load the template - and be sure to cacheGFW the result.
+    var fn = !/\W/.test(str) ?
+      cacheGFW[str] = cacheGFW[str] ||
+        tmplGFW(document.getElementById(str).innerHTML) :
+
+      // Generate a reusable function that will serve as a template
+      // generator (and which will be cached).
+      new Function("obj",
+        "var p=[],print=function(){p.push.apply(p,arguments);};" +
+
+        // Introduce the data as local variables using with(){}
+        "with(obj){p.push('" +
+
+        // Convert the template into pure JavaScript
+        str
+          .replace(/[\r\t\n]/g, " ")
+          .split("<%").join("\t")
+          .replace(/((^|%>)[^\t]*)'/g, "$1\r")
+          .replace(/\t=(.*?)%>/g, "',$1,'")
+          .split("\t").join("');")
+          .split("%>").join("p.push('")
+          .split("\r").join("\\'")
+      + "');}return p.join('');");
+
+    // Provide some basic currying to the user
+    return data ? fn( data ) : fn;
+  };
+})();
+
 window.GFW = window.GFW || {};
 window.GFW.NavBar = window.GFW.NavBar || {};
 
@@ -444,6 +480,278 @@ gfw.feedbackModal = {
 
 })(window.GFW.NavBar);
 
+// https://cdn.rawgit.com/simbiotica/gfw_assets/0612702e5ec4cc8e1cc75c4a4a63c8274f7ea870/js/build/production.js
+window.GFW = window.GFW || {};
+window.GFW.NavBar = window.GFW.NavBar || {};
+
+(function(gfw) {
+
+  gfw.menujsonGFW = {
+    'default' : [{
+        name: 'Explore',
+        link: '/explore',
+        submenu: [{
+          name: 'GFW Interactive Map',
+          link: '/map',
+        },{
+          name: 'Country Profiles &amp; Rankings',
+          link: '/countries',
+        },{
+          name: 'Commodities',
+          link: 'http://commodities.globalforestwatch.org/',
+          classname: 'mobile-friendly', 
+        },{
+          name: 'Fires',
+          link: 'http://fires.globalforestwatch.org/',
+          classname: 'mobile-friendly', 
+        },{
+          name: 'Climate',
+          link: 'http://climate.globalforestwatch.org/',
+          classname: 'mobile-friendly', 
+        },{
+          name: 'All applications',
+          link: '/explore',
+        },{
+          name: 'Open Data Portal',
+          link: 'http://data.globalforestwatch.org/',
+          classname: 'mobile-friendly', 
+        }]
+      },{
+        name: 'Stay informed',
+        link: '/stayinformed',
+        submenu: [{
+          name: 'Blog',
+          link: 'http://blog.globalforestwatch.org/',
+        },{
+          name: 'Crowdsourced stories',
+          link: '/stayinformed/crowdsourced-stories',
+        },{
+          name: 'Newsletter',
+          link: 'http://www.wri.org/global-forest-watch-stay-informed',
+          target: '_blank',
+        },{
+          name: 'Publications',
+          link: '/stayinformed/publications',
+        }]
+      },{
+        name: 'Get Involved',
+        link: '/getinvolved',
+        submenu: [{
+          name: 'Develop your own app',
+          link: '/getinvolved/develop-your-own-app',
+        },{
+          name: 'Submit a story',
+          link: '/stories/new',
+        },{
+          name: 'Share data',
+          link: '/getinvolved/share-data',
+        },{
+          name: 'Help improve data',
+          link: '/getinvolved/help-improve-data',
+        },{
+          name: 'Join the discussion',
+          link: 'https://groups.google.com/forum/#!forum/globalforestwatch',
+          target: '_blank',
+        },{
+          name: 'Apply to the Small Grants Fund',
+          link: '/getinvolved/apply-to-the-small-grants-fund',
+        },{
+          name: 'Provide feedback',
+          link: '/getinvolved/provide-feedback',
+          classname: 'feedback-link',
+        },{
+          name: 'Help improve translations',
+          link: '/getinvolved/help-improve-translations',
+        }]
+      },{
+        name: 'How to',
+        link: '/howto',
+        submenu: [{
+          name: 'Visualize data',
+          link: '/howto/view-data',
+        },{
+          name: 'View statistics',
+          link: '/howto/view-statistics',
+        },{
+          name: 'Analyze forest change',
+          link: '/howto/analyze-forest-change',
+        },{
+          name: 'Subscribe to alerts and user stories',
+          link: '/howto/subscribe-to-alerts-and-user-stories',
+        },{
+          name: 'Submit a story',
+          link: '/howto/submit-a-story',
+        },{
+          name: 'Open Data Portal',
+          link: '/howto/odp',
+        },{
+          name: 'FAQs',
+          link: '/howto/faqs',
+        },{
+          name: 'Training modules',
+          link: '/howto/training-modules',
+        }]
+      },{
+        name: 'About',
+        link: '/about',
+        submenu: [{
+          name: 'About GFW',
+          link: '/about/about-gfw',
+        },{
+          name: 'The GFW partnership',
+          link: '/about/the-gfw-partnership',
+        },{
+          name: 'Videos',
+          link: '/about/videos',
+        },{
+          name: 'Awards &amp; testimonials',
+          link: '/about/awards_and_testimonials',
+        },{
+          name: 'Data policy',
+          link: '/about/data_policy',
+        },{
+          name: 'Contact us',
+          link: '/about/contact-us',
+        }]
+      }
+    ],
+
+    'climate' : [{
+        name: 'Map',
+        link: '/map',
+      },{
+        name: 'Country profiles',
+        link: '/countries',
+      },{
+        name: 'Country comparisons',
+        link: '/compare-countries',
+      },{
+        name: 'Pantropical overview',
+        link: '/pantropical',
+      },{
+        name: 'About',
+        link: '/about',
+      }
+    ],
+
+    'howto' : [
+      {
+        name: 'Search by theme',
+        link: '',
+        submenu: [
+          {
+            name: "Visualize data",
+            link: "/gfw-howto/themes/visualize-data"
+          },
+          {
+            name: "View statistics",
+            link: "/gfw-howto/themes/view-statistics"
+          },
+          {
+            name: "Analyze data",
+            link: "/gfw-howto/themes/analyze-data"
+          },
+          {
+            name: "Suscribe to alerts",
+            link: "/gfw-howto/themes/suscribe-to-alerts"
+          },
+          {
+            name: "Submit a story",
+            link: "/gfw-howto/themes/submit-a-story"
+          },
+          {
+            name: "Tutorial videos",
+            link: "/gfw-howto/themes/tutorial-videos"
+          },
+          {
+            name: "Webinars",
+            link: "/gfw-howto/themes/webinars"
+          },
+          {
+            name: "Training modules",
+            link: "/gfw-howto/themes/training-modules"
+          },
+          {
+            name: "FAQ's",
+            link: "/gfw-howto/faqs"
+          }
+        ]
+      },
+      {
+        name: 'Search by app',
+        link: '',
+        submenu: [
+          {
+            name: "Gfw",
+            link: "/gfw-howto/apps/gfw"
+          },
+          {
+            name: "Climate",
+            link: "/gfw-howto/apps/climate"
+          },
+          {
+            name: "Fires",
+            link: "/gfw-howto/apps/fires"
+          },
+          {
+            name: "Commodities",
+            link: "/gfw-howto/apps/commodities"
+          }
+        ]
+      }
+
+    ]
+
+  };
+
+})(window.GFW.NavBar);
+
+
+// https://cdn.rawgit.com/simbiotica/gfw_assets/0612702e5ec4cc8e1cc75c4a4a63c8274f7ea870/js/build/production.js
+window.GFW = window.GFW || {};
+window.GFW.NavBar = window.GFW.NavBar || {};
+
+(function(gfw) {
+
+gfw.menuGFW = {
+  init: function(params) {
+    this.cacheVars();
+    // Choose the menu you want to render
+    this.switchMenu();
+    // Print it
+    this.printMenu();
+  },
+
+  cacheVars: function() {
+    this.$mobileMenu = $('#submenuMenuMobile');
+  },
+
+  switchMenu: function() {
+    switch(location.hostname) {
+      case 'localhost':
+        this.menu = gfw.menujsonGFW['default'];
+      break;
+
+      case 'climate.globalforestwatch.org':
+        this.menu = gfw.menujsonGFW['climate'];
+      break;
+
+      case 'howto.globalforestwatch.org':
+        this.menu = gfw.menujsonGFW['howto'];
+      break;
+
+      default: 
+        this.menu = gfw.menujsonGFW['default'];
+    }
+  },
+
+  printMenu: function() {
+    this.$mobileMenu.html(tmplGFW('mobileMenuTPL',{ menu: this.menu }));
+  }
+}
+
+})(window.GFW.NavBar);
+
 window.GFW = window.GFW || {};
 window.GFW.NavBar = window.GFW.NavBar || {};
 
@@ -463,6 +771,7 @@ gfw.Application = {
     this.initEvents();
     this.initMyGFW();
     this.initFeedback();
+    this.initMobileMenu();
 
     $(document).ready(this.initLogos.bind(this));
 
@@ -549,6 +858,10 @@ gfw.Application = {
     gfw.feedbackModal.init();
   },
 
+  initMobileMenu: function() {
+    gfw.menuGFW.init();
+  },
+
   // Events related to UI
   showMenus: function(e) {
     if (!!this.params.mobile) {
@@ -601,9 +914,9 @@ gfw.Application = {
 
 var loaderGFW = {
   urls: {
-    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/src/header.html',
+    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/ff2ba884c4e09b626c03b1287b946665c9e7a36e/src/header.html',
     footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/src/footer.html',
-    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/css/build/global.css',
+    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/14da456802ffb9139584bbf92a72fda735a9ef0e/css/build/global.css',
   },
 
   urls_dev: {
@@ -664,15 +977,17 @@ var loaderGFW = {
         css: args[2],
       });
       this.printData();
-      window.GFW.NavBar.Application.initialize(this.params);
     }.bind(this));
   },
 
   // Print
   printData: function() {
     this.$head.append('<style>'+this.params.css+'</style>');
-    this.$header.html(this.params.header).show(0);
-    this.$footer.html(this.params.footer).show(0);
+    setTimeout(function(){
+      this.$header.html(this.params.header).show(0);
+      this.$footer.html(this.params.footer).show(0);
+      window.GFW.NavBar.Application.initialize(this.params);
+    }.bind(this), 250)
   },
 };
 

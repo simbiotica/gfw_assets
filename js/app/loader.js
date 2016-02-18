@@ -2,9 +2,9 @@
 
 var loaderGFW = {
   urls: {
-    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/src/header.html',
+    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/ff2ba884c4e09b626c03b1287b946665c9e7a36e/src/header.html',
     footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/src/footer.html',
-    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/css/build/global.css',
+    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/14da456802ffb9139584bbf92a72fda735a9ef0e/css/build/global.css',
   },
 
   urls_dev: {
@@ -65,15 +65,17 @@ var loaderGFW = {
         css: args[2],
       });
       this.printData();
-      window.GFW.NavBar.Application.initialize(this.params);
     }.bind(this));
   },
 
   // Print
   printData: function() {
     this.$head.append('<style>'+this.params.css+'</style>');
-    this.$header.html(this.params.header).show(0);
-    this.$footer.html(this.params.footer).show(0);
+    setTimeout(function(){
+      this.$header.html(this.params.header).show(0);
+      this.$footer.html(this.params.footer).show(0);
+      window.GFW.NavBar.Application.initialize(this.params);
+    }.bind(this), 250)
   },
 };
 
