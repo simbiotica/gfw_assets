@@ -2607,7 +2607,7 @@ The `sprites` mixin generates identical output to the CSS template
   z-index: 2;
   position: relative;
   width: 475px;
-  height: 285px;
+  height: 360px;
   padding: 30px 50px 53px 50px;
 }
 #my-gfw-modal .my-gfw-modal-close {
@@ -2640,12 +2640,16 @@ The `sprites` mixin generates identical output to the CSS template
   font-size: 24px;
   width: 300px;
 }
+#my-gfw-modal header h3 {
+  font-weight: 200;
+  line-height: 1.5em;
+  margin-top: 15px;
+}
 #my-gfw-modal .my-gfw-content {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 85%;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
@@ -2678,6 +2682,7 @@ The `sprites` mixin generates identical output to the CSS template
   display: block;
   height: 50px;
   text-align: center;
+  margin-bottom: 10px;
   position: relative;
 }
 #my-gfw-modal .my-gfw-authentication li a {
