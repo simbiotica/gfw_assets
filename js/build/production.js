@@ -1248,6 +1248,7 @@ var feedbackModal = {
 >>>>>>> Switches to using Lory.js for the carousel (waaaaay smaller than slick)
 var loaderGFW = {
   urls: {
+<<<<<<< b286d7b83e37a23155eaec6d9006520bf35304b3
 <<<<<<< 7efa1fb33568196ae14af8239bccff18e14cf17b
 <<<<<<< bd500f2d3d71605f473270de05a250fe2f56e63f
 <<<<<<< 1c9b42519952910dadd7e4d83a553005fb835264
@@ -1271,6 +1272,11 @@ var loaderGFW = {
 =======
     css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/14da456802ffb9139584bbf92a72fda735a9ef0e/css/build/global.css',
 >>>>>>> Water color added
+=======
+    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/033623054bb1beacfe389d03e48800ace72e70d2/src/header.html',
+    footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/src/footer.html',
+    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/033623054bb1beacfe389d03e48800ace72e70d2/css/build/global.css',
+>>>>>>> Update asset URLs
   },
 
   urls_dev: {
