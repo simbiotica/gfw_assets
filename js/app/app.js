@@ -17,6 +17,7 @@ gfw.Application = {
     this.initEvents();
     this.initMyGFW();
     this.initFeedback();
+    this.initMobileMenu();
 
     $(document).ready(this.initLogos.bind(this));
 
@@ -101,6 +102,10 @@ gfw.Application = {
 
   initFeedback: function() {
     gfw.feedbackModal.init();
+  },
+
+  initMobileMenu: function() {
+    gfw.menuGFW.init();
   },
 
   // Events related to UI
