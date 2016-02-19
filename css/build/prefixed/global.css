@@ -394,6 +394,7 @@ html.-no-scroll, body.-no-scroll {
           justify-content: space-between;
   width: 100%;
   position: relative;
+  background-color: transparent;
 }
 #headerGfw .m-header-nav {
   display: -webkit-flex;
@@ -1394,6 +1395,7 @@ html.-no-scroll, body.-no-scroll {
   font-size: 21px;
   font-weight: 400;
   line-height: 1.25;
+  text-transform: none;
 }
 #headerGfw .feedback-modal .modal-content h3 strong, #footerGfw .feedback-modal .modal-content h3 strong {
   font-weight: 500;
