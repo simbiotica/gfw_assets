@@ -15,6 +15,7 @@ gfw.Application = {
     // Inits
     this.initTranslate();
     this.initEvents();
+    this.initMyGFW();
     this.initFeedback();
     this.initMyGFW();
     this.initMobileMenu();
@@ -43,9 +44,6 @@ gfw.Application = {
 
     // Footer
     this.$footerCarousel = this.$footer.find('#footerCarousel');
-
-    // My GFW
-    this.$toggleMyGFW = this.$header.find('#toggleMyGFW');
   },
 
   setCurrent: function() {
@@ -89,6 +87,18 @@ gfw.Application = {
   initEvents: function() {
     this.$header.on('click', '.m-header-submenu-btn', this.showMenus.bind(this));
     this.$header.on('click', '.m-header-backdrop', this.hideMenus.bind(this));
+  },
+
+  initMyGFW: function() {
+    var containerEl = document.getElementById('my-gfw-container');
+
+    if (gfw.Utils.isDefaultHost() === true) {
+      var loginButton = new gfw.myGFW.LoginButton({
+        el: containerEl});
+      loginButton.render();
+    } else {
+      containerEl.style.display = 'none';
+    }
   },
 
   initFeedback: function() {
