@@ -1252,6 +1252,7 @@ var feedbackModal = {
 >>>>>>> Switches to using Lory.js for the carousel (waaaaay smaller than slick)
 var loaderGFW = {
   urls: {
+<<<<<<< 393e712a6817f7a7210fd735358f503c6f956706
 <<<<<<< b286d7b83e37a23155eaec6d9006520bf35304b3
 <<<<<<< 7efa1fb33568196ae14af8239bccff18e14cf17b
 <<<<<<< bd500f2d3d71605f473270de05a250fe2f56e63f
@@ -1281,6 +1282,11 @@ var loaderGFW = {
     footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/src/footer.html',
     css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/033623054bb1beacfe389d03e48800ace72e70d2/css/build/global.css',
 >>>>>>> Update asset URLs
+=======
+    header: 'https://cdn.rawgit.com/simbiotica/gfw_assets/bf66e4f2b65f01472c2b242bd88dea114aa35744/src/header.html',
+    footer: 'https://cdn.rawgit.com/simbiotica/gfw_assets/7716f05c7cf320427b1ccb8f61458b8d296487c8/src/footer.html',
+    css: 'https://cdn.rawgit.com/simbiotica/gfw_assets/10399a4e2387e303a7c54bd01d34c268199485a3/css/build/global.css',
+>>>>>>> Applications: prevent navigation when you click app icon in desktop
   },
 
   urls_dev: {
