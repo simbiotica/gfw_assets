@@ -125,6 +125,10 @@ gfw.Application = {
       } else {
         this.hideMenus();
       }
+    } else {
+      if ($(e.currentTarget).data('stopnavigation')) {
+        e && e.preventDefault();
+      }
     }
   },
 
