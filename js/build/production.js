@@ -879,18 +879,6 @@ gfw.Application = {
     gfw.feedbackModal.init();
   },
 
-  initMyGFW: function() {
-    var containerEl = document.getElementById('my-gfw-container');
-
-    if (gfw.Utils.isDefaultHost() === true) {
-      var loginButton = new gfw.myGFW.LoginButton({
-        el: containerEl});
-      loginButton.render();
-    } else {
-      containerEl.style.display = 'none';
-    }
-  },
-
   initMobileMenu: function() {
     gfw.menuGFW.init();
   },
