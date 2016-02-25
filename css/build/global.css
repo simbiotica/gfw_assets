@@ -62,22 +62,22 @@ html.-no-scroll, body.-no-scroll {
 #headerGfw .-hidden, #footerGfw .-hidden {
   display: none;
 }
-#headerGfw .scroll-dark, #footerGfw .scroll-dark {
+#headerGfw .-scroll-bar, #footerGfw .-scroll-bar {
   -webkit-overflow-scrolling: touch;
   /* Let's get this party started */
   /* Track */
   /* Handle */
 }
-#headerGfw .scroll-dark::-webkit-scrollbar, #footerGfw .scroll-dark::-webkit-scrollbar {
+#headerGfw .-scroll-bar::-webkit-scrollbar, #footerGfw .-scroll-bar::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
-#headerGfw .scroll-dark::-webkit-scrollbar-track, #footerGfw .scroll-dark::-webkit-scrollbar-track {
+#headerGfw .-scroll-bar::-webkit-scrollbar-track, #footerGfw .-scroll-bar::-webkit-scrollbar-track {
   border-radius: 0px;
   background: #b6b6ba;
 }
-#headerGfw .scroll-dark::-webkit-scrollbar-thumb, #footerGfw .scroll-dark::-webkit-scrollbar-thumb {
-  border-radius: 0px;
+#headerGfw .-scroll-bar::-webkit-scrollbar-thumb, #footerGfw .-scroll-bar::-webkit-scrollbar-thumb {
+  border-radius: 20px;
   background: rgba(85, 85, 85, 0.8);
 }
 
