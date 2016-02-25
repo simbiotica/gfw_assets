@@ -1,9 +1,5 @@
 @charset "UTF-8";
-<<<<<<< 44cf28fb72dba0bf0628dc1049de964ed8216a12
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500);
-=======
-@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300italic,500);
->>>>>>> font loaded by css (I do not feel very comfortable with this solution, it blocks the rest of the load)
 html.-no-scroll, body.-no-scroll {
   overflow: hidden;
   position: fixed;

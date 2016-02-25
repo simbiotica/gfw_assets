@@ -46,7 +46,6 @@ gfw.Application = {
 
     // My GFW
     this.$toggleMyGFW = this.$header.find('#toggleMyGFW');
-    
   },
 
   setCurrent: function() {
@@ -109,7 +108,7 @@ gfw.Application = {
   },
 
   initMobileMenu: function() {
-    menuGFW.init();
+    gfw.menuGFW.init();
   },
 
   // Events related to UI

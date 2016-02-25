@@ -11,6 +11,8 @@ module.exports = {
       'js/app/my_gfw/LoginButton.js',
 
       'js/app/feedback.js',
+      'js/app/menu.js',
+      'js/app/menujson.js',
 
       'js/app/app.js',
       'js/app/loader.js',

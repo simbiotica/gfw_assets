@@ -53,7 +53,6 @@ var loaderGFW = {
     }.bind(this));
   },
 
-  // Getters
   getData: function() {
     this.$header.hide(0);
     this.$footer.hide(0);
@@ -65,10 +64,10 @@ var loaderGFW = {
         css: args[2],
       });
       this.printData();
+      window.GFW.NavBar.Application.initialize(this.params);
     }.bind(this));
   },
 
-  // Print
   printData: function() {
     this.$head.append('<style>'+this.params.css+'</style>');
     this.$header.html(this.params.header).delay(100).show(0);
