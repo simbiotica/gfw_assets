@@ -149,7 +149,7 @@ gfw.Application = {
     nextEl.addEventListener('click', cancelTimer);
     prevEl.addEventListener('click', cancelTimer);
 
-    var slider = window.lory.lory(sliderEl, {
+    var slider = window.lory(sliderEl, {
       infinite: 5,
       slidesToScroll: 1,
       slideSpeed: 500
