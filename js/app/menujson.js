@@ -152,6 +152,21 @@ window.GFW.NavBar = window.GFW.NavBar || {};
       }
     ],
 
+    'atlas' : [{
+        name: 'Home',
+        link: '/gfw-atlas',
+      },{
+        name: 'Map builder',
+        link: '/gfw-atlas/map-builder',
+      },{
+        name: 'Gallery',
+        link: '/gfw-atlas/gallery',
+      },{
+        name: 'Develop your own app',
+        link: '/gfw-atlas/develop-your-own-app',
+      }
+    ],
+
     'howto' : [
       {
         name: 'Search by theme',
