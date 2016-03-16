@@ -13,6 +13,7 @@ gfw.menuGFW = {
   },
 
   cacheVars: function() {
+    this.$submenuHome = $('#submenuHome');
     this.$mobileMenu = $('#submenuMenuMobile');
   },
 
@@ -49,6 +50,7 @@ gfw.menuGFW = {
   },
 
   printMenu: function() {
+    this.$submenuHome.html(tmplGFW('mobileMenuTPL',{ menu: gfw.menujsonGFW['default'] }))
     this.$mobileMenu.html(tmplGFW('mobileMenuTPL',{ menu: this.menu }));
   },
 

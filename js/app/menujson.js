@@ -6,6 +6,9 @@ window.GFW.NavBar = window.GFW.NavBar || {};
 
   gfw.menujsonGFW = {
     'default' : [{
+        name: 'GFW Home',
+        link: '/'
+      },{
         name: 'Explore',
         link: '/explore',
         submenu: [{
