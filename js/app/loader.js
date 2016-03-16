@@ -15,7 +15,6 @@ var loaderGFW = {
 
   initialize: function() {
     // Setters
-    this.initFonts();
     this.setElements();
     this.setParams({
       current: this.$script.data('current'),
@@ -24,15 +23,6 @@ var loaderGFW = {
 
     // Get data
     this.getData();
-  },
-
-  initFonts: function() {
-    setTimeout(function() {
-      let linkTag = document.createElement('link');
-      linkTag.rel = 'stylesheet';
-      linkTag.href = 'https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500';
-      document.head.appendChild(linkTag);
-    }, 0);
   },
 
   // Setters
