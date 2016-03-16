@@ -1035,6 +1035,7 @@ var loaderGFW = {
 
   initialize: function() {
     // Setters
+    this.initFonts();
     this.setElements();
     this.setParams({
       current: this.$script.data('current'),
@@ -1043,6 +1044,15 @@ var loaderGFW = {
 
     // Get data
     this.getData();
+  },
+
+  initFonts: function() {
+    setTimeout(function() {
+      let linkTag = document.createElement('link');
+      linkTag.rel = 'stylesheet';
+      linkTag.href = 'https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500';
+      document.head.appendChild(linkTag);
+    }, 0);
   },
 
   // Setters
@@ -1090,8 +1100,8 @@ var loaderGFW = {
 
   printData: function() {
     this.$head.append('<style>'+this.params.css+'</style>');
-    this.$header.html(this.params.header).delay(100).show(0);
-    this.$footer.html(this.params.footer).delay(100).show(0);
+    this.$header.html(this.params.header).show(0);
+    this.$footer.html(this.params.footer).show(0);
   },
 };
 
