@@ -747,10 +747,13 @@ html.-no-scroll, body.-no-scroll {
   #headerGfw .m-header-submenu.-home > ul > li {
     width: 20%;
     padding: 0 25px;
-    border-left: 1px solid #E5E5DF;
+    border-right: 1px solid #E5E5DF;
   }
-  #headerGfw .m-header-submenu.-home > ul > li:first-child {
-    border-left: none;
+  #headerGfw .m-header-submenu.-home > ul > li.-only-mobile {
+    display: none;
+  }
+  #headerGfw .m-header-submenu.-home > ul > li:last-child {
+    border-right: none;
   }
 }
 #headerGfw .m-header-submenu.-home > ul > li a {

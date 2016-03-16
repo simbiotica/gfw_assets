@@ -147,9 +147,14 @@
           @media (min-width: $br-mobile){
             width: 20%;
             padding: 0 25px;
-            border-left: 1px solid $border1;
-            &:first-child {
-              border-left: none;
+            border-right: 1px solid $border1;
+
+            &.-only-mobile {
+              display: none;
+            }
+
+            &:last-child {
+              border-right: none;
             }
           }
 

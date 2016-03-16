@@ -548,7 +548,6 @@ gfw.menuGFW = {
   },
 
   cacheVars: function() {
-    this.$submenuHome = $('#submenuHome');
     this.$mobileMenu = $('#submenuMenuMobile');
   },
 
@@ -585,7 +584,6 @@ gfw.menuGFW = {
   },
 
   printMenu: function() {
-    this.$submenuHome.html(tmplGFW('mobileMenuTPL',{ menu: gfw.menujsonGFW['default'] }))
     this.$mobileMenu.html(tmplGFW('mobileMenuTPL',{ menu: this.menu }));
   },
 
@@ -613,7 +611,7 @@ window.GFW.NavBar = window.GFW.NavBar || {};
 
   gfw.menujsonGFW = {
     'default' : [{
-        name: 'GFW Home',
+        name: 'Home',
         link: '/'
       },{
         name: 'Explore',
@@ -745,6 +743,9 @@ window.GFW.NavBar = window.GFW.NavBar || {};
     ],
 
     'climate' : [{
+        name: 'Home',
+        link: '/',
+      },{
         name: 'Map',
         link: '/map',
       },{
@@ -764,6 +765,9 @@ window.GFW.NavBar = window.GFW.NavBar || {};
 
     'atlas' : [{
         name: 'Home',
+        link: '/',
+      },{
+        name: 'Home',
         link: '/gfw-atlas',
       },{
         name: 'Map builder',
@@ -777,8 +781,10 @@ window.GFW.NavBar = window.GFW.NavBar || {};
       }
     ],
 
-    'howto' : [
-      {
+    'howto' : [{
+        name: 'Home',
+        link: '/',
+      },{
         name: 'Search by theme',
         link: '',
         submenu: [
@@ -1055,7 +1061,7 @@ var loaderGFW = {
     this.promises = [];
     // If you want to develop you should change this.urls => this.urls_dev
     // It may be better if we set this var by branches
-    $.each(this.urls, function(k,v){
+    $.each(this.urls_dev, function(k,v){
       var deferred = new $.Deferred();
       $.ajax({
         url: v,
