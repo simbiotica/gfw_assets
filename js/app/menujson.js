@@ -6,6 +6,9 @@ window.GFW.NavBar = window.GFW.NavBar || {};
 
   gfw.menujsonGFW = {
     'default' : [{
+        name: 'Home',
+        link: '/'
+      },{
         name: 'Explore',
         link: '/explore',
         submenu: [{
@@ -135,6 +138,9 @@ window.GFW.NavBar = window.GFW.NavBar || {};
     ],
 
     'climate' : [{
+        name: 'Home',
+        link: '/',
+      },{
         name: 'Map',
         link: '/map',
       },{
@@ -154,6 +160,9 @@ window.GFW.NavBar = window.GFW.NavBar || {};
 
     'atlas' : [{
         name: 'Home',
+        link: '/',
+      },{
+        name: 'Home',
         link: '/gfw-atlas',
       },{
         name: 'Map builder',
@@ -167,8 +176,10 @@ window.GFW.NavBar = window.GFW.NavBar || {};
       }
     ],
 
-    'howto' : [
-      {
+    'howto' : [{
+        name: 'Home',
+        link: '/',
+      },{
         name: 'Search by theme',
         link: '',
         submenu: [

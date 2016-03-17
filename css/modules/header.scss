@@ -20,12 +20,25 @@
     list-style: none;
   }
 
-  .m-header{
+  .m-header {
     display: flex;
     justify-content: space-between;
     width: 100%;
     position: relative;
     background-color: transparent;
+
+    .m-header-scroll {
+      overflow: auto;
+      display: flex;
+      width: 100%;
+      border-right: 60px solid transparent;
+      
+      @media (min-width: $br-mobile){
+        border-right: none;
+        overflow: visible;
+        justify-content: space-between;
+      }
+    }
   }
 
   .m-header-nav {
@@ -37,7 +50,7 @@
     }
 
     &.-secondary {
-      display: none;
+      // display: none;
 
       @media (min-width: $br-mobile){
         display: flex;
@@ -45,6 +58,23 @@
     }
 
     &.-mobile {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+      background: #DDD;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: 15px;
+        height: 100%;
+        @include gradient(left, rgba(#EEE, 0), rgba(#EEE, 1));
+      }
+
       @media (min-width: $br-mobile){
         display: none;
       }
@@ -68,17 +98,40 @@
         text-transform: uppercase;
         font-size: 12px;
         color: $black;
+        .-only-desktop {
+          @media (max-width: $br-mobile - 1){
+            display: none;
+          }
+        }
+        .-only-mobile {
+          @media (min-width: $br-mobile){
+            display: none;
+          }
+        }
       }
 
 
     }
 
     svg {
-      display: inline-block;
+      display: block;
       width: 18px;
-      height: 35px;
+      height: 18px;
+      margin: 0 auto;
       transition: $transition1;
       fill: $light;
+
+      @media (min-width: $br-mobile){
+        display: inline-block;
+        width: 18px;
+        height: 35px;
+      }
+    }
+
+    &.-only-desktop {
+      @media (max-width: $br-mobile - 1){
+        display: none;
+      }
     }
 
     // Default items
@@ -140,18 +193,30 @@
 
     // Text items
     &.-text {
-      min-width: 35px;
-      margin: 0 0 0 20px;
-
-      &:first-child {
-        margin: 0;
+      @media (min-width: $br-mobile){
+        min-width: 35px;
+        margin: 0 0 0 20px;
+        &:first-child {
+          margin: 0;
+        }
       }
 
+
       > a {
-        &:hover {
-          > span {
-            opacity: 1;
-            visibility: visible;
+        padding: 10px 15px;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        display: block;
+        @media (min-width: $br-mobile){
+          padding: 0;
+          border: none;
+          display: flex;
+
+          &:hover {
+            > span {
+              opacity: 1;
+              visibility: visible;
+            }
           }
         }
 
@@ -159,29 +224,39 @@
         // It should act as a tooltip => tablet
         // It should act as a rig-name => desktop
         > span {
-          display: inline-block;
-          position: absolute;
-          top: 100%;
-          left: 50%;
-          transform: translate(-50%,0);
-
-          padding: 5px 10px 3px;
-
-          background: $dark;
-          color: $white;
-          opacity: 0;
-          visibility: hidden;
+          display: block;
+          line-height: 1;
+          margin: 2px 0 0;
+          font-size: 10px;          
+          text-align: center;
           white-space: nowrap;
 
-          &:after {
-            content: "";
+          @media (min-width: $br-mobile){
+            line-height: 28px;
+            font-size: 12px;
+            display: inline-block;
             position: absolute;
-            top: -5px;
+            top: 100%;
             left: 50%;
-            width: 10px;
-            height: 10px;
-            transform: translate(-50%,0) rotate(45deg);
+            transform: translate(-50%,0);
+
+            padding: 5px 10px 3px;
+
             background: $dark;
+            color: $white;
+            opacity: 0;
+            visibility: hidden;
+
+            &:after {
+              content: "";
+              position: absolute;
+              top: -5px;
+              left: 50%;
+              width: 10px;
+              height: 10px;
+              transform: translate(-50%,0) rotate(45deg);
+              background: $dark;
+            }
           }
 
 
