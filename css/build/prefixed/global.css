@@ -712,10 +712,12 @@ html.-no-scroll, body.-no-scroll {
   border-right: none;
   top: -5px;
 }
-#headerGfw .m-header-submenu.-active {
-  transition: all 0s linear 0s;
-  opacity: 1;
-  visibility: visible;
+@media (max-width: 849px) {
+  #headerGfw .m-header-submenu.-active {
+    transition: all 0s linear 0s;
+    opacity: 1;
+    visibility: visible;
+  }
 }
 #headerGfw .m-header-submenu > ul {
   background: #FFF;
@@ -726,34 +728,39 @@ html.-no-scroll, body.-no-scroll {
   font-size: 12px;
   padding: 0;
   z-index: 4;
+  overflow-x: hidden;
   overflow-y: auto;
   text-align: center;
 }
 @media (min-width: 850px) {
   #headerGfw .m-header-submenu.-home {
     overflow-y: visible;
+    overflow-x: visible;
     padding: 35px 0;
     text-align: left;
     background: #FFF;
   }
 }
-#headerGfw .m-header-submenu.-home.-active {
-  position: fixed;
-  top: auto;
-  bottom: 50px;
-  left: 0;
-  height: 100%;
-  max-height: calc(100% - 50px);
+@media (max-width: 849px) {
+  #headerGfw .m-header-submenu.-home.-active {
+    position: fixed;
+    top: auto;
+    bottom: 50px;
+    left: 0;
+    height: 100%;
+    max-height: calc(100% - 50px);
+  }
+  #headerGfw .m-header-submenu.-home.-active:after {
+    display: none;
+  }
 }
-#headerGfw .m-header-submenu.-home.-active:after {
-  display: none;
-}
-@media (min-width: 850px) {
+@media (max-width: 849px) and (min-width: 850px) {
   #headerGfw .m-header-submenu.-home.-active {
     position: absolute;
     max-height: none;
   }
 }
+
 #headerGfw .m-header-submenu.-home:after {
   left: 13px;
 }
@@ -876,23 +883,26 @@ html.-no-scroll, body.-no-scroll {
     max-width: 400px;
   }
 }
-#headerGfw .m-header-submenu.-apps.-active {
-  position: fixed;
-  top: auto;
-  bottom: 50px;
-  left: 0;
-  height: 100%;
-  max-height: calc(100% - 50px);
+@media (max-width: 849px) {
+  #headerGfw .m-header-submenu.-apps.-active {
+    position: fixed;
+    top: auto;
+    bottom: 50px;
+    left: 0;
+    height: 100%;
+    max-height: calc(100% - 50px);
+  }
+  #headerGfw .m-header-submenu.-apps.-active:after {
+    display: none;
+  }
 }
-#headerGfw .m-header-submenu.-apps.-active:after {
-  display: none;
-}
-@media (min-width: 850px) {
+@media (max-width: 849px) and (min-width: 850px) {
   #headerGfw .m-header-submenu.-apps.-active {
     position: absolute;
     max-height: none;
   }
 }
+
 #headerGfw .m-header-submenu.-apps:after {
   left: 48px;
 }

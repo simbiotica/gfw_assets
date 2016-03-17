@@ -28,10 +28,12 @@
       top: -5px;
     }
 
-    &.-active {
-      transition: all 0s linear 0s;
-      opacity: 1;
-      visibility: visible;
+    @media (max-width: $br-mobile - 1){
+      &.-active {
+        transition: all 0s linear 0s;
+        opacity: 1;
+        visibility: visible;
+      }
     }
 
     > ul {
@@ -48,31 +50,35 @@
       font-size: 12px;
       padding: 0;
       z-index: 4;
+      overflow-x: hidden;
       overflow-y: auto;
       text-align: center;
 
       @media (min-width: $br-mobile){
         overflow-y: visible;
+        overflow-x: visible;
         padding: 35px 0;
         text-align: left;
         background: $white;
       }
 
-      &.-active {
-        position: fixed;
-        top: auto;
-        bottom: 50px;
-        left: 0;
-        height: 100%;
-        max-height: calc(100% - 50px);
+      @media (max-width: $br-mobile - 1){
+        &.-active {
+          position: fixed;
+          top: auto;
+          bottom: 50px;
+          left: 0;
+          height: 100%;
+          max-height: calc(100% - 50px);
 
-        &:after {
-          display: none;
-        }
+          &:after {
+            display: none;
+          }
 
-        @media (min-width: $br-mobile){
-          position: absolute;
-          max-height: none;
+          @media (min-width: $br-mobile){
+            position: absolute;
+            max-height: none;
+          }
         }
       }
 
@@ -205,20 +211,22 @@
         max-width: 400px;
       }
 
-      &.-active {
-        position: fixed;
-        top: auto;
-        bottom: 50px;
-        left: 0;
-        height: 100%;
-        max-height: calc(100% - 50px);
-        &:after {
-          display: none;
-        }
+      @media (max-width: $br-mobile - 1){
+        &.-active {
+          position: fixed;
+          top: auto;
+          bottom: 50px;
+          left: 0;
+          height: 100%;
+          max-height: calc(100% - 50px);
+          &:after {
+            display: none;
+          }
 
-        @media (min-width: $br-mobile){
-          position: absolute;
-          max-height: none;
+          @media (min-width: $br-mobile){
+            position: absolute;
+            max-height: none;
+          }
         }
       }
 
