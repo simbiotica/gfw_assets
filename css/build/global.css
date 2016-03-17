@@ -384,7 +384,7 @@ html.-no-scroll, body.-no-scroll {
   overflow: auto;
   display: flex;
   width: 100%;
-  border-right: 65px solid transparent;
+  border-right: 60px solid transparent;
 }
 @media (min-width: 850px) {
   #headerGfw .m-header .m-header-scroll {
@@ -408,6 +408,20 @@ html.-no-scroll, body.-no-scroll {
   right: 0;
   z-index: 2;
   background: #DDD;
+}
+#headerGfw .m-header-nav.-mobile:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 15px;
+  height: 100%;
+  background-image: -webkit-linear-gradient(left, rgba(238, 238, 238, 0), #eeeeee);
+  background-image: -moz-linear-gradient(left, rgba(238, 238, 238, 0), #eeeeee);
+  background-image: -o-linear-gradient(left, rgba(238, 238, 238, 0), #eeeeee);
+  background-image: -ms-linear-gradient(left, rgba(238, 238, 238, 0), #eeeeee);
+  background-image: linear-gradient(left, rgba(238, 238, 238, 0), #eeeeee);
 }
 @media (min-width: 850px) {
   #headerGfw .m-header-nav.-mobile {

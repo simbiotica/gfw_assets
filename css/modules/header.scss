@@ -31,7 +31,7 @@
       overflow: auto;
       display: flex;
       width: 100%;
-      border-right: 65px solid transparent;
+      border-right: 60px solid transparent;
       
       @media (min-width: $br-mobile){
         border-right: none;
@@ -63,6 +63,18 @@
       right: 0;
       z-index: 2;
       background: #DDD;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: 15px;
+        height: 100%;
+        @include gradient(left, rgba(#EEE, 0), rgba(#EEE, 1));
+      }
+
       @media (min-width: $br-mobile){
         display: none;
       }
