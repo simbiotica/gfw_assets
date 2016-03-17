@@ -20,12 +20,25 @@
     list-style: none;
   }
 
-  .m-header{
+  .m-header {
     display: flex;
     justify-content: space-between;
     width: 100%;
     position: relative;
     background-color: transparent;
+
+    .m-header-scroll {
+      overflow: auto;
+      display: flex;
+      width: 100%;
+      border-right: 65px solid transparent;
+      
+      @media (min-width: $br-mobile){
+        border-right: none;
+        overflow: visible;
+        justify-content: space-between;
+      }
+    }
   }
 
   .m-header-nav {
@@ -45,6 +58,11 @@
     }
 
     &.-mobile {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+      background: #DDD;
       @media (min-width: $br-mobile){
         display: none;
       }
@@ -68,6 +86,16 @@
         text-transform: uppercase;
         font-size: 12px;
         color: $black;
+        .-only-desktop {
+          @media (max-width: $br-mobile - 1){
+            display: none;
+          }
+        }
+        .-only-mobile {
+          @media (min-width: $br-mobile){
+            display: none;
+          }
+        }
       }
 
 

@@ -8,9 +8,9 @@ var loaderGFW = {
   },
 
   urls_dev: {
-    header: 'http://localhost:9000/src/header.html',
-    footer: 'http://localhost:9000/src/footer.html',
-    css: 'http://localhost:9000/css/build/global.css',
+    header: 'http://192.168.1.180:9000/src/header.html',
+    footer: 'http://192.168.1.180:9000/src/footer.html',
+    css: 'http://192.168.1.180:9000/css/build/global.css',
   },
 
   initialize: function() {
