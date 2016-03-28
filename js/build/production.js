@@ -885,7 +885,7 @@ gfw.Application = {
     this.initMyGFW();
     this.initMobileMenu();
 
-    $(document).ready(this.initLogos.bind(this));
+    window.onload = this.initLogos.bind(this);
 
     // resize function
     $(window).on('resize', this.setMobileParam.bind(this));
