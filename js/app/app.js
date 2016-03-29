@@ -20,7 +20,11 @@ gfw.Application = {
     this.initMyGFW();
     this.initMobileMenu();
 
-    window.onload = this.initLogos.bind(this);
+    if (window.addEventListener) {
+      window.addEventListener('load', this.initLogos.bind(this))
+    } else {
+      window.attachEvent('onload', this.initLogos.bind(this))
+    }
 
     // resize function
     $(window).on('resize', this.setMobileParam.bind(this));
