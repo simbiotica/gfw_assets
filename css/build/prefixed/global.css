@@ -287,12 +287,10 @@ html.-no-scroll, body.-no-scroll {
   }
 }
 #headerGfw .radio-box, #footerGfw .radio-box {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   padding: 15px 0;
 }
 #headerGfw .radio-box:before, #headerGfw .radio-box:after, #footerGfw .radio-box:before, #footerGfw .radio-box:after {
@@ -381,19 +379,16 @@ html.-no-scroll, body.-no-scroll {
   list-style: none;
 }
 #headerGfw .m-header {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 100%;
   position: relative;
   background-color: transparent;
 }
 #headerGfw .m-header .m-header-scroll {
   overflow: auto;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
@@ -403,22 +398,18 @@ html.-no-scroll, body.-no-scroll {
   #headerGfw .m-header .m-header-scroll {
     border-right: none;
     overflow: visible;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
   }
 }
 #headerGfw .m-header-nav {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 @media (min-width: 850px) {
   #headerGfw .m-header-nav.-secondary {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -447,15 +438,12 @@ html.-no-scroll, body.-no-scroll {
 }
 #headerGfw .m-header-item > a {
   position: relative;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   width: 100%;
   height: 100%;
   color: #555;
@@ -524,7 +512,6 @@ html.-no-scroll, body.-no-scroll {
 @media (min-width: 850px) {
   #headerGfw .m-header-item.-default > a {
     padding: 0;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -571,7 +558,6 @@ html.-no-scroll, body.-no-scroll {
   #headerGfw .m-header-item.-text > a {
     padding: 0;
     border: none;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -636,15 +622,12 @@ html.-no-scroll, body.-no-scroll {
   margin: 0 0 0 20px;
 }
 #headerGfw .m-header-item.-search form {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   height: 35px;
 }
 #headerGfw .m-header-item.-search form button :hover {
@@ -818,14 +801,12 @@ html.-no-scroll, body.-no-scroll {
 }
 @media (min-width: 850px) {
   #headerGfw .m-header-submenu.-home > ul {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     position: relative;
     bottom: auto;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
   }
 }
 #headerGfw .m-header-submenu.-home > ul > li {
@@ -908,12 +889,10 @@ html.-no-scroll, body.-no-scroll {
 }
 #headerGfw .m-header-submenu.-apps > ul {
   width: 100%;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: absolute;
   bottom: 0;
   max-height: 100%;
@@ -1032,10 +1011,8 @@ html.-no-scroll, body.-no-scroll {
 #googleTranslate .goog-te-gadget .goog-te-gadget-simple {
   border: none;
   background: none;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-flex;
+  -ms-flex-align: center;
+      align-items: center;
   display: -ms-flexbox;
   display: flex;
   height: 35px;
@@ -1417,12 +1394,10 @@ html.-no-scroll, body.-no-scroll {
           transform: translate(-50%, 0);
   float: left;
   padding: 4px;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   border: 1px solid #97bd3d;
   border-radius: 45px;
 }
@@ -1576,17 +1551,14 @@ html.-no-scroll, body.-no-scroll {
   border: 1px solid #5b80a0;
 }
 #headerGfw .feedback-modal .m-btncontainer, #footerGfw .feedback-modal .m-btncontainer {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 #headerGfw .feedback-modal .m-btncontainer.-center, #footerGfw .feedback-modal .m-btncontainer.-center {
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 #headerGfw .feedback-modal .m-btncontainer.-steps .btn, #footerGfw .feedback-modal .m-btncontainer.-steps .btn {
   display: none;
@@ -1618,6 +1590,21 @@ The provided mixins are intended to be used with the array-like variables
 .icon-email {
   @include sprite($icon-email);
 }
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
 */
 /*
 The `sprites` mixin generates identical output to the CSS template
@@ -1639,15 +1626,13 @@ The `sprites` mixin generates identical output to the CSS template
 }
 #footerGfw .m-footer-apps {
   display: none;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   border-bottom: 2px solid #E5E5DF;
   padding: 30px 0;
 }
 @media (min-width: 850px) {
   #footerGfw .m-footer-apps {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -1678,15 +1663,12 @@ The `sprites` mixin generates identical output to the CSS template
 }
 @media (min-width: 850px) {
   #footerGfw .m-footer-info {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
   }
 }
 #footerGfw .m-footer-info .m-footer-partner {
@@ -2541,17 +2523,14 @@ The `sprites` mixin generates identical output to the CSS template
   height: 73px;
 }
 #my-gfw-slider .m-footer-carousel {
-  display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 100%;
   height: 100%;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
 }
 #my-gfw-slider .frame {
   width: 957px;
@@ -2566,16 +2545,13 @@ The `sprites` mixin generates identical output to the CSS template
   height: 160px;
   overflow: hidden;
   white-space: nowrap;
-  display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   white-space: nowrap;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 #my-gfw-slider .js_prev,
 #my-gfw-slider .js_next {
@@ -2669,12 +2645,10 @@ The `sprites` mixin generates identical output to the CSS template
 
 #my-gfw-modal {
   display: none;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -2683,7 +2657,6 @@ The `sprites` mixin generates identical output to the CSS template
   height: 100%;
 }
 #my-gfw-modal.is-active {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -2722,15 +2695,12 @@ The `sprites` mixin generates identical output to the CSS template
 }
 #my-gfw-modal header {
   text-align: center;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
 }
 #my-gfw-modal header h2 {
   font-size: 24px;
@@ -2742,36 +2712,28 @@ The `sprites` mixin generates identical output to the CSS template
   margin-top: 15px;
 }
 #my-gfw-modal .my-gfw-content {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
 }
 #my-gfw-modal .my-gfw-authentication {
   margin-top: 20px;
   height: 100%;
   width: 100%;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 #my-gfw-modal .my-gfw-authentication li {
   width: 250px;
@@ -2787,15 +2749,12 @@ The `sprites` mixin generates identical output to the CSS template
   font-size: 14px;
   width: 100%;
   height: 100%;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 #my-gfw-modal .my-gfw-authentication li a svg {
   fill: white;
