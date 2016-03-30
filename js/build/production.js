@@ -661,8 +661,7 @@ window.GFW.NavBar = window.GFW.NavBar || {};
           link: '/stayinformed/crowdsourced-stories',
         },{
           name: 'Newsletter',
-          link: 'http://www.wri.org/global-forest-watch-stay-informed',
-          target: '_blank',
+          link: '/stayinformed/newsletter',
         },{
           name: 'Publications',
           link: '/stayinformed/publications',
