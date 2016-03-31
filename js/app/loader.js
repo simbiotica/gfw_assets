@@ -41,7 +41,7 @@ var loaderGFW = {
     this.promises = [];
     // If you want to develop you should change this.urls => this.urls_dev
     // It may be better if we set this var by branches
-    $.each(this.urls, function(k,v){
+    $.each(this.urls_dev, function(k,v){
       var deferred = new $.Deferred();
       $.ajax({
         url: v,
@@ -63,15 +63,17 @@ var loaderGFW = {
         footer: args[1],
         css: args[2],
       });
-      this.printData();
-      window.GFW.NavBar.Application.initialize(this.params);
+      this.printData();      
     }.bind(this));
   },
 
   printData: function() {
     this.$head.append('<style>'+this.params.css+'</style>');
-    this.$header.html(this.params.header).delay(100).show(0);
-    this.$footer.html(this.params.footer).delay(100).show(0);
+    setTimeout(function(){
+      this.$header.html(this.params.header).show(0);
+      this.$footer.html(this.params.footer).show(0);
+      window.GFW.NavBar.Application.initialize(this.params);        
+    }.bind(this),100);
   },
 };
 
