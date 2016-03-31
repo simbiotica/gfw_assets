@@ -17,14 +17,8 @@ gfw.Application = {
     this.initEvents();
     this.initMyGFW();
     this.initFeedback();
-    this.initMyGFW();
     this.initMobileMenu();
-
-    if (window.addEventListener) {
-      window.addEventListener('load', this.initLogos.bind(this))
-    } else {
-      window.attachEvent('onload', this.initLogos.bind(this))
-    }
+    this.initLogos();
 
     // resize function
     $(window).on('resize', this.setMobileParam.bind(this));

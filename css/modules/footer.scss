@@ -551,7 +551,7 @@
   }
 
   .frame {
-    width: 957px;
+    width: 980px;
     margin: 0 auto !important;
     position: relative;
     font-size: 0;
@@ -586,6 +586,7 @@
     border: none;
     outline: none;
     border-radius: 50%;
+    z-index: 10;
 
     &:hover, &:focus {
       outline: none;
@@ -623,7 +624,7 @@
   li.js_slide {
     display: inline-block;
     position: relative;
-    width: 975px;
+    width: 980px;
   }
 }
 

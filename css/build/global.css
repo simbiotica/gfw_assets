@@ -2498,7 +2498,7 @@ The `sprites` mixin generates identical output to the CSS template
   align-items: center;
 }
 #my-gfw-slider .frame {
-  width: 957px;
+  width: 980px;
   margin: 0 auto !important;
   position: relative;
   font-size: 0;
@@ -2531,6 +2531,7 @@ The `sprites` mixin generates identical output to the CSS template
   border: none;
   outline: none;
   border-radius: 50%;
+  z-index: 10;
 }
 #my-gfw-slider .js_prev:hover, #my-gfw-slider .js_prev:focus,
 #my-gfw-slider .js_next:hover,
@@ -2569,7 +2570,7 @@ The `sprites` mixin generates identical output to the CSS template
 #my-gfw-slider li.js_slide {
   display: inline-block;
   position: relative;
-  width: 975px;
+  width: 980px;
 }
 
 #my-gfw-container .my-gfw-loggedin svg {
