@@ -1,4 +1,4 @@
-// https://cdn.rawgit.com/simbiotica/gfw_assets/0612702e5ec4cc8e1cc75c4a4a63c8274f7ea870/js/build/production.js
+// https://cdn.jsdelivr.net/gh/simbiotica/gfw_assets@0612702e5ec4cc8e1cc75c4a4a63c8274f7ea870/js/build/production.js
 window.GFW = window.GFW || {};
 window.GFW.NavBar = window.GFW.NavBar || {};
 
